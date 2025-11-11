@@ -55,7 +55,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold mb-4 text-lime">Get In Touch</h4>
+            <h4 className="font-semibold mb-4 text-lime">Get in touch</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <a

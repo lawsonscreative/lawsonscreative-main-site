@@ -155,7 +155,7 @@ export default function TermsPage() {
             </div>
 
             <div className="bg-lightgrey rounded-xl p-6 mt-12">
-              <h3 className="font-heading font-bold text-xl text-navy mb-3">Questions About Our Terms?</h3>
+              <h3 className="font-heading font-bold text-xl text-navy mb-3">Questions about our terms?</h3>
               <p className="mb-4">
                 If you have any questions about these terms of service, please contact us:
               </p>

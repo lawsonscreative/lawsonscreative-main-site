@@ -20,7 +20,7 @@ export default function PortfolioShowcase() {
           className="text-center mb-16"
         >
           <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-4">
-            Real Businesses. Real Results.
+            Real businesses. Real results.
           </h2>
           <p className="text-xl text-slate max-w-3xl mx-auto">
             See how we've transformed small businesses with websites that work as hard as they do.
@@ -42,19 +42,19 @@ export default function PortfolioShowcase() {
               </h3>
               <div className="space-y-4 mb-6">
                 <div>
-                  <h4 className="font-semibold text-lg text-navy mb-2">The Challenge</h4>
+                  <h4 className="font-semibold text-lg text-navy mb-2">The challenge</h4>
                   <p className="text-slate">
                     Dated website wasn't converting visitors into bookings. Needed a modern, trust-focused redesign that showcased their expertise and made it easy for pet owners to get in touch.
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-lg text-navy mb-2">Our Solution</h4>
+                  <h4 className="font-semibold text-lg text-navy mb-2">Our solution</h4>
                   <p className="text-slate">
                     Modern, mobile-first redesign with clear CTAs, emotional imagery, and prominent trust signals. Made booking consultations effortless.
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-lg text-navy mb-2">The Results</h4>
+                  <h4 className="font-semibold text-lg text-navy mb-2">The results</h4>
                   <div className="flex flex-wrap gap-4">
                     <div className="bg-white px-4 py-2 rounded-lg">
                       <div className="text-2xl font-bold text-lime">50%</div>
@@ -77,7 +77,7 @@ export default function PortfolioShowcase() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-navy font-semibold hover:text-lime transition-colors"
               >
-                View Live Site
+                View live site
                 <svg
                   className="w-5 h-5 ml-2"
                   fill="none"
@@ -119,7 +119,7 @@ export default function PortfolioShowcase() {
           </div>
         </motion.div>
 
-        {/* More Projects Coming Soon */}
+        {/* More projects coming soon */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -130,7 +130,7 @@ export default function PortfolioShowcase() {
             This is just the beginning. We're building a portfolio of stunning, effective websites across industries—from fitness coaches to wedding photographers, car detailers to accountants.
           </p>
           <Link href="/portfolio" className="btn-primary inline-block">
-            View Full Portfolio
+            View full portfolio
           </Link>
         </motion.div>
       </div>

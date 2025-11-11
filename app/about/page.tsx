@@ -25,7 +25,7 @@ export default function AboutPage() {
       <section className="section-padding">
         <div className="container-custom max-w-4xl">
           <h2 className="font-heading font-bold text-4xl text-navy mb-6">
-            Why I Started This
+            Why I started this
           </h2>
           <div className="prose prose-lg max-w-none text-slate space-y-4 leading-relaxed">
             <p>
@@ -48,7 +48,7 @@ export default function AboutPage() {
       <section className="section-padding bg-lightgrey">
         <div className="container-custom max-w-4xl">
           <h2 className="font-heading font-bold text-4xl text-navy mb-12 text-center">
-            My Approach
+            My approach
           </h2>
 
           <div className="space-y-12">
@@ -85,11 +85,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* How I Work */}
+      {/* How I work */}
       <section className="section-padding">
         <div className="container-custom max-w-4xl">
           <h2 className="font-heading font-bold text-4xl text-navy mb-6">
-            How I Work
+            How I work
           </h2>
           <div className="text-slate leading-relaxed space-y-4">
             <p>
@@ -109,7 +109,7 @@ export default function AboutPage() {
       <section className="section-padding bg-navy text-white">
         <div className="container-custom text-center">
           <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6">
-            Want to Work Together?
+            Want to work together?
           </h2>
           <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
             Let's chat about your project. No pressure, no obligation—just a conversation.
@@ -118,7 +118,7 @@ export default function AboutPage() {
             href="/contact"
             className="bg-lime text-navy font-semibold px-8 py-4 rounded-lg hover:scale-105 hover:shadow-xl transition-all duration-200 inline-block"
           >
-            Get In Touch
+            Get in touch
           </Link>
         </div>
       </section>

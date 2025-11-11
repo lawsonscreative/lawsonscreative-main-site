@@ -54,7 +54,7 @@ export default function Process() {
           className="text-center mb-16"
         >
           <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-4">
-            Simple Process. Outstanding Results.
+            Simple process. Outstanding results.
           </h2>
           <p className="text-xl text-slate max-w-3xl mx-auto">
             We've streamlined our workflow to deliver quality websites fast—without sacrificing strategy or design.

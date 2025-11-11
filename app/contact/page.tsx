@@ -20,7 +20,7 @@ export default function ContactPage() {
       <section className="section-padding bg-gradient-to-br from-navy via-navy to-blue-900 text-white">
         <div className="container-custom text-center">
           <h1 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6">
-            Let's Talk About Your Project
+            Let's talk about your project
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
             Book a free 30-minute consultation or send a message. We'll respond within 24 hours.
@@ -49,7 +49,7 @@ export default function ContactPage() {
               </div>
 
               <h2 className="font-heading font-bold text-3xl text-navy mb-4">
-                Book a Call (Recommended)
+                Book a call (recommended)
               </h2>
               <p className="text-slate mb-6 leading-relaxed">
                 The best way to discuss your project is a quick call. We'll talk about your business, goals, and how a website can help. No pressure, no obligation.
@@ -59,7 +59,7 @@ export default function ContactPage() {
                 onClick={openCalendly}
                 className="btn-primary w-full text-center"
               >
-                Book Your Free Consultation
+                Book your free consultation
               </button>
 
               <div className="mt-6 flex items-center text-slate text-sm">
@@ -78,7 +78,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Option 2: Send a Message */}
+            {/* Option 2: Send a message */}
             <div>
               <div className="w-16 h-16 bg-navy rounded-full flex items-center justify-center mb-6">
                 <svg
@@ -95,7 +95,7 @@ export default function ContactPage() {
               </div>
 
               <h2 className="font-heading font-bold text-3xl text-navy mb-4">
-                Send a Message
+                Send a message
               </h2>
               <p className="text-slate mb-6 leading-relaxed">
                 Prefer email? Fill out the form below and we'll get back to you within 24 hours with answers to your questions.
@@ -105,12 +105,12 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Form */}
+      {/* Contact form */}
       <section className="section-padding bg-lightgrey">
         <div className="container-custom max-w-3xl">
           <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
             <h2 className="font-heading font-bold text-3xl text-navy mb-8 text-center">
-              Contact Form
+              Contact form
             </h2>
             <ContactForm />
           </div>
@@ -186,7 +186,7 @@ export default function ContactPage() {
 
           <div className="mt-16 text-center">
             <h3 className="font-heading font-bold text-2xl text-navy mb-4">
-              Have Questions First?
+              Have questions first?
             </h3>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/services" className="text-lime hover:underline">

@@ -58,7 +58,7 @@ export default function WhyChooseUs() {
           className="text-center mb-16"
         >
           <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-4">
-            Built for Small Businesses, By Someone Who Gets It
+            Built for small businesses, by someone who gets it
           </h2>
           <p className="text-xl text-slate max-w-3xl mx-auto">
             Large agencies charge £10k+ and take months. We deliver quality websites in 1-2 weeks at a fraction of the cost—without cutting corners.

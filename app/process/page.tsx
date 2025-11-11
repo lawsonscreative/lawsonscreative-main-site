@@ -138,7 +138,7 @@ export default function ProcessPage() {
               <div className="space-y-6">
                 <div className="bg-white rounded-xl p-6 shadow-md">
                   <h3 className="font-heading font-bold text-xl text-navy mb-4">
-                    What We Need From You
+                    What we need from you
                   </h3>
                   <ul className="space-y-2">
                     {step.whatWeNeed.map((item, idx) => (
@@ -162,7 +162,7 @@ export default function ProcessPage() {
 
                 <div className="bg-white rounded-xl p-6 shadow-md">
                   <h3 className="font-heading font-bold text-xl text-navy mb-4">
-                    What You'll Get
+                    What you'll get
                   </h3>
                   <ul className="space-y-2">
                     {step.whatYouGet.map((item, idx) => (
@@ -193,7 +193,7 @@ export default function ProcessPage() {
       <section className="section-padding bg-navy text-white">
         <div className="container-custom max-w-4xl">
           <h2 className="font-heading font-bold text-4xl mb-12 text-center">
-            What You Can Expect From Us
+            What you can expect from us
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -235,13 +235,13 @@ export default function ProcessPage() {
       <section className="section-padding bg-lightgrey">
         <div className="container-custom text-center">
           <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-6">
-            Ready to Get Started?
+            Ready to get started?
           </h2>
           <p className="text-xl text-slate mb-8 max-w-3xl mx-auto">
             Book your free consultation and let's discuss your project. We'll walk you through the process and answer any questions.
           </p>
           <Link href="/contact" className="btn-primary inline-block">
-            Book Free Consultation
+            Book free consultation
           </Link>
         </div>
       </section>

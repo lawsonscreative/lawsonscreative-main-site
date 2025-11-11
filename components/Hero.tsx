@@ -15,7 +15,7 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight">
-              Websites That Grow Your Business
+              Websites that grow your business
             </h1>
             <h2 className="text-xl md:text-2xl mb-6 text-gray-200 font-semibold">
               Modern, fast, effective websites for small service businesses. Built in 1-2 weeks, not months.
@@ -30,13 +30,13 @@ export default function Hero() {
                 href="/portfolio"
                 className="bg-lime text-navy font-semibold px-8 py-4 rounded-lg hover:scale-105 hover:shadow-xl active:scale-95 transition-all duration-200 text-base text-center"
               >
-                View Our Work
+                View our work
               </Link>
               <Link
                 href="/contact"
                 className="bg-transparent border-2 border-white text-white font-semibold px-8 py-4 rounded-lg hover:bg-white hover:text-navy transition-all duration-200 text-base text-center"
               >
-                Get Your Free Quote
+                Get your free quote
               </Link>
             </div>
           </motion.div>

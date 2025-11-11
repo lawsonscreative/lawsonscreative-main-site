@@ -24,7 +24,7 @@ export default function FinalCTA() {
           className="text-center max-w-4xl mx-auto"
         >
           <h2 className="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl mb-6">
-            Ready to Grow Your Business?
+            Ready to grow your business?
           </h2>
           <p className="text-xl md:text-2xl mb-8 text-gray-200">
             Book a free 30-minute consultation to discuss your project. No pressure, no obligation—just a conversation about your business and how a website can help.
@@ -35,13 +35,13 @@ export default function FinalCTA() {
               onClick={openCalendly}
               className="bg-lime text-navy font-semibold px-8 py-4 rounded-lg hover:scale-105 hover:shadow-xl active:scale-95 transition-all duration-200 text-base"
             >
-              Book Your Free Consultation
+              Book your free consultation
             </button>
             <Link
               href="/contact"
               className="bg-transparent border-2 border-white text-white font-semibold px-8 py-4 rounded-lg hover:bg-white hover:text-navy transition-all duration-200 text-base text-center"
             >
-              Or Get a Quote by Email
+              Or get a quote by email
             </Link>
           </div>
 

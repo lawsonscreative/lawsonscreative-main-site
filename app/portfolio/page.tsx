@@ -13,7 +13,7 @@ export default function PortfolioPage() {
       <section className="section-padding bg-gradient-to-br from-navy via-navy to-blue-900 text-white">
         <div className="container-custom text-center">
           <h1 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6">
-            Our Work Speaks for Itself
+            Our work speaks for itself
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
             Real websites for real businesses. See how we've helped small service businesses grow with modern, effective web design.
@@ -73,7 +73,7 @@ export default function PortfolioPage() {
               <div>
                 <div className="mb-8">
                   <h3 className="font-heading font-bold text-2xl text-navy mb-3">
-                    Project Overview
+                    Project overview
                   </h3>
                   <div className="space-y-2 text-slate">
                     <div><strong className="text-navy">Client:</strong> Graceful Pet Care</div>
@@ -86,7 +86,7 @@ export default function PortfolioPage() {
 
                 <div className="mb-8">
                   <h3 className="font-heading font-bold text-2xl text-navy mb-3">
-                    The Challenge
+                    The challenge
                   </h3>
                   <p className="text-slate leading-relaxed">
                     Graceful Pet Care had an outdated website that wasn't converting visitors into bookings. The design felt dated, trust signals were weak, and the mobile experience was poor. Pet owners couldn't easily find information or get in touch, resulting in lost business opportunities.
@@ -95,7 +95,7 @@ export default function PortfolioPage() {
 
                 <div>
                   <h3 className="font-heading font-bold text-2xl text-navy mb-3">
-                    Our Solution
+                    Our solution
                   </h3>
                   <p className="text-slate leading-relaxed mb-4">
                     We redesigned the website with a mobile-first approach, focusing on building trust through emotional imagery, clear service descriptions, and prominent testimonials. We made it effortless for pet owners to understand the services and book consultations.
@@ -110,7 +110,7 @@ export default function PortfolioPage() {
               <div>
                 <div className="mb-8">
                   <h3 className="font-heading font-bold text-2xl text-navy mb-3">
-                    Key Features
+                    Key features
                   </h3>
                   <ul className="space-y-3">
                     {[
@@ -143,7 +143,7 @@ export default function PortfolioPage() {
 
                 <div className="bg-lightgrey rounded-xl p-6">
                   <h3 className="font-heading font-bold text-2xl text-navy mb-4">
-                    The Results
+                    The results
                   </h3>
                   <div className="space-y-4">
                     <div>
@@ -196,7 +196,7 @@ export default function PortfolioPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center btn-primary mb-6"
               >
-                View Live Site
+                View live site
                 <svg
                   className="w-5 h-5 ml-2"
                   fill="none"
@@ -214,17 +214,17 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      {/* More Projects Coming Soon */}
+      {/* More projects coming soon */}
       <section className="section-padding bg-lightgrey">
         <div className="container-custom text-center">
           <h2 className="font-heading font-bold text-3xl md:text-4xl text-navy mb-4">
-            More Projects Coming Soon
+            More projects coming soon
           </h2>
           <p className="text-xl text-slate mb-8 max-w-3xl mx-auto">
             We're currently building stunning, effective websites across industries—from fitness coaches to wedding photographers, car detailers to accountants. Check back soon to see more transformations.
           </p>
           <Link href="/contact" className="btn-primary inline-block">
-            Start Your Project
+            Start your project
           </Link>
         </div>
       </section>

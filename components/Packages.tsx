@@ -80,7 +80,7 @@ export default function Packages() {
           className="text-center mb-16"
         >
           <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-4">
-            Flexible Packages for Every Business
+            Flexible packages for every business
           </h2>
           <p className="text-xl text-slate max-w-3xl mx-auto">
             Whether you need a simple landing page or a full-featured website, we have a package that fits your business and budget.
@@ -141,7 +141,7 @@ export default function Packages() {
                     : 'bg-navy text-white hover:scale-105'
                 }`}
               >
-                Get Started
+                Get started
               </Link>
             </motion.div>
           ))}
@@ -155,25 +155,25 @@ export default function Packages() {
           className="mt-16 text-center"
         >
           <h3 className="font-heading font-bold text-2xl text-navy mb-6">
-            Add-On Services
+            Add-on services
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <div className="bg-white rounded-lg p-6">
-              <h4 className="font-semibold text-navy mb-2">Website Maintenance</h4>
+              <h4 className="font-semibold text-navy mb-2">Website maintenance</h4>
               <p className="text-slate text-sm mb-2">£50-£150/month</p>
               <p className="text-slate text-sm">
                 Updates, security, backups, small changes
               </p>
             </div>
             <div className="bg-white rounded-lg p-6">
-              <h4 className="font-semibold text-navy mb-2">Content Updates</h4>
+              <h4 className="font-semibold text-navy mb-2">Content updates</h4>
               <p className="text-slate text-sm mb-2">£40/hour</p>
               <p className="text-slate text-sm">
                 New pages, copy changes, image updates
               </p>
             </div>
             <div className="bg-white rounded-lg p-6">
-              <h4 className="font-semibold text-navy mb-2">SEO Services</h4>
+              <h4 className="font-semibold text-navy mb-2">SEO services</h4>
               <p className="text-slate text-sm mb-2">Custom quote</p>
               <p className="text-slate text-sm">
                 Keyword research, optimization, content strategy

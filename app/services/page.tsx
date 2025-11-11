@@ -152,7 +152,7 @@ export default function ServicesPage() {
                 </div>
 
                 <Link href="/contact" className="btn-primary inline-block">
-                  Get Started with {pkg.name}
+                  Get started with {pkg.name}
                 </Link>
               </div>
 
@@ -194,12 +194,12 @@ export default function ServicesPage() {
         </section>
       ))}
 
-      {/* Add-On Services */}
+      {/* Add-on services */}
       <section className="section-padding bg-navy text-white">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="font-heading font-bold text-4xl md:text-5xl mb-4">
-              Add-On Services
+              Add-on services
             </h2>
             <p className="text-xl text-gray-200 max-w-3xl mx-auto">
               Keep your website running smoothly with our ongoing support services.
@@ -209,7 +209,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="bg-white/10 backdrop-blur rounded-xl p-8">
               <h3 className="font-heading font-bold text-2xl mb-3">
-                Website Maintenance
+                Website maintenance
               </h3>
               <div className="text-3xl font-bold text-lime mb-4">£50-£150/mo</div>
               <ul className="space-y-2 text-gray-200">
@@ -223,7 +223,7 @@ export default function ServicesPage() {
 
             <div className="bg-white/10 backdrop-blur rounded-xl p-8">
               <h3 className="font-heading font-bold text-2xl mb-3">
-                Content Updates
+                Content updates
               </h3>
               <div className="text-3xl font-bold text-lime mb-4">£40/hour</div>
               <ul className="space-y-2 text-gray-200">
@@ -237,7 +237,7 @@ export default function ServicesPage() {
 
             <div className="bg-white/10 backdrop-blur rounded-xl p-8">
               <h3 className="font-heading font-bold text-2xl mb-3">
-                SEO Services
+                SEO services
               </h3>
               <div className="text-3xl font-bold text-lime mb-4">Custom Quote</div>
               <ul className="space-y-2 text-gray-200">
@@ -256,7 +256,7 @@ export default function ServicesPage() {
       <section className="section-padding bg-lightgrey">
         <div className="container-custom max-w-4xl">
           <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-12 text-center">
-            Pricing Questions
+            Pricing questions
           </h2>
 
           <div className="space-y-6">
@@ -319,13 +319,13 @@ export default function ServicesPage() {
       <section className="section-padding bg-white">
         <div className="container-custom text-center">
           <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-6">
-            Not Sure Which Package Is Right for You?
+            Not sure which package is right for you?
           </h2>
           <p className="text-xl text-slate mb-8 max-w-3xl mx-auto">
             Book a free consultation and we'll help you choose the perfect package for your business goals and budget.
           </p>
           <Link href="/contact" className="btn-primary inline-block">
-            Get Your Free Consultation
+            Get your free consultation
           </Link>
         </div>
       </section>

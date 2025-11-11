@@ -30,7 +30,7 @@ export default function Testimonials() {
           className="text-center mb-16"
         >
           <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-4">
-            What Our Clients Say
+            What our clients say
           </h2>
         </motion.div>
 
