@@ -1,36 +1,163 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lawsons Creative - Main Website
 
-## Getting Started
+Modern, professional website for Lawsons Creative - a web design agency serving small service businesses across the UK.
 
-First, run the development server:
+## 🚀 Built With
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js 14** (App Router)
+- **TypeScript**
+- **Tailwind CSS**
+- **Framer Motion** (animations)
+- **React Hook Form** (form validation)
+
+## 📋 Features
+
+- ✅ Mobile-first responsive design
+- ✅ Smooth scroll animations
+- ✅ SEO-optimized pages
+- ✅ Contact form with validation
+- ✅ Calendly integration for bookings
+- ✅ Portfolio showcase with case studies
+- ✅ Detailed service packages
+- ✅ FAQ accordion
+- ✅ Fast loading (< 2s target)
+
+## 📁 Project Structure
+
+```
+lawsonscreative-main-site/
+├── app/
+│   ├── layout.tsx          # Root layout with Navigation & Footer
+│   ├── page.tsx             # Homepage
+│   ├── about/               # About page
+│   ├── contact/             # Contact page with form
+│   ├── portfolio/           # Portfolio/case studies
+│   ├── process/             # Process breakdown
+│   ├── services/            # Services & packages
+│   └── terms/               # Terms of service
+├── components/
+│   ├── Navigation.tsx       # Main navigation
+│   ├── Footer.tsx           # Site footer
+│   ├── Hero.tsx             # Homepage hero section
+│   ├── PortfolioShowcase.tsx
+│   ├── Packages.tsx         # Service packages
+│   ├── Process.tsx          # Process steps
+│   ├── Testimonials.tsx
+│   ├── WhyChooseUs.tsx
+│   ├── FAQ.tsx              # Accordion FAQ
+│   ├── FinalCTA.tsx         # Bottom CTA with Calendly
+│   ├── ContactForm.tsx      # Contact form component
+│   └── SocialProof.tsx      # Trust badges
+└── public/                  # Static assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Brand Colors
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Navy:** `#0A2540` (primary brand color)
+- **Lime:** `#00E676` (accent color)
+- **Slate:** `#475569` (body text)
+- **Light Grey:** `#F1F5F9` (backgrounds)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🏃 Getting Started
 
-## Learn More
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Run development server:**
+   ```bash
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Open browser:**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Build for production:**
+   ```bash
+   npm run build
+   npm run start
+   ```
 
-## Deploy on Vercel
+## 📝 Configuration
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Calendly Integration
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Update the Calendly URL in:
+- [components/FinalCTA.tsx](components/FinalCTA.tsx)
+- [app/contact/page.tsx](app/contact/page.tsx)
+
+Current URL: `https://calendly.com/andy-lawsonsenterprises/30min`
+
+### Contact Form
+
+The contact form uses Formspree for submissions. To enable:
+
+1. Sign up at [formspree.io](https://formspree.io)
+2. Create a new form
+3. Update the form endpoint in [components/ContactForm.tsx](components/ContactForm.tsx):
+   ```typescript
+   const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+   ```
+
+## 🖼️ Adding Portfolio Images
+
+Portfolio placeholders are currently in place for the Graceful Pet Care case study. To add images:
+
+1. Add images to `public/images/portfolio/`
+2. Update image references in:
+   - [components/PortfolioShowcase.tsx](components/PortfolioShowcase.tsx)
+   - [app/portfolio/page.tsx](app/portfolio/page.tsx)
+
+Recommended: Use Next.js Image component for optimization.
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+
+1. Push code to GitHub
+2. Import project in Vercel dashboard
+3. Vercel will auto-detect Next.js and deploy
+4. Add custom domain: lawsonscreative.co.uk
+
+### Environment Variables
+
+No environment variables required for basic functionality. If using Formspree or analytics:
+
+```env
+NEXT_PUBLIC_FORMSPREE_ID=your_form_id
+NEXT_PUBLIC_GA_ID=your_ga_id (optional)
+```
+
+## 📄 Pages Overview
+
+- **Home** (`/`) - Hero, portfolio showcase, packages, process, testimonials, FAQ
+- **Portfolio** (`/portfolio`) - Detailed case studies
+- **Services** (`/services`) - Package details, pricing FAQ
+- **About** (`/about`) - Company story and approach
+- **Process** (`/process`) - Detailed workflow breakdown
+- **Contact** (`/contact`) - Contact form and Calendly booking
+- **Terms** (`/terms`) - Terms of service
+
+## ✅ Pre-Launch Checklist
+
+- [ ] Update Formspree endpoint in ContactForm.tsx
+- [ ] Add portfolio images for Graceful Pet Care
+- [ ] Test contact form submissions
+- [ ] Test Calendly booking flow
+- [ ] Verify all links work
+- [ ] Test on real mobile devices
+- [ ] Run Lighthouse audit (target 90+ scores)
+- [ ] Add favicon (if not already done)
+- [ ] Configure custom domain
+- [ ] Set up analytics (optional)
+
+## 📧 Contact
+
+**Email:** hello@lawsonscreative.co.uk
+**Domain:** lawsonscreative.co.uk
+**GitHub:** [lawsonscreative](https://github.com/lawsonscreative)
+
+## 📜 License
+
+Copyright © 2025 Lawsons Enterprises Ltd. All rights reserved.
