@@ -2,9 +2,11 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const navLinks = [
     { href: '/', label: 'Home' },
@@ -14,6 +16,13 @@ export default function Navigation() {
     { href: '/process', label: 'Process' },
     { href: '/contact', label: 'Contact' },
   ];
+
+  const isActive = (href: string) => {
+    if (href === '/') {
+      return pathname === '/';
+    }
+    return pathname.startsWith(href);
+  };
 
   return (
     <nav className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
@@ -30,9 +39,16 @@ export default function Navigation() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-slate hover:text-navy transition-colors font-medium"
+                className={`relative font-medium transition-colors ${
+                  isActive(link.href)
+                    ? 'text-navy'
+                    : 'text-slate hover:text-navy'
+                }`}
               >
                 {link.label}
+                {isActive(link.href) && (
+                  <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-lime"></span>
+                )}
               </Link>
             ))}
             <Link
@@ -75,10 +91,17 @@ export default function Navigation() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-slate hover:text-navy transition-colors font-medium"
+                  className={`relative font-medium transition-colors ${
+                    isActive(link.href)
+                      ? 'text-navy font-semibold'
+                      : 'text-slate hover:text-navy'
+                  }`}
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
+                  {isActive(link.href) && (
+                    <span className="absolute left-0 top-1/2 -translate-y-1/2 -ml-4 w-1 h-4 bg-lime rounded-r"></span>
+                  )}
                 </Link>
               ))}
               <Link
