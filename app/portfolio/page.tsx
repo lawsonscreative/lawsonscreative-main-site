@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Portfolio | Lawsons Creative',
@@ -41,28 +42,48 @@ export default function PortfolioPage() {
               </p>
             </div>
 
-            {/* Before/After Placeholder */}
+            {/* Before/After Comparison */}
             <div className="bg-lightgrey rounded-2xl p-8 mb-12">
-              <div className="text-center mb-4">
+              <div className="text-center mb-6">
                 <h3 className="font-heading font-bold text-2xl text-navy mb-2">
                   Before & After
                 </h3>
                 <p className="text-slate">See the transformation</p>
               </div>
-              <div className="aspect-video bg-white rounded-xl shadow-lg flex items-center justify-center text-slate">
-                <div className="text-center">
-                  <svg
-                    className="w-16 h-16 mx-auto mb-2 text-gray-400"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                  </svg>
-                  <p className="text-sm">Before/After comparison images to be added</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Before */}
+                <div>
+                  <div className="bg-white rounded-xl overflow-hidden shadow-lg">
+                    <Image
+                      src="/images/portfolio/graceful-petcare-before.png"
+                      alt="Graceful Pet Care website before redesign"
+                      width={800}
+                      height={600}
+                      className="w-full h-auto"
+                    />
+                  </div>
+                  <div className="text-center mt-3">
+                    <span className="inline-block bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-semibold">
+                      Before
+                    </span>
+                  </div>
+                </div>
+                {/* After */}
+                <div>
+                  <div className="bg-white rounded-xl overflow-hidden shadow-lg ring-2 ring-lime">
+                    <Image
+                      src="/images/portfolio/graceful-petcare-after.png"
+                      alt="Graceful Pet Care website after redesign"
+                      width={800}
+                      height={600}
+                      className="w-full h-auto"
+                    />
+                  </div>
+                  <div className="text-center mt-3">
+                    <span className="inline-block bg-lime text-navy px-3 py-1 rounded-full text-sm font-semibold">
+                      After
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>

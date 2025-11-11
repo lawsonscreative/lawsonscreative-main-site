@@ -83,13 +83,17 @@ export default function Footer() {
             </div>
 
             {/* Legal Links */}
-            <div className="text-sm flex gap-4">
-              <Link href="/terms" className="text-gray-400 hover:text-white transition-colors">
-                Terms of Service
-              </Link>
-              <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">
-                Privacy Policy
-              </Link>
+            <div className="text-sm space-y-2">
+              <div>
+                <Link href="/terms" className="text-gray-400 hover:text-white transition-colors">
+                  Terms of Service
+                </Link>
+              </div>
+              <div>
+                <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">
+                  Privacy Policy
+                </Link>
+              </div>
             </div>
           </div>
         </div>

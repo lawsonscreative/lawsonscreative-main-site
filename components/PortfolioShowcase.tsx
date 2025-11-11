@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -92,27 +93,40 @@ export default function PortfolioShowcase() {
               </a>
             </div>
 
-            {/* Before/After Placeholder */}
-            <div className="relative">
-              <div className="bg-white rounded-xl shadow-xl p-4">
-                <div className="mb-2 text-center text-sm font-semibold text-slate">
-                  Before / After Comparison
+            {/* Before/After Images */}
+            <div className="space-y-4">
+              {/* Before */}
+              <div className="relative">
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+                  <Image
+                    src="/images/portfolio/graceful-petcare-before.png"
+                    alt="Graceful Pet Care website before redesign"
+                    width={800}
+                    height={600}
+                    className="w-full h-auto"
+                  />
                 </div>
-                <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center text-slate">
-                  <div className="text-center">
-                    <svg
-                      className="w-16 h-16 mx-auto mb-2 text-gray-400"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                    </svg>
-                    <p className="text-sm">Portfolio images to be added</p>
-                  </div>
+                <div className="absolute top-3 left-3">
+                  <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-semibold shadow-md">
+                    Before
+                  </span>
+                </div>
+              </div>
+              {/* After */}
+              <div className="relative">
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden ring-2 ring-lime">
+                  <Image
+                    src="/images/portfolio/graceful-petcare-after.png"
+                    alt="Graceful Pet Care website after redesign"
+                    width={800}
+                    height={600}
+                    className="w-full h-auto"
+                  />
+                </div>
+                <div className="absolute top-3 left-3">
+                  <span className="bg-lime text-navy px-3 py-1 rounded-full text-xs font-semibold shadow-md">
+                    After
+                  </span>
                 </div>
               </div>
             </div>
