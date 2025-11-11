@@ -72,12 +72,22 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Lawsons Enterprises Ltd. All rights reserved.</p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link href="/terms" className="hover:text-white transition-colors">
-              Terms of Service
-            </Link>
+        <div className="border-t border-gray-700 mt-12 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+            {/* Company Info */}
+            <div className="text-sm text-gray-400 space-y-1">
+              <p>&copy; {new Date().getFullYear()} Lawsons Creative. All rights reserved.</p>
+              <p>Lawsons Creative is a trading name of Lawsons Enterprises Ltd.</p>
+              <p>Company No: 16433965 | Registered in England & Wales</p>
+              <p>VAT No: GB495884223</p>
+            </div>
+
+            {/* Legal Links */}
+            <div className="text-sm">
+              <Link href="/terms" className="text-gray-400 hover:text-white transition-colors">
+                Terms of Service
+              </Link>
+            </div>
           </div>
         </div>
       </div>
