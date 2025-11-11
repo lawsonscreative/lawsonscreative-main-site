@@ -135,7 +135,7 @@ export default function ServicesPage() {
                     {pkg.included.map((item, idx) => (
                       <li key={idx} className="flex items-start">
                         <svg
-                          className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0 mt-0.5"
+                          className="w-5 h-5 text-lime mr-3 flex-shrink-0 mt-0.5"
                           fill="none"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -165,7 +165,7 @@ export default function ServicesPage() {
                   <ul className="space-y-2">
                     {pkg.ideal.map((item, idx) => (
                       <li key={idx} className="flex items-start">
-                        <span className="text-blue-600 mr-2">•</span>
+                        <span className="text-lime mr-2">•</span>
                         <span className="text-slate text-sm">{item}</span>
                       </li>
                     ))}
@@ -199,7 +199,7 @@ export default function ServicesPage() {
         <div className="container-custom">
           {/* Section intro */}
           <div className="text-center mb-4">
-            <p className="text-blue-600 font-semibold text-sm uppercase tracking-wide mb-2">
+            <p className="text-lime font-semibold text-sm uppercase tracking-wide mb-2">
               Need something extra?
             </p>
           </div>
@@ -253,7 +253,7 @@ export default function ServicesPage() {
                 <ul className="space-y-4 text-slate">
                   <li className="flex items-start">
                     <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-blue-600" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>
@@ -261,7 +261,7 @@ export default function ServicesPage() {
                   </li>
                   <li className="flex items-start">
                     <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-blue-600" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>
@@ -269,7 +269,7 @@ export default function ServicesPage() {
                   </li>
                   <li className="flex items-start">
                     <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-blue-600" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>
@@ -277,7 +277,7 @@ export default function ServicesPage() {
                   </li>
                   <li className="flex items-start">
                     <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-blue-600" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>
@@ -285,7 +285,7 @@ export default function ServicesPage() {
                   </li>
                   <li className="flex items-start">
                     <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-blue-600" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>
@@ -304,7 +304,7 @@ export default function ServicesPage() {
                 {/* Icon */}
                 <div className="w-20 h-20 bg-gradient-to-br from-navy to-navy/60 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-navy/20 group-hover:scale-110 transition-transform duration-300">
                   <svg
-                    className="w-10 h-10 text-blue-400"
+                    className="w-10 h-10 text-lime"
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -413,7 +413,7 @@ export default function ServicesPage() {
                 <ul className="space-y-4 text-slate">
                   <li className="flex items-start">
                     <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-blue-600" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>
@@ -421,7 +421,7 @@ export default function ServicesPage() {
                   </li>
                   <li className="flex items-start">
                     <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-blue-600" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>
@@ -429,7 +429,7 @@ export default function ServicesPage() {
                   </li>
                   <li className="flex items-start">
                     <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-blue-600" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>
@@ -437,7 +437,7 @@ export default function ServicesPage() {
                   </li>
                   <li className="flex items-start">
                     <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-blue-600" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>
@@ -445,7 +445,7 @@ export default function ServicesPage() {
                   </li>
                   <li className="flex items-start">
                     <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-blue-600" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>

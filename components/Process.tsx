@@ -82,7 +82,7 @@ export default function Process() {
                 <h3 className="font-heading font-bold text-2xl text-navy mb-2">
                   {step.title}
                 </h3>
-                <div className="text-sm font-semibold text-blue-600 mb-3">
+                <div className="text-sm font-semibold text-lime mb-3">
                   {step.duration}
                 </div>
                 <p className="text-slate mb-4 leading-relaxed">

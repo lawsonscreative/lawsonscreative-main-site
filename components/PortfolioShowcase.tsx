@@ -57,15 +57,15 @@ export default function PortfolioShowcase() {
                   <h4 className="font-semibold text-lg text-navy mb-2">The results</h4>
                   <div className="flex flex-wrap gap-4">
                     <div className="bg-white px-4 py-2 rounded-lg">
-                      <div className="text-2xl font-bold text-blue-600">50%</div>
+                      <div className="text-2xl font-bold text-lime">50%</div>
                       <div className="text-sm text-slate">More Enquiries</div>
                     </div>
                     <div className="bg-white px-4 py-2 rounded-lg">
-                      <div className="text-2xl font-bold text-blue-600">200%</div>
+                      <div className="text-2xl font-bold text-lime">200%</div>
                       <div className="text-sm text-slate">Mobile Bookings</div>
                     </div>
                     <div className="bg-white px-4 py-2 rounded-lg">
-                      <div className="text-2xl font-bold text-blue-600">100%</div>
+                      <div className="text-2xl font-bold text-lime">100%</div>
                       <div className="text-sm text-slate">Professional Trust</div>
                     </div>
                   </div>
@@ -75,7 +75,7 @@ export default function PortfolioShowcase() {
                 href="https://gracefulpetcare.co.uk"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center text-navy font-semibold hover:text-blue-600 transition-colors"
+                className="inline-flex items-center text-navy font-semibold hover:text-lime transition-colors"
               >
                 View live site
                 <svg

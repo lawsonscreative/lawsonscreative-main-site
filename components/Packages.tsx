@@ -114,7 +114,7 @@ export default function Packages() {
                 {pkg.features.map((feature, idx) => (
                   <li key={idx} className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5"
+                      className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5"
                       fill="none"
                       strokeLinecap="round"
                       strokeLinejoin="round"

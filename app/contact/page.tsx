@@ -75,7 +75,7 @@ export default function ContactPage() {
             <div>
               <div className="w-16 h-16 bg-navy rounded-full flex items-center justify-center mb-6">
                 <svg
-                  className="w-8 h-8 text-blue-400"
+                  className="w-8 h-8 text-lime"
                   fill="none"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -131,7 +131,7 @@ export default function ContactPage() {
               <h3 className="font-semibold text-navy mb-2">Email</h3>
               <a
                 href="mailto:hello@lawsonscreative.co.uk"
-                className="text-slate hover:text-blue-600 transition-colors"
+                className="text-slate hover:text-lime transition-colors"
               >
                 hello@lawsonscreative.co.uk
               </a>
@@ -182,13 +182,13 @@ export default function ContactPage() {
               Have questions first?
             </h3>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/services" className="text-blue-600 hover:underline">
+              <Link href="/services" className="text-lime hover:underline">
                 View Packages →
               </Link>
-              <Link href="/portfolio" className="text-blue-600 hover:underline">
+              <Link href="/portfolio" className="text-lime hover:underline">
                 See Our Work →
               </Link>
-              <Link href="/process" className="text-blue-600 hover:underline">
+              <Link href="/process" className="text-lime hover:underline">
                 How We Work →
               </Link>
             </div>

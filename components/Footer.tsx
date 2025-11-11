@@ -17,7 +17,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-4 text-blue-400">Quick Links</h4>
+            <h4 className="font-semibold mb-4 text-lime">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/" className="text-gray-300 hover:text-white transition-colors">
@@ -44,7 +44,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="font-semibold mb-4 text-blue-400">Services</h4>
+            <h4 className="font-semibold mb-4 text-lime">Services</h4>
             <ul className="space-y-2 text-sm">
               <li className="text-gray-300">Website Design</li>
               <li className="text-gray-300">Website Development</li>
@@ -55,7 +55,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold mb-4 text-blue-400">Get in touch</h4>
+            <h4 className="font-semibold mb-4 text-lime">Get in touch</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <a

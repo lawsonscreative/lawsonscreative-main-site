@@ -124,7 +124,7 @@ export default function ProcessPage() {
                 <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-3">
                   {step.title}
                 </h2>
-                <div className="text-blue-600 font-semibold text-lg mb-6">{step.duration}</div>
+                <div className="text-lime font-semibold text-lg mb-6">{step.duration}</div>
                 <p className="text-slate text-lg leading-relaxed mb-6">
                   {step.description}
                 </p>
@@ -144,7 +144,7 @@ export default function ProcessPage() {
                     {step.whatWeNeed.map((item, idx) => (
                       <li key={idx} className="flex items-start">
                         <svg
-                          className="w-5 h-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5"
+                          className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5"
                           fill="none"
                           strokeLinecap="round"
                           strokeLinejoin="round"
