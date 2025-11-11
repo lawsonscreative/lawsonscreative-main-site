@@ -47,7 +47,7 @@ export default function ContactForm() {
       } else {
         setSubmitStatus('error');
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -248,7 +248,7 @@ export default function ContactForm() {
       {/* Status Messages */}
       {submitStatus === 'success' && (
         <div className="bg-success/10 border border-success text-success px-4 py-3 rounded-lg">
-          <p className="font-semibold">Thanks! We'll get back to you within 24 hours.</p>
+          <p className="font-semibold">Thanks! We&apos;ll get back to you within 24 hours.</p>
         </div>
       )}
 

@@ -14,14 +14,14 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight">
+            <h1 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6 leading-snug">
               Websites that grow your business
             </h1>
             <h2 className="text-xl md:text-2xl mb-6 text-gray-200 font-semibold">
               Modern, fast, effective websites for small service businesses. Built in 1-2 weeks, not months.
             </h2>
             <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-              You're great at what you do. Your website should show it. We build professional sites that attract customers, build trust, and drive bookings—without the agency price tag.
+              You&apos;re great at what you do. Your website should show it. We build professional sites that attract customers, build trust, and drive bookings—without the agency price tag.
             </p>
 
             {/* CTAs */}

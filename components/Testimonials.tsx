@@ -45,7 +45,7 @@ export default function Testimonials() {
             >
               <div className="flex items-start mb-6">
                 <svg
-                  className="w-12 h-12 text-lime flex-shrink-0"
+                  className="w-12 h-12 text-blue-600 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 32 32"
                 >
@@ -74,7 +74,7 @@ export default function Testimonials() {
                 {[...Array(5)].map((_, i) => (
                   <svg
                     key={i}
-                    className="w-5 h-5 text-lime"
+                    className="w-5 h-5 text-blue-600"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >

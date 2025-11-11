@@ -57,15 +57,15 @@ export default function PortfolioShowcase() {
                   <h4 className="font-semibold text-lg text-navy mb-2">The results</h4>
                   <div className="flex flex-wrap gap-4">
                     <div className="bg-white px-4 py-2 rounded-lg">
-                      <div className="text-2xl font-bold text-lime">50%</div>
+                      <div className="text-2xl font-bold text-blue-600">50%</div>
                       <div className="text-sm text-slate">More Enquiries</div>
                     </div>
                     <div className="bg-white px-4 py-2 rounded-lg">
-                      <div className="text-2xl font-bold text-lime">200%</div>
+                      <div className="text-2xl font-bold text-blue-600">200%</div>
                       <div className="text-sm text-slate">Mobile Bookings</div>
                     </div>
                     <div className="bg-white px-4 py-2 rounded-lg">
-                      <div className="text-2xl font-bold text-lime">100%</div>
+                      <div className="text-2xl font-bold text-blue-600">100%</div>
                       <div className="text-sm text-slate">Professional Trust</div>
                     </div>
                   </div>
@@ -75,7 +75,7 @@ export default function PortfolioShowcase() {
                 href="https://gracefulpetcare.co.uk"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center text-navy font-semibold hover:text-lime transition-colors"
+                className="inline-flex items-center text-navy font-semibold hover:text-blue-600 transition-colors"
               >
                 View live site
                 <svg
@@ -127,7 +127,7 @@ export default function PortfolioShowcase() {
           className="text-center"
         >
           <p className="text-slate text-lg mb-6">
-            This is just the beginning. We're building a portfolio of stunning, effective websites across industries—from fitness coaches to wedding photographers, car detailers to accountants.
+            This is just the beginning. We&apos;re building a portfolio of stunning, effective websites across industries—from fitness coaches to wedding photographers, car detailers to accountants.
           </p>
           <Link href="/portfolio" className="btn-primary inline-block">
             View full portfolio

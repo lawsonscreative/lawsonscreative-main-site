@@ -129,13 +129,13 @@ export default function ServicesPage() {
 
                 <div className="mb-8">
                   <h3 className="font-heading font-bold text-2xl text-navy mb-4">
-                    What's Included
+                    What&apos;s Included
                   </h3>
                   <ul className="space-y-3">
                     {pkg.included.map((item, idx) => (
                       <li key={idx} className="flex items-start">
                         <svg
-                          className="w-5 h-5 text-lime mr-3 flex-shrink-0 mt-0.5"
+                          className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0 mt-0.5"
                           fill="none"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -165,7 +165,7 @@ export default function ServicesPage() {
                   <ul className="space-y-2">
                     {pkg.ideal.map((item, idx) => (
                       <li key={idx} className="flex items-start">
-                        <span className="text-lime mr-2">•</span>
+                        <span className="text-blue-600 mr-2">•</span>
                         <span className="text-slate text-sm">{item}</span>
                       </li>
                     ))}
@@ -199,7 +199,7 @@ export default function ServicesPage() {
         <div className="container-custom">
           {/* Section intro */}
           <div className="text-center mb-4">
-            <p className="text-lime font-semibold text-sm uppercase tracking-wide mb-2">
+            <p className="text-blue-600 font-semibold text-sm uppercase tracking-wide mb-2">
               Need something extra?
             </p>
           </div>
@@ -214,164 +214,245 @@ export default function ServicesPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border-2 border-gray-200 hover:border-lime">
-              <div className="w-16 h-16 bg-lime/10 rounded-xl flex items-center justify-center mb-6">
-                <svg
-                  className="w-8 h-8 text-lime"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
-                  <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                </svg>
+            {/* Website Maintenance Card */}
+            <div className="group relative bg-gradient-to-br from-white via-white to-lime/5 rounded-3xl p-10 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(0,230,118,0.3)] transition-all duration-500 border border-gray-100 hover:border-lime/50 hover:-translate-y-2">
+              {/* Decorative gradient orb */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-lime/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+              <div className="relative">
+                {/* Icon */}
+                <div className="w-20 h-20 bg-gradient-to-br from-lime to-lime/60 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-lime/20 group-hover:scale-110 transition-transform duration-300">
+                  <svg
+                    className="w-10 h-10 text-navy"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                    <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                </div>
+
+                {/* Title */}
+                <h3 className="font-heading font-bold text-3xl mb-4 text-navy">
+                  Website maintenance
+                </h3>
+
+                {/* Pricing */}
+                <div className="mb-6 pb-6 border-b border-gray-200">
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-5xl font-bold bg-gradient-to-r from-lime to-lime/60 bg-clip-text text-transparent">£50-£150</span>
+                  </div>
+                  <div className="text-sm font-semibold text-slate uppercase tracking-wide mt-1">per month</div>
+                </div>
+
+                {/* Features */}
+                <ul className="space-y-4 text-slate">
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-blue-600" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span className="text-base leading-relaxed">Regular updates & security patches</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-blue-600" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span className="text-base leading-relaxed">Automated backups</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-blue-600" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span className="text-base leading-relaxed">Small content changes</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-blue-600" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span className="text-base leading-relaxed">Performance monitoring</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-blue-600" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span className="text-base leading-relaxed">Priority email support</span>
+                  </li>
+                </ul>
               </div>
-              <h3 className="font-heading font-bold text-2xl mb-3 text-navy">
-                Website maintenance
-              </h3>
-              <div className="text-4xl font-bold text-lime mb-2">£50-£150</div>
-              <div className="text-sm text-slate mb-6">per month</div>
-              <ul className="space-y-3 text-slate">
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Regular updates & security patches</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Automated backups</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Small content changes</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Performance monitoring</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Priority email support</span>
-                </li>
-              </ul>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border-2 border-gray-200 hover:border-lime">
-              <div className="w-16 h-16 bg-lime/10 rounded-xl flex items-center justify-center mb-6">
-                <svg
-                  className="w-8 h-8 text-lime"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
-                </svg>
+            {/* Content Updates Card */}
+            <div className="group relative bg-gradient-to-br from-white via-white to-navy/5 rounded-3xl p-10 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(10,37,64,0.3)] transition-all duration-500 border border-gray-100 hover:border-navy/50 hover:-translate-y-2">
+              {/* Decorative gradient orb */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-navy/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+              <div className="relative">
+                {/* Icon */}
+                <div className="w-20 h-20 bg-gradient-to-br from-navy to-navy/60 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-navy/20 group-hover:scale-110 transition-transform duration-300">
+                  <svg
+                    className="w-10 h-10 text-blue-400"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                  </svg>
+                </div>
+
+                {/* Title */}
+                <h3 className="font-heading font-bold text-3xl mb-4 text-navy">
+                  Content updates
+                </h3>
+
+                {/* Pricing */}
+                <div className="mb-6 pb-6 border-b border-gray-200">
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-5xl font-bold bg-gradient-to-r from-navy to-navy/60 bg-clip-text text-transparent">£40</span>
+                  </div>
+                  <div className="text-sm font-semibold text-slate uppercase tracking-wide mt-1">per hour</div>
+                </div>
+
+                {/* Features */}
+                <ul className="space-y-4 text-slate">
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-navy/10 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span className="text-base leading-relaxed">New page creation</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-navy/10 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span className="text-base leading-relaxed">Copy changes & edits</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-navy/10 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span className="text-base leading-relaxed">Image updates & optimization</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-navy/10 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span className="text-base leading-relaxed">Adding new features</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-navy/10 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span className="text-base leading-relaxed">Layout adjustments</span>
+                  </li>
+                </ul>
               </div>
-              <h3 className="font-heading font-bold text-2xl mb-3 text-navy">
-                Content updates
-              </h3>
-              <div className="text-4xl font-bold text-lime mb-2">£40</div>
-              <div className="text-sm text-slate mb-6">per hour</div>
-              <ul className="space-y-3 text-slate">
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>New page creation</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Copy changes & edits</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Image updates & optimization</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Adding new features</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Layout adjustments</span>
-                </li>
-              </ul>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border-2 border-gray-200 hover:border-lime">
-              <div className="w-16 h-16 bg-lime/10 rounded-xl flex items-center justify-center mb-6">
-                <svg
-                  className="w-8 h-8 text-lime"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                </svg>
+            {/* SEO Services Card */}
+            <div className="group relative bg-gradient-to-br from-white via-white to-lime/5 rounded-3xl p-10 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(0,230,118,0.3)] transition-all duration-500 border border-gray-100 hover:border-lime/50 hover:-translate-y-2">
+              {/* Decorative gradient orb */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-lime/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+              <div className="relative">
+                {/* Icon */}
+                <div className="w-20 h-20 bg-gradient-to-br from-lime to-lime/60 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-lime/20 group-hover:scale-110 transition-transform duration-300">
+                  <svg
+                    className="w-10 h-10 text-navy"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                  </svg>
+                </div>
+
+                {/* Title */}
+                <h3 className="font-heading font-bold text-3xl mb-4 text-navy">
+                  SEO services
+                </h3>
+
+                {/* Pricing */}
+                <div className="mb-6 pb-6 border-b border-gray-200">
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-5xl font-bold bg-gradient-to-r from-lime to-lime/60 bg-clip-text text-transparent">Custom</span>
+                  </div>
+                  <div className="text-sm font-semibold text-slate uppercase tracking-wide mt-1">pricing based on scope</div>
+                </div>
+
+                {/* Features */}
+                <ul className="space-y-4 text-slate">
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-blue-600" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span className="text-base leading-relaxed">Keyword research & strategy</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-blue-600" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span className="text-base leading-relaxed">On-page optimization</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-blue-600" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span className="text-base leading-relaxed">Content strategy & creation</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-blue-600" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span className="text-base leading-relaxed">Local SEO optimization</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-blue-600" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span className="text-base leading-relaxed">Monthly reporting</span>
+                  </li>
+                </ul>
               </div>
-              <h3 className="font-heading font-bold text-2xl mb-3 text-navy">
-                SEO services
-              </h3>
-              <div className="text-4xl font-bold text-lime mb-2">Custom</div>
-              <div className="text-sm text-slate mb-6">pricing based on scope</div>
-              <ul className="space-y-3 text-slate">
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Keyword research & strategy</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>On-page optimization</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Content strategy & creation</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Local SEO optimization</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Monthly reporting</span>
-                </li>
-              </ul>
             </div>
           </div>
 
@@ -397,7 +478,7 @@ export default function ServicesPage() {
                 What affects the final cost?
               </h3>
               <p className="text-slate leading-relaxed">
-                The final price depends on the number of pages, complexity of features, amount of custom design work, and how much content you provide. We'll give you a detailed quote after our discovery call so there are no surprises.
+                The final price depends on the number of pages, complexity of features, amount of custom design work, and how much content you provide. We&apos;ll give you a detailed quote after our discovery call so there are no surprises.
               </p>
             </div>
 
@@ -406,13 +487,13 @@ export default function ServicesPage() {
                 Why do prices vary within packages?
               </h3>
               <p className="text-slate leading-relaxed">
-                Every business is unique. A 5-page site with simple layouts costs less than a 5-page site with custom features and extensive content. We price based on actual work required, not arbitrary numbers. You'll always know the exact price before we start.
+                Every business is unique. A 5-page site with simple layouts costs less than a 5-page site with custom features and extensive content. We price based on actual work required, not arbitrary numbers. You&apos;ll always know the exact price before we start.
               </p>
             </div>
 
             <div className="bg-white rounded-xl p-6 shadow-md">
               <h3 className="font-semibold text-xl text-navy mb-3">
-                What's NOT included in any package?
+                What&apos;s NOT included in any package?
               </h3>
               <p className="text-slate leading-relaxed mb-3">
                 Our packages cover design and development. Separate costs include:
@@ -431,7 +512,7 @@ export default function ServicesPage() {
                 Can I upgrade later?
               </h3>
               <p className="text-slate leading-relaxed">
-                Absolutely. Start with a Starter package and upgrade to Professional or Premium as your business grows. We'll credit what you've already paid toward the upgrade cost.
+                Absolutely. Start with a Starter package and upgrade to Professional or Premium as your business grows. We&apos;ll credit what you've already paid toward the upgrade cost.
               </p>
             </div>
 
@@ -440,7 +521,7 @@ export default function ServicesPage() {
                 Do you offer discounts?
               </h3>
               <p className="text-slate leading-relaxed">
-                We occasionally offer discounts for charities, multiple projects, or referrals. Our prices are already fair and transparent—we don't inflate them to offer fake discounts later.
+                We occasionally offer discounts for charities, multiple projects, or referrals. Our prices are already fair and transparent—we don&apos;t inflate them to offer fake discounts later.
               </p>
             </div>
           </div>

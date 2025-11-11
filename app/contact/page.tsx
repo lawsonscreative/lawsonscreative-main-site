@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import ContactForm from '@/components/ContactForm';
+import CalendlyButton from '@/components/CalendlyButton';
 
 export const metadata: Metadata = {
   title: 'Contact | Lawsons Creative',
@@ -8,11 +9,6 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
-  const openCalendly = () => {
-    if (typeof window !== 'undefined') {
-      window.open('https://calendly.com/andy-lawsonsenterprises/30min', '_blank');
-    }
-  };
 
   return (
     <div className="bg-white">
@@ -23,7 +19,7 @@ export default function ContactPage() {
             Let's talk about your project
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
-            Book a free 30-minute consultation or send a message. We'll respond within 24 hours.
+            Book a free 30-minute consultation or send a message. We&apos;ll respond within 24 hours.
           </p>
         </div>
       </section>
@@ -52,15 +48,12 @@ export default function ContactPage() {
                 Book a call (recommended)
               </h2>
               <p className="text-slate mb-6 leading-relaxed">
-                The best way to discuss your project is a quick call. We'll talk about your business, goals, and how a website can help. No pressure, no obligation.
+                The best way to discuss your project is a quick call. We&apos;ll talk about your business, goals, and how a website can help. No pressure, no obligation.
               </p>
 
-              <button
-                onClick={openCalendly}
-                className="btn-primary w-full text-center"
-              >
+              <CalendlyButton className="btn-primary w-full text-center">
                 Book your free consultation
-              </button>
+              </CalendlyButton>
 
               <div className="mt-6 flex items-center text-slate text-sm">
                 <svg
@@ -82,7 +75,7 @@ export default function ContactPage() {
             <div>
               <div className="w-16 h-16 bg-navy rounded-full flex items-center justify-center mb-6">
                 <svg
-                  className="w-8 h-8 text-lime"
+                  className="w-8 h-8 text-blue-400"
                   fill="none"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -138,7 +131,7 @@ export default function ContactPage() {
               <h3 className="font-semibold text-navy mb-2">Email</h3>
               <a
                 href="mailto:hello@lawsonscreative.co.uk"
-                className="text-slate hover:text-lime transition-colors"
+                className="text-slate hover:text-blue-600 transition-colors"
               >
                 hello@lawsonscreative.co.uk
               </a>
@@ -189,13 +182,13 @@ export default function ContactPage() {
               Have questions first?
             </h3>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/services" className="text-lime hover:underline">
+              <Link href="/services" className="text-blue-600 hover:underline">
                 View Packages →
               </Link>
-              <Link href="/portfolio" className="text-lime hover:underline">
+              <Link href="/portfolio" className="text-blue-600 hover:underline">
                 See Our Work →
               </Link>
-              <Link href="/process" className="text-lime hover:underline">
+              <Link href="/process" className="text-blue-600 hover:underline">
                 How We Work →
               </Link>
             </div>

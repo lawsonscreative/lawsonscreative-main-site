@@ -23,7 +23,7 @@ export default function Process() {
       title: 'Design',
       duration: 'Day 3-5',
       description:
-        "We design a modern, mobile-first website that reflects your brand and speaks to your customers. You'll see mockups and provide feedback before we build anything.",
+        "We design a modern, mobile-first website that reflects your brand and speaks to your customers. You&apos;ll see mockups and provide feedback before we build anything.",
       deliverable: 'Visual designs for approval',
     },
     {
@@ -82,17 +82,17 @@ export default function Process() {
                 <h3 className="font-heading font-bold text-2xl text-navy mb-2">
                   {step.title}
                 </h3>
-                <div className="text-sm font-semibold text-lime mb-3">
+                <div className="text-sm font-semibold text-blue-600 mb-3">
                   {step.duration}
                 </div>
                 <p className="text-slate mb-4 leading-relaxed">
                   {step.description}
                 </p>
-                <div className="bg-lightgrey rounded-lg p-3">
-                  <div className="text-xs font-semibold text-navy mb-1">
-                    Deliverable:
+                <div className="bg-navy/5 border-l-4 border-navy rounded-lg p-4 mt-6">
+                  <div className="text-xs font-bold text-navy/60 uppercase tracking-wider mb-2">
+                    Deliverable
                   </div>
-                  <div className="text-sm text-slate">{step.deliverable}</div>
+                  <div className="text-sm font-semibold text-navy">{step.deliverable}</div>
                 </div>
               </div>
             </motion.div>
@@ -106,7 +106,7 @@ export default function Process() {
           className="text-center mt-12"
         >
           <p className="text-slate text-sm">
-            Timeline may vary based on package and complexity. We'll provide a detailed schedule during discovery.
+            Timeline may vary based on package and complexity. We&apos;ll provide a detailed schedule during discovery.
           </p>
         </motion.div>
       </div>

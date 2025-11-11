@@ -34,7 +34,7 @@ export default function ProcessPage() {
       title: 'Design',
       duration: 'Day 3-5',
       description:
-        "We design a modern, mobile-first website that reflects your brand and speaks to your customers. You'll see mockups and provide feedback before we build anything.",
+        "We design a modern, mobile-first website that reflects your brand and speaks to your customers. You&apos;ll see mockups and provide feedback before we build anything.",
       deliverable: 'Visual designs for approval',
       whatWeNeed: [
         'Approval of strategic brief',
@@ -124,7 +124,7 @@ export default function ProcessPage() {
                 <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-3">
                   {step.title}
                 </h2>
-                <div className="text-lime font-semibold text-lg mb-6">{step.duration}</div>
+                <div className="text-blue-600 font-semibold text-lg mb-6">{step.duration}</div>
                 <p className="text-slate text-lg leading-relaxed mb-6">
                   {step.description}
                 </p>
@@ -144,7 +144,7 @@ export default function ProcessPage() {
                     {step.whatWeNeed.map((item, idx) => (
                       <li key={idx} className="flex items-start">
                         <svg
-                          className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5"
+                          className="w-5 h-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5"
                           fill="none"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -162,7 +162,7 @@ export default function ProcessPage() {
 
                 <div className="bg-white rounded-xl p-6 shadow-md">
                   <h3 className="font-heading font-bold text-xl text-navy mb-4">
-                    What you'll get
+                    What you&apos;ll get
                   </h3>
                   <ul className="space-y-2">
                     {step.whatYouGet.map((item, idx) => (
@@ -206,13 +206,13 @@ export default function ProcessPage() {
             <div>
               <h3 className="font-heading font-bold text-xl mb-3">Regular Updates</h3>
               <p className="text-gray-200">
-                You'll see progress throughout the project. No disappearing for weeks and surprising you with something you didn't expect.
+                You&apos;ll see progress throughout the project. No disappearing for weeks and surprising you with something you didn't expect.
               </p>
             </div>
             <div>
               <h3 className="font-heading font-bold text-xl mb-3">Proactive Problem-Solving</h3>
               <p className="text-gray-200">
-                If we spot an issue or opportunity, we'll tell you. We're here to make your site work, not just tick boxes.
+                If we spot an issue or opportunity, we'll tell you. We&apos;re here to make your site work, not just tick boxes.
               </p>
             </div>
             <div>
@@ -225,7 +225,7 @@ export default function ProcessPage() {
 
           <div className="mt-12 text-center">
             <p className="text-gray-200 italic mb-4">
-              Timeline may vary based on package and complexity. We'll provide a detailed schedule during discovery.
+              Timeline may vary based on package and complexity. We&apos;ll provide a detailed schedule during discovery.
             </p>
           </div>
         </div>
@@ -238,7 +238,7 @@ export default function ProcessPage() {
             Ready to get started?
           </h2>
           <p className="text-xl text-slate mb-8 max-w-3xl mx-auto">
-            Book your free consultation and let's discuss your project. We'll walk you through the process and answer any questions.
+            Book your free consultation and let's discuss your project. We&apos;ll walk you through the process and answer any questions.
           </p>
           <Link href="/contact" className="btn-primary inline-block">
             Book free consultation

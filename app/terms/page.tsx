@@ -161,7 +161,7 @@ export default function TermsPage() {
               </p>
               <p>
                 <strong>Email:</strong>{' '}
-                <a href="mailto:hello@lawsonscreative.co.uk" className="text-lime hover:underline">
+                <a href="mailto:hello@lawsonscreative.co.uk" className="text-blue-600 hover:underline">
                   hello@lawsonscreative.co.uk
                 </a>
               </p>

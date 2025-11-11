@@ -114,7 +114,7 @@ export default function Packages() {
                 {pkg.features.map((feature, idx) => (
                   <li key={idx} className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5"
+                      className="w-5 h-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5"
                       fill="none"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -154,30 +154,63 @@ export default function Packages() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="mt-16 text-center"
         >
-          <h3 className="font-heading font-bold text-2xl text-navy mb-6">
+          <h3 className="font-heading font-bold text-3xl md:text-4xl text-navy mb-12">
             Add-on services
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="bg-white rounded-lg p-6">
-              <h4 className="font-semibold text-navy mb-2">Website maintenance</h4>
-              <p className="text-slate text-sm mb-2">£50-£150/month</p>
-              <p className="text-slate text-sm">
-                Updates, security, backups, small changes
-              </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Website Maintenance */}
+            <div className="group relative bg-gradient-to-br from-white via-white to-lime/5 rounded-3xl p-8 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(0,230,118,0.3)] transition-all duration-500 border border-gray-100 hover:border-lime/50 hover:-translate-y-2">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-lime/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative">
+                <div className="w-16 h-16 bg-gradient-to-br from-lime to-lime/60 rounded-2xl flex items-center justify-center mb-4 shadow-lg shadow-lime/20 group-hover:scale-110 transition-transform duration-300 mx-auto">
+                  <svg className="w-8 h-8 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                    <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                </div>
+                <h4 className="font-heading font-bold text-xl text-navy mb-3">Website maintenance</h4>
+                <div className="text-3xl font-bold bg-gradient-to-r from-lime to-lime/60 bg-clip-text text-transparent mb-1">£50-£150</div>
+                <p className="text-xs font-semibold text-slate uppercase tracking-wide mb-4">per month</p>
+                <p className="text-slate text-sm leading-relaxed">
+                  Updates, security, backups, small changes
+                </p>
+              </div>
             </div>
-            <div className="bg-white rounded-lg p-6">
-              <h4 className="font-semibold text-navy mb-2">Content updates</h4>
-              <p className="text-slate text-sm mb-2">£40/hour</p>
-              <p className="text-slate text-sm">
-                New pages, copy changes, image updates
-              </p>
+
+            {/* Content Updates */}
+            <div className="group relative bg-gradient-to-br from-white via-white to-navy/5 rounded-3xl p-8 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(10,37,64,0.3)] transition-all duration-500 border border-gray-100 hover:border-navy/50 hover:-translate-y-2">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-navy/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative">
+                <div className="w-16 h-16 bg-gradient-to-br from-navy to-navy/60 rounded-2xl flex items-center justify-center mb-4 shadow-lg shadow-navy/20 group-hover:scale-110 transition-transform duration-300 mx-auto">
+                  <svg className="w-8 h-8 text-blue-400" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                  </svg>
+                </div>
+                <h4 className="font-heading font-bold text-xl text-navy mb-3">Content updates</h4>
+                <div className="text-3xl font-bold bg-gradient-to-r from-navy to-navy/60 bg-clip-text text-transparent mb-1">£40</div>
+                <p className="text-xs font-semibold text-slate uppercase tracking-wide mb-4">per hour</p>
+                <p className="text-slate text-sm leading-relaxed">
+                  New pages, copy changes, image updates
+                </p>
+              </div>
             </div>
-            <div className="bg-white rounded-lg p-6">
-              <h4 className="font-semibold text-navy mb-2">SEO services</h4>
-              <p className="text-slate text-sm mb-2">Custom quote</p>
-              <p className="text-slate text-sm">
-                Keyword research, optimization, content strategy
-              </p>
+
+            {/* SEO Services */}
+            <div className="group relative bg-gradient-to-br from-white via-white to-lime/5 rounded-3xl p-8 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(0,230,118,0.3)] transition-all duration-500 border border-gray-100 hover:border-lime/50 hover:-translate-y-2">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-lime/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative">
+                <div className="w-16 h-16 bg-gradient-to-br from-lime to-lime/60 rounded-2xl flex items-center justify-center mb-4 shadow-lg shadow-lime/20 group-hover:scale-110 transition-transform duration-300 mx-auto">
+                  <svg className="w-8 h-8 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                  </svg>
+                </div>
+                <h4 className="font-heading font-bold text-xl text-navy mb-3">SEO services</h4>
+                <div className="text-3xl font-bold bg-gradient-to-r from-lime to-lime/60 bg-clip-text text-transparent mb-1">Custom</div>
+                <p className="text-xs font-semibold text-slate uppercase tracking-wide mb-4">pricing based on scope</p>
+                <p className="text-slate text-sm leading-relaxed">
+                  Keyword research, optimization, content strategy
+                </p>
+              </div>
             </div>
           </div>
         </motion.div>

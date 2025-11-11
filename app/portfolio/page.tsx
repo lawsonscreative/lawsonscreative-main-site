@@ -125,7 +125,7 @@ export default function PortfolioPage() {
                     ].map((feature, idx) => (
                       <li key={idx} className="flex items-start">
                         <svg
-                          className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5"
+                          className="w-5 h-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5"
                           fill="none"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -147,15 +147,15 @@ export default function PortfolioPage() {
                   </h3>
                   <div className="space-y-4">
                     <div>
-                      <div className="text-3xl font-bold text-lime mb-1">50%</div>
+                      <div className="text-3xl font-bold text-blue-600 mb-1">50%</div>
                       <div className="text-slate">Increase in enquiries in first month</div>
                     </div>
                     <div>
-                      <div className="text-3xl font-bold text-lime mb-1">200%</div>
+                      <div className="text-3xl font-bold text-blue-600 mb-1">200%</div>
                       <div className="text-slate">Increase in mobile bookings</div>
                     </div>
                     <div>
-                      <div className="text-3xl font-bold text-lime mb-1">100%</div>
+                      <div className="text-3xl font-bold text-blue-600 mb-1">100%</div>
                       <div className="text-slate">Professional, trustworthy appearance</div>
                     </div>
                   </div>
@@ -167,7 +167,7 @@ export default function PortfolioPage() {
             <div className="bg-navy text-white rounded-2xl p-8 md:p-12 mb-12">
               <div className="flex items-start mb-6">
                 <svg
-                  className="w-12 h-12 text-lime flex-shrink-0"
+                  className="w-12 h-12 text-blue-600 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 32 32"
                 >
@@ -221,7 +221,7 @@ export default function PortfolioPage() {
             More projects coming soon
           </h2>
           <p className="text-xl text-slate mb-8 max-w-3xl mx-auto">
-            We're currently building stunning, effective websites across industries—from fitness coaches to wedding photographers, car detailers to accountants. Check back soon to see more transformations.
+            We&apos;re currently building stunning, effective websites across industries—from fitness coaches to wedding photographers, car detailers to accountants. Check back soon to see more transformations.
           </p>
           <Link href="/contact" className="btn-primary inline-block">
             Start your project

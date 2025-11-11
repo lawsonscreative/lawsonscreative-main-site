@@ -16,7 +16,7 @@ export default function AboutPage() {
             Built by a Small Business Owner, For Small Business Owners
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
-            Hi, I'm Andrew. I started Lawsons Creative because too many great small businesses were stuck with expensive agencies or cheap, ineffective websites. There had to be a better way.
+            Hi, I&apos;m Andrew. I started Lawsons Creative because too many great small businesses were stuck with expensive agencies or cheap, ineffective websites. There had to be a better way.
           </p>
         </div>
       </section>
@@ -38,7 +38,7 @@ export default function AboutPage() {
               <li>Existing sites were outdated but "good enough" (they weren't)</li>
             </ul>
             <p>
-              I knew there was a gap: quality, strategic websites delivered fast at fair prices. That's Lawsons Creative.
+              I knew there was a gap: quality, strategic websites delivered fast at fair prices. That&apos;s Lawsons Creative.
             </p>
           </div>
         </div>
@@ -57,7 +57,7 @@ export default function AboutPage() {
                 Business First, Design Second
               </h3>
               <p className="text-slate leading-relaxed">
-                I don't just make websites look pretty (though they should). I think about: Who are your customers and what do they need to see? What actions do you want visitors to take? How can design build trust quickly? What's the fastest path from visitor to customer?
+                I don&apos;t just make websites look pretty (though they should). I think about: Who are your customers and what do they need to see? What actions do you want visitors to take? How can design build trust quickly? What&apos;s the fastest path from visitor to customer?
               </p>
               <p className="text-slate leading-relaxed mt-3">
                 Beautiful design matters, but only if it drives results.
@@ -78,7 +78,7 @@ export default function AboutPage() {
                 Transparent and Honest
               </h3>
               <p className="text-slate leading-relaxed">
-                No jargon, no upselling, no hidden fees. I tell you exactly what you need (and what you don't). Fair pricing, clear timelines, honest communication.
+                No jargon, no upselling, no hidden fees. I tell you exactly what you need (and what you don&apos;t). Fair pricing, clear timelines, honest communication.
               </p>
             </div>
           </div>
@@ -93,13 +93,13 @@ export default function AboutPage() {
           </h2>
           <div className="text-slate leading-relaxed space-y-4">
             <p>
-              I'm based in London and work with small businesses across the UK. Every project starts with a conversation about your business and goals—not a sales pitch.
+              I&apos;m based in London and work with small businesses across the UK. Every project starts with a conversation about your business and goals—not a sales pitch.
             </p>
             <p>
               I handle everything from strategy to design to development to launch. You get one person who understands your business, not a team of rotating account managers.
             </p>
             <p>
-              And once your site is live, I'm available for support, updates, and maintenance—no need to find a new developer every time you need a change.
+              And once your site is live, I&apos;m available for support, updates, and maintenance—no need to find a new developer every time you need a change.
             </p>
           </div>
         </div>
