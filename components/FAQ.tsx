@@ -36,7 +36,7 @@ export default function FAQ() {
     {
       question: 'Do you provide hosting?',
       answer:
-        "We build your site and deploy it to professional hosting (Vercel/Netlify). Hosting costs are minimal (often free for small sites) and we can manage this for you or hand over access—your choice.",
+        "We build your site and deploy it to professional hosting (Vercel/Netlify). Hosting costs are minimal (often free for small sites) and we can manage this for you or hand over access, your choice.",
     },
     {
       question: "What if I don&apos;t have content (photos, text)?",

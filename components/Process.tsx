@@ -23,7 +23,7 @@ export default function Process() {
       title: 'Design',
       duration: 'Day 3-5',
       description:
-        "We design a modern, mobile-first website that reflects your brand and speaks to your customers. You&apos;ll see mockups and provide feedback before we build anything.",
+        "We design a modern, mobile-friendly website that reflects your brand and speaks to your customers. You&apos;ll see mockups and provide feedback before we build anything.",
       deliverable: 'Visual designs for approval',
     },
     {
@@ -31,7 +31,7 @@ export default function Process() {
       title: 'Build',
       duration: 'Day 6-10',
       description:
-        'We build your site using modern, fast technology. Every page is optimized for mobile, tested for speed, and built to convert visitors into customers.',
+        'We build your site using modern, fast technology. Every page is optimised for mobile, tested for speed, and built to convert visitors into customers.',
       deliverable: 'Fully-functional website on staging URL',
     },
     {
@@ -57,7 +57,7 @@ export default function Process() {
             Simple process. Outstanding results.
           </h2>
           <p className="text-xl text-slate max-w-3xl mx-auto">
-            We've streamlined our workflow to deliver quality websites fast—without sacrificing strategy or design.
+            We've streamlined our workflow to deliver quality websites fast, without sacrificing strategy or design.
           </p>
         </motion.div>
 

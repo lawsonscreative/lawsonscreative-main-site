@@ -18,10 +18,10 @@ export default function Hero() {
               Websites that grow your business
             </h1>
             <h2 className="text-xl md:text-2xl mb-6 text-gray-200 font-semibold">
-              Modern, fast, effective websites for small service businesses. Built in 1-2 weeks, not months.
+              Professional, fast and effective websites for small to medium sized businesses. Built in weeks, not months.
             </h2>
             <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-              You&apos;re great at what you do. Your website should show it. We build professional sites that attract customers, build trust, and drive bookings—without the agency price tag.
+              You&apos;re great at what you do. Your website should show it. We build professional sites that attract customers, build trust, and drive bookings, without the agency price tag.
             </p>
 
             {/* CTAs */}
@@ -65,16 +65,16 @@ export default function Hero() {
 
               {/* Floating badges */}
               <div className="absolute -top-4 -left-4 bg-lime text-navy px-4 py-2 rounded-full font-semibold text-sm shadow-lg">
-                ⚡ Fast Delivery
+                ⚡ Fast delivery
               </div>
               <div className="absolute -bottom-4 -right-4 bg-white text-navy px-4 py-2 rounded-full font-semibold text-sm shadow-lg">
-                📱 Mobile-First
+                £ Great value
               </div>
             </div>
           </motion.div>
         </div>
 
-        {/* Scroll indicator */}
+        {/* Scroll indicator - animated arrow prompting users to scroll down and explore more content */}
         <motion.div
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
           animate={{ y: [0, 10, 0] }}

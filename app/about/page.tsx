@@ -29,7 +29,7 @@ export default function AboutPage() {
           </h2>
           <div className="prose prose-lg max-w-none text-slate space-y-4 leading-relaxed">
             <p>
-              I've always been drawn to building things—websites, apps, businesses. But as I talked to small business owners, I kept hearing the same frustrations:
+              I've always been drawn to building things. Websites, apps, businesses. But as I talked to small business owners, I kept hearing the same frustrations:
             </p>
             <ul className="list-disc ml-6 space-y-2">
               <li>Agencies quoted £10k+ and took 6 months</li>
@@ -69,7 +69,7 @@ export default function AboutPage() {
                 Fast Doesn't Mean Rushed
               </h3>
               <p className="text-slate leading-relaxed">
-                Using modern tools and efficient processes, I deliver in 1-2 weeks without cutting corners. You get strategy, quality design, and websites built to last—just without the agency overhead.
+                Using modern tools and efficient processes, I deliver in 1-2 weeks without cutting corners. You get strategy, quality design, and websites built to last, just without the agency overhead.
               </p>
             </div>
 
@@ -93,13 +93,13 @@ export default function AboutPage() {
           </h2>
           <div className="text-slate leading-relaxed space-y-4">
             <p>
-              I&apos;m based in London and work with small businesses across the UK. Every project starts with a conversation about your business and goals—not a sales pitch.
+              I&apos;m based in Kent and work with small businesses across the UK. Every project starts with a conversation about your business and goals, not a sales pitch.
             </p>
             <p>
               I handle everything from strategy to design to development to launch. You get one person who understands your business, not a team of rotating account managers.
             </p>
             <p>
-              And once your site is live, I&apos;m available for support, updates, and maintenance—no need to find a new developer every time you need a change.
+              And once your site is live, I&apos;m available for support, updates, and maintenance. No need to find a new developer every time you need a change.
             </p>
           </div>
         </div>
@@ -112,7 +112,7 @@ export default function AboutPage() {
             Want to work together?
           </h2>
           <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
-            Let's chat about your project. No pressure, no obligation—just a conversation.
+            Let's chat about your project. No pressure, no obligation, just a conversation.
           </p>
           <Link
             href="/contact"

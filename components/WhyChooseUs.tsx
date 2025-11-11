@@ -23,9 +23,9 @@ export default function WhyChooseUs() {
       icon: '🎯',
     },
     {
-      title: 'Mobile-First Everything',
+      title: 'Mobile-friendly websites',
       description:
-        "60%+ of your visitors are on mobile. We design for phones first, then scale up—not the other way around.",
+        "60%+ of your visitors are on mobile. We design for phones first, then scale up, not the other way around.",
       icon: '📱',
     },
     {
@@ -61,7 +61,7 @@ export default function WhyChooseUs() {
             Built for small businesses, by someone who gets it
           </h2>
           <p className="text-xl text-slate max-w-3xl mx-auto">
-            Large agencies charge £10k+ and take months. We deliver quality websites in 1-2 weeks at a fraction of the cost—without cutting corners.
+            Large agencies charge £10k+ and take months. We deliver quality websites in 1-2 weeks at a fraction of the cost, without cutting corners.
           </p>
         </motion.div>
 

@@ -11,7 +11,7 @@ export default function ServicesPage() {
     {
       name: 'Starter',
       price: '£500 - £800',
-      bestFor: 'New businesses or single-service providers',
+      bestFor: 'Ideal for new businesses or single-service providers',
       included: [
         'Single-page website (homepage only)',
         'Mobile-responsive design',
@@ -38,7 +38,7 @@ export default function ServicesPage() {
     {
       name: 'Professional',
       price: '£1,200 - £2,000',
-      bestFor: 'Established businesses ready to grow',
+      bestFor: 'Ideal for established businesses ready to grow',
       included: [
         'Multi-page website (up to 5 pages)',
         'Everything in Starter, plus:',
@@ -46,7 +46,7 @@ export default function ServicesPage() {
         'Testimonials showcase',
         'Service/product pages with detailed info',
         'Blog setup (optional)',
-        'Advanced SEO optimization',
+        'Advanced SEO optimisation',
         'Integration with booking systems (Calendly, etc.)',
         '2 rounds of revisions',
         '1-2 week delivery',
@@ -67,7 +67,7 @@ export default function ServicesPage() {
     {
       name: 'Premium',
       price: '£2,500 - £4,000',
-      bestFor: 'Businesses needing custom features',
+      bestFor: 'Ideal for businesses needing custom features',
       included: [
         'Everything in Professional, plus:',
         'Custom functionality (calculators, advanced booking)',
@@ -353,7 +353,7 @@ export default function ServicesPage() {
                         <path d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>
-                    <span className="text-base leading-relaxed">Image updates & optimization</span>
+                    <span className="text-base leading-relaxed">Image updates and optimisation</span>
                   </li>
                   <li className="flex items-start">
                     <div className="w-6 h-6 rounded-full bg-navy/10 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
@@ -425,7 +425,7 @@ export default function ServicesPage() {
                         <path d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>
-                    <span className="text-base leading-relaxed">On-page optimization</span>
+                    <span className="text-base leading-relaxed">On-page optimisation</span>
                   </li>
                   <li className="flex items-start">
                     <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
@@ -441,7 +441,7 @@ export default function ServicesPage() {
                         <path d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>
-                    <span className="text-base leading-relaxed">Local SEO optimization</span>
+                    <span className="text-base leading-relaxed">Local SEO optimisation</span>
                   </li>
                   <li className="flex items-start">
                     <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
@@ -521,7 +521,7 @@ export default function ServicesPage() {
                 Do you offer discounts?
               </h3>
               <p className="text-slate leading-relaxed">
-                We occasionally offer discounts for charities, multiple projects, or referrals. Our prices are already fair and transparent—we don&apos;t inflate them to offer fake discounts later.
+                We occasionally offer discounts for charities, multiple projects, or referrals. Our prices are already fair and transparent. We don&apos;t inflate them to offer fake discounts later.
               </p>
             </div>
           </div>

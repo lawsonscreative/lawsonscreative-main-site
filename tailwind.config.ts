@@ -13,12 +13,12 @@ const config: Config = {
         foreground: "var(--foreground)",
         // Brand colors
         navy: {
-          DEFAULT: '#0A2540',
-          dark: '#051828',
+          DEFAULT: '#27a6ea',
+          dark: '#1e8bc3',
         },
         lime: {
-          DEFAULT: '#00E676',
-          light: '#69F0AE',
+          DEFAULT: '#27a6ea',
+          light: '#4db8ef',
         },
         slate: {
           DEFAULT: '#475569',
@@ -29,8 +29,8 @@ const config: Config = {
         warning: '#F97316',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        heading: ['Outfit', 'Inter', 'system-ui', 'sans-serif'],
+        sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+        heading: ['Space Grotesk', 'Plus Jakarta Sans', 'system-ui', 'sans-serif'],
       },
     },
   },

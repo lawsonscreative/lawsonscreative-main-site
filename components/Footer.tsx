@@ -49,7 +49,7 @@ export default function Footer() {
               <li className="text-gray-300">Website Design</li>
               <li className="text-gray-300">Website Development</li>
               <li className="text-gray-300">Website Maintenance</li>
-              <li className="text-gray-300">SEO Optimization</li>
+              <li className="text-gray-300">SEO optimisation</li>
             </ul>
           </div>
 
@@ -65,7 +65,7 @@ export default function Footer() {
                   hello@lawsonscreative.co.uk
                 </a>
               </li>
-              <li className="text-gray-300">London, UK</li>
+              <li className="text-gray-300">Kent, UK</li>
               <li className="text-gray-300">Serving businesses UK-wide</li>
             </ul>
           </div>

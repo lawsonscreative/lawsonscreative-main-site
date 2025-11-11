@@ -153,7 +153,7 @@ export default function ContactPage() {
                 </svg>
               </div>
               <h3 className="font-semibold text-navy mb-2">Location</h3>
-              <p className="text-slate">London, UK</p>
+              <p className="text-slate">Kent, UK</p>
               <p className="text-slate text-sm">Serving businesses UK-wide</p>
             </div>
 
@@ -188,7 +188,7 @@ export default function ContactPage() {
               <Link href="/portfolio" className="text-lime hover:underline">
                 See Our Work →
               </Link>
-              <Link href="/process" className="text-lime hover:underline">
+              <Link href="/how-we-work" className="text-lime hover:underline">
                 How We Work →
               </Link>
             </div>

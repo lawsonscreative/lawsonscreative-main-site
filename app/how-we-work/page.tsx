@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Our Process | Lawsons Creative',
+  title: 'How We Work | Lawsons Creative',
   description: 'From idea to live website in 1-2 weeks. See our streamlined website design and development process.',
 };
 
@@ -34,7 +34,7 @@ export default function ProcessPage() {
       title: 'Design',
       duration: 'Day 3-5',
       description:
-        "We design a modern, mobile-first website that reflects your brand and speaks to your customers. You&apos;ll see mockups and provide feedback before we build anything.",
+        "We design a modern, mobile-friendly website that reflects your brand and speaks to your customers. You&apos;ll see mockups and provide feedback before we build anything.",
       deliverable: 'Visual designs for approval',
       whatWeNeed: [
         'Approval of strategic brief',
@@ -54,7 +54,7 @@ export default function ProcessPage() {
       title: 'Build',
       duration: 'Day 6-10',
       description:
-        'We build your site using modern, fast technology. Every page is optimized for mobile, tested for speed, and built to convert visitors into customers.',
+        'We build your site using modern, fast technology. Every page is optimised for mobile, tested for speed, and built to convert visitors into customers.',
       deliverable: 'Fully-functional website on staging URL',
       whatWeNeed: [
         'Approval of final designs',
@@ -67,7 +67,7 @@ export default function ProcessPage() {
         'Staging URL to review and test',
         'Mobile-responsive across all devices',
         'Fast loading speeds',
-        'SEO optimization',
+        'SEO optimisation',
         'Forms and features working',
       ],
     },
@@ -200,7 +200,7 @@ export default function ProcessPage() {
             <div>
               <h3 className="font-heading font-bold text-xl mb-3">Clear Communication</h3>
               <p className="text-gray-200">
-                Email, Slack, or phone—your choice. We keep you updated at every stage and respond to questions quickly.
+                Email, Slack, or phone, your choice. We keep you updated at every stage and respond to questions quickly.
               </p>
             </div>
             <div>

@@ -119,7 +119,7 @@ export default function PortfolioPage() {
                     Our solution
                   </h3>
                   <p className="text-slate leading-relaxed mb-4">
-                    We redesigned the website with a mobile-first approach, focusing on building trust through emotional imagery, clear service descriptions, and prominent testimonials. We made it effortless for pet owners to understand the services and book consultations.
+                    We redesigned the website with a mobile-friendly approach, focusing on building trust through emotional imagery, clear service descriptions, and prominent testimonials. We made it effortless for pet owners to understand the services and book consultations.
                   </p>
                   <p className="text-slate leading-relaxed">
                     The new design uses warm, professional colors and features real pet photos to create an emotional connection. Every page guides visitors toward taking action, with multiple clear CTAs throughout.
@@ -135,14 +135,14 @@ export default function PortfolioPage() {
                   </h3>
                   <ul className="space-y-3">
                     {[
-                      'Mobile-first responsive design',
+                      'Mobile-friendly responsive design',
                       'Emotional pet imagery throughout',
                       'Clear service breakdown with pricing guidance',
                       'Testimonials carousel with client stories',
                       'Easy-to-use contact form',
                       'Google Maps integration for service area',
                       'Fast loading speed (< 2s)',
-                      'SEO optimization for local searches',
+                      'SEO optimisation for local searches',
                     ].map((feature, idx) => (
                       <li key={idx} className="flex items-start">
                         <svg
@@ -168,15 +168,15 @@ export default function PortfolioPage() {
                   </h3>
                   <div className="space-y-4">
                     <div>
-                      <div className="text-3xl font-bold text-lime mb-1">50%</div>
+                      <div className="text-3xl font-bold text-lime mb-1">35%</div>
                       <div className="text-slate">Increase in enquiries in first month</div>
                     </div>
                     <div>
-                      <div className="text-3xl font-bold text-lime mb-1">200%</div>
+                      <div className="text-3xl font-bold text-lime mb-1">80%</div>
                       <div className="text-slate">Increase in mobile bookings</div>
                     </div>
                     <div>
-                      <div className="text-3xl font-bold text-lime mb-1">100%</div>
+                      <div className="text-3xl font-bold text-lime mb-1">2x better</div>
                       <div className="text-slate">Professional, trustworthy appearance</div>
                     </div>
                   </div>
@@ -203,7 +203,7 @@ export default function PortfolioPage() {
                   G
                 </div>
                 <div>
-                  <div className="font-semibold">Grace Thompson</div>
+                  <div className="font-semibold">Grace Williams</div>
                   <div className="text-gray-300 text-sm">Founder, Graceful Pet Care</div>
                 </div>
               </div>
@@ -242,7 +242,7 @@ export default function PortfolioPage() {
             More projects coming soon
           </h2>
           <p className="text-xl text-slate mb-8 max-w-3xl mx-auto">
-            We&apos;re currently building stunning, effective websites across industries—from fitness coaches to wedding photographers, car detailers to accountants. Check back soon to see more transformations.
+            We&apos;re currently building stunning, effective websites across industries. From fitness coaches to wedding photographers, car detailers to accountants. Check back soon to see more transformations.
           </p>
           <Link href="/contact" className="btn-primary inline-block">
             Start your project

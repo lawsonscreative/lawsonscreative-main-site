@@ -40,7 +40,7 @@ export default function Packages() {
         'Testimonials showcase',
         'Service/product pages with detailed info',
         'Blog setup (optional)',
-        'Advanced SEO optimization',
+        'Advanced SEO optimisation',
         'Integration with booking systems',
         '2 rounds of revisions',
         '1-2 week delivery',
@@ -208,7 +208,7 @@ export default function Packages() {
                 <div className="text-3xl font-bold bg-gradient-to-r from-lime to-lime/60 bg-clip-text text-transparent mb-1">Custom</div>
                 <p className="text-xs font-semibold text-slate uppercase tracking-wide mb-4">pricing based on scope</p>
                 <p className="text-slate text-sm leading-relaxed">
-                  Keyword research, optimization, content strategy
+                  Keyword research, optimisation, content strategy
                 </p>
               </div>
             </div>

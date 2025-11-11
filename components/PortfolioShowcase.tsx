@@ -51,23 +51,23 @@ export default function PortfolioShowcase() {
                 <div>
                   <h4 className="font-semibold text-lg text-navy mb-2">Our solution</h4>
                   <p className="text-slate">
-                    Modern, mobile-first redesign with clear CTAs, emotional imagery, and prominent trust signals. Made booking consultations effortless.
+                    Modern, mobile-friendly redesign with clear CTAs, emotional imagery, and prominent trust signals. Made booking consultations effortless.
                   </p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg text-navy mb-2">The results</h4>
                   <div className="flex flex-wrap gap-4">
                     <div className="bg-white px-4 py-2 rounded-lg">
-                      <div className="text-2xl font-bold text-lime">50%</div>
-                      <div className="text-sm text-slate">More Enquiries</div>
+                      <div className="text-2xl font-bold text-lime">35%</div>
+                      <div className="text-sm text-slate">More enquiries</div>
                     </div>
                     <div className="bg-white px-4 py-2 rounded-lg">
-                      <div className="text-2xl font-bold text-lime">200%</div>
-                      <div className="text-sm text-slate">Mobile Bookings</div>
+                      <div className="text-2xl font-bold text-lime">80%</div>
+                      <div className="text-sm text-slate">Mobile bookings</div>
                     </div>
                     <div className="bg-white px-4 py-2 rounded-lg">
-                      <div className="text-2xl font-bold text-lime">100%</div>
-                      <div className="text-sm text-slate">Professional Trust</div>
+                      <div className="text-2xl font-bold text-lime">2x</div>
+                      <div className="text-sm text-slate">Professional trust</div>
                     </div>
                   </div>
                 </div>
@@ -141,7 +141,7 @@ export default function PortfolioShowcase() {
           className="text-center"
         >
           <p className="text-slate text-lg mb-6">
-            This is just the beginning. We&apos;re building a portfolio of stunning, effective websites across industries—from fitness coaches to wedding photographers, car detailers to accountants.
+            This is just the beginning. We&apos;re building a portfolio of stunning, effective websites across industries. From fitness coaches to wedding photographers, car detailers to accountants.
           </p>
           <Link href="/portfolio" className="btn-primary inline-block">
             View full portfolio

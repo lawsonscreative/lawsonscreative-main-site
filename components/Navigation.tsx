@@ -13,7 +13,7 @@ export default function Navigation() {
     { href: '/portfolio', label: 'Portfolio' },
     { href: '/services', label: 'Services' },
     { href: '/about', label: 'About' },
-    { href: '/process', label: 'Process' },
+    { href: '/how-we-work', label: 'How We Work' },
     { href: '/contact', label: 'Contact' },
   ];
 
@@ -39,10 +39,10 @@ export default function Navigation() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`relative font-medium transition-colors ${
+                className={`relative font-medium transition-all duration-200 ${
                   isActive(link.href)
                     ? 'text-navy'
-                    : 'text-slate hover:text-navy'
+                    : 'text-slate hover:text-navy hover:scale-105 hover:shadow-sm'
                 }`}
               >
                 {link.label}
