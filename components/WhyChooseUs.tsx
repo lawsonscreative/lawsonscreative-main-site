@@ -31,7 +31,7 @@ export default function WhyChooseUs() {
     {
       title: 'Transparent Pricing, No Surprises',
       description:
-        'You know exactly what you're paying before we start. No hidden fees, no scope creep, no surprise invoices.',
+        "You know exactly what you're paying before we start. No hidden fees, no scope creep, no surprise invoices.",
       icon: '💰',
     },
     {
