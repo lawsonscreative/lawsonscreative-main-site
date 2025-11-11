@@ -52,6 +52,14 @@ export default function Hero() {
               {/* Placeholder for device mockup - you can add images later */}
               <div className="bg-white rounded-lg shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-300">
                 <div className="space-y-4">
+                  {/* Logo/icon placeholder in top-left */}
+                  <div className="flex items-start mb-2">
+                    <div className="w-10 h-10 bg-gradient-to-br from-lime to-lime/60 rounded-full flex items-center justify-center shadow-md">
+                      <svg className="w-6 h-6 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                      </svg>
+                    </div>
+                  </div>
                   <div className="h-6 bg-gray-200 rounded w-3/4"></div>
                   <div className="h-4 bg-gray-200 rounded w-full"></div>
                   <div className="h-4 bg-gray-200 rounded w-5/6"></div>

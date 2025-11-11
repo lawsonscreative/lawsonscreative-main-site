@@ -13,7 +13,7 @@ export default function Testimonials() {
     {
       quote:
         "Working with Lawsons Creative was effortless. They took our dated website and transformed it into something that truly represents our business. We've seen a significant increase in enquiries since launch, and customers regularly compliment how professional we look online.",
-      name: 'Grace Thompson',
+      name: 'Grace Williams',
       business: 'Graceful Pet Care',
       industry: 'Pet Care Services',
     },
