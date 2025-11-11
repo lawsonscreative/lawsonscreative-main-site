@@ -25,7 +25,10 @@ export default function TermsPage() {
             <div>
               <h2 className="font-heading font-bold text-2xl text-navy mb-3">Introduction</h2>
               <p>
-                These Terms of Service ("Terms") govern your use of services provided by Lawsons Creative, a trading name of Lawsons Enterprises Ltd ("we", "us", or "our"), a company registered in England and Wales. By engaging our services, you ("Client", "you", or "your") agree to be bound by these Terms.
+                These terms apply to services provided by Lawsons Enterprises Ltd (Company No: 16433965), trading as Lawsons Creative.
+              </p>
+              <p>
+                These Terms of Service ("Terms") govern your use of services provided by us ("we", "us", or "Lawsons Creative"). By engaging our services, you ("Client", "you", or "your") agree to be bound by these Terms.
               </p>
               <p>
                 Please read these Terms carefully before engaging our services. If you do not agree to these Terms, you should not proceed with our services.
