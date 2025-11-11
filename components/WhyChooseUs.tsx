@@ -1,0 +1,88 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+
+export default function WhyChooseUs() {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  const reasons = [
+    {
+      title: 'Fast Delivery Without Rushing',
+      description:
+        "We use efficient modern tools and streamlined processes to deliver in 1-2 weeks. You get your site when you need it, not when an agency's calendar opens up.",
+      icon: '⚡',
+    },
+    {
+      title: 'Strategy First, Pretty Second',
+      description:
+        'Beautiful design matters, but only if it drives results. We start with your business goals and build websites that convert visitors into customers.',
+      icon: '🎯',
+    },
+    {
+      title: 'Mobile-First Everything',
+      description:
+        "60%+ of your visitors are on mobile. We design for phones first, then scale up—not the other way around.",
+      icon: '📱',
+    },
+    {
+      title: 'Transparent Pricing, No Surprises',
+      description:
+        'You know exactly what you're paying before we start. No hidden fees, no scope creep, no surprise invoices.',
+      icon: '💰',
+    },
+    {
+      title: 'Built to Last',
+      description:
+        "We use modern, maintainable technology that won't be outdated in 6 months. Your site is fast, secure, and easy to update.",
+      icon: '🔧',
+    },
+    {
+      title: 'Ongoing Support Available',
+      description:
+        "Your website isn't 'done' at launch. We offer maintenance packages and support so you can focus on running your business.",
+      icon: '🤝',
+    },
+  ];
+
+  return (
+    <section className="section-padding bg-white" ref={ref}>
+      <div className="container-custom">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-4">
+            Built for Small Businesses, By Someone Who Gets It
+          </h2>
+          <p className="text-xl text-slate max-w-3xl mx-auto">
+            Large agencies charge £10k+ and take months. We deliver quality websites in 1-2 weeks at a fraction of the cost—without cutting corners.
+          </p>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {reasons.map((reason, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.1 * (index + 1) }}
+              className="bg-lightgrey rounded-xl p-6 hover:shadow-lg transition-shadow"
+            >
+              <div className="text-4xl mb-4">{reason.icon}</div>
+              <h3 className="font-heading font-bold text-xl text-navy mb-3">
+                {reason.title}
+              </h3>
+              <p className="text-slate leading-relaxed">{reason.description}</p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

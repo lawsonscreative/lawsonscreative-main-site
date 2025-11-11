@@ -11,6 +11,26 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        // Brand colors
+        navy: {
+          DEFAULT: '#0A2540',
+          dark: '#051828',
+        },
+        lime: {
+          DEFAULT: '#00E676',
+          light: '#69F0AE',
+        },
+        slate: {
+          DEFAULT: '#475569',
+          light: '#64748B',
+        },
+        lightgrey: '#F1F5F9',
+        success: '#22C55E',
+        warning: '#F97316',
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        heading: ['Outfit', 'Inter', 'system-ui', 'sans-serif'],
       },
     },
   },
