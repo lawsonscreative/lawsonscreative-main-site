@@ -1,12 +1,23 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import Image from 'next/image';
+import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navLinks = [
     { href: '/', label: 'Home' },
@@ -25,12 +36,18 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+    <nav className={`bg-white border-b border-gray-200 sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'shadow-md' : 'shadow-sm'}`}>
       <div className="container-custom">
-        <div className="flex justify-between items-center h-20">
-          {/* Logo */}
-          <Link href="/" className="text-2xl font-heading font-bold text-navy">
-            Lawsons Creative
+        <div className={`flex justify-between items-center transition-all duration-300 ${isScrolled ? 'h-16' : 'h-20'}`}>
+          {/* Logo - Without Strapline */}
+          <Link href="/" className="relative">
+            <Image
+              src="/images/logo.png"
+              alt="Lawsons Creative"
+              width={180}
+              height={60}
+              className={`transition-all duration-300 h-auto ${isScrolled ? 'w-36 md:w-40' : 'w-40 md:w-44'}`}
+            />
           </Link>
 
           {/* Desktop Navigation */}

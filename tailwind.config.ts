@@ -13,12 +13,12 @@ const config: Config = {
         foreground: "var(--foreground)",
         // Brand colors
         navy: {
-          DEFAULT: '#27a6ea',
-          dark: '#1e8bc3',
+          DEFAULT: '#0A2540',
+          dark: '#051828',
         },
         lime: {
-          DEFAULT: '#10b981',
-          light: '#34d399',
+          DEFAULT: '#00E676',
+          light: '#69F0AE',
         },
         slate: {
           DEFAULT: '#475569',
