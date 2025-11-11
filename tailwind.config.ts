@@ -17,8 +17,8 @@ const config: Config = {
           dark: '#1e8bc3',
         },
         lime: {
-          DEFAULT: '#FF6B35',
-          light: '#FF8C61',
+          DEFAULT: '#10b981',
+          light: '#34d399',
         },
         slate: {
           DEFAULT: '#475569',
