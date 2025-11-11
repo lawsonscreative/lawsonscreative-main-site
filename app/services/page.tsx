@@ -195,59 +195,191 @@ export default function ServicesPage() {
       ))}
 
       {/* Add-on services */}
-      <section className="section-padding bg-navy text-white">
+      <section className="section-padding bg-lightgrey border-t-4 border-lime">
         <div className="container-custom">
-          <div className="text-center mb-16">
-            <h2 className="font-heading font-bold text-4xl md:text-5xl mb-4">
-              Add-on services
-            </h2>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-              Keep your website running smoothly with our ongoing support services.
+          {/* Section intro */}
+          <div className="text-center mb-4">
+            <p className="text-lime font-semibold text-sm uppercase tracking-wide mb-2">
+              Need something extra?
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="bg-white/10 backdrop-blur rounded-xl p-8">
-              <h3 className="font-heading font-bold text-2xl mb-3">
+          <div className="text-center mb-16">
+            <h2 className="font-heading font-bold text-4xl md:text-5xl mb-4 text-navy">
+              Add-on services
+            </h2>
+            <p className="text-xl text-slate max-w-3xl mx-auto">
+              Keep your website running smoothly with our ongoing support services. Add these to any package or purchase separately.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border-2 border-gray-200 hover:border-lime">
+              <div className="w-16 h-16 bg-lime/10 rounded-xl flex items-center justify-center mb-6">
+                <svg
+                  className="w-8 h-8 text-lime"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                  <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <h3 className="font-heading font-bold text-2xl mb-3 text-navy">
                 Website maintenance
               </h3>
-              <div className="text-3xl font-bold text-lime mb-4">£50-£150/mo</div>
-              <ul className="space-y-2 text-gray-200">
-                <li>• Regular updates & security patches</li>
-                <li>• Automated backups</li>
-                <li>• Small content changes</li>
-                <li>• Performance monitoring</li>
-                <li>• Priority email support</li>
+              <div className="text-4xl font-bold text-lime mb-2">£50-£150</div>
+              <div className="text-sm text-slate mb-6">per month</div>
+              <ul className="space-y-3 text-slate">
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Regular updates & security patches</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Automated backups</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Small content changes</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Performance monitoring</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Priority email support</span>
+                </li>
               </ul>
             </div>
 
-            <div className="bg-white/10 backdrop-blur rounded-xl p-8">
-              <h3 className="font-heading font-bold text-2xl mb-3">
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border-2 border-gray-200 hover:border-lime">
+              <div className="w-16 h-16 bg-lime/10 rounded-xl flex items-center justify-center mb-6">
+                <svg
+                  className="w-8 h-8 text-lime"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                </svg>
+              </div>
+              <h3 className="font-heading font-bold text-2xl mb-3 text-navy">
                 Content updates
               </h3>
-              <div className="text-3xl font-bold text-lime mb-4">£40/hour</div>
-              <ul className="space-y-2 text-gray-200">
-                <li>• New page creation</li>
-                <li>• Copy changes & edits</li>
-                <li>• Image updates & optimization</li>
-                <li>• Adding new features</li>
-                <li>• Layout adjustments</li>
+              <div className="text-4xl font-bold text-lime mb-2">£40</div>
+              <div className="text-sm text-slate mb-6">per hour</div>
+              <ul className="space-y-3 text-slate">
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>New page creation</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Copy changes & edits</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Image updates & optimization</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Adding new features</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Layout adjustments</span>
+                </li>
               </ul>
             </div>
 
-            <div className="bg-white/10 backdrop-blur rounded-xl p-8">
-              <h3 className="font-heading font-bold text-2xl mb-3">
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border-2 border-gray-200 hover:border-lime">
+              <div className="w-16 h-16 bg-lime/10 rounded-xl flex items-center justify-center mb-6">
+                <svg
+                  className="w-8 h-8 text-lime"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+              </div>
+              <h3 className="font-heading font-bold text-2xl mb-3 text-navy">
                 SEO services
               </h3>
-              <div className="text-3xl font-bold text-lime mb-4">Custom Quote</div>
-              <ul className="space-y-2 text-gray-200">
-                <li>• Keyword research & strategy</li>
-                <li>• On-page optimization</li>
-                <li>• Content strategy & creation</li>
-                <li>• Local SEO optimization</li>
-                <li>• Monthly reporting</li>
+              <div className="text-4xl font-bold text-lime mb-2">Custom</div>
+              <div className="text-sm text-slate mb-6">pricing based on scope</div>
+              <ul className="space-y-3 text-slate">
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Keyword research & strategy</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>On-page optimization</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Content strategy & creation</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Local SEO optimization</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Monthly reporting</span>
+                </li>
               </ul>
             </div>
+          </div>
+
+          {/* Bottom note */}
+          <div className="mt-12 text-center">
+            <p className="text-slate text-lg max-w-2xl mx-auto">
+              All add-on services can be combined with any package or purchased independently. Get in touch to discuss your specific needs.
+            </p>
           </div>
         </div>
       </section>
