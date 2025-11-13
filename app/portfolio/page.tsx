@@ -28,11 +28,14 @@ export default function PortfolioPage() {
           <div className="max-w-6xl mx-auto">
             {/* Project Header */}
             <div className="mb-12">
-              <div className="flex flex-wrap items-center gap-4 mb-4">
-                <span className="bg-lime text-navy px-4 py-2 rounded-full font-semibold text-sm">
+              <div className="flex flex-wrap items-center gap-3 mb-4">
+                <span className="inline-block bg-lime text-navy px-4 py-2 rounded-full font-semibold text-sm">
                   Pet Care Services
                 </span>
-                <span className="text-slate">Full Website Redesign</span>
+                <span className="text-slate text-sm">·</span>
+                <span className="inline-block bg-navy/5 text-navy px-4 py-2 rounded-full font-semibold text-sm">
+                  Full Website Redesign
+                </span>
               </div>
               <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-4">
                 Graceful Pet Care
