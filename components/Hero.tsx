@@ -70,14 +70,6 @@ export default function Hero() {
                   </div>
                 </div>
               </div>
-
-              {/* Floating badges */}
-              <div className="absolute -top-4 -left-4 bg-lime text-navy px-4 py-2 rounded-full font-semibold text-sm shadow-lg">
-                ⚡ Fast delivery
-              </div>
-              <div className="absolute -bottom-4 -right-4 bg-white text-navy px-4 py-2 rounded-full font-semibold text-sm shadow-lg">
-                £ Great value
-              </div>
             </div>
           </motion.div>
         </div>

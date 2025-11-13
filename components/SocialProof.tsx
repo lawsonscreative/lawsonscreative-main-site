@@ -1,10 +1,10 @@
 export default function SocialProof() {
   const features = [
-    { icon: '⭐', text: '5-star service' },
-    { icon: '⚡', text: 'Fast delivery' },
+    { icon: '⚡', text: 'Fast delivery (1-2 weeks)' },
     { icon: '£', text: 'From £500' },
-    { icon: '📱', text: 'Mobile-friendly websites' },
-    { icon: '🔒', text: 'Secure and fast' },
+    { icon: '⭐', text: '5-star service' },
+    { icon: '📱', text: 'Mobile-friendly' },
+    { icon: '🔒', text: 'Secure & fast' },
   ];
 
   return (
