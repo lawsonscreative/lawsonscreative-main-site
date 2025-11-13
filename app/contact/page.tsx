@@ -188,8 +188,8 @@ export default function ContactPage() {
               <Link href="/portfolio" className="text-lime hover:underline">
                 See Our Work →
               </Link>
-              <Link href="/how-we-work" className="text-lime hover:underline">
-                How We Work →
+              <Link href="/process" className="text-lime hover:underline">
+                Our Process →
               </Link>
             </div>
           </div>

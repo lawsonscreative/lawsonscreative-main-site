@@ -24,7 +24,7 @@ export default function Navigation() {
     { href: '/portfolio', label: 'Portfolio' },
     { href: '/services', label: 'Services' },
     { href: '/about', label: 'About' },
-    { href: '/how-we-work', label: 'How We Work' },
+    { href: '/process', label: 'Process' },
     { href: '/contact', label: 'Contact' },
   ];
 

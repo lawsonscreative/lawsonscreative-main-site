@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'How We Work | Lawsons Creative',
+  title: 'Our Process | Lawsons Creative',
   description: 'From idea to live website in 1-2 weeks. See our streamlined website design and development process.',
 };
 
