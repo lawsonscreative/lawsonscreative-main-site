@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Portfolio | Lawsons Creative',
+  title: 'Web Design Portfolio – Small Business Websites | Lawsons Creative',
   description: 'View our portfolio of stunning, effective websites for small service businesses across the UK.',
 };
 
@@ -248,7 +248,7 @@ export default function PortfolioPage() {
             We&apos;re currently building stunning, effective websites across industries. From fitness coaches to wedding photographers, car detailers to accountants. Check back soon to see more transformations.
           </p>
           <Link href="/contact" className="btn-primary inline-block">
-            Start your project
+            Book a free consultation
           </Link>
         </div>
       </section>

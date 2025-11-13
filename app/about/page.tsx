@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'About | Lawsons Creative',
+  title: 'About Lawsons Creative – Web Design for UK Small Businesses',
   description: 'Learn about Lawsons Creative - quality website design for small businesses, built fast without the agency price tag.',
 };
 
@@ -105,6 +105,70 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Who I work best with */}
+      <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32 bg-lightgrey">
+        <div className="container-custom max-w-4xl">
+          <h2 className="font-heading font-bold text-4xl text-navy mb-8">
+            Who I work best with
+          </h2>
+
+          <p className="text-slate text-lg mb-6 leading-relaxed">
+            Lawsons Creative is built for UK service businesses who:
+          </p>
+
+          <div className="space-y-6 mb-8">
+            <div className="flex items-start gap-4">
+              <div className="text-lime text-2xl flex-shrink-0">✅</div>
+              <div>
+                <h3 className="font-heading font-bold text-lg text-navy mb-1">Want results, not just pretty websites</h3>
+                <p className="text-slate leading-relaxed">You care about bookings, enquiries, and revenue — not just &quot;looking good online.&quot;</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="text-lime text-2xl flex-shrink-0">✅</div>
+              <div>
+                <h3 className="font-heading font-bold text-lg text-navy mb-1">Value speed and efficiency</h3>
+                <p className="text-slate leading-relaxed">You need your website done in weeks, not months. You don&apos;t have time for endless meetings and revisions.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="text-lime text-2xl flex-shrink-0">✅</div>
+              <div>
+                <h3 className="font-heading font-bold text-lg text-navy mb-1">Appreciate transparency</h3>
+                <p className="text-slate leading-relaxed">You want clear pricing, honest timelines, and straightforward communication. No jargon, no surprises.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="text-lime text-2xl flex-shrink-0">✅</div>
+              <div>
+                <h3 className="font-heading font-bold text-lg text-navy mb-1">Are ready to invest properly</h3>
+                <p className="text-slate leading-relaxed">You understand that professional websites cost more than £200, but you don&apos;t want to pay agency prices (£10k+) either.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="text-lime text-2xl flex-shrink-0">✅</div>
+              <div>
+                <h3 className="font-heading font-bold text-lg text-navy mb-1">Know what they do (even if they can&apos;t explain it yet)</h3>
+                <p className="text-slate leading-relaxed">You&apos;re established enough to know your services, your customers, and your value. I&apos;ll help you articulate it clearly.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-xl p-6 border-l-4 border-navy">
+            <p className="text-slate leading-relaxed mb-4">
+              <strong className="text-navy">Not a good fit?</strong> That&apos;s okay too. If you need a £200 basic site, there are great Fiverr designers. If you need a £50k enterprise platform, there are excellent agencies. I&apos;m the middle ground — quality without overpaying.
+            </p>
+            <p className="text-slate leading-relaxed">
+              <strong className="text-navy">Sound like you?</strong> <Link href="/contact" className="text-lime hover:underline font-semibold">Book a free consultation</Link> and let&apos;s talk about your project.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32 bg-navy text-white">
         <div className="container-custom text-center">
@@ -118,7 +182,7 @@ export default function AboutPage() {
             href="/contact"
             className="bg-lime text-navy font-semibold px-8 py-4 rounded-lg hover:scale-105 hover:shadow-xl transition-all duration-200 inline-block"
           >
-            Get in touch
+            Book a free consultation
           </Link>
         </div>
       </section>

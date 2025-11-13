@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Our Process | Lawsons Creative',
+  title: 'Our Web Design Process – From Idea to Live Website in 1–2 Weeks | Lawsons Creative',
   description: 'From idea to live website in 1-2 weeks. See our streamlined website design and development process.',
 };
 
@@ -189,6 +189,158 @@ export default function ProcessPage() {
         </section>
       ))}
 
+      {/* How Payments and Communication Work */}
+      <section className="section-padding bg-white">
+        <div className="container-custom max-w-4xl">
+          <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-12 text-center">
+            How payments and communication work
+          </h2>
+
+          <div className="space-y-12">
+            {/* Payment Structure */}
+            <div>
+              <h3 className="font-heading font-bold text-2xl text-navy mb-4">
+                Payment structure
+              </h3>
+              <p className="text-slate leading-relaxed mb-4">
+                All packages have flexible payment options:
+              </p>
+              <div className="bg-lightgrey rounded-lg p-6 space-y-4">
+                <div>
+                  <h4 className="font-semibold text-navy mb-2">Option 1: Two payments</h4>
+                  <ul className="list-disc ml-6 text-slate space-y-1">
+                    <li>50% deposit to start work</li>
+                    <li>50% on launch (before we make the site live)</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-navy mb-2">Option 2: Three monthly payments</h4>
+                  <ul className="list-disc ml-6 text-slate space-y-1">
+                    <li>Available for Professional and Premium packages</li>
+                    <li>First payment to start</li>
+                    <li>Second payment mid-project</li>
+                    <li>Final payment on launch</li>
+                  </ul>
+                </div>
+              </div>
+              <p className="text-slate leading-relaxed mt-4">
+                We accept bank transfer, debit card, and credit card. All terms are agreed upfront — no surprise invoices, no scope creep.
+              </p>
+            </div>
+
+            {/* Communication & Updates */}
+            <div>
+              <h3 className="font-heading font-bold text-2xl text-navy mb-4">
+                Communication &amp; updates
+              </h3>
+              <p className="text-slate leading-relaxed mb-4">
+                You choose how we communicate:
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                <div className="bg-lightgrey rounded-lg p-4 text-center">
+                  <div className="text-3xl mb-2">📧</div>
+                  <div className="font-semibold text-navy">Email</div>
+                  <div className="text-sm text-slate">Replies within 24 hours</div>
+                </div>
+                <div className="bg-lightgrey rounded-lg p-4 text-center">
+                  <div className="text-3xl mb-2">💬</div>
+                  <div className="font-semibold text-navy">Slack</div>
+                  <div className="text-sm text-slate">Real-time updates</div>
+                </div>
+                <div className="bg-lightgrey rounded-lg p-4 text-center">
+                  <div className="text-3xl mb-2">📞</div>
+                  <div className="font-semibold text-navy">Phone/Video</div>
+                  <div className="text-sm text-slate">Quick calls as needed</div>
+                </div>
+              </div>
+              <div className="bg-lightgrey rounded-lg p-6">
+                <h4 className="font-semibold text-navy mb-3">What to expect:</h4>
+                <ul className="space-y-2 text-slate">
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                      <path d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Progress updates every 2-3 days (or more often if you prefer)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                      <path d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Clear next steps at each stage</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                      <path d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Responses to questions within 24 hours (usually same day)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                      <path d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>No jargon — I explain everything in plain English</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* What I Need From You */}
+            <div>
+              <h3 className="font-heading font-bold text-2xl text-navy mb-4">
+                What I need from you
+              </h3>
+              <p className="text-slate leading-relaxed mb-4">
+                To deliver on time, I need a few things from you:
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <div className="text-2xl flex-shrink-0">📝</div>
+                  <div>
+                    <h4 className="font-semibold text-navy mb-1">Content within 3 days of request</h4>
+                    <p className="text-slate text-sm">Text, photos, testimonials — I&apos;ll give you a simple template showing exactly what I need.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="text-2xl flex-shrink-0">👀</div>
+                  <div>
+                    <h4 className="font-semibold text-navy mb-1">Feedback within 48 hours</h4>
+                    <p className="text-slate text-sm">When I share designs or staging sites, timely feedback keeps us on track.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="text-2xl flex-shrink-0">✅</div>
+                  <div>
+                    <h4 className="font-semibold text-navy mb-1">Clear approvals</h4>
+                    <p className="text-slate text-sm">A simple &quot;approved&quot; or &quot;let&apos;s change X&quot; keeps us moving forward.</p>
+                  </div>
+                </div>
+              </div>
+              <p className="text-slate text-sm leading-relaxed mt-4 italic">
+                Don&apos;t worry — I&apos;ll remind you when I need something, and I&apos;ll make it as easy as possible. Most clients find the process surprisingly smooth.
+              </p>
+            </div>
+
+            {/* Cancellation Policy */}
+            <div className="bg-navy/5 rounded-xl p-6 border-l-4 border-navy">
+              <h3 className="font-heading font-bold text-xl text-navy mb-3">
+                Cancellation policy
+              </h3>
+              <p className="text-slate leading-relaxed mb-3">
+                Life happens. If you need to cancel or pause the project:
+              </p>
+              <ul className="list-disc ml-6 text-slate space-y-2">
+                <li>Before work starts: Full refund of deposit, minus any setup costs incurred</li>
+                <li>During the project: You pay for work completed up to that point</li>
+                <li>You own all the work delivered so far (designs, content, code)</li>
+              </ul>
+              <p className="text-slate text-sm leading-relaxed mt-3">
+                I&apos;d rather you be happy than locked into something that&apos;s not working. Cancellations are rare, but the option is there if you need it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Additional Info */}
       <section className="section-padding bg-navy text-white">
         <div className="container-custom max-w-4xl">
@@ -241,7 +393,7 @@ export default function ProcessPage() {
             Book your free consultation and let's discuss your project. We&apos;ll walk you through the process and answer any questions.
           </p>
           <Link href="/contact" className="btn-primary inline-block">
-            Book free consultation
+            Book a free consultation
           </Link>
         </div>
       </section>

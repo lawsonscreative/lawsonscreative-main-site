@@ -82,9 +82,16 @@ export default function Packages() {
           <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-4">
             Flexible packages for every business
           </h2>
-          <p className="text-xl text-slate max-w-6xl mx-auto">
+          <p className="text-xl text-slate max-w-6xl mx-auto mb-8">
             Whether you need a simple landing page or a full-featured website, we have a package that fits your business and budget.
           </p>
+
+          <div className="bg-white rounded-xl p-6 max-w-4xl mx-auto mb-12 shadow-md">
+            <h3 className="font-heading font-bold text-lg text-navy mb-2">Why the price ranges?</h3>
+            <p className="text-slate text-base leading-relaxed">
+              Each package has a price range because every business is slightly different. We&apos;ll give you a fixed quote after a short discovery call — no surprises.
+            </p>
+          </div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -129,8 +136,12 @@ export default function Packages() {
                 ))}
               </ul>
 
-              <p className="text-sm text-slate mb-6 border-t pt-6">
+              <p className="text-sm text-slate mb-4 border-t pt-6">
                 {pkg.description}
+              </p>
+
+              <p className="text-xs text-slate/70 mb-6 italic">
+                *Prices exclude VAT. Final cost depends on number of pages and any custom features — we&apos;ll confirm everything upfront.
               </p>
 
               <Link

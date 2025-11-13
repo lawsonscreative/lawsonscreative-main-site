@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Services & Packages | Lawsons Creative',
+  title: 'Web Design Packages & Pricing for Small Businesses | Lawsons Creative',
   description: 'Flexible website design packages for small businesses. From £500 starter sites to premium custom solutions.',
 };
 
@@ -109,6 +109,28 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Pricing Explainer */}
+      <section className="pt-12 md:pt-16 lg:pt-20 pb-0">
+        <div className="container-custom">
+          <div className="bg-white rounded-xl p-8 max-w-4xl mx-auto shadow-lg border-l-4 border-lime">
+            <h3 className="font-heading font-bold text-2xl text-navy mb-4">
+              How pricing works
+            </h3>
+            <div className="space-y-3 text-slate leading-relaxed">
+              <p>
+                <strong className="text-navy">Why the price ranges?</strong> Every business is slightly different. A 3-page site with simple layouts costs less than a 3-page site with custom animations and integrations.
+              </p>
+              <p>
+                <strong className="text-navy">How it works:</strong> During our free discovery call, we&apos;ll discuss your specific needs and give you a fixed quote before we start. No surprises, no scope creep.
+              </p>
+              <p className="text-sm italic pt-2 border-t border-gray-200">
+                <strong className="text-navy">VAT:</strong> All prices shown exclude VAT (20%). If you&apos;re VAT registered, you can reclaim this. Final invoice will include VAT where applicable.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Package Details */}
       {packages.map((pkg, index) => (
         <section
@@ -125,7 +147,10 @@ export default function ServicesPage() {
                 <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-4">
                   {pkg.name}
                 </h2>
-                <div className="text-4xl font-bold text-slate mb-6">{pkg.price}</div>
+                <div className="mb-6">
+                  <div className="text-4xl font-bold text-slate">{pkg.price}</div>
+                  <p className="text-sm text-slate/70 italic mt-1">*Prices exclude VAT</p>
+                </div>
 
                 <div className="mb-8">
                   <h3 className="font-heading font-bold text-2xl text-navy mb-4">
@@ -538,7 +563,7 @@ export default function ServicesPage() {
             Book a free consultation and we'll help you choose the perfect package for your business goals and budget.
           </p>
           <Link href="/contact" className="btn-primary inline-block">
-            Get your free consultation
+            Book a free consultation
           </Link>
         </div>
       </section>

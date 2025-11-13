@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Lawsons Creative | Modern Websites for Small Businesses",
+  title: "Web Design for Small Businesses in the UK | Lawsons Creative",
   description: "Professional website design and development for small service businesses. Fast delivery, transparent pricing, real results. Based in London, serving UK-wide.",
   keywords: ["web design", "website design London", "small business websites", "affordable web design", "website designer UK"],
   openGraph: {

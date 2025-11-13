@@ -4,7 +4,7 @@ import ContactForm from '@/components/ContactForm';
 import CalendlyButton from '@/components/CalendlyButton';
 
 export const metadata: Metadata = {
-  title: 'Contact | Lawsons Creative',
+  title: 'Get a Free Website Quote | Contact Lawsons Creative',
   description: 'Get in touch for your free consultation. Book a call or send us a message about your website project.',
 };
 

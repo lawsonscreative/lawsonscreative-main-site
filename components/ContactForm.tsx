@@ -131,6 +131,7 @@ export default function ContactForm() {
           className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime focus:ring-2 focus:ring-lime/20 outline-none transition-colors"
           placeholder="https://"
         />
+        <p className="text-slate text-sm mt-1 italic">(If you don&apos;t have one yet, just leave this blank)</p>
       </div>
 
       {/* Business Type */}
@@ -194,6 +195,7 @@ export default function ContactForm() {
           <option value="1-3-months">1-3 Months</option>
           <option value="just-exploring">Just Exploring</option>
         </select>
+        <p className="text-slate text-sm mt-1 italic">(If you&apos;re not sure, choose &quot;Just exploring&quot; and we&apos;ll talk it through)</p>
       </div>
 
       {/* Message */}
@@ -232,10 +234,14 @@ export default function ContactForm() {
           <option value="2500-4000">£2,500-£4,000</option>
           <option value="4000+">£4,000+</option>
         </select>
+        <p className="text-slate text-sm mt-1 italic">(This helps me recommend the right package. We&apos;ll always confirm a fixed quote before starting)</p>
       </div>
 
       {/* Submit Button */}
       <div>
+        <p className="text-slate text-sm text-center mb-4 italic">
+          No spam, no pushy sales — just an honest conversation about whether I can help.
+        </p>
         <button
           type="submit"
           disabled={isSubmitting}

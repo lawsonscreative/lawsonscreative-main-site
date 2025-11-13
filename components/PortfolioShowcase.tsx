@@ -159,7 +159,7 @@ export default function PortfolioShowcase() {
           className="text-center mt-16"
         >
           <p className="text-slate text-lg mb-4 leading-relaxed">
-            This is just the beginning. We&apos;re building a portfolio of stunning, effective websites across industries. From fitness coaches to wedding photographers, car detailers to accountants.
+            We&apos;re currently partnering with pet care, fitness, trades, creative and professional service businesses — with new projects launching every month. You won&apos;t be project number 312 lost in a big agency; you&apos;ll get direct attention from the person actually building your site.
           </p>
           <Link href="/portfolio" className="btn-secondary inline-block">
             View full portfolio
