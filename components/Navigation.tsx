@@ -56,7 +56,7 @@ export default function Navigation() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`relative font-medium transition-all duration-200 ${
+                className={`relative font-medium text-lg transition-all duration-200 ${
                   isActive(link.href)
                     ? 'text-navy'
                     : 'text-slate hover:text-navy hover:scale-105 hover:shadow-sm'
@@ -108,7 +108,7 @@ export default function Navigation() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`relative font-medium transition-colors ${
+                  className={`relative font-medium text-lg transition-colors ${
                     isActive(link.href)
                       ? 'text-navy font-semibold'
                       : 'text-slate hover:text-navy'
