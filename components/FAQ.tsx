@@ -16,7 +16,7 @@ export default function FAQ() {
     {
       question: 'How long does it take to build a website?',
       answer:
-        "Most projects take 1-2 weeks from kickoff to launch, depending on the package and complexity. We&apos;ll give you a detailed timeline during the discovery call.",
+        "Most projects take 1-2 weeks from kickoff to launch, depending on the package and complexity. We'll give you a detailed timeline during the discovery call.",
     },
     {
       question: 'Do you offer payment plans?',
@@ -31,7 +31,7 @@ export default function FAQ() {
     {
       question: 'Can I update the website myself?',
       answer:
-        "Yes. We provide training on how to make common updates (text, images, basic content). For more complex changes, we&apos;re always available to help.",
+        "Yes. We provide training on how to make common updates (text, images, basic content). For more complex changes, we're always available to help.",
     },
     {
       question: 'Do you provide hosting?',
