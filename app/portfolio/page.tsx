@@ -65,8 +65,8 @@ export default function PortfolioPage() {
                       className="w-full h-auto"
                     />
                   </div>
-                  <div className="text-center mt-3">
-                    <span className="inline-block bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-semibold">
+                  <div className="text-center mt-4">
+                    <span className="inline-block bg-red-100 text-red-700 px-5 py-2 rounded-full text-base font-bold">
                       Before
                     </span>
                   </div>
@@ -82,8 +82,8 @@ export default function PortfolioPage() {
                       className="w-full h-auto"
                     />
                   </div>
-                  <div className="text-center mt-3">
-                    <span className="inline-block bg-lime text-navy px-3 py-1 rounded-full text-sm font-semibold">
+                  <div className="text-center mt-4">
+                    <span className="inline-block bg-lime text-navy px-5 py-2 rounded-full text-base font-bold">
                       After
                     </span>
                   </div>
