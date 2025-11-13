@@ -55,7 +55,7 @@ export default function PortfolioPage() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Before */}
-                <div>
+                <div className="relative">
                   <div className="bg-white rounded-xl overflow-hidden shadow-lg">
                     <Image
                       src="/images/portfolio/graceful-petcare-before.png"
@@ -65,14 +65,14 @@ export default function PortfolioPage() {
                       className="w-full h-auto"
                     />
                   </div>
-                  <div className="text-center mt-2">
-                    <span className="inline-block bg-red-100 text-red-700 px-5 py-2 rounded-full text-base font-bold">
+                  <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2">
+                    <span className="inline-block bg-red-100 text-red-700 px-5 py-2 rounded-full text-base font-bold shadow-lg">
                       Before
                     </span>
                   </div>
                 </div>
                 {/* After */}
-                <div>
+                <div className="relative">
                   <div className="bg-white rounded-xl overflow-hidden shadow-lg ring-2 ring-lime">
                     <Image
                       src="/images/portfolio/graceful-petcare-after.png"
@@ -82,8 +82,8 @@ export default function PortfolioPage() {
                       className="w-full h-auto"
                     />
                   </div>
-                  <div className="text-center mt-2">
-                    <span className="inline-block bg-lime text-navy px-5 py-2 rounded-full text-base font-bold">
+                  <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2">
+                    <span className="inline-block bg-lime text-navy px-5 py-2 rounded-full text-base font-bold shadow-lg">
                       After
                     </span>
                   </div>
