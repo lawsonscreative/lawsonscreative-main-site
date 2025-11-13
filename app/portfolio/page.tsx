@@ -37,7 +37,7 @@ export default function PortfolioPage() {
                   Full Website Redesign
                 </span>
               </div>
-              <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-4">
+              <h2 className="font-heading font-bold text-5xl md:text-6xl text-navy mb-4">
                 Graceful Pet Care
               </h2>
               <p className="text-xl text-slate">
