@@ -18,12 +18,12 @@ export default function PortfolioShowcase() {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-16 pt-8 md:pt-12"
         >
           <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-4">
             Real businesses. Real results.
           </h2>
-          <p className="text-xl text-slate max-w-3xl mx-auto">
+          <p className="text-xl text-slate max-w-4xl mx-auto leading-relaxed">
             See how we've transformed small businesses with websites that work as hard as they do.
           </p>
         </motion.div>
