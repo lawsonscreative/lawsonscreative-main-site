@@ -39,9 +39,9 @@ export default function FAQ() {
         "We build your site and deploy it to professional hosting (Vercel/Netlify). Hosting costs are minimal (often free for small sites) and we can manage this for you or hand over access, your choice.",
     },
     {
-      question: "What if I don&apos;t have content (photos, text)?",
+      question: "What if I don't have content (photos, text)?",
       answer:
-        "No problem. We can help with copywriting, source stock images, or work with what you have. We&apos;ll discuss your content needs during discovery.",
+        "No problem. We can help with copywriting, source stock images, or work with what you have. We'll discuss your content needs during discovery.",
     },
     {
       question: 'Do you do e-commerce websites?',
@@ -51,17 +51,17 @@ export default function FAQ() {
     {
       question: 'How do I know if a website will actually help my business?',
       answer:
-        "Great question. If you're getting enquiries but losing them because your site looks dated or unprofessional, a new website can help. If you're not showing up in Google searches, or your site doesn&apos;t work well on mobile, you're losing potential customers. We&apos;ll discuss whether a website is the right investment during your free consultation.",
+        "Great question. If you're getting enquiries but losing them because your site looks dated or unprofessional, a new website can help. If you're not showing up in Google searches, or your site doesn't work well on mobile, you're losing potential customers. We'll discuss whether a website is the right investment during your free consultation.",
     },
     {
       question: 'What makes you different from Wix, Squarespace, or Fiverr?',
       answer:
-        "DIY builders are great if you have time and design skills, but most small business owners don&apos;t. Cheap Fiverr gigs often deliver templated, low-quality work. We offer the best of both: custom, strategic design at a fair price, delivered fast.",
+        "DIY builders are great if you have time and design skills, but most small business owners don't. Cheap Fiverr gigs often deliver templated, low-quality work. We offer the best of both: custom, strategic design at a fair price, delivered fast.",
     },
   ];
 
   return (
-    <section className="section-padding bg-lightgrey" ref={ref}>
+    <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32 bg-lightgrey" ref={ref}>
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -74,7 +74,7 @@ export default function FAQ() {
           </h2>
         </motion.div>
 
-        <div className="max-w-4xl mx-auto space-y-4">
+        <div className="max-w-6xl mx-auto space-y-4">
           {faqs.map((faq, index) => (
             <motion.div
               key={index}

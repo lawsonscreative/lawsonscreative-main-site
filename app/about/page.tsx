@@ -10,7 +10,7 @@ export default function AboutPage() {
   return (
     <div className="bg-white">
       {/* Hero */}
-      <section className="section-padding bg-gradient-to-br from-navy via-navy to-blue-900 text-white">
+      <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32 bg-gradient-to-br from-navy via-navy to-blue-900 text-white">
         <div className="container-custom text-center">
           <h1 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6">
             Built by a Small Business Owner, For Small Business Owners
@@ -22,7 +22,7 @@ export default function AboutPage() {
       </section>
 
       {/* Story */}
-      <section className="section-padding">
+      <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32">
         <div className="container-custom max-w-4xl">
           <h2 className="font-heading font-bold text-4xl text-navy mb-6">
             Why I started this
@@ -45,7 +45,7 @@ export default function AboutPage() {
       </section>
 
       {/* Approach */}
-      <section className="section-padding bg-lightgrey">
+      <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32 bg-lightgrey">
         <div className="container-custom max-w-4xl">
           <h2 className="font-heading font-bold text-4xl text-navy mb-12 text-center">
             My approach
@@ -86,7 +86,7 @@ export default function AboutPage() {
       </section>
 
       {/* How I work */}
-      <section className="section-padding">
+      <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32">
         <div className="container-custom max-w-4xl">
           <h2 className="font-heading font-bold text-4xl text-navy mb-6">
             How I work
@@ -106,7 +106,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-navy text-white">
+      <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32 bg-navy text-white">
         <div className="container-custom text-center">
           <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6">
             Want to work together?

@@ -15,13 +15,13 @@ export default function FinalCTA() {
   };
 
   return (
-    <section className="section-padding bg-gradient-to-br from-navy via-navy to-blue-900 text-white" ref={ref}>
+    <section className="pt-20 md:pt-28 lg:pt-32 pb-16 md:pb-20 lg:pb-24 bg-gradient-to-br from-navy via-navy to-blue-900 text-white" ref={ref}>
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center max-w-4xl mx-auto"
+          className="text-center max-w-6xl mx-auto"
         >
           <h2 className="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl mb-6">
             Ready to grow your business?

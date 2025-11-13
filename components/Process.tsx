@@ -45,7 +45,7 @@ export default function Process() {
   ];
 
   return (
-    <section className="section-padding bg-white" ref={ref}>
+    <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32 bg-white" ref={ref}>
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -56,7 +56,7 @@ export default function Process() {
           <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-4">
             Simple process. Outstanding results.
           </h2>
-          <p className="text-xl text-slate max-w-3xl mx-auto">
+          <p className="text-xl text-slate max-w-6xl mx-auto">
             We've streamlined our workflow to deliver quality websites fast, without sacrificing strategy or design.
           </p>
         </motion.div>

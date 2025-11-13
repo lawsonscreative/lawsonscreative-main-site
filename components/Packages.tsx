@@ -71,7 +71,7 @@ export default function Packages() {
   ];
 
   return (
-    <section className="section-padding bg-lightgrey" ref={ref}>
+    <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32 bg-lightgrey" ref={ref}>
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -82,7 +82,7 @@ export default function Packages() {
           <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-4">
             Flexible packages for every business
           </h2>
-          <p className="text-xl text-slate max-w-3xl mx-auto">
+          <p className="text-xl text-slate max-w-6xl mx-auto">
             Whether you need a simple landing page or a full-featured website, we have a package that fits your business and budget.
           </p>
         </motion.div>
@@ -94,7 +94,7 @@ export default function Packages() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.1 * (index + 1) }}
-              className={`bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow relative ${
+              className={`bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-shadow relative ${
                 pkg.popular ? 'ring-2 ring-lime' : ''
               }`}
             >
@@ -159,7 +159,7 @@ export default function Packages() {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Website Maintenance */}
-            <div className="group relative bg-gradient-to-br from-white via-white to-lime/5 rounded-3xl p-8 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(0,230,118,0.3)] transition-all duration-500 border border-gray-100 hover:border-lime/50 hover:-translate-y-2">
+            <div className="group relative bg-gradient-to-br from-white via-white to-lime/5 rounded-xl p-8 shadow-lg hover:shadow-[0_20px_60px_-15px_rgba(0,230,118,0.3)] transition-all duration-500 border border-gray-100 hover:border-lime/50 hover:-translate-y-2">
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-lime/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative">
                 <div className="w-16 h-16 bg-gradient-to-br from-lime to-lime/60 rounded-2xl flex items-center justify-center mb-4 shadow-lg shadow-lime/20 group-hover:scale-110 transition-transform duration-300 mx-auto">
@@ -178,7 +178,7 @@ export default function Packages() {
             </div>
 
             {/* Content Updates */}
-            <div className="group relative bg-gradient-to-br from-white via-white to-navy/5 rounded-3xl p-8 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(10,37,64,0.3)] transition-all duration-500 border border-gray-100 hover:border-navy/50 hover:-translate-y-2">
+            <div className="group relative bg-gradient-to-br from-white via-white to-navy/5 rounded-xl p-8 shadow-lg hover:shadow-[0_20px_60px_-15px_rgba(10,37,64,0.3)] transition-all duration-500 border border-gray-100 hover:border-navy/50 hover:-translate-y-2">
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-navy/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative">
                 <div className="w-16 h-16 bg-gradient-to-br from-navy to-navy/60 rounded-2xl flex items-center justify-center mb-4 shadow-lg shadow-navy/20 group-hover:scale-110 transition-transform duration-300 mx-auto">
@@ -196,7 +196,7 @@ export default function Packages() {
             </div>
 
             {/* SEO Services */}
-            <div className="group relative bg-gradient-to-br from-white via-white to-lime/5 rounded-3xl p-8 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(0,230,118,0.3)] transition-all duration-500 border border-gray-100 hover:border-lime/50 hover:-translate-y-2">
+            <div className="group relative bg-gradient-to-br from-white via-white to-lime/5 rounded-xl p-8 shadow-lg hover:shadow-[0_20px_60px_-15px_rgba(0,230,118,0.3)] transition-all duration-500 border border-gray-100 hover:border-lime/50 hover:-translate-y-2">
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-lime/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative">
                 <div className="w-16 h-16 bg-gradient-to-br from-lime to-lime/60 rounded-2xl flex items-center justify-center mb-4 shadow-lg shadow-lime/20 group-hover:scale-110 transition-transform duration-300 mx-auto">

@@ -31,11 +31,15 @@ html {
   }
 
   .btn-secondary {
-    @apply bg-transparent border-2 border-navy text-navy font-semibold px-8 py-4 rounded-lg hover:bg-navy hover:text-white transition-all duration-200 text-base;
+    @apply bg-lime text-navy font-semibold px-8 py-3 rounded-lg hover:scale-105 hover:shadow-xl active:scale-95 transition-all duration-200 text-base;
+  }
+
+  .btn-tertiary {
+    @apply bg-transparent border-2 border-white text-white font-semibold px-8 py-3 rounded-lg hover:bg-white hover:text-navy transition-all duration-200 text-base;
   }
 
   .section-padding {
-    @apply py-20 md:py-28 lg:py-32;
+    @apply pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32;
   }
 
   .container-custom {

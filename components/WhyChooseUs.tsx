@@ -49,7 +49,7 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="section-padding bg-white" ref={ref}>
+    <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32 bg-white" ref={ref}>
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -60,7 +60,7 @@ export default function WhyChooseUs() {
           <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-4">
             Built for small businesses, by someone who gets it
           </h2>
-          <p className="text-xl text-slate max-w-3xl mx-auto">
+          <p className="text-xl text-slate max-w-6xl mx-auto">
             Large agencies charge £10k+ and take months. We deliver quality websites in 1-2 weeks at a fraction of the cost, without cutting corners.
           </p>
         </motion.div>
@@ -72,7 +72,7 @@ export default function WhyChooseUs() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.1 * (index + 1) }}
-              className="bg-lightgrey rounded-xl p-6 hover:shadow-lg transition-shadow"
+              className="bg-lightgrey rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow"
             >
               <div className="text-4xl mb-4">{reason.icon}</div>
               <h3 className="font-heading font-bold text-xl text-navy mb-3">
