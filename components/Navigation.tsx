@@ -38,7 +38,7 @@ export default function Navigation() {
   return (
     <nav className={`bg-white border-b border-gray-200 sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'shadow-md' : 'shadow-sm'}`}>
       <div className="container-custom">
-        <div className={`flex justify-between items-center transition-all duration-300 ${isScrolled ? 'h-16' : 'h-20'}`}>
+        <div className={`flex justify-between items-center transition-all duration-300 ${isScrolled ? 'h-20' : 'h-24'}`}>
           {/* Logo - Without Strapline */}
           <Link href="/" className="relative">
             <Image
