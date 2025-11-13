@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 export default function Hero() {
   return (
     <section className="relative bg-gradient-to-br from-navy via-navy to-blue-900 text-white overflow-hidden">
-      <div className="container-custom py-20 md:py-32 lg:py-40">
+      <div className="container-custom pt-16 pb-24 md:pt-24 md:pb-40 lg:pt-28 lg:pb-48">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
           <motion.div
