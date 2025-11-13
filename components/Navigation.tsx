@@ -44,9 +44,9 @@ export default function Navigation() {
             <Image
               src="/images/logo.png"
               alt="Lawsons Creative"
-              width={180}
-              height={60}
-              className={`transition-all duration-300 h-auto ${isScrolled ? 'w-36 md:w-40' : 'w-40 md:w-44'}`}
+              width={260}
+              height={87}
+              className={`transition-all duration-300 h-auto ${isScrolled ? 'w-52 md:w-56' : 'w-56 md:w-60'}`}
             />
           </Link>
 
