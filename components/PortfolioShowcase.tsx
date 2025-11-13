@@ -38,7 +38,7 @@ export default function PortfolioShowcase() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Content */}
             <div>
-              <h3 className="font-heading font-bold text-3xl md:text-4xl text-navy mb-6">
+              <h3 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-6">
                 Graceful Pet Care
               </h3>
               <div className="space-y-6 mb-8">
@@ -115,8 +115,8 @@ export default function PortfolioShowcase() {
                     className="w-full h-auto"
                   />
                 </div>
-                <div className="absolute top-3 left-3">
-                  <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-semibold shadow-md">
+                <div className="absolute top-3 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-red-100 text-red-700 px-5 py-2 rounded-full text-base font-bold shadow-lg">
                     Before
                   </span>
                 </div>
@@ -141,8 +141,8 @@ export default function PortfolioShowcase() {
                     className="w-full h-auto"
                   />
                 </div>
-                <div className="absolute top-3 left-3">
-                  <span className="bg-lime text-navy px-3 py-1 rounded-full text-xs font-semibold shadow-md">
+                <div className="absolute top-3 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-lime text-navy px-5 py-2 rounded-full text-base font-bold shadow-lg">
                     After
                   </span>
                 </div>
