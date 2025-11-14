@@ -102,7 +102,7 @@ export default function AboutPage() {
                 Fast Doesn't Mean Rushed
               </h3>
               <p className="text-slate leading-relaxed">
-                Using modern tools and efficient processes, I deliver in 1-2 weeks without cutting corners. You get strategy, quality design, and websites built to last, just without the agency overhead.
+                Using modern tools and efficient processes, I deliver in 1–2 weeks without cutting corners. You get strategy, quality design, and websites built to last, just without the agency overhead.
               </p>
             </div>
 

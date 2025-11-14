@@ -43,7 +43,7 @@ export default function Packages() {
         'Advanced SEO optimisation',
         'Integration with booking systems',
         '2 rounds of revisions',
-        '1-2 week delivery',
+        '1–2 week delivery',
       ],
       description:
         'A complete website that positions you as the professional you are. Built to convert visitors into customers.',
@@ -61,7 +61,7 @@ export default function Packages() {
         'Priority support',
         'Comprehensive analytics setup',
         '3 rounds of revisions',
-        '2 week delivery',
+        '2-week delivery',
         '30-day post-launch support',
       ],
       description:

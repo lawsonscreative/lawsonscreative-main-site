@@ -13,7 +13,7 @@ export default function WhyChooseUs() {
     {
       title: 'Fast Delivery Without Rushing',
       description:
-        "We use efficient modern tools and streamlined processes to deliver in 1-2 weeks. You get your site when you need it, not when an agency's calendar opens up.",
+        "We use efficient modern tools and streamlined processes to deliver in 1–2 weeks. You get realistic timelines and a clear schedule — not vague promises or endless delays.",
       icon: '⚡',
     },
     {
@@ -61,7 +61,7 @@ export default function WhyChooseUs() {
             Built for small businesses, by someone who gets it
           </h2>
           <p className="text-xl text-slate max-w-6xl mx-auto">
-            Large agencies charge £10k+ and take months. We deliver quality websites in 1-2 weeks at a fraction of the cost, without cutting corners.
+            Large agencies charge £10k+ and take months. We deliver quality websites in 1–2 weeks at a fraction of the cost, without cutting corners.
           </p>
         </motion.div>
 

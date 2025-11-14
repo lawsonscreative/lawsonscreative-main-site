@@ -129,7 +129,7 @@ export default function TermsPage() {
               </p>
               <ul className="list-disc ml-6 space-y-2">
                 <li><strong>Starter package:</strong> 1 week</li>
-                <li><strong>Professional package:</strong> 1-2 weeks</li>
+                <li><strong>Professional package:</strong> 1–2 weeks</li>
                 <li><strong>Premium package:</strong> 2 weeks</li>
               </ul>
               <p className="mt-4">

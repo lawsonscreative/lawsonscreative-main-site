@@ -49,7 +49,7 @@ export default function ServicesPage() {
         'Advanced SEO optimisation',
         'Integration with booking systems (Calendly, etc.)',
         '2 rounds of revisions',
-        '1-2 week delivery',
+        '1–2 week delivery',
       ],
       notIncluded: [
         'E-commerce (6+ products)',
@@ -77,7 +77,7 @@ export default function ServicesPage() {
         'Priority support',
         'Comprehensive analytics setup',
         '3 rounds of revisions',
-        '2 week delivery',
+        '2-week delivery',
         '30-day post-launch support',
       ],
       notIncluded: [
@@ -583,9 +583,9 @@ export default function ServicesPage() {
                 Our packages cover design and development. Separate costs include:
               </p>
               <ul className="text-slate space-y-1 ml-4">
-                <li>• Domain name (£10-15/year)</li>
-                <li>• Stock photography (if needed, £10-50)</li>
-                <li>• Professional copywriting (if needed, custom quote)</li>
+                <li>Domain name (£10-15/year)</li>
+                <li>Stock photography (if needed, £10-50)</li>
+                <li>Professional copywriting (if needed, custom quote)</li>
               </ul>
               <div className="mt-4 pt-4 border-t border-gray-200">
                 <p className="text-slate font-semibold mb-2">Hosting & ongoing maintenance</p>
@@ -596,18 +596,18 @@ export default function ServicesPage() {
                   However, most clients opt for a maintenance package (£50-150/month) which includes:
                 </p>
                 <ul className="text-slate text-sm space-y-1 ml-4">
-                  <li>• Hosting + fast CDN</li>
-                  <li>• Security updates and patches</li>
-                  <li>• Automated backups</li>
-                  <li>• Content updates (included hours vary by tier)</li>
-                  <li>• Priority support</li>
+                  <li>Hosting + fast CDN</li>
+                  <li>Security updates and patches</li>
+                  <li>Automated backups</li>
+                  <li>Content updates (included hours vary by tier)</li>
+                  <li>Priority support</li>
                 </ul>
                 <p className="text-slate text-sm leading-relaxed mt-2">
                   First year hosting is included in your build cost. After that, you can:
                 </p>
                 <ul className="text-slate text-sm space-y-1 ml-4">
-                  <li>• Self-manage hosting (£5-20/month) if you have technical capabilities</li>
-                  <li>• Use our maintenance packages (recommended for most clients)</li>
+                  <li>Self-manage hosting (£5-20/month) if you have technical capabilities</li>
+                  <li>Use our maintenance packages (recommended for most clients)</li>
                 </ul>
               </div>
             </div>

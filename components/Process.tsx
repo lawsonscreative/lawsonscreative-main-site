@@ -13,7 +13,7 @@ export default function Process() {
     {
       number: '01',
       title: 'Discovery',
-      duration: 'Day 1-2',
+      duration: 'Day 1–2',
       description:
         'We start by understanding your business, goals, and customers. What makes you different? Who are you trying to reach? What actions do you want visitors to take?',
       deliverable: 'Strategic brief and sitemap',

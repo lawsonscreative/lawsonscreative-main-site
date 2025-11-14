@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Our Web Design Process – From Idea to Live Website in 1–2 Weeks | Lawsons Creative',
-  description: 'From idea to live website in 1-2 weeks. See our streamlined website design and development process.',
+  description: 'From idea to live website in 1–2 weeks. See our streamlined website design and development process.',
 };
 
 export default function ProcessPage() {
@@ -11,7 +11,7 @@ export default function ProcessPage() {
     {
       number: '01',
       title: 'Discovery',
-      duration: 'Day 1-2',
+      duration: 'Day 1–2',
       description:
         'We start by understanding your business, goals, and customers. What makes you different? Who are you trying to reach? What actions do you want visitors to take?',
       deliverable: 'Strategic brief and sitemap',
