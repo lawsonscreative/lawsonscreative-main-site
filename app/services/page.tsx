@@ -191,7 +191,7 @@ export default function ServicesPage() {
         <section
           key={pkg.name}
           id={pkg.name.toLowerCase()}
-          className={`section-padding ${index % 2 === 0 ? 'bg-white' : 'bg-lightgrey'} scroll-mt-24`}
+          className={`section-padding ${index % 2 === 0 ? 'bg-white' : 'bg-lightgrey'} scroll-mt-8`}
         >
           <div className="container-custom max-w-6xl">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
