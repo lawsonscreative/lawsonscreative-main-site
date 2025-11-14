@@ -13,19 +13,19 @@ export default function PackagesSummary() {
   const packages = [
     {
       name: 'Starter',
-      price: '£500 - £800',
+      price: '£500–£800',
       description: 'Perfect for new businesses getting online',
       popular: false,
     },
     {
       name: 'Professional',
-      price: '£1,200 - £2,000',
+      price: '£1,200–£2,000',
       description: 'For established businesses ready to grow',
       popular: true,
     },
     {
       name: 'Premium',
-      price: '£2,500 - £4,000',
+      price: '£2,500–£4,000',
       description: 'Custom solutions for complex needs',
       popular: false,
     },
