@@ -138,47 +138,53 @@ export default function ServicesPage() {
             <h3 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-center">
               Not sure which package? Here's how to choose:
             </h3>
-            <div className="space-y-4">
-              <a href="#starter" className="flex items-start gap-4 bg-white/10 rounded-lg p-4 backdrop-blur-sm hover:bg-white/20 transition-colors cursor-pointer">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-lime flex items-center justify-center font-bold text-navy">
-                  1
-                </div>
-                <div>
-                  <p className="text-lg leading-relaxed">
-                    <strong className="text-lime">Just need an online presence?</strong> → Starter
-                  </p>
-                  <p className="text-sm text-gray-300 mt-1">
-                    Perfect for sole traders, new businesses, or single-service providers who need a simple but professional web presence.
-                  </p>
-                </div>
-              </a>
-              <a href="#professional" className="flex items-start gap-4 bg-white/10 rounded-lg p-4 backdrop-blur-sm hover:bg-white/20 transition-colors cursor-pointer">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-lime flex items-center justify-center font-bold text-navy">
-                  2
-                </div>
-                <div>
-                  <p className="text-lg leading-relaxed">
-                    <strong className="text-lime">Ready to grow and generate leads?</strong> → Professional
-                  </p>
-                  <p className="text-sm text-gray-300 mt-1">
-                    Ideal for established businesses with multiple services, portfolios to showcase, or those serious about online marketing.
-                  </p>
-                </div>
-              </a>
-              <a href="#premium" className="flex items-start gap-4 bg-white/10 rounded-lg p-4 backdrop-blur-sm hover:bg-white/20 transition-colors cursor-pointer">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-lime flex items-center justify-center font-bold text-navy">
-                  3
-                </div>
-                <div>
-                  <p className="text-lg leading-relaxed">
-                    <strong className="text-lime">Need custom features or e-commerce?</strong> → Premium
-                  </p>
-                  <p className="text-sm text-gray-300 mt-1">
-                    Best for businesses with specific requirements like online booking systems, product sales, or custom functionality.
-                  </p>
-                </div>
-              </a>
-            </div>
+            <ol className="space-y-4 list-none">
+              <li>
+                <a href="#starter" className="flex items-start gap-4 bg-white/10 rounded-lg p-4 backdrop-blur-sm hover:bg-white/20 transition-colors cursor-pointer">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-lime flex items-center justify-center font-bold text-navy" aria-hidden="true">
+                    1
+                  </div>
+                  <div>
+                    <p className="text-lg leading-relaxed">
+                      <strong className="text-lime">Just need an online presence?</strong> → Starter
+                    </p>
+                    <p className="text-sm text-gray-300 mt-1">
+                      Perfect for sole traders, new businesses, or single-service providers who need a simple but professional web presence.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#professional" className="flex items-start gap-4 bg-white/10 rounded-lg p-4 backdrop-blur-sm hover:bg-white/20 transition-colors cursor-pointer">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-lime flex items-center justify-center font-bold text-navy" aria-hidden="true">
+                    2
+                  </div>
+                  <div>
+                    <p className="text-lg leading-relaxed">
+                      <strong className="text-lime">Ready to grow and generate leads?</strong> → Professional
+                    </p>
+                    <p className="text-sm text-gray-300 mt-1">
+                      Ideal for established businesses with multiple services, portfolios to showcase, or those serious about online marketing.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#premium" className="flex items-start gap-4 bg-white/10 rounded-lg p-4 backdrop-blur-sm hover:bg-white/20 transition-colors cursor-pointer">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-lime flex items-center justify-center font-bold text-navy" aria-hidden="true">
+                    3
+                  </div>
+                  <div>
+                    <p className="text-lg leading-relaxed">
+                      <strong className="text-lime">Need custom features or e-commerce?</strong> → Premium
+                    </p>
+                    <p className="text-sm text-gray-300 mt-1">
+                      Best for businesses with specific requirements like online booking systems, product sales, or custom functionality.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ol>
             <p className="text-center text-sm text-gray-300 mt-6 italic">
               Still unsure? Book a free consultation and we'll help you choose the right fit.
             </p>

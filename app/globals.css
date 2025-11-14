@@ -45,4 +45,12 @@ html {
   .container-custom {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
+
+  .skip-link {
+    @apply absolute left-[-10000px] top-auto w-px h-px overflow-hidden;
+  }
+
+  .skip-link:focus {
+    @apply static w-auto h-auto p-4 bg-lime text-navy font-semibold z-[9999] inline-block;
+  }
 }

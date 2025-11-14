@@ -55,6 +55,10 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+      <p className="text-sm text-slate mb-6">
+        * Required fields
+      </p>
+
       {/* Name */}
       <div>
         <label htmlFor="name" className="block text-sm font-semibold text-navy mb-2">
@@ -63,10 +67,17 @@ export default function ContactForm() {
         <input
           type="text"
           id="name"
+          required
           {...register('name', { required: 'Name is required' })}
           className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime focus:ring-2 focus:ring-lime/20 outline-none transition-colors"
+          aria-invalid={errors.name ? 'true' : 'false'}
+          aria-describedby={errors.name ? 'name-error' : undefined}
         />
-        {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
+        {errors.name && (
+          <p id="name-error" className="text-red-500 text-sm mt-1" role="alert">
+            {errors.name.message}
+          </p>
+        )}
       </div>
 
       {/* Email */}
@@ -77,6 +88,7 @@ export default function ContactForm() {
         <input
           type="email"
           id="email"
+          required
           {...register('email', {
             required: 'Email is required',
             pattern: {
@@ -85,8 +97,14 @@ export default function ContactForm() {
             },
           })}
           className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime focus:ring-2 focus:ring-lime/20 outline-none transition-colors"
+          aria-invalid={errors.email ? 'true' : 'false'}
+          aria-describedby={errors.email ? 'email-error' : undefined}
         />
-        {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
+        {errors.email && (
+          <p id="email-error" className="text-red-500 text-sm mt-1" role="alert">
+            {errors.email.message}
+          </p>
+        )}
       </div>
 
       {/* Phone */}
@@ -110,11 +128,16 @@ export default function ContactForm() {
         <input
           type="text"
           id="businessName"
+          required
           {...register('businessName', { required: 'Business name is required' })}
           className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime focus:ring-2 focus:ring-lime/20 outline-none transition-colors"
+          aria-invalid={errors.businessName ? 'true' : 'false'}
+          aria-describedby={errors.businessName ? 'businessName-error' : undefined}
         />
         {errors.businessName && (
-          <p className="text-red-500 text-sm mt-1">{errors.businessName.message}</p>
+          <p id="businessName-error" className="text-red-500 text-sm mt-1" role="alert">
+            {errors.businessName.message}
+          </p>
         )}
       </div>
 
@@ -141,6 +164,7 @@ export default function ContactForm() {
         <textarea
           id="message"
           rows={5}
+          required
           {...register('message', {
             required: 'Please tell us about your project',
             minLength: {
@@ -150,8 +174,14 @@ export default function ContactForm() {
           })}
           className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime focus:ring-2 focus:ring-lime/20 outline-none transition-colors resize-none"
           placeholder="Tell us about your business, what you need, and what you hope to achieve with your website..."
+          aria-invalid={errors.message ? 'true' : 'false'}
+          aria-describedby={errors.message ? 'message-error' : undefined}
         />
-        {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
+        {errors.message && (
+          <p id="message-error" className="text-red-500 text-sm mt-1" role="alert">
+            {errors.message.message}
+          </p>
+        )}
       </div>
 
       {/* Budget */}
@@ -250,13 +280,16 @@ export default function ContactForm() {
           {isSubmitting ? 'Sending...' : 'Send message'}
         </button>
         <p className="text-slate text-sm text-center mt-4 leading-relaxed">
+          We respect your privacy. Your information will only be used to respond to your enquiry and will never be shared with third parties.
+        </p>
+        <p className="text-slate text-sm text-center mt-2 leading-relaxed">
           We'll respond within 24 hours (usually much faster).
         </p>
       </div>
 
       {/* Status Messages */}
       {submitStatus === 'success' && (
-        <div className="bg-lime/10 border-2 border-lime text-navy px-6 py-5 rounded-lg">
+        <div className="bg-lime/10 border-2 border-lime text-navy px-6 py-5 rounded-lg" role="status" aria-live="polite">
           <p className="font-bold text-lg mb-2">Thanks! Your message has been sent.</p>
           <p className="text-slate leading-relaxed">
             We&apos;ll respond within 24 hours (usually much faster). Please check your inbox (and your spam/junk folder) for our reply.

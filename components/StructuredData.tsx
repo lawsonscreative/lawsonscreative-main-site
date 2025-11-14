@@ -9,7 +9,8 @@ export default function StructuredData() {
     email: 'hello@lawsonscreative.co.uk',
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Kent',
+      addressLocality: 'London',
+      addressRegion: 'Greater London',
       addressCountry: 'GB',
     },
     areaServed: {
