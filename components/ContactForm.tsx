@@ -9,11 +9,10 @@ type FormData = {
   phone?: string;
   businessName: string;
   websiteUrl?: string;
-  businessType: string;
-  projectType: string;
-  timeline: string;
   message: string;
   budget: string;
+  timeline: string;
+  brandingContent?: string[];
 };
 
 export default function ContactForm() {
@@ -122,7 +121,7 @@ export default function ContactForm() {
       {/* Current Website URL */}
       <div>
         <label htmlFor="websiteUrl" className="block text-sm font-semibold text-navy mb-2">
-          Current Website URL (if applicable)
+          Current website URL (optional)
         </label>
         <input
           type="url"
@@ -131,71 +130,6 @@ export default function ContactForm() {
           className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime focus:ring-2 focus:ring-lime/20 outline-none transition-colors"
           placeholder="https://"
         />
-        <p className="text-slate text-sm mt-1 italic">(If you don&apos;t have one yet, just leave this blank)</p>
-      </div>
-
-      {/* Business Type */}
-      <div>
-        <label htmlFor="businessType" className="block text-sm font-semibold text-navy mb-2">
-          What type of business? *
-        </label>
-        <select
-          id="businessType"
-          {...register('businessType', { required: 'Please select a business type' })}
-          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime focus:ring-2 focus:ring-lime/20 outline-none transition-colors"
-        >
-          <option value="">Select...</option>
-          <option value="pet-care">Pet Care</option>
-          <option value="fitness">Fitness & Wellness</option>
-          <option value="beauty">Beauty & Personal Care</option>
-          <option value="trades">Trades & Services</option>
-          <option value="creative">Creative Services</option>
-          <option value="automotive">Automotive Services</option>
-          <option value="professional">Professional Services</option>
-          <option value="home-garden">Home & Garden</option>
-          <option value="other">Other</option>
-        </select>
-        {errors.businessType && (
-          <p className="text-red-500 text-sm mt-1">{errors.businessType.message}</p>
-        )}
-      </div>
-
-      {/* Project Type */}
-      <div>
-        <label htmlFor="projectType" className="block text-sm font-semibold text-navy mb-2">
-          What do you need? *
-        </label>
-        <select
-          id="projectType"
-          {...register('projectType', { required: 'Please select a project type' })}
-          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime focus:ring-2 focus:ring-lime/20 outline-none transition-colors"
-        >
-          <option value="">Select...</option>
-          <option value="new-website">New Website</option>
-          <option value="redesign">Website Redesign</option>
-          <option value="maintenance">Website Maintenance</option>
-          <option value="not-sure">Not Sure</option>
-        </select>
-        {errors.projectType && (
-          <p className="text-red-500 text-sm mt-1">{errors.projectType.message}</p>
-        )}
-      </div>
-
-      {/* Timeline */}
-      <div>
-        <label htmlFor="timeline" className="block text-sm font-semibold text-navy mb-2">
-          Project Timeline
-        </label>
-        <select
-          id="timeline"
-          {...register('timeline')}
-          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime focus:ring-2 focus:ring-lime/20 outline-none transition-colors"
-        >
-          <option value="asap">ASAP</option>
-          <option value="1-3-months">1-3 Months</option>
-          <option value="just-exploring">Just Exploring</option>
-        </select>
-        <p className="text-slate text-sm mt-1 italic">(If you&apos;re not sure, choose &quot;Just exploring&quot; and we&apos;ll talk it through)</p>
       </div>
 
       {/* Message */}
@@ -209,11 +143,12 @@ export default function ContactForm() {
           {...register('message', {
             required: 'Please tell us about your project',
             minLength: {
-              value: 50,
-              message: 'Please provide at least 50 characters',
+              value: 20,
+              message: 'Please provide at least 20 characters',
             },
           })}
           className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime focus:ring-2 focus:ring-lime/20 outline-none transition-colors resize-none"
+          placeholder="Tell us about your business, what you need, and what you hope to achieve with your website..."
         />
         {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
       </div>
@@ -221,48 +156,117 @@ export default function ContactForm() {
       {/* Budget */}
       <div>
         <label htmlFor="budget" className="block text-sm font-semibold text-navy mb-2">
-          Budget Range
+          Approximate budget *
         </label>
         <select
           id="budget"
-          {...register('budget')}
+          {...register('budget', { required: 'Please select a budget range' })}
           className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime focus:ring-2 focus:ring-lime/20 outline-none transition-colors"
         >
-          <option value="not-sure">Not Sure</option>
-          <option value="500-800">£500-£800</option>
-          <option value="1200-2000">£1,200-£2,000</option>
-          <option value="2500-4000">£2,500-£4,000</option>
+          <option value="">Select...</option>
+          <option value="under-1000">Under £1,000</option>
+          <option value="1000-2000">£1,000–£2,000</option>
+          <option value="2000-4000">£2,000–£4,000</option>
           <option value="4000+">£4,000+</option>
         </select>
-        <p className="text-slate text-sm mt-1 italic">(This helps me recommend the right package. We&apos;ll always confirm a fixed quote before starting)</p>
+        {errors.budget && <p className="text-red-500 text-sm mt-1">{errors.budget.message}</p>}
+      </div>
+
+      {/* Timeline */}
+      <div>
+        <label htmlFor="timeline" className="block text-sm font-semibold text-navy mb-2">
+          When do you need the website? *
+        </label>
+        <select
+          id="timeline"
+          {...register('timeline', { required: 'Please select a timeline' })}
+          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime focus:ring-2 focus:ring-lime/20 outline-none transition-colors"
+        >
+          <option value="">Select...</option>
+          <option value="asap">ASAP</option>
+          <option value="within-1-month">Within 1 month</option>
+          <option value="1-3-months">1–3 months</option>
+          <option value="3-plus-months">3+ months</option>
+          <option value="just-exploring">Just exploring options</option>
+        </select>
+        {errors.timeline && <p className="text-red-500 text-sm mt-1">{errors.timeline.message}</p>}
+      </div>
+
+      {/* Branding/Content */}
+      <div>
+        <label className="block text-sm font-semibold text-navy mb-3">
+          Do you have existing branding/content? (optional)
+        </label>
+        <div className="space-y-2">
+          <label className="flex items-center">
+            <input
+              type="checkbox"
+              value="logo-branding"
+              {...register('brandingContent')}
+              className="w-4 h-4 text-lime border-gray-300 rounded focus:ring-lime focus:ring-2"
+            />
+            <span className="ml-2 text-slate">I have a logo/branding</span>
+          </label>
+          <label className="flex items-center">
+            <input
+              type="checkbox"
+              value="copy-content"
+              {...register('brandingContent')}
+              className="w-4 h-4 text-lime border-gray-300 rounded focus:ring-lime focus:ring-2"
+            />
+            <span className="ml-2 text-slate">I have most of the copy/content</span>
+          </label>
+          <label className="flex items-center">
+            <input
+              type="checkbox"
+              value="need-branding-help"
+              {...register('brandingContent')}
+              className="w-4 h-4 text-lime border-gray-300 rounded focus:ring-lime focus:ring-2"
+            />
+            <span className="ml-2 text-slate">I need help with branding</span>
+          </label>
+          <label className="flex items-center">
+            <input
+              type="checkbox"
+              value="need-copy-help"
+              {...register('brandingContent')}
+              className="w-4 h-4 text-lime border-gray-300 rounded focus:ring-lime focus:ring-2"
+            />
+            <span className="ml-2 text-slate">I need help with copy/content</span>
+          </label>
+        </div>
       </div>
 
       {/* Submit Button */}
       <div>
-        <p className="text-slate text-sm text-center mb-4 italic">
-          No spam, no pushy sales — just an honest conversation about whether I can help.
-        </p>
         <button
           type="submit"
           disabled={isSubmitting}
           className="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {isSubmitting ? 'Sending...' : 'Send Message'}
+          {isSubmitting ? 'Sending...' : 'Send message'}
         </button>
+        <p className="text-slate text-sm text-center mt-4 leading-relaxed">
+          I usually reply within a few hours during UK business hours (Mon–Fri, 9am–6pm). I always respond within one business day.
+        </p>
       </div>
 
       {/* Status Messages */}
       {submitStatus === 'success' && (
-        <div className="bg-success/10 border border-success text-success px-4 py-3 rounded-lg">
-          <p className="font-semibold">Thanks! We&apos;ll get back to you within 24 hours.</p>
+        <div className="bg-lime/10 border-2 border-lime text-navy px-6 py-5 rounded-lg">
+          <p className="font-bold text-lg mb-2">Thanks! Your message has been sent.</p>
+          <p className="text-slate leading-relaxed">
+            I&apos;ll review your project and get back to you within one business day (often much sooner). Please check your inbox (and your spam/junk folder) for my reply.
+          </p>
         </div>
       )}
 
       {submitStatus === 'error' && (
-        <div className="bg-red-50 border border-red-500 text-red-600 px-4 py-3 rounded-lg">
-          <p className="font-semibold">
-            Oops! Something went wrong. Please try again or email us directly at{' '}
-            <a href="mailto:hello@lawsonscreative.co.uk" className="underline">
+        <div className="bg-red-50 border-2 border-red-500 text-red-600 px-6 py-5 rounded-lg">
+          <p className="font-bold text-lg mb-2">Oops! Something went wrong.</p>
+          <p className="leading-relaxed">
+            Please try again or email me directly at{' '}
+            <a href="mailto:hello@lawsonscreative.co.uk" className="underline font-semibold">
               hello@lawsonscreative.co.uk
             </a>
           </p>
