@@ -408,7 +408,7 @@ export default function ServicesPage() {
                 {/* Pricing */}
                 <div className="mb-6 pb-6 border-b border-gray-200">
                   <div className="flex items-baseline gap-2">
-                    <span className="text-5xl font-bold bg-gradient-to-r from-navy to-navy/60 bg-clip-text text-transparent">£40</span>
+                    <span className="text-5xl font-bold bg-gradient-to-r from-navy to-navy/60 bg-clip-text text-transparent">£75</span>
                   </div>
                   <div className="text-sm font-semibold text-slate uppercase tracking-wide mt-1">per hour</div>
                 </div>
@@ -584,11 +584,32 @@ export default function ServicesPage() {
               </p>
               <ul className="text-slate space-y-1 ml-4">
                 <li>• Domain name (£10-15/year)</li>
-                <li>• Hosting (often free, or £5-20/month)</li>
                 <li>• Stock photography (if needed, £10-50)</li>
                 <li>• Professional copywriting (if needed, custom quote)</li>
-                <li>• Ongoing maintenance (optional, see add-ons)</li>
               </ul>
+              <div className="mt-4 pt-4 border-t border-gray-200">
+                <p className="text-slate font-semibold mb-2">Hosting & ongoing maintenance</p>
+                <p className="text-slate text-sm leading-relaxed mb-2">
+                  Hosting infrastructure costs £5-20/month (or free for simple static sites on Vercel/Netlify).
+                </p>
+                <p className="text-slate text-sm leading-relaxed mb-2">
+                  However, most clients opt for a maintenance package (£50-150/month) which includes:
+                </p>
+                <ul className="text-slate text-sm space-y-1 ml-4">
+                  <li>• Hosting + fast CDN</li>
+                  <li>• Security updates and patches</li>
+                  <li>• Automated backups</li>
+                  <li>• Content updates (included hours vary by tier)</li>
+                  <li>• Priority support</li>
+                </ul>
+                <p className="text-slate text-sm leading-relaxed mt-2">
+                  First year hosting is included in your build cost. After that, you can:
+                </p>
+                <ul className="text-slate text-sm space-y-1 ml-4">
+                  <li>• Self-manage hosting (£5-20/month) if you have technical capabilities</li>
+                  <li>• Use our maintenance packages (recommended for most clients)</li>
+                </ul>
+              </div>
             </div>
 
             <div className="bg-white rounded-xl p-6 shadow-md">
