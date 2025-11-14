@@ -256,7 +256,7 @@ export default function PortfolioPage() {
           </div>
           <a
             href="/contact"
-            className="btn-secondary inline-block"
+            className="btn-primary inline-block"
           >
             Book a free consultation
           </a>
@@ -286,7 +286,7 @@ export default function PortfolioPage() {
             </Link>
             <Link
               href="/contact"
-              className="btn-tertiary inline-block"
+              className="btn-secondary inline-block"
             >
               Get a quote by email
             </Link>

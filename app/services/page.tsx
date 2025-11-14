@@ -649,7 +649,7 @@ export default function ServicesPage() {
             <p className="text-xl text-slate mb-6 leading-relaxed">
               Book a free consultation to discuss your project. No pressure, no obligation — just an honest conversation about what you need and which package fits best.
             </p>
-            <Link href="/contact" className="btn-secondary inline-block">
+            <Link href="/contact" className="btn-primary inline-block">
               Book a free consultation
             </Link>
           </div>

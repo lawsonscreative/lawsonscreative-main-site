@@ -223,36 +223,6 @@ h4 {
 @layer components {
   /* ===== BUTTON SYSTEM ===== */
   .btn-primary {
-    background-color: var(--color-accent-navy);
-    color: white;
-    font-weight: var(--font-semibold);
-    padding: var(--space-3) var(--space-8);
-    border-radius: var(--border-radius-sm);
-    font-size: var(--text-base);
-    transition: all var(--transition-base);
-    border: none;
-    cursor: pointer;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-  }
-
-  .btn-primary:hover {
-    background-color: var(--color-accent-navy-dark);
-    transform: scale(1.02);
-    box-shadow: var(--shadow-lg);
-  }
-
-  .btn-primary:active {
-    transform: scale(0.98);
-  }
-
-  .btn-primary:focus-visible {
-    outline: 3px solid var(--color-primary);
-    outline-offset: 2px;
-  }
-
-  .btn-secondary {
     background-color: var(--color-primary);
     color: var(--color-accent-navy);
     font-weight: var(--font-semibold);
@@ -267,10 +237,41 @@ h4 {
     text-decoration: none;
   }
 
-  .btn-secondary:hover {
+  .btn-primary:hover {
     background-color: var(--color-primary-hover);
     transform: scale(1.02);
     box-shadow: var(--shadow-xl);
+  }
+
+  .btn-primary:active {
+    transform: scale(0.98);
+  }
+
+  .btn-primary:focus-visible {
+    outline: 3px solid var(--color-accent-navy);
+    outline-offset: 2px;
+  }
+
+  .btn-secondary {
+    background-color: transparent;
+    color: var(--color-accent-navy);
+    font-weight: var(--font-semibold);
+    padding: var(--space-3) var(--space-8);
+    border-radius: var(--border-radius-sm);
+    font-size: var(--text-base);
+    transition: all var(--transition-base);
+    border: 2px solid var(--color-accent-navy);
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--color-accent-navy);
+    color: white;
+    transform: scale(1.02);
+    box-shadow: var(--shadow-lg);
   }
 
   .btn-secondary:active {
@@ -278,7 +279,7 @@ h4 {
   }
 
   .btn-secondary:focus-visible {
-    outline: 3px solid var(--color-accent-navy);
+    outline: 3px solid var(--color-primary);
     outline-offset: 2px;
   }
 

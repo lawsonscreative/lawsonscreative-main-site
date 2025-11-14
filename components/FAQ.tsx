@@ -144,7 +144,7 @@ export default function FAQ() {
             </p>
             <Link
               href="/contact"
-              className="btn-secondary inline-block"
+              className="btn-primary inline-block"
             >
               Book a free consultation
             </Link>
