@@ -237,21 +237,6 @@ export default function PortfolioPage() {
           </div>
         </div>
       </section>
-
-      {/* More projects coming soon */}
-      <section className="section-padding bg-lightgrey">
-        <div className="container-custom text-center">
-          <h2 className="font-heading font-bold text-3xl md:text-4xl text-navy mb-4">
-            More projects coming soon
-          </h2>
-          <p className="text-xl text-slate mb-8 max-w-3xl mx-auto">
-            We&apos;re currently building stunning, effective websites across industries. From fitness coaches to wedding photographers, car detailers to accountants. Check back soon to see more transformations.
-          </p>
-          <Link href="/contact" className="btn-primary inline-block">
-            Book a free consultation
-          </Link>
-        </div>
-      </section>
     </div>
   );
 }
