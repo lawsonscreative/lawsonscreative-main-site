@@ -205,7 +205,7 @@ export default function PrivacyPage() {
                   <strong>Right to Withdraw Consent:</strong> If we process your data based on consent, you can withdraw that consent at any time
                 </li>
                 <li>
-                  <strong>Right to Lodge a Complaint:</strong> You can complain to the Information Commissioner&apos;s Office (ICO) if you believe we have mishandled your personal data
+                  <strong>Right to Lodge a Complaint:</strong> You can complain to the Information Commissioner's Office (ICO) if you believe we have mishandled your personal data
                 </li>
               </ul>
 

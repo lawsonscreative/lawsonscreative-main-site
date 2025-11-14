@@ -43,13 +43,13 @@ export default function WhyChooseUs() {
     {
       title: 'Built to Last',
       description:
-        "We use modern, maintainable technology that won&apos;t be outdated in 6 months. Your site is fast, secure, and straightforward to keep current with simple update requests or ongoing maintenance.",
+        "We use modern, maintainable technology that won't be outdated in 6 months. Your site is fast, secure, and straightforward to keep current with simple update requests or ongoing maintenance.",
       icon: Wrench,
     },
     {
       title: 'Ongoing Support Available',
       description:
-        "Your website isn&apos;t 'done' at launch. We offer maintenance packages and support so you can focus on running your business.",
+        "Your website isn't 'done' at launch. We offer maintenance packages and support so you can focus on running your business.",
       icon: HandshakeIcon,
     },
   ];

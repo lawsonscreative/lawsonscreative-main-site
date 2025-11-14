@@ -89,7 +89,7 @@ export default function Packages() {
           <div className="bg-white rounded-xl p-6 max-w-4xl mx-auto mb-12 shadow-md">
             <h3 className="font-heading font-bold text-lg text-navy mb-2">Why the price ranges?</h3>
             <p className="text-slate text-base leading-relaxed">
-              Each package has a price range because every business is slightly different. We&apos;ll give you a fixed quote after a short discovery call — no surprises.
+              Each package has a price range because every business is slightly different. We'll give you a fixed quote after a short discovery call — no surprises.
             </p>
           </div>
         </motion.div>
@@ -141,7 +141,7 @@ export default function Packages() {
               </p>
 
               <p className="text-xs text-slate/70 mb-6 italic">
-                *Prices exclude VAT. Final cost depends on number of pages and any custom features — we&apos;ll confirm everything upfront.
+                *Prices exclude VAT. Final cost depends on number of pages and any custom features — we'll confirm everything upfront.
               </p>
 
               <Link

@@ -21,7 +21,7 @@ export default function Hero() {
               Modern, fast-loading websites for UK service businesses — designed to build trust and generate enquiries. Typically delivered in 1–2 weeks, without the agency price tag.
             </h2>
             <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-              You&apos;re great at what you do. Your website should show it. I build strategy-led sites that turn visitors into bookings, not just &quot;pretty&quot; homepages.
+              You're great at what you do. Your website should show it. I build strategy-led sites that turn visitors into bookings, not just &quot;pretty&quot; homepages.
             </p>
 
             {/* CTAs */}

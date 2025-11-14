@@ -121,10 +121,10 @@ export default function ServicesPage() {
                 <strong className="text-navy">Why the price ranges?</strong> Every business is slightly different. A 3-page site with simple layouts costs less than a 3-page site with custom animations and integrations.
               </p>
               <p>
-                <strong className="text-navy">How it works:</strong> During our free discovery call, we&apos;ll discuss your specific needs and give you a fixed quote before we start. No surprises, no scope creep.
+                <strong className="text-navy">How it works:</strong> During our free discovery call, we'll discuss your specific needs and give you a fixed quote before we start. No surprises, no scope creep.
               </p>
               <p className="text-sm italic pt-2 border-t border-gray-200">
-                <strong className="text-navy">VAT:</strong> All prices shown exclude VAT (20%). If you&apos;re VAT registered, you can reclaim this. Final invoice will include VAT where applicable.
+                <strong className="text-navy">VAT:</strong> All prices shown exclude VAT (20%). If you're VAT registered, you can reclaim this. Final invoice will include VAT where applicable.
               </p>
             </div>
           </div>
@@ -229,7 +229,7 @@ export default function ServicesPage() {
 
                 <div className="mb-8">
                   <h3 className="font-heading font-bold text-2xl text-navy mb-4">
-                    What&apos;s Included
+                    What's Included
                   </h3>
                   <ul className="space-y-3">
                     {pkg.included.map((item, idx) => (
@@ -580,7 +580,7 @@ export default function ServicesPage() {
                 What affects the final cost?
               </h3>
               <p className="text-slate leading-relaxed">
-                The final price depends on the number of pages, complexity of features, amount of custom design work, and how much content you provide. We&apos;ll give you a detailed quote after our discovery call so there are no surprises.
+                The final price depends on the number of pages, complexity of features, amount of custom design work, and how much content you provide. We'll give you a detailed quote after our discovery call so there are no surprises.
               </p>
             </div>
 
@@ -589,13 +589,13 @@ export default function ServicesPage() {
                 Why do prices vary within packages?
               </h3>
               <p className="text-slate leading-relaxed">
-                Every business is unique. A 5-page site with simple layouts costs less than a 5-page site with custom features and extensive content. We price based on actual work required, not arbitrary numbers. You&apos;ll always know the exact price before we start.
+                Every business is unique. A 5-page site with simple layouts costs less than a 5-page site with custom features and extensive content. We price based on actual work required, not arbitrary numbers. You'll always know the exact price before we start.
               </p>
             </div>
 
             <div className="bg-white rounded-xl p-6 shadow-md">
               <h3 className="font-semibold text-xl text-navy mb-3">
-                What&apos;s NOT included in any package?
+                What's NOT included in any package?
               </h3>
               <p className="text-slate leading-relaxed mb-3">
                 Our packages cover design and development. Separate costs include:
@@ -635,7 +635,7 @@ export default function ServicesPage() {
                 Can I upgrade later?
               </h3>
               <p className="text-slate leading-relaxed">
-                Absolutely. Start with a Starter package and upgrade to Professional or Premium as your business grows. We&apos;ll credit what you've already paid toward the upgrade cost.
+                Absolutely. Start with a Starter package and upgrade to Professional or Premium as your business grows. We'll credit what you've already paid toward the upgrade cost.
               </p>
             </div>
 
@@ -644,7 +644,7 @@ export default function ServicesPage() {
                 Do you offer discounts?
               </h3>
               <p className="text-slate leading-relaxed">
-                We occasionally offer discounts for charities, multiple projects, or referrals. Our prices are already fair and transparent. We don&apos;t inflate them to offer fake discounts later.
+                We occasionally offer discounts for charities, multiple projects, or referrals. Our prices are already fair and transparent. We don't inflate them to offer fake discounts later.
               </p>
             </div>
           </div>

@@ -149,7 +149,7 @@ export default function PortfolioShowcase() {
           className="text-center mt-16"
         >
           <p className="text-slate text-lg mb-4 leading-relaxed">
-            We&apos;re currently partnering with pet care, fitness, trades, creative and professional service businesses — with new projects launching every month. You won&apos;t be project number 312 lost in a big agency; you&apos;ll get direct attention from the person actually building your site.
+            We're currently partnering with pet care, fitness, trades, creative and professional service businesses — with new projects launching every month. You won't be project number 312 lost in a big agency; you'll get direct attention from the person actually building your site.
           </p>
           <Link href="/portfolio" className="btn-primary inline-block">
             View full portfolio

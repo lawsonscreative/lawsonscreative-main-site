@@ -296,7 +296,7 @@ export default function ContactForm() {
         <div className="bg-lime/10 border-2 border-lime text-navy px-6 py-5 rounded-lg" role="status" aria-live="polite">
           <p className="font-bold text-lg mb-2">Thanks! Your message has been sent.</p>
           <p className="text-slate leading-relaxed">
-            We&apos;ll respond within 24 hours (usually much faster). Please check your inbox (and your spam/junk folder) for our reply.
+            We'll respond within 24 hours (usually much faster). Please check your inbox (and your spam/junk folder) for our reply.
           </p>
         </div>
       )}

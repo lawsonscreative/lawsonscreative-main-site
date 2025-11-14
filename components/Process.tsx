@@ -23,7 +23,7 @@ export default function Process() {
       title: 'Design',
       duration: 'Day 3-5',
       description:
-        "We design a modern, mobile-friendly website that reflects your brand and speaks to your customers. You&apos;ll see mockups and provide feedback before we build anything.",
+        "We design a modern, mobile-friendly website that reflects your brand and speaks to your customers. You'll see mockups and provide feedback before we build anything.",
       deliverable: 'Visual designs for approval',
     },
     {
@@ -106,7 +106,7 @@ export default function Process() {
           className="text-center mt-12"
         >
           <p className="text-slate text-sm">
-            Timeline may vary based on package and complexity. We&apos;ll provide a detailed schedule during discovery.
+            Timeline may vary based on package and complexity. We'll provide a detailed schedule during discovery.
           </p>
         </motion.div>
       </div>

@@ -271,7 +271,7 @@ export default function PortfolioPage() {
           </h2>
           <div className="text-lg text-slate leading-relaxed space-y-4 mb-8">
             <p>
-              If your current website feels dated or isn&apos;t generating enquiries, let&apos;s fix that.
+              If your current website feels dated or isn't generating enquiries, let's fix that.
             </p>
             <p>
               Every project I take on focuses on the same goal: websites that work as hard as you do to win customers and build trust.

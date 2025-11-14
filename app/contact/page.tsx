@@ -19,7 +19,7 @@ export default function ContactPage() {
             Let's talk about your project
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
-            Book a free 30-minute consultation or send a message. We&apos;ll respond within 24 hours (usually much faster).
+            Book a free 30-minute consultation or send a message. We'll respond within 24 hours (usually much faster).
           </p>
         </div>
       </section>
@@ -48,7 +48,7 @@ export default function ContactPage() {
                 Book a call (recommended)
               </h2>
               <p className="text-slate mb-6 leading-relaxed">
-                The best way to discuss your project is a quick call. We&apos;ll talk about your business, goals, and how a website can help. No pressure, no obligation.
+                The best way to discuss your project is a quick call. We'll talk about your business, goals, and how a website can help. No pressure, no obligation.
               </p>
 
               <CalendlyButton className="btn-primary w-full text-center">

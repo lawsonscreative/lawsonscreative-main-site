@@ -34,7 +34,7 @@ export default function ProcessPage() {
       title: 'Design',
       duration: 'Day 3-5',
       description:
-        "We design a modern, mobile-friendly website that reflects your brand and speaks to your customers. You&apos;ll see mockups and provide feedback before we build anything.",
+        "We design a modern, mobile-friendly website that reflects your brand and speaks to your customers. You'll see mockups and provide feedback before we build anything.",
       deliverable: 'Visual designs for approval',
       whatWeNeed: [
         'Approval of strategic brief',
@@ -163,7 +163,7 @@ export default function ProcessPage() {
 
                 <div className="bg-white rounded-xl p-6 shadow-md">
                   <h3 className="font-heading font-bold text-xl text-navy mb-4">
-                    What you&apos;ll get
+                    What you'll get
                   </h3>
                   <ul className="space-y-2">
                     {step.whatYouGet.map((item, idx) => (
@@ -298,7 +298,7 @@ export default function ProcessPage() {
                   <div className="text-2xl flex-shrink-0">📝</div>
                   <div>
                     <h4 className="font-semibold text-navy mb-1">Content within 3 days of request</h4>
-                    <p className="text-slate text-sm">Text, photos, testimonials — I&apos;ll give you a simple template showing exactly what I need.</p>
+                    <p className="text-slate text-sm">Text, photos, testimonials — I'll give you a simple template showing exactly what I need.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -312,12 +312,12 @@ export default function ProcessPage() {
                   <div className="text-2xl flex-shrink-0">✅</div>
                   <div>
                     <h4 className="font-semibold text-navy mb-1">Clear approvals</h4>
-                    <p className="text-slate text-sm">A simple &quot;approved&quot; or &quot;let&apos;s change X&quot; keeps us moving forward.</p>
+                    <p className="text-slate text-sm">A simple &quot;approved&quot; or &quot;let's change X&quot; keeps us moving forward.</p>
                   </div>
                 </div>
               </div>
               <p className="text-slate text-sm leading-relaxed mt-4 italic">
-                Don&apos;t worry — I&apos;ll remind you when I need something, and I&apos;ll make it as easy as possible. Most clients find the process surprisingly smooth.
+                Don't worry — I'll remind you when I need something, and I'll make it as easy as possible. Most clients find the process surprisingly smooth.
               </p>
             </div>
 
@@ -335,7 +335,7 @@ export default function ProcessPage() {
                 <li>You own all the work delivered so far (designs, content, code)</li>
               </ul>
               <p className="text-slate text-sm leading-relaxed mt-3">
-                I&apos;d rather you be happy than locked into something that&apos;s not working. Cancellations are rare, but the option is there if you need it.
+                I'd rather you be happy than locked into something that's not working. Cancellations are rare, but the option is there if you need it.
               </p>
             </div>
           </div>
@@ -359,13 +359,13 @@ export default function ProcessPage() {
             <div>
               <h3 className="font-heading font-bold text-xl mb-3">Regular Updates</h3>
               <p className="text-gray-200">
-                You&apos;ll see progress throughout the project. No disappearing for weeks and surprising you with something you didn't expect.
+                You'll see progress throughout the project. No disappearing for weeks and surprising you with something you didn't expect.
               </p>
             </div>
             <div>
               <h3 className="font-heading font-bold text-xl mb-3">Proactive Problem-Solving</h3>
               <p className="text-gray-200">
-                If we spot an issue or opportunity, we'll tell you. We&apos;re here to make your site work, not just tick boxes.
+                If we spot an issue or opportunity, we'll tell you. We're here to make your site work, not just tick boxes.
               </p>
             </div>
             <div>
@@ -378,7 +378,7 @@ export default function ProcessPage() {
 
           <div className="mt-12 text-center">
             <p className="text-gray-200 italic mb-4">
-              Timeline may vary based on package and complexity. We&apos;ll provide a detailed schedule during discovery.
+              Timeline may vary based on package and complexity. We'll provide a detailed schedule during discovery.
             </p>
           </div>
         </div>
@@ -391,7 +391,7 @@ export default function ProcessPage() {
             Ready to get started?
           </h2>
           <p className="text-xl text-slate mb-8 max-w-3xl mx-auto">
-            <Link href="/services" className="text-lime hover:underline font-semibold">Choose a package that fits your business and budget</Link>, then book your free consultation to discuss your project. We&apos;ll walk you through the process and answer any questions.
+            <Link href="/services" className="text-lime hover:underline font-semibold">Choose a package that fits your business and budget</Link>, then book your free consultation to discuss your project. We'll walk you through the process and answer any questions.
           </p>
           <Link href="/contact" className="btn-primary inline-block">
             Book a free consultation
