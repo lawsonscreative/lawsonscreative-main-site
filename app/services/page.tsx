@@ -249,11 +249,10 @@ export default function ServicesPage() {
                   <h3 className="font-heading font-bold text-xl text-navy mb-4">
                     Ideal For
                   </h3>
-                  <ul className="space-y-2">
+                  <ul className="space-y-2 list-disc list-inside marker:text-lime">
                     {pkg.ideal.map((item, idx) => (
-                      <li key={idx} className="flex items-start">
-                        <span className="text-lime mr-2">•</span>
-                        <span className="text-slate text-sm">{item}</span>
+                      <li key={idx} className="text-slate text-sm pl-2">
+                        {item}
                       </li>
                     ))}
                   </ul>
@@ -263,11 +262,10 @@ export default function ServicesPage() {
                   <h3 className="font-heading font-bold text-xl text-navy mb-4">
                     Not Included
                   </h3>
-                  <ul className="space-y-2">
+                  <ul className="space-y-2 list-disc list-inside marker:text-gray-400">
                     {pkg.notIncluded.map((item, idx) => (
-                      <li key={idx} className="flex items-start">
-                        <span className="text-gray-400 mr-2">×</span>
-                        <span className="text-slate text-sm">{item}</span>
+                      <li key={idx} className="text-slate text-sm pl-2">
+                        {item}
                       </li>
                     ))}
                   </ul>
@@ -588,10 +586,10 @@ export default function ServicesPage() {
               <p className="text-slate leading-relaxed mb-3">
                 Our packages cover design and development. Separate costs include:
               </p>
-              <ul className="text-slate space-y-1 ml-4">
-                <li>Domain name (£10-15/year)</li>
-                <li>Stock photography (if needed, £10-50)</li>
-                <li>Professional copywriting (if needed, custom quote)</li>
+              <ul className="text-slate space-y-1 ml-4 list-disc list-inside marker:text-navy/40">
+                <li className="pl-2">Domain name (£10-15/year)</li>
+                <li className="pl-2">Stock photography (if needed, £10-50)</li>
+                <li className="pl-2">Professional copywriting (if needed, custom quote)</li>
               </ul>
               <div className="mt-4 pt-4 border-t border-gray-200">
                 <p className="text-slate font-semibold mb-2">Hosting & ongoing maintenance</p>
@@ -601,19 +599,19 @@ export default function ServicesPage() {
                 <p className="text-slate text-sm leading-relaxed mb-2">
                   However, most clients opt for a maintenance package (£50-150/month) which includes:
                 </p>
-                <ul className="text-slate text-sm space-y-1 ml-4">
-                  <li>Hosting + fast CDN</li>
-                  <li>Security updates and patches</li>
-                  <li>Automated backups</li>
-                  <li>Content updates (included hours vary by tier)</li>
-                  <li>Priority support</li>
+                <ul className="text-slate text-sm space-y-1 ml-4 list-disc list-inside marker:text-navy/40">
+                  <li className="pl-2">Hosting + fast CDN</li>
+                  <li className="pl-2">Security updates and patches</li>
+                  <li className="pl-2">Automated backups</li>
+                  <li className="pl-2">Content updates (included hours vary by tier)</li>
+                  <li className="pl-2">Priority support</li>
                 </ul>
                 <p className="text-slate text-sm leading-relaxed mt-2">
                   First year hosting is included in your build cost. After that, you can:
                 </p>
-                <ul className="text-slate text-sm space-y-1 ml-4">
-                  <li>Self-manage hosting (£5-20/month) if you have technical capabilities</li>
-                  <li>Use our maintenance packages (recommended for most clients)</li>
+                <ul className="text-slate text-sm space-y-1 ml-4 list-disc list-inside marker:text-navy/40">
+                  <li className="pl-2">Self-manage hosting (£5-20/month) if you have technical capabilities</li>
+                  <li className="pl-2">Use our maintenance packages (recommended for most clients)</li>
                 </ul>
               </div>
             </div>
