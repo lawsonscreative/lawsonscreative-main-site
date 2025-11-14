@@ -35,7 +35,7 @@ export default function FinalCTA() {
               onClick={openCalendly}
               className="bg-lime text-navy font-semibold px-8 py-4 rounded-lg hover:scale-105 hover:shadow-xl active:scale-95 transition-all duration-200 text-base"
             >
-              Book your free consultation
+              Book a free consultation
             </button>
             <Link
               href="/contact"

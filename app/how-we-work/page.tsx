@@ -101,7 +101,7 @@ export default function ProcessPage() {
       <section className="section-padding bg-gradient-to-br from-navy via-navy to-blue-900 text-white">
         <div className="container-custom text-center">
           <h1 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6">
-            From Idea to Live Website in 1-2 Weeks
+            From Idea to Live Website in 1–2 Weeks
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
             Here's exactly how we'll work together, what to expect at each stage, and how we deliver quality websites fast.

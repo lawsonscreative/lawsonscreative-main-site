@@ -198,6 +198,62 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Why Clients Choose */}
+      <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32">
+        <div className="container-custom max-w-4xl">
+          <h2 className="font-heading font-bold text-4xl text-navy mb-12 text-center">
+            Why clients choose Lawsons Creative
+          </h2>
+
+          <div className="space-y-8">
+            <div>
+              <h3 className="font-heading font-bold text-2xl text-navy mb-3">
+                Strategy first, design second
+              </h3>
+              <p className="text-slate leading-relaxed">
+                Beautiful websites that don&apos;t generate enquiries are expensive art projects. I focus on what actually drives bookings: clear messaging, trust signals, and easy next steps.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-heading font-bold text-2xl text-navy mb-3">
+                Speed without sacrificing quality
+              </h3>
+              <p className="text-slate leading-relaxed">
+                I use modern tools and efficient processes to deliver in 1–2 weeks. Most agencies take 6–12 weeks for the same result.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-heading font-bold text-2xl text-navy mb-3">
+                You work directly with me
+              </h3>
+              <p className="text-slate leading-relaxed">
+                No account managers, no junior designers, no outsourcing. I design it, I build it, I support it.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-heading font-bold text-2xl text-navy mb-3">
+                Transparent pricing
+              </h3>
+              <p className="text-slate leading-relaxed">
+                You know the price before we start. No scope creep, no surprise invoices, no &quot;oh by the way, that&apos;ll be extra.&quot;
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-heading font-bold text-2xl text-navy mb-3">
+                Built for the long term
+              </h3>
+              <p className="text-slate leading-relaxed">
+                I use modern, maintainable technology. Your site won&apos;t be outdated in 6 months, and you won&apos;t be locked into expensive ongoing contracts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32 bg-navy text-white">
         <div className="container-custom text-center">

@@ -178,8 +178,8 @@ export default function PortfolioPage() {
                       <div className="text-slate">Increase in mobile bookings</div>
                     </div>
                     <div>
-                      <div className="text-3xl font-bold text-lime mb-1">2x better</div>
-                      <div className="text-slate">Professional, trustworthy appearance</div>
+                      <div className="text-3xl font-bold text-lime mb-1">Professional, trustworthy appearance</div>
+                      <div className="text-slate">Customers now regularly comment on how professional and trustworthy the website feels</div>
                     </div>
                   </div>
                 </div>
@@ -257,6 +257,37 @@ export default function PortfolioPage() {
           >
             Book a free consultation
           </a>
+        </div>
+      </section>
+
+      {/* Closing CTA */}
+      <section className="section-padding bg-white">
+        <div className="container-custom max-w-4xl text-center">
+          <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-6">
+            Want results like this for your business?
+          </h2>
+          <div className="text-lg text-slate leading-relaxed space-y-4 mb-8">
+            <p>
+              If your current website feels dated or isn&apos;t generating enquiries, let&apos;s fix that.
+            </p>
+            <p>
+              Every project I take on focuses on the same goal: websites that work as hard as you do to win customers and build trust.
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/contact"
+              className="btn-primary inline-block"
+            >
+              Book a free consultation
+            </Link>
+            <Link
+              href="/contact"
+              className="btn-tertiary inline-block"
+            >
+              Get a quote by email
+            </Link>
+          </div>
         </div>
       </section>
     </div>

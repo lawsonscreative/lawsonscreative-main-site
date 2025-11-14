@@ -39,8 +39,8 @@ export default function Process() {
       title: 'Launch',
       duration: 'Day 11-14',
       description:
-        "After your final approval, we launch your site, set up analytics, and provide training on managing content. You're live and ready to grow.",
-      deliverable: 'Live website + training session',
+        "After your final approval, we launch your site, set up analytics, and walk you through how everything works. You'll know exactly how to track performance and request future updates.",
+      deliverable: 'Live website + walkthrough',
     },
   ];
 
