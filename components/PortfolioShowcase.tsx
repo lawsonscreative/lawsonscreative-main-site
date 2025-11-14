@@ -12,7 +12,7 @@ export default function PortfolioShowcase() {
   });
 
   return (
-    <section className="pt-12 md:pt-16 lg:pt-20 pb-16 md:pb-20 lg:pb-24 bg-white" ref={ref}>
+    <section className="section-padding bg-white" ref={ref}>
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -57,17 +57,17 @@ export default function PortfolioShowcase() {
                 <div>
                   <h4 className="font-semibold text-lg text-navy mb-4">The results</h4>
                   <div className="grid grid-cols-3 gap-4">
-                    <div className="bg-white px-4 py-4 rounded-lg shadow-md text-center">
-                      <div className="text-3xl md:text-4xl font-bold text-lime mb-1">35%</div>
-                      <div className="text-xs md:text-sm text-slate">More enquiries</div>
+                    <div className="bg-white px-4 py-5 rounded-lg shadow-md text-center border border-gray-100">
+                      <div className="metric-value">35%</div>
+                      <div className="metric-label">More enquiries</div>
                     </div>
-                    <div className="bg-white px-4 py-4 rounded-lg shadow-md text-center">
-                      <div className="text-3xl md:text-4xl font-bold text-lime mb-1">80%</div>
-                      <div className="text-xs md:text-sm text-slate">Mobile bookings</div>
+                    <div className="bg-white px-4 py-5 rounded-lg shadow-md text-center border border-gray-100">
+                      <div className="metric-value">80%</div>
+                      <div className="metric-label">Mobile bookings</div>
                     </div>
-                    <div className="bg-white px-4 py-4 rounded-lg shadow-md text-center">
-                      <div className="text-3xl md:text-4xl font-bold text-lime mb-1">2×</div>
-                      <div className="text-xs md:text-sm text-slate">Professional trust</div>
+                    <div className="bg-white px-4 py-5 rounded-lg shadow-md text-center border border-gray-100">
+                      <div className="metric-value">2×</div>
+                      <div className="metric-label">Professional trust</div>
                     </div>
                   </div>
                 </div>

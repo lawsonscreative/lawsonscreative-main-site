@@ -28,7 +28,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/contact"
-                className="btn-primary text-center"
+                className="btn-primary text-center text-lg px-10 py-4 shadow-xl"
                 onClick={() => {
                   if (typeof window !== 'undefined' && window.plausible) {
                     window.plausible('CTA Click', { props: { location: 'Hero', button: 'Book Consultation' } });
@@ -39,7 +39,7 @@ export default function Hero() {
               </Link>
               <Link
                 href="/portfolio"
-                className="btn-secondary text-center"
+                className="btn-tertiary text-center"
               >
                 View our work
               </Link>

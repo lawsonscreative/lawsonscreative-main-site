@@ -45,7 +45,7 @@ export default function Process() {
   ];
 
   return (
-    <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32 bg-white" ref={ref}>
+    <section className="section-padding bg-white" ref={ref}>
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -55,6 +55,14 @@
   --text-5xl: 3rem;         /* 48px - H1 desktop */
   --text-6xl: 3.75rem;      /* 60px - Hero H1 */
 
+  /* Semantic typography scale (from audit) */
+  --text-hero: 2.5rem;      /* 40px mobile - Hero headings */
+  --text-section: 1.875rem; /* 30px - Section headings (H2) */
+  --text-subsection: 1.5rem;/* 24px - Subsection headings (H3) */
+  --text-body: 1rem;        /* 16px - Body copy */
+  --text-small: 0.875rem;   /* 14px - Meta, timelines, helper text */
+  --text-metric: 2.25rem;   /* 36px - Metrics (35%, 80%, 2×) */
+
   /* Line heights */
   --leading-tight: 1.25;
   --leading-snug: 1.375;
@@ -93,6 +101,17 @@
   --border-radius-md: 0.75rem;  /* 12px - cards */
   --border-radius-lg: 1rem;     /* 16px - large cards */
   --border-radius-xl: 1.5rem;   /* 24px - hero sections */
+
+  /* Card System Specs */
+  --card-radius: 0.75rem;       /* 12px - consistent card border radius */
+  --card-padding: 2rem;         /* 32px - consistent card internal padding */
+  --card-gap: 1.5rem;           /* 24px - space between card sections */
+  --card-border-width: 1px;     /* Standard card border */
+  --card-border-color: var(--color-border-light);
+  --card-shadow: var(--shadow-md);
+  --card-shadow-hover: var(--shadow-lg);
+  --card-highlighted-border: 2px solid var(--color-primary);
+  --card-highlighted-shadow: var(--shadow-xl);
 
   /* Shadows */
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -379,22 +398,76 @@ h4 {
   /* ===== CARD SYSTEM ===== */
   .card {
     background-color: var(--color-background-primary);
-    border-radius: var(--border-radius-md);
-    padding: var(--space-8);
-    box-shadow: var(--shadow-md);
+    border-radius: var(--card-radius);
+    padding: var(--card-padding);
+    box-shadow: var(--card-shadow);
     transition: box-shadow var(--transition-base);
+    border: var(--card-border-width) solid var(--card-border-color);
   }
 
   .card:hover {
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--card-shadow-hover);
   }
 
   .card-highlighted {
     background-color: var(--color-background-primary);
-    border-radius: var(--border-radius-md);
-    padding: var(--space-8);
-    box-shadow: var(--shadow-lg);
-    border: 2px solid var(--color-primary);
+    border-radius: var(--card-radius);
+    padding: var(--card-padding);
+    box-shadow: var(--card-highlighted-shadow);
+    border: var(--card-highlighted-border);
     position: relative;
+    transform: scale(1.02);
+  }
+
+  .card-highlighted:hover {
+    box-shadow: var(--card-highlighted-shadow);
+  }
+
+  /* Package Card Variants */
+  .card-package {
+    background-color: var(--color-background-primary);
+    border-radius: var(--card-radius);
+    padding: var(--card-padding);
+    box-shadow: var(--card-shadow);
+    border: var(--card-border-width) solid var(--card-border-color);
+    transition: all var(--transition-base);
+    display: flex;
+    flex-direction: column;
+    gap: var(--card-gap);
+  }
+
+  .card-package:hover {
+    box-shadow: var(--card-shadow-hover);
+  }
+
+  .card-package-highlighted {
+    background-color: var(--color-background-primary);
+    border-radius: var(--card-radius);
+    padding: var(--card-padding);
+    box-shadow: var(--card-highlighted-shadow);
+    border: 3px solid var(--color-primary);
+    position: relative;
+    transform: scale(1.05);
+    display: flex;
+    flex-direction: column;
+    gap: var(--card-gap);
+  }
+
+  .card-package-highlighted:hover {
+    box-shadow: var(--card-highlighted-shadow);
+  }
+
+  /* Metric styling */
+  .metric-value {
+    font-size: var(--text-metric);
+    font-weight: var(--font-extrabold);
+    line-height: var(--leading-tight);
+    color: var(--color-primary);
+  }
+
+  .metric-label {
+    font-size: var(--text-small);
+    color: var(--color-text-secondary);
+    font-weight: var(--font-medium);
   }
 }
