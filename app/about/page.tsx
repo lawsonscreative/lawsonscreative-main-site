@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'About Lawsons Creative – Web Design for UK Small Businesses',
@@ -13,7 +14,7 @@ export default function AboutPage() {
       <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32 bg-gradient-to-br from-navy via-navy to-blue-900 text-white">
         <div className="container-custom text-center">
           <h1 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6">
-            Built by a Small Business Owner, For Small Business Owners
+            Built by a small business owner, for small business owners
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
             Hi, I&apos;m Andrew. I started Lawsons Creative because too many great small businesses were stuck with expensive agencies or cheap, ineffective websites. There had to be a better way.
@@ -21,8 +22,41 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Photo + Micro Bio */}
+      <section className="pt-16 md:pt-20 lg:pt-24 pb-12 md:pb-16">
+        <div className="container-custom max-w-5xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center">
+            {/* Photo */}
+            <div className="flex justify-center md:justify-start">
+              <div className="w-48 h-48 md:w-56 md:h-56 rounded-full bg-gradient-to-br from-navy to-blue-900 flex items-center justify-center text-white shadow-xl ring-4 ring-lime/20">
+                {/* Placeholder - replace with actual photo when available */}
+                <div className="text-center">
+                  <div className="text-6xl font-bold mb-2">AL</div>
+                  <div className="text-sm text-gray-300">Andrew Lawson</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Micro Bio */}
+            <div className="md:col-span-2">
+              <h2 className="font-heading font-bold text-3xl md:text-4xl text-navy mb-4">
+                About Andrew
+              </h2>
+              <div className="text-lg text-slate leading-relaxed space-y-3">
+                <p>
+                  I'm Andrew, the person behind Lawsons Creative. I build websites for small service businesses who need results, not just pretty designs.
+                </p>
+                <p>
+                  Based in Kent, I've helped businesses across the UK transform their online presence and generate more enquiries. Every website is built with strategy first, design second — because beautiful sites that don't convert are just expensive art projects.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Story */}
-      <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32">
+      <section className="pt-12 md:pt-16 pb-20 md:pb-28 lg:pb-32">
         <div className="container-custom max-w-4xl">
           <h2 className="font-heading font-bold text-4xl text-navy mb-6">
             Why I started this
@@ -108,63 +142,59 @@ export default function AboutPage() {
       {/* Who I work best with */}
       <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32 bg-lightgrey">
         <div className="container-custom max-w-4xl">
-          <h2 className="font-heading font-bold text-4xl text-navy mb-8">
-            Who I work best with
-          </h2>
-
-          <p className="text-slate text-lg mb-6 leading-relaxed">
-            Lawsons Creative is built for UK service businesses who:
-          </p>
-
-          <div className="space-y-6 mb-8">
-            <div className="flex items-start gap-4">
-              <div className="text-lime text-2xl flex-shrink-0">✅</div>
-              <div>
-                <h3 className="font-heading font-bold text-lg text-navy mb-1">Want results, not just pretty websites</h3>
-                <p className="text-slate leading-relaxed">You care about bookings, enquiries, and revenue — not just &quot;looking good online.&quot;</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* Good Fit */}
+            <div>
+              <h2 className="font-heading font-bold text-3xl md:text-4xl text-navy mb-6">
+                Who I work best with
+              </h2>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="text-lime text-2xl flex-shrink-0">✅</div>
+                  <p className="text-slate text-lg">Want results, not just pretty websites</p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="text-lime text-2xl flex-shrink-0">✅</div>
+                  <p className="text-slate text-lg">Value speed and efficiency</p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="text-lime text-2xl flex-shrink-0">✅</div>
+                  <p className="text-slate text-lg">Appreciate transparency</p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="text-lime text-2xl flex-shrink-0">✅</div>
+                  <p className="text-slate text-lg">Ready to invest properly</p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="text-lime text-2xl flex-shrink-0">✅</div>
+                  <p className="text-slate text-lg">Know what they do</p>
+                </div>
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
-              <div className="text-lime text-2xl flex-shrink-0">✅</div>
-              <div>
-                <h3 className="font-heading font-bold text-lg text-navy mb-1">Value speed and efficiency</h3>
-                <p className="text-slate leading-relaxed">You need your website done in weeks, not months. You don&apos;t have time for endless meetings and revisions.</p>
+            {/* Not a Good Fit */}
+            <div>
+              <h2 className="font-heading font-bold text-3xl md:text-4xl text-navy mb-6">
+                Not a good fit?
+              </h2>
+              <div className="space-y-3 mb-6">
+                <div className="flex items-center gap-3">
+                  <div className="text-red-500 text-2xl flex-shrink-0">❌</div>
+                  <p className="text-slate text-lg">Need a £200 basic site → Try Fiverr</p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="text-red-500 text-2xl flex-shrink-0">❌</div>
+                  <p className="text-slate text-lg">Need £50k enterprise platform → Contact an agency</p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="text-lime text-2xl flex-shrink-0">✅</div>
+                  <p className="text-slate text-lg font-semibold">Need quality without overpaying → You're in the right place</p>
+                </div>
               </div>
+              <p className="text-slate leading-relaxed">
+                <Link href="/contact" className="text-lime hover:underline font-semibold">Book a free consultation</Link> and let's talk about your project.
+              </p>
             </div>
-
-            <div className="flex items-start gap-4">
-              <div className="text-lime text-2xl flex-shrink-0">✅</div>
-              <div>
-                <h3 className="font-heading font-bold text-lg text-navy mb-1">Appreciate transparency</h3>
-                <p className="text-slate leading-relaxed">You want clear pricing, honest timelines, and straightforward communication. No jargon, no surprises.</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="text-lime text-2xl flex-shrink-0">✅</div>
-              <div>
-                <h3 className="font-heading font-bold text-lg text-navy mb-1">Are ready to invest properly</h3>
-                <p className="text-slate leading-relaxed">You understand that professional websites cost more than £200, but you don&apos;t want to pay agency prices (£10k+) either.</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="text-lime text-2xl flex-shrink-0">✅</div>
-              <div>
-                <h3 className="font-heading font-bold text-lg text-navy mb-1">Know what they do (even if they can&apos;t explain it yet)</h3>
-                <p className="text-slate leading-relaxed">You&apos;re established enough to know your services, your customers, and your value. I&apos;ll help you articulate it clearly.</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-xl p-6 border-l-4 border-navy">
-            <p className="text-slate leading-relaxed mb-4">
-              <strong className="text-navy">Not a good fit?</strong> That&apos;s okay too. If you need a £200 basic site, there are great Fiverr designers. If you need a £50k enterprise platform, there are excellent agencies. I&apos;m the middle ground — quality without overpaying.
-            </p>
-            <p className="text-slate leading-relaxed">
-              <strong className="text-navy">Sound like you?</strong> <Link href="/contact" className="text-lime hover:underline font-semibold">Book a free consultation</Link> and let&apos;s talk about your project.
-            </p>
           </div>
         </div>
       </section>
