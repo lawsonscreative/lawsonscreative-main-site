@@ -92,8 +92,10 @@ export default function FAQ() {
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full px-6 py-5 flex justify-between items-center hover:bg-gray-50 transition-colors text-left"
+                aria-expanded={openIndex === index}
+                aria-controls={`faq-answer-${index}`}
               >
-                <h3 className="font-semibold text-lg text-navy pr-4">
+                <h3 id={`faq-question-${index}`} className="font-semibold text-lg text-navy pr-4">
                   {faq.question}
                 </h3>
                 <svg
@@ -106,6 +108,7 @@ export default function FAQ() {
                   strokeWidth="2"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
+                  aria-hidden="true"
                 >
                   <path d="M19 9l-7 7-7-7"></path>
                 </svg>
@@ -118,6 +121,9 @@ export default function FAQ() {
                     animate={{ height: 'auto', opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
+                    id={`faq-answer-${index}`}
+                    role="region"
+                    aria-labelledby={`faq-question-${index}`}
                   >
                     <div className="px-6 pb-5 text-slate leading-relaxed whitespace-pre-line">
                       {faq.answer}
