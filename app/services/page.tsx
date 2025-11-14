@@ -10,7 +10,7 @@ export default function ServicesPage() {
   const packages = [
     {
       name: 'Starter',
-      price: '£500 - £800',
+      price: '£500–£800',
       bestFor: 'Ideal for new businesses or single-service providers',
       included: [
         'Single-page website (homepage only)',
@@ -37,7 +37,7 @@ export default function ServicesPage() {
     },
     {
       name: 'Professional',
-      price: '£1,200 - £2,000',
+      price: '£1,200–£2,000',
       bestFor: 'Ideal for established businesses ready to grow',
       included: [
         'Multi-page website (up to 5 pages)',
@@ -66,7 +66,7 @@ export default function ServicesPage() {
     },
     {
       name: 'Premium',
-      price: '£2,500 - £4,000',
+      price: '£2,500–£4,000',
       bestFor: 'Ideal for businesses needing custom features',
       included: [
         'Everything in Professional, plus:',
@@ -328,7 +328,7 @@ export default function ServicesPage() {
                 {/* Pricing */}
                 <div className="mb-6 pb-6 border-b border-gray-200">
                   <div className="flex items-baseline gap-2">
-                    <span className="text-5xl font-bold bg-gradient-to-r from-lime to-lime/60 bg-clip-text text-transparent">£50-£150</span>
+                    <span className="text-5xl font-bold bg-gradient-to-r from-lime to-lime/60 bg-clip-text text-transparent">£50–£150</span>
                   </div>
                   <div className="text-sm font-semibold text-slate uppercase tracking-wide mt-1">per month</div>
                 </div>

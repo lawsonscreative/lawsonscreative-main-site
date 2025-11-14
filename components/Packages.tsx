@@ -13,7 +13,7 @@ export default function Packages() {
   const packages = [
     {
       name: 'Starter',
-      price: '£500 - £800',
+      price: '£500–£800',
       bestFor: 'New businesses or single-service providers',
       features: [
         'Single-page website (homepage only)',
@@ -31,7 +31,7 @@ export default function Packages() {
     },
     {
       name: 'Professional',
-      price: '£1,200 - £2,000',
+      price: '£1,200–£2,000',
       bestFor: 'Established businesses ready to grow',
       features: [
         'Multi-page website (up to 5 pages)',
@@ -51,7 +51,7 @@ export default function Packages() {
     },
     {
       name: 'Premium',
-      price: '£2,500 - £4,000',
+      price: '£2,500–£4,000',
       bestFor: 'Businesses needing custom features',
       features: [
         'Everything in Professional, plus:',
@@ -180,7 +180,7 @@ export default function Packages() {
                   </svg>
                 </div>
                 <h4 className="font-heading font-bold text-xl text-navy mb-3">Website maintenance</h4>
-                <div className="text-3xl font-bold bg-gradient-to-r from-lime to-lime/60 bg-clip-text text-transparent mb-1">£50-£150</div>
+                <div className="text-3xl font-bold bg-gradient-to-r from-lime to-lime/60 bg-clip-text text-transparent mb-1">£50–£150</div>
                 <p className="text-xs font-semibold text-slate uppercase tracking-wide mb-4">per month</p>
                 <p className="text-slate text-sm leading-relaxed">
                   Updates, security, backups, small changes
