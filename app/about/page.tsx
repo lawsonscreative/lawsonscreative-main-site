@@ -43,7 +43,7 @@ export default function AboutPage() {
               </h2>
               <div className="text-lg text-slate leading-relaxed space-y-3">
                 <p>
-                  I'm Andrew, the person behind Lawsons Creative. I build websites for small service businesses who need results, not just pretty designs.
+                  I build websites for small service businesses who need results, not just pretty designs.
                 </p>
                 <p>
                   Based in Kent, I've helped businesses across the UK transform their online presence and generate more enquiries. Every website is built with strategy first, design second — because beautiful sites that don't convert are just expensive art projects.
