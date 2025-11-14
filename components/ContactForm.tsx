@@ -42,6 +42,10 @@ export default function ContactForm() {
 
       if (response.ok) {
         setSubmitStatus('success');
+        // Track form submission as conversion
+        if (typeof window !== 'undefined' && window.plausible) {
+          window.plausible('Form Submission', { props: { form: 'Contact Form' } });
+        }
         reset();
       } else {
         setSubmitStatus('error');

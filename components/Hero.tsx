@@ -29,6 +29,11 @@ export default function Hero() {
               <Link
                 href="/contact"
                 className="btn-secondary text-center"
+                onClick={() => {
+                  if (typeof window !== 'undefined' && window.plausible) {
+                    window.plausible('CTA Click', { props: { location: 'Hero', button: 'Book Consultation' } });
+                  }
+                }}
               >
                 Book a free consultation
               </Link>

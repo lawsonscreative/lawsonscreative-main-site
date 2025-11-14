@@ -11,6 +11,9 @@ export default function FinalCTA() {
   });
 
   const openCalendly = () => {
+    if (typeof window !== 'undefined' && window.plausible) {
+      window.plausible('CTA Click', { props: { location: 'Final CTA', button: 'Book Consultation' } });
+    }
     window.open('https://calendly.com/andy-lawsonsenterprises/30min', '_blank');
   };
 
@@ -40,6 +43,11 @@ export default function FinalCTA() {
             <Link
               href="/contact"
               className="bg-transparent border-2 border-white text-white font-semibold px-8 py-4 rounded-lg hover:bg-white hover:text-navy transition-all duration-200 text-base text-center"
+              onClick={() => {
+                if (typeof window !== 'undefined' && window.plausible) {
+                  window.plausible('CTA Click', { props: { location: 'Final CTA', button: 'Email Quote' } });
+                }
+              }}
             >
               Or get a quote by email
             </Link>

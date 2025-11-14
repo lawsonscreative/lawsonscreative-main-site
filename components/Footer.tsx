@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 
 export default function Footer() {
@@ -61,6 +63,11 @@ export default function Footer() {
                 <a
                   href="mailto:hello@lawsonscreative.co.uk"
                   className="text-gray-300 hover:text-white transition-colors"
+                  onClick={() => {
+                    if (typeof window !== 'undefined' && window.plausible) {
+                      window.plausible('Email Click', { props: { location: 'Footer' } });
+                    }
+                  }}
                 >
                   hello@lawsonscreative.co.uk
                 </a>

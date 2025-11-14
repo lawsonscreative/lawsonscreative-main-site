@@ -79,6 +79,11 @@ export default function PackagesSummary() {
                       ? 'bg-lime text-navy hover:scale-105'
                       : 'bg-navy text-white hover:scale-105'
                   }`}
+                  onClick={() => {
+                    if (typeof window !== 'undefined' && window.plausible) {
+                      window.plausible('CTA Click', { props: { location: 'Packages Summary', button: `${pkg.name} Consultation` } });
+                    }
+                  }}
                 >
                   Book a free consultation
                 </Link>
