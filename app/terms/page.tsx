@@ -11,7 +11,7 @@ export default function TermsPage() {
       {/* Hero */}
       <section className="section-padding bg-navy text-white">
         <div className="container-custom text-center">
-          <h1 className="font-heading font-bold text-4xl md:text-5xl mb-4">
+          <h1 className="font-heading font-bold text-4xl md:text-5xl mb-4 text-white">
             Terms of Service
           </h1>
           <p className="text-gray-200">Last updated: November 2025</p>

@@ -11,7 +11,7 @@ export default function PrivacyPage() {
       {/* Hero */}
       <section className="section-padding bg-gradient-to-br from-navy via-navy to-blue-900 text-white">
         <div className="container-custom text-center">
-          <h1 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6">
+          <h1 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6 text-white">
             Privacy Policy
           </h1>
           <p className="text-xl text-gray-200">

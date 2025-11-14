@@ -100,7 +100,7 @@ export default function ProcessPage() {
       {/* Hero */}
       <section className="section-padding bg-gradient-to-br from-navy via-navy to-blue-900 text-white">
         <div className="container-custom text-center">
-          <h1 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6">
+          <h1 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6 text-white">
             From Idea to Live Website in 1–2 Weeks
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
@@ -345,7 +345,7 @@ export default function ProcessPage() {
       {/* Additional Info */}
       <section className="section-padding bg-navy text-white">
         <div className="container-custom max-w-4xl">
-          <h2 className="font-heading font-bold text-4xl mb-12 text-center">
+          <h2 className="font-heading font-bold text-4xl mb-12 text-center text-white">
             What you can expect from us
           </h2>
 

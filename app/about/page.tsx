@@ -13,7 +13,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32 bg-gradient-to-br from-navy via-navy to-blue-900 text-white">
         <div className="container-custom text-center">
-          <h1 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6">
+          <h1 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6 text-white">
             Built by a small business owner, for small business owners
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
@@ -274,7 +274,7 @@ export default function AboutPage() {
       {/* CTA */}
       <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32 bg-navy text-white">
         <div className="container-custom text-center">
-          <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6">
+          <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6 text-white">
             Want to work together?
           </h2>
           <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
