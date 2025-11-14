@@ -154,7 +154,6 @@ export default function ContactPage() {
               </div>
               <h3 className="font-semibold text-navy mb-2">Location</h3>
               <p className="text-slate">Kent, UK</p>
-              <p className="text-slate text-sm">(registered office in London, UK)</p>
               <p className="text-slate text-sm">Serving businesses UK-wide</p>
             </div>
 

@@ -65,7 +65,7 @@ export default function Footer() {
                   hello@lawsonscreative.co.uk
                 </a>
               </li>
-              <li className="text-gray-300">Kent, UK (registered office in London, UK)</li>
+              <li className="text-gray-300">Kent, UK</li>
               <li className="text-gray-300">Serving businesses UK-wide</li>
             </ul>
           </div>

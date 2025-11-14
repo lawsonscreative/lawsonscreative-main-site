@@ -380,7 +380,7 @@ export default function TermsPage() {
               </p>
               <p className="mt-4 text-sm">
                 <strong>Company:</strong> Lawsons Enterprises Ltd<br />
-                <strong>Location:</strong> London, United Kingdom
+                <strong>Location:</strong> Kent, United Kingdom
               </p>
             </div>
           </div>

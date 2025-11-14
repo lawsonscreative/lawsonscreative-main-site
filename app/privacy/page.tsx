@@ -52,7 +52,7 @@ export default function PrivacyPage() {
                 <strong>Contact Email:</strong> <a href="mailto:hello@lawsonscreative.co.uk" className="text-lime hover:underline">hello@lawsonscreative.co.uk</a>
               </p>
               <p>
-                <strong>Location:</strong> London, United Kingdom
+                <strong>Location:</strong> Kent, United Kingdom
               </p>
             </div>
 
@@ -295,7 +295,7 @@ export default function PrivacyPage() {
                   <strong>Company Number:</strong> 16433965
                 </p>
                 <p>
-                  <strong>Location:</strong> London, United Kingdom
+                  <strong>Location:</strong> Kent, United Kingdom
                 </p>
               </div>
 
