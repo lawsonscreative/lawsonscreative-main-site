@@ -131,6 +131,61 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Decision Framework */}
+      <section className="pt-12 md:pt-16 pb-8 md:pb-12 bg-white">
+        <div className="container-custom max-w-4xl">
+          <div className="bg-gradient-to-br from-navy to-blue-900 rounded-xl p-8 md:p-10 text-white shadow-xl">
+            <h3 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-center">
+              Not sure which package? Here's how to choose:
+            </h3>
+            <div className="space-y-4">
+              <div className="flex items-start gap-4 bg-white/10 rounded-lg p-4 backdrop-blur-sm hover:bg-white/20 transition-colors">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-lime flex items-center justify-center font-bold text-navy">
+                  1
+                </div>
+                <div>
+                  <p className="text-lg leading-relaxed">
+                    <strong className="text-lime">Just need an online presence?</strong> → Starter
+                  </p>
+                  <p className="text-sm text-gray-300 mt-1">
+                    Perfect for sole traders, new businesses, or single-service providers who need a simple but professional web presence.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4 bg-white/10 rounded-lg p-4 backdrop-blur-sm hover:bg-white/20 transition-colors">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-lime flex items-center justify-center font-bold text-navy">
+                  2
+                </div>
+                <div>
+                  <p className="text-lg leading-relaxed">
+                    <strong className="text-lime">Ready to grow and generate leads?</strong> → Professional
+                  </p>
+                  <p className="text-sm text-gray-300 mt-1">
+                    Ideal for established businesses with multiple services, portfolios to showcase, or those serious about online marketing.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4 bg-white/10 rounded-lg p-4 backdrop-blur-sm hover:bg-white/20 transition-colors">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-lime flex items-center justify-center font-bold text-navy">
+                  3
+                </div>
+                <div>
+                  <p className="text-lg leading-relaxed">
+                    <strong className="text-lime">Need custom features or e-commerce?</strong> → Premium
+                  </p>
+                  <p className="text-sm text-gray-300 mt-1">
+                    Best for businesses with specific requirements like online booking systems, product sales, or custom functionality.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p className="text-center text-sm text-gray-300 mt-6 italic">
+              Still unsure? Book a free consultation and we'll help you choose the right fit.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Package Details */}
       {packages.map((pkg, index) => (
         <section
@@ -233,8 +288,11 @@ export default function ServicesPage() {
             <h2 className="font-heading font-bold text-4xl md:text-5xl mb-4 text-navy">
               Add-on services
             </h2>
-            <p className="text-xl text-slate max-w-3xl mx-auto">
-              Keep your website running smoothly with our ongoing support services. Add these to any package or purchase separately.
+            <p className="text-xl text-slate max-w-3xl mx-auto mb-4">
+              Keep your website running smoothly with our ongoing support services.
+            </p>
+            <p className="text-lg text-slate max-w-2xl mx-auto">
+              <strong className="text-navy">Flexible options:</strong> Add these to any package during your build, or purchase them separately after launch — even if we didn't build your original site.
             </p>
           </div>
 
@@ -554,17 +612,19 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-white">
-        <div className="container-custom text-center">
-          <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-6">
-            Not sure which package is right for you?
-          </h2>
-          <p className="text-xl text-slate mb-8 max-w-3xl mx-auto">
-            Book a free consultation and we'll help you choose the perfect package for your business goals and budget.
-          </p>
-          <Link href="/contact" className="btn-primary inline-block">
-            Book a free consultation
-          </Link>
+      <section className="section-padding bg-lightgrey">
+        <div className="container-custom text-center max-w-3xl mx-auto">
+          <div className="bg-white rounded-xl p-8 md:p-12 shadow-lg">
+            <h2 className="font-heading font-bold text-3xl md:text-4xl text-navy mb-4">
+              Still unsure?
+            </h2>
+            <p className="text-xl text-slate mb-6 leading-relaxed">
+              Book a free consultation to discuss your project. No pressure, no obligation — just an honest conversation about what you need and which package fits best.
+            </p>
+            <Link href="/contact" className="btn-secondary inline-block">
+              Book a free consultation
+            </Link>
+          </div>
         </div>
       </section>
     </div>
