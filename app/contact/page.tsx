@@ -177,20 +177,34 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="mt-16 text-center">
-            <h3 className="font-heading font-bold text-2xl text-navy mb-4">
-              Have questions first?
-            </h3>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/services" className="text-lime hover:underline">
-                View Packages →
-              </Link>
-              <Link href="/portfolio" className="text-lime hover:underline">
-                See Our Work →
-              </Link>
-              <Link href="/how-we-work" className="text-lime hover:underline">
-                How we work →
-              </Link>
+          <div className="mt-16">
+            <div className="card text-center bg-secondary border-2 border-lime/20">
+              <h3 className="font-heading font-bold text-2xl text-navy mb-4">
+                Have questions first?
+              </h3>
+              <p className="text-slate mb-6 leading-relaxed">
+                Not ready to book a call? Explore these resources to learn more about our packages, process, and previous work.
+              </p>
+              <div className="flex flex-wrap justify-center gap-6">
+                <Link href="/services" className="inline-flex items-center font-semibold text-navy hover:text-lime transition-colors">
+                  <span>View Packages</span>
+                  <svg className="w-4 h-4 ml-1" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </Link>
+                <Link href="/portfolio" className="inline-flex items-center font-semibold text-navy hover:text-lime transition-colors">
+                  <span>See Our Work</span>
+                  <svg className="w-4 h-4 ml-1" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </Link>
+                <Link href="/how-we-work" className="inline-flex items-center font-semibold text-navy hover:text-lime transition-colors">
+                  <span>How We Work</span>
+                  <svg className="w-4 h-4 ml-1" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
