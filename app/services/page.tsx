@@ -139,7 +139,7 @@ export default function ServicesPage() {
               Not sure which package? Here's how to choose:
             </h3>
             <div className="space-y-4">
-              <div className="flex items-start gap-4 bg-white/10 rounded-lg p-4 backdrop-blur-sm hover:bg-white/20 transition-colors">
+              <a href="#starter" className="flex items-start gap-4 bg-white/10 rounded-lg p-4 backdrop-blur-sm hover:bg-white/20 transition-colors cursor-pointer">
                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-lime flex items-center justify-center font-bold text-navy">
                   1
                 </div>
@@ -151,8 +151,8 @@ export default function ServicesPage() {
                     Perfect for sole traders, new businesses, or single-service providers who need a simple but professional web presence.
                   </p>
                 </div>
-              </div>
-              <div className="flex items-start gap-4 bg-white/10 rounded-lg p-4 backdrop-blur-sm hover:bg-white/20 transition-colors">
+              </a>
+              <a href="#professional" className="flex items-start gap-4 bg-white/10 rounded-lg p-4 backdrop-blur-sm hover:bg-white/20 transition-colors cursor-pointer">
                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-lime flex items-center justify-center font-bold text-navy">
                   2
                 </div>
@@ -164,8 +164,8 @@ export default function ServicesPage() {
                     Ideal for established businesses with multiple services, portfolios to showcase, or those serious about online marketing.
                   </p>
                 </div>
-              </div>
-              <div className="flex items-start gap-4 bg-white/10 rounded-lg p-4 backdrop-blur-sm hover:bg-white/20 transition-colors">
+              </a>
+              <a href="#premium" className="flex items-start gap-4 bg-white/10 rounded-lg p-4 backdrop-blur-sm hover:bg-white/20 transition-colors cursor-pointer">
                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-lime flex items-center justify-center font-bold text-navy">
                   3
                 </div>
@@ -177,7 +177,7 @@ export default function ServicesPage() {
                     Best for businesses with specific requirements like online booking systems, product sales, or custom functionality.
                   </p>
                 </div>
-              </div>
+              </a>
             </div>
             <p className="text-center text-sm text-gray-300 mt-6 italic">
               Still unsure? Book a free consultation and we'll help you choose the right fit.
@@ -190,7 +190,8 @@ export default function ServicesPage() {
       {packages.map((pkg, index) => (
         <section
           key={pkg.name}
-          className={`section-padding ${index % 2 === 0 ? 'bg-white' : 'bg-lightgrey'}`}
+          id={pkg.name.toLowerCase()}
+          className={`section-padding ${index % 2 === 0 ? 'bg-white' : 'bg-lightgrey'} scroll-mt-24`}
         >
           <div className="container-custom max-w-6xl">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
