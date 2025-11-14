@@ -140,71 +140,71 @@ export default function AboutPage() {
       </section>
 
       {/* Who I work best with */}
-      <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32 bg-lightgrey">
-        <div className="container-custom max-w-4xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <section className="section-padding bg-secondary">
+        <div className="container-custom max-w-5xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Good Fit */}
-            <div>
+            <div className="card bg-white border-2 border-lime/30">
               <h2 className="font-heading font-bold text-3xl md:text-4xl text-navy mb-6">
                 Who I work best with
               </h2>
-              <div className="space-y-3">
-                <div className="flex items-center gap-3">
-                  <div className="text-lime flex-shrink-0">
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="text-lime flex-shrink-0 mt-0.5">
                     <Check size={24} strokeWidth={3} />
                   </div>
-                  <p className="text-slate text-lg">Want results, not just pretty websites</p>
+                  <p className="text-slate text-base leading-relaxed">Want results, not just pretty websites</p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="text-lime flex-shrink-0">
+                <div className="flex items-start gap-3">
+                  <div className="text-lime flex-shrink-0 mt-0.5">
                     <Check size={24} strokeWidth={3} />
                   </div>
-                  <p className="text-slate text-lg">Value speed and efficiency</p>
+                  <p className="text-slate text-base leading-relaxed">Value speed and efficiency</p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="text-lime flex-shrink-0">
+                <div className="flex items-start gap-3">
+                  <div className="text-lime flex-shrink-0 mt-0.5">
                     <Check size={24} strokeWidth={3} />
                   </div>
-                  <p className="text-slate text-lg">Appreciate transparency</p>
+                  <p className="text-slate text-base leading-relaxed">Appreciate transparency</p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="text-lime flex-shrink-0">
+                <div className="flex items-start gap-3">
+                  <div className="text-lime flex-shrink-0 mt-0.5">
                     <Check size={24} strokeWidth={3} />
                   </div>
-                  <p className="text-slate text-lg">Ready to invest properly</p>
+                  <p className="text-slate text-base leading-relaxed">Ready to invest properly</p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="text-lime flex-shrink-0">
+                <div className="flex items-start gap-3">
+                  <div className="text-lime flex-shrink-0 mt-0.5">
                     <Check size={24} strokeWidth={3} />
                   </div>
-                  <p className="text-slate text-lg">Know what they do</p>
+                  <p className="text-slate text-base leading-relaxed">Know what they do</p>
                 </div>
               </div>
             </div>
 
             {/* Not a Good Fit */}
-            <div>
+            <div className="card bg-white">
               <h2 className="font-heading font-bold text-3xl md:text-4xl text-navy mb-6">
                 Not a good fit?
               </h2>
-              <div className="space-y-3 mb-6">
-                <div className="flex items-center gap-3">
-                  <div className="text-red-500 flex-shrink-0">
+              <div className="space-y-4 mb-6">
+                <div className="flex items-start gap-3">
+                  <div className="text-red-500 flex-shrink-0 mt-0.5">
                     <X size={24} strokeWidth={3} />
                   </div>
-                  <p className="text-slate text-lg">Need a £200 basic site → Try Fiverr</p>
+                  <p className="text-slate text-base leading-relaxed">Need a £200 basic site → Try Fiverr</p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="text-red-500 flex-shrink-0">
+                <div className="flex items-start gap-3">
+                  <div className="text-red-500 flex-shrink-0 mt-0.5">
                     <X size={24} strokeWidth={3} />
                   </div>
-                  <p className="text-slate text-lg">Need £50k enterprise platform → Contact an agency</p>
+                  <p className="text-slate text-base leading-relaxed">Need £50k enterprise platform → Contact an agency</p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="text-lime flex-shrink-0">
+                <div className="flex items-start gap-3 p-4 bg-lime/10 rounded-lg border-2 border-lime/30">
+                  <div className="text-lime flex-shrink-0 mt-0.5">
                     <Check size={24} strokeWidth={3} />
                   </div>
-                  <p className="text-slate text-lg font-semibold">Need quality without overpaying → You're in the right place</p>
+                  <p className="text-navy text-base font-semibold leading-relaxed">Need quality without overpaying → You're in the right place</p>
                 </div>
               </div>
               <p className="text-slate leading-relaxed">
