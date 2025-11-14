@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { Check, X } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'About Lawsons Creative – Web Design for UK Small Businesses',
@@ -149,23 +150,33 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
-                  <div className="text-lime text-2xl flex-shrink-0">✅</div>
+                  <div className="text-lime flex-shrink-0">
+                    <Check size={24} strokeWidth={3} />
+                  </div>
                   <p className="text-slate text-lg">Want results, not just pretty websites</p>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="text-lime text-2xl flex-shrink-0">✅</div>
+                  <div className="text-lime flex-shrink-0">
+                    <Check size={24} strokeWidth={3} />
+                  </div>
                   <p className="text-slate text-lg">Value speed and efficiency</p>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="text-lime text-2xl flex-shrink-0">✅</div>
+                  <div className="text-lime flex-shrink-0">
+                    <Check size={24} strokeWidth={3} />
+                  </div>
                   <p className="text-slate text-lg">Appreciate transparency</p>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="text-lime text-2xl flex-shrink-0">✅</div>
+                  <div className="text-lime flex-shrink-0">
+                    <Check size={24} strokeWidth={3} />
+                  </div>
                   <p className="text-slate text-lg">Ready to invest properly</p>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="text-lime text-2xl flex-shrink-0">✅</div>
+                  <div className="text-lime flex-shrink-0">
+                    <Check size={24} strokeWidth={3} />
+                  </div>
                   <p className="text-slate text-lg">Know what they do</p>
                 </div>
               </div>
@@ -178,15 +189,21 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-3 mb-6">
                 <div className="flex items-center gap-3">
-                  <div className="text-red-500 text-2xl flex-shrink-0">❌</div>
+                  <div className="text-red-500 flex-shrink-0">
+                    <X size={24} strokeWidth={3} />
+                  </div>
                   <p className="text-slate text-lg">Need a £200 basic site → Try Fiverr</p>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="text-red-500 text-2xl flex-shrink-0">❌</div>
+                  <div className="text-red-500 flex-shrink-0">
+                    <X size={24} strokeWidth={3} />
+                  </div>
                   <p className="text-slate text-lg">Need £50k enterprise platform → Contact an agency</p>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="text-lime text-2xl flex-shrink-0">✅</div>
+                  <div className="text-lime flex-shrink-0">
+                    <Check size={24} strokeWidth={3} />
+                  </div>
                   <p className="text-slate text-lg font-semibold">Need quality without overpaying → You're in the right place</p>
                 </div>
               </div>
