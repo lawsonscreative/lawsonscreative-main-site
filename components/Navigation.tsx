@@ -46,6 +46,7 @@ export default function Navigation() {
               alt="Lawsons Creative"
               width={260}
               height={87}
+              priority
               className={`transition-all duration-300 h-auto ${isScrolled ? 'w-52 md:w-56' : 'w-56 md:w-60'}`}
             />
           </Link>

@@ -93,7 +93,7 @@ export default function AboutPage() {
                 I don&apos;t just make websites look pretty (though they should). I think about: Who are your customers and what do they need to see? What actions do you want visitors to take? How can design build trust quickly? What&apos;s the fastest path from visitor to customer?
               </p>
               <p className="text-slate leading-relaxed mt-3">
-                Beautiful design matters, but only if it drives results.
+                Beautiful design matters, but only if it drives results. <Link href="/portfolio" className="text-lime hover:underline font-semibold">See how this translates into real client results</Link>.
               </p>
             </div>
 

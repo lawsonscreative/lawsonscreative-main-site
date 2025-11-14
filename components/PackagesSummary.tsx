@@ -86,7 +86,7 @@ export default function PackagesSummary() {
                   href="/services"
                   className="block text-center text-navy hover:text-lime transition-colors text-sm"
                 >
-                  See full details →
+                  See full {pkg.name} package details →
                 </Link>
               </div>
             </motion.div>

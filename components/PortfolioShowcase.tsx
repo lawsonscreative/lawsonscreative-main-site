@@ -112,6 +112,7 @@ export default function PortfolioShowcase() {
                   alt="Graceful Pet Care website before redesign"
                   width={800}
                   height={600}
+                  loading="lazy"
                   className="w-full h-auto"
                 />
               </div>
@@ -132,6 +133,7 @@ export default function PortfolioShowcase() {
                   alt="Graceful Pet Care website after redesign"
                   width={800}
                   height={600}
+                  loading="lazy"
                   className="w-full h-auto"
                 />
               </div>

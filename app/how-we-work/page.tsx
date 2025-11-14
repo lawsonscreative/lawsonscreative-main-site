@@ -391,7 +391,7 @@ export default function ProcessPage() {
             Ready to get started?
           </h2>
           <p className="text-xl text-slate mb-8 max-w-3xl mx-auto">
-            Book your free consultation and let's discuss your project. We&apos;ll walk you through the process and answer any questions.
+            <Link href="/services" className="text-lime hover:underline font-semibold">Choose a package that fits your business and budget</Link>, then book your free consultation to discuss your project. We&apos;ll walk you through the process and answer any questions.
           </p>
           <Link href="/contact" className="btn-primary inline-block">
             Book a free consultation
