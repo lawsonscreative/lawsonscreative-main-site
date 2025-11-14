@@ -152,7 +152,7 @@ export default function Packages() {
                     : 'bg-navy text-white hover:scale-105'
                 }`}
               >
-                Get started
+                Book a free consultation
               </Link>
             </motion.div>
           ))}

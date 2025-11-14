@@ -27,16 +27,16 @@ export default function Hero() {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="/portfolio"
+                href="/contact"
                 className="btn-secondary text-center"
               >
-                View our work
+                Book a free consultation
               </Link>
               <Link
-                href="/contact"
+                href="/portfolio"
                 className="btn-tertiary text-center"
               >
-                Book a free consultation
+                View our work
               </Link>
             </div>
           </motion.div>

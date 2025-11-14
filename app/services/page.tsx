@@ -177,7 +177,7 @@ export default function ServicesPage() {
                 </div>
 
                 <Link href="/contact" className="btn-primary inline-block">
-                  Get started with {pkg.name}
+                  Book a free consultation
                 </Link>
               </div>
 

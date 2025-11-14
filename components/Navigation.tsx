@@ -24,7 +24,7 @@ export default function Navigation() {
     { href: '/portfolio', label: 'Portfolio' },
     { href: '/services', label: 'Services' },
     { href: '/about', label: 'About' },
-    { href: '/process', label: 'Process' },
+    { href: '/how-we-work', label: 'How we work' },
     { href: '/contact', label: 'Contact' },
   ];
 
@@ -72,7 +72,7 @@ export default function Navigation() {
               href="/contact"
               className="btn-primary"
             >
-              Get Started
+              Book a Call
             </Link>
           </div>
 
@@ -126,7 +126,7 @@ export default function Navigation() {
                 className="btn-primary inline-block text-center"
                 onClick={() => setIsOpen(false)}
               >
-                Get Started
+                Book a Call
               </Link>
             </div>
           </div>
