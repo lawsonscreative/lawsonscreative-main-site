@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -127,6 +128,29 @@ export default function FAQ() {
             </motion.div>
           ))}
         </div>
+
+        {/* Post-FAQ CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="mt-16 text-center max-w-3xl mx-auto"
+        >
+          <div className="bg-white rounded-xl p-8 md:p-12 shadow-lg">
+            <h3 className="font-heading font-bold text-3xl md:text-4xl text-navy mb-4">
+              Still unsure?
+            </h3>
+            <p className="text-xl text-slate mb-6 leading-relaxed">
+              Book a free consultation to discuss your project. No pressure, no obligation — just an honest conversation about what you need.
+            </p>
+            <Link
+              href="/contact"
+              className="btn-secondary inline-block"
+            >
+              Book a free consultation
+            </Link>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

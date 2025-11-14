@@ -1,7 +1,7 @@
 import Hero from '@/components/Hero';
 import SocialProof from '@/components/SocialProof';
 import PortfolioShowcase from '@/components/PortfolioShowcase';
-import Packages from '@/components/Packages';
+import PackagesSummary from '@/components/PackagesSummary';
 import Process from '@/components/Process';
 import Testimonials from '@/components/Testimonials';
 import WhyChooseUs from '@/components/WhyChooseUs';
@@ -14,7 +14,7 @@ export default function Home() {
       <Hero />
       <SocialProof />
       <PortfolioShowcase />
-      <Packages />
+      <PackagesSummary />
       <Process />
       <Testimonials />
       <WhyChooseUs />
