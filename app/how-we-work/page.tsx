@@ -76,8 +76,8 @@ export default function ProcessPage() {
       title: 'Launch',
       duration: 'Day 11-14',
       description:
-        "After your final approval, we launch your site, set up analytics, and provide training on managing content. You're live and ready to grow.",
-      deliverable: 'Live website + training session',
+        "After your final approval, we launch your site, set up analytics, and walk you through how everything works. You're live and ready to grow.",
+      deliverable: 'Live website + walkthrough',
       whatWeNeed: [
         'Final approval of staging site',
         'Domain name access (or we can purchase)',
@@ -87,7 +87,8 @@ export default function ProcessPage() {
       whatYouGet: [
         'Live website on your domain',
         'Analytics configured and tracking',
-        'Training on content management',
+        'Walkthrough of how to track performance and request updates',
+        'Simple guide to requesting changes (typos, new content, etc.)',
         'Documentation for future reference',
         'Post-launch support (depends on package)',
       ],

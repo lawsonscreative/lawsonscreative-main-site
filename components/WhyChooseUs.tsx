@@ -37,7 +37,7 @@ export default function WhyChooseUs() {
     {
       title: 'Built to Last',
       description:
-        "We use modern, maintainable technology that won&apos;t be outdated in 6 months. Your site is fast, secure, and easy to update.",
+        "We use modern, maintainable technology that won&apos;t be outdated in 6 months. Your site is fast, secure, and straightforward to keep current with simple update requests or ongoing maintenance.",
       icon: '🔧',
     },
     {
