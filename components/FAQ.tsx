@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { ChevronDown } from 'lucide-react';
 
 export default function FAQ() {
   const [ref, inView] = useInView({
@@ -91,27 +92,19 @@ export default function FAQ() {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full px-6 py-5 flex justify-between items-center hover:bg-gray-50 transition-colors text-left"
+                className="w-full px-6 py-5 flex justify-between items-center hover:bg-gray-50 transition-colors text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-lime focus-visible:outline-offset-2"
                 aria-expanded={openIndex === index}
                 aria-controls={`faq-answer-${index}`}
               >
                 <h3 id={`faq-question-${index}`} className="font-semibold text-lg text-navy pr-4">
                   {faq.question}
                 </h3>
-                <svg
-                  className={`w-6 h-6 text-blue-600 flex-shrink-0 transition-transform ${
+                <ChevronDown
+                  className={`w-6 h-6 text-lime flex-shrink-0 transition-transform duration-300 ${
                     openIndex === index ? 'transform rotate-180' : ''
                   }`}
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
                   aria-hidden="true"
-                >
-                  <path d="M19 9l-7 7-7-7"></path>
-                </svg>
+                />
               </button>
 
               <AnimatePresence>
