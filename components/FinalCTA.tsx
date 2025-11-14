@@ -58,7 +58,7 @@ export default function FinalCTA() {
               <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
             <span className="text-sm">
-              Free consultation. No obligation. Typical response time: &lt; 24 hours.
+              Free consultation. No obligation. Response time: Within 24 hours (usually faster).
             </span>
           </div>
         </motion.div>

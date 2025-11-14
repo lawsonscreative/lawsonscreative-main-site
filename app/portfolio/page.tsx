@@ -236,6 +236,29 @@ export default function PortfolioPage() {
           </div>
         </div>
       </section>
+
+      {/* Current Projects */}
+      <section className="section-padding bg-lightgrey">
+        <div className="container-custom max-w-4xl text-center">
+          <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-6">
+            Current projects in development
+          </h2>
+          <div className="text-lg text-slate leading-relaxed space-y-4 mb-8">
+            <p>
+              We're currently building new sites for fitness coaches, trades professionals, and creative service businesses. As those projects launch, we'll add them here with full case studies and results.
+            </p>
+            <p>
+              In the meantime, Graceful Pet Care demonstrates our approach: strategy-first design that drives real business results.
+            </p>
+          </div>
+          <a
+            href="/contact"
+            className="btn-secondary inline-block"
+          >
+            Book a free consultation
+          </a>
+        </div>
+      </section>
     </div>
   );
 }

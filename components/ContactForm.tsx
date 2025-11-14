@@ -121,8 +121,9 @@ export default function ContactForm() {
       {/* Current Website URL */}
       <div>
         <label htmlFor="websiteUrl" className="block text-sm font-semibold text-navy mb-2">
-          Current website URL (optional)
+          Current website URL
         </label>
+        <p className="text-slate text-sm mb-2">Optional - leave blank if you don't have one</p>
         <input
           type="url"
           id="websiteUrl"
@@ -156,11 +157,12 @@ export default function ContactForm() {
       {/* Budget */}
       <div>
         <label htmlFor="budget" className="block text-sm font-semibold text-navy mb-2">
-          Approximate budget *
+          Approximate budget
         </label>
+        <p className="text-slate text-sm mb-2">Helps us recommend the right package - all budgets welcome</p>
         <select
           id="budget"
-          {...register('budget', { required: 'Please select a budget range' })}
+          {...register('budget')}
           className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime focus:ring-2 focus:ring-lime/20 outline-none transition-colors"
         >
           <option value="">Select...</option>
@@ -175,11 +177,12 @@ export default function ContactForm() {
       {/* Timeline */}
       <div>
         <label htmlFor="timeline" className="block text-sm font-semibold text-navy mb-2">
-          When do you need the website? *
+          When do you need the website?
         </label>
+        <p className="text-slate text-sm mb-2">Helps us schedule - choose 'Just exploring' if you're not sure</p>
         <select
           id="timeline"
-          {...register('timeline', { required: 'Please select a timeline' })}
+          {...register('timeline')}
           className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime focus:ring-2 focus:ring-lime/20 outline-none transition-colors"
         >
           <option value="">Select...</option>
@@ -247,7 +250,7 @@ export default function ContactForm() {
           {isSubmitting ? 'Sending...' : 'Send message'}
         </button>
         <p className="text-slate text-sm text-center mt-4 leading-relaxed">
-          I usually reply within a few hours during UK business hours (Mon–Fri, 9am–6pm). I always respond within one business day.
+          We'll respond within 24 hours (usually much faster).
         </p>
       </div>
 
@@ -256,7 +259,7 @@ export default function ContactForm() {
         <div className="bg-lime/10 border-2 border-lime text-navy px-6 py-5 rounded-lg">
           <p className="font-bold text-lg mb-2">Thanks! Your message has been sent.</p>
           <p className="text-slate leading-relaxed">
-            I&apos;ll review your project and get back to you within one business day (often much sooner). Please check your inbox (and your spam/junk folder) for my reply.
+            We&apos;ll respond within 24 hours (usually much faster). Please check your inbox (and your spam/junk folder) for our reply.
           </p>
         </div>
       )}

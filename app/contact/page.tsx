@@ -19,7 +19,7 @@ export default function ContactPage() {
             Let's talk about your project
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
-            Book a free 30-minute consultation or send a message. We&apos;ll respond within 24 hours.
+            Book a free 30-minute consultation or send a message. We&apos;ll respond within 24 hours (usually much faster).
           </p>
         </div>
       </section>
@@ -91,7 +91,7 @@ export default function ContactPage() {
                 Send a message
               </h2>
               <p className="text-slate mb-6 leading-relaxed">
-                Prefer email? Fill out the form below and we'll get back to you within 24 hours with answers to your questions.
+                Prefer email? Fill out the form below and we'll get back to you within 24 hours (usually much faster) with answers to your questions.
               </p>
             </div>
           </div>
@@ -173,7 +173,7 @@ export default function ContactPage() {
               </div>
               <h3 className="font-semibold text-navy mb-2">Response Time</h3>
               <p className="text-slate">Within 24 hours</p>
-              <p className="text-slate text-sm">Monday to Friday</p>
+              <p className="text-slate text-sm">(usually much faster)</p>
             </div>
           </div>
 
