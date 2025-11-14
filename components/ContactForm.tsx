@@ -31,8 +31,7 @@ export default function ContactForm() {
     setSubmitStatus('idle');
 
     try {
-      // Using Formspree endpoint - replace with your actual endpoint
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const response = await fetch('https://formspree.io/f/movyernr', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
