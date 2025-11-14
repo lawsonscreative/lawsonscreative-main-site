@@ -72,7 +72,7 @@ export default function Navigation() {
               href="/contact"
               className="btn-primary"
             >
-              Book a Call
+              Book a free consultation
             </Link>
           </div>
 
@@ -126,7 +126,7 @@ export default function Navigation() {
                 className="btn-primary inline-block text-center"
                 onClick={() => setIsOpen(false)}
               >
-                Book a Call
+                Book a free consultation
               </Link>
             </div>
           </div>
