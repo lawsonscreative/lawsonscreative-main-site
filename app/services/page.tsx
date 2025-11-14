@@ -135,7 +135,7 @@ export default function ServicesPage() {
       <section className="pt-12 md:pt-16 pb-8 md:pb-12 bg-white">
         <div className="container-custom max-w-4xl">
           <div className="bg-gradient-to-br from-navy to-blue-900 rounded-xl p-8 md:p-10 text-white shadow-xl">
-            <h3 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-center">
+            <h3 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-center text-white">
               Not sure which package? Here's how to choose:
             </h3>
             <ol className="space-y-4 list-none">
