@@ -241,7 +241,7 @@ export default function PortfolioPage() {
       <section className="section-padding bg-lightgrey">
         <div className="container-custom max-w-4xl text-center">
           <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-6">
-            Current projects in development
+            New client projects launching soon
           </h2>
           <div className="text-lg text-slate leading-relaxed space-y-4 mb-8">
             <p>
