@@ -101,7 +101,7 @@ export default function ServicesPage() {
       <section className="section-padding bg-gradient-to-br from-navy via-navy to-blue-900 text-white">
         <div className="container-custom text-center">
           <h1 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6 text-white">
-            Websites Built to Fit Your Business and Budget
+            Websites built to fit your business and budget<span className="text-lime">.</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
             No cookie-cutter templates. No overpriced agency fees. Just honest pricing for quality websites that drive results.

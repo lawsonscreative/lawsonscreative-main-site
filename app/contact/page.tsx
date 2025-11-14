@@ -16,7 +16,7 @@ export default function ContactPage() {
       <section className="section-padding bg-gradient-to-br from-navy via-navy to-blue-900 text-white">
         <div className="container-custom text-center">
           <h1 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6 text-white">
-            Let's talk about your project
+            Let's talk about your project<span className="text-lime">.</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
             Book a free 30-minute consultation or send a message. We'll respond within 24 hours (usually much faster).

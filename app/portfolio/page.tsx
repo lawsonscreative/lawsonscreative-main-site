@@ -14,7 +14,7 @@ export default function PortfolioPage() {
       <section className="section-padding bg-gradient-to-br from-navy via-navy to-blue-900 text-white">
         <div className="container-custom text-center">
           <h1 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6 text-white">
-            Our work speaks for itself
+            Our work speaks for itself<span className="text-lime">.</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
             Real websites for real businesses. See how we've helped small service businesses grow with modern, effective web design.

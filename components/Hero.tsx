@@ -15,7 +15,7 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6 leading-snug text-white">
-              Websites that actually win you customers
+              Websites that actually win you customers<span className="text-lime">.</span>
             </h1>
             <h2 className="text-xl md:text-2xl mb-6 text-gray-200 font-semibold">
               Modern, fast-loading websites for UK service businesses — designed to build trust and generate enquiries. Typically delivered in 1–2 weeks, without the agency price tag.
