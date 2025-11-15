@@ -252,17 +252,17 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32 bg-lightgrey">
+      <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32 bg-gradient-to-br from-lime to-lime/80">
         <div className="container-custom text-center">
           <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6 text-navy">
             Want to work together?
           </h2>
-          <p className="text-xl text-slate mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-navy/80 mb-8 max-w-3xl mx-auto">
             Let's chat about your project. No pressure, no obligation, just a conversation.
           </p>
           <Link
             href="/contact"
-            className="bg-lime text-navy font-semibold px-8 py-4 rounded-lg hover:scale-105 hover:shadow-xl transition-all duration-200 inline-block"
+            className="bg-navy text-white font-semibold px-8 py-4 rounded-lg hover:scale-105 hover:shadow-xl transition-all duration-200 inline-block"
           >
             Book a free consultation
           </Link>
