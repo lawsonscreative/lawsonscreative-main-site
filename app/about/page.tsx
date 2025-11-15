@@ -119,28 +119,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* How I work */}
-      <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32">
-        <div className="container-custom max-w-4xl">
-          <h2 className="font-heading font-bold text-4xl text-navy mb-6">
-            How I work
-          </h2>
-          <div className="text-slate leading-relaxed space-y-4">
-            <p>
-              I'm based in Kent and work with small businesses across the UK. Every project starts with a conversation about your business and goals, not a sales pitch.
-            </p>
-            <p>
-              I handle everything from strategy to design to development to launch. You get one person who understands your business, not a team of rotating account managers.
-            </p>
-            <p>
-              And once your site is live, I'm available for support, updates, and maintenance. No need to find a new developer every time you need a change.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Who I work best with */}
-      <section className="section-padding bg-secondary">
+      <section className="section-padding bg-white">
         <div className="container-custom max-w-5xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Good Fit */}
@@ -216,7 +196,7 @@ export default function AboutPage() {
       </section>
 
       {/* Why Clients Choose */}
-      <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32">
+      <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32 bg-lightgrey">
         <div className="container-custom max-w-4xl">
           <h2 className="font-heading font-bold text-4xl text-navy mb-12 text-center">
             Why clients choose Lawsons Creative
