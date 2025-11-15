@@ -74,7 +74,7 @@ export default function PackagesSummary() {
                 {pkg.name}
               </h3>
               <div className="text-3xl font-bold text-slate mb-4">{pkg.price}</div>
-              <p className="text-slate mb-6 leading-relaxed">{pkg.description}</p>
+              <p className="text-slate mb-6 leading-relaxed min-h-[3rem]">{pkg.description}</p>
 
               <div className="space-y-3 mt-auto">
                 <Link

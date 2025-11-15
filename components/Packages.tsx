@@ -136,7 +136,7 @@ export default function Packages() {
                 ))}
               </ul>
 
-              <p className="text-sm text-slate mb-4 border-t pt-6">
+              <p className="text-sm text-slate mb-4 border-t pt-6 min-h-[3rem]">
                 {pkg.description}
               </p>
 
