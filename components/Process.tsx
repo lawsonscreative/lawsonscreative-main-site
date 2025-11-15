@@ -61,21 +61,21 @@ export default function Process() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6 lg:items-stretch">
           {steps.map((step, index) => (
             <motion.div
               key={step.number}
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.1 * (index + 1) }}
-              className="relative"
+              className="relative h-full"
             >
               {/* Connector line for desktop */}
               {index < steps.length - 1 && (
                 <div className="hidden lg:block absolute top-12 left-full w-full h-0.5 bg-lime/30 z-0" />
               )}
 
-              <div className="relative z-10">
+              <div className="relative z-10 h-full flex flex-col">
                 <div className="bg-lime text-navy w-16 h-16 rounded-full flex items-center justify-center font-heading font-bold text-xl mb-4">
                   {step.number}
                 </div>
@@ -85,10 +85,10 @@ export default function Process() {
                 <div className="text-sm font-semibold text-lime mb-3">
                   {step.duration}
                 </div>
-                <p className="text-slate mb-4 leading-relaxed">
+                <p className="text-slate mb-4 leading-relaxed flex-grow">
                   {step.description}
                 </p>
-                <div className="bg-navy/5 border-l-4 border-navy rounded-lg p-4 mt-6">
+                <div className="bg-navy/5 border-l-4 border-navy rounded-lg p-4 mt-auto">
                   <div className="text-xs font-bold text-navy/60 uppercase tracking-wider mb-2">
                     Deliverable
                   </div>
