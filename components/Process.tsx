@@ -61,7 +61,7 @@ export default function Process() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6 items-start">
           {steps.map((step, index) => (
             <motion.div
               key={step.number}
@@ -92,7 +92,7 @@ export default function Process() {
                   <div className="text-xs font-bold text-navy/60 uppercase tracking-wider mb-2">
                     Deliverable
                   </div>
-                  <div className="text-sm font-semibold text-navy">{step.deliverable}</div>
+                  <div className="text-sm font-semibold text-navy min-h-[2.5rem]">{step.deliverable}</div>
                 </div>
               </div>
             </motion.div>
