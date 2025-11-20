@@ -42,7 +42,7 @@ export default function Navigation() {
           <Link href="/" className="flex items-center">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/logo.png"
+              src="/images/logo.webp"
               alt="Lawsons Creative"
               className="transition-all duration-300 h-auto"
               style={{

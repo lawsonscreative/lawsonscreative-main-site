@@ -96,7 +96,7 @@ export default function PortfolioShowcase() {
               </div>
               {/* Screenshot */}
               <Image
-                src="/images/portfolio/tfrco-new-site.png"
+                src="/images/portfolio/tfrco-new-site.webp"
                 alt="The Flooring and Resin Company website"
                 width={800}
                 height={600}

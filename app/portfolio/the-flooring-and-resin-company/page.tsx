@@ -202,7 +202,7 @@ export default function TFRCOCaseStudy() {
                 <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Homepage hero</span>
               </div>
               <Image
-                src="/images/portfolio/tfrco-hero.png"
+                src="/images/portfolio/tfrco-hero.webp"
                 alt="TFRCO homepage hero section"
                 width={1200}
                 height={800}
@@ -259,12 +259,12 @@ export default function TFRCOCaseStudy() {
                 <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Services</span>
               </div>
               <Image
-                src="/images/portfolio/tfrco-four-tiles.png"
+                src="/images/portfolio/tfrco-four-tiles.webp"
                 alt="TFRCO service tiles"
                 width={1200}
                 height={800}
                 loading="lazy"
-                quality={85}
+                
                 className="w-full h-auto"
               />
             </div>
@@ -317,12 +317,12 @@ export default function TFRCOCaseStudy() {
                 <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Resin page</span>
               </div>
               <Image
-                src="/images/portfolio/tfrco-resin-page.png"
+                src="/images/portfolio/tfrco-resin-page.webp"
                 alt="TFRCO resin feature surfaces page"
                 width={1200}
                 height={800}
                 loading="lazy"
-                quality={85}
+                
                 className="w-full h-auto"
               />
             </div>
@@ -377,12 +377,12 @@ export default function TFRCOCaseStudy() {
                 <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Trust & testimonials</span>
               </div>
               <Image
-                src="/images/portfolio/tfrco-testimonials.png"
+                src="/images/portfolio/tfrco-testimonials.webp"
                 alt="TFRCO why choose us and testimonials"
                 width={1200}
                 height={800}
                 loading="lazy"
-                quality={85}
+                
                 className="w-full h-auto"
               />
             </div>
@@ -422,12 +422,12 @@ export default function TFRCOCaseStudy() {
                   <span className="text-xs font-semibold text-red-600 uppercase tracking-wide">Before</span>
                 </div>
                 <Image
-                  src="/images/portfolio/tfrco-facebook-page.png"
+                  src="/images/portfolio/tfrco-facebook-page.webp"
                   alt="TFRCO Facebook page before website"
                   width={1200}
                   height={800}
                   loading="lazy"
-                  quality={85}
+                  
                   className="w-full h-auto"
                 />
               </div>
@@ -451,12 +451,12 @@ export default function TFRCOCaseStudy() {
                   <span className="text-xs font-semibold text-lime uppercase tracking-wide">After</span>
                 </div>
                 <Image
-                  src="/images/portfolio/tfrco-hero.png"
+                  src="/images/portfolio/tfrco-hero.webp"
                   alt="TFRCO new website homepage"
                   width={1200}
                   height={800}
                   loading="lazy"
-                  quality={85}
+                  
                   className="w-full h-auto"
                 />
               </div>
