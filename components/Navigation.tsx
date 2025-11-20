@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 
@@ -36,29 +35,19 @@ export default function Navigation() {
   };
 
   return (
-    <nav
-      className={`bg-white border-b border-gray-200 sticky top-0 z-50 transition-shadow duration-300 ${
-        isScrolled ? 'shadow-md' : 'shadow-sm'
-      }`}
-    >
+    <nav className={`bg-white border-b border-gray-200 sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'shadow-md' : 'shadow-sm'}`}>
       <div className="container-custom">
-        {/* Top bar */}
-        <div
-          className={`flex items-center justify-between transition-all duration-300 ${
-            isScrolled ? 'py-3' : 'py-5'
-          }`}
-        >
-          {/* Logo */}
-          <Link href="/" className="flex items-center shrink-0">
-            <Image
-              src="/images/logo.webp"
+        <div className={`flex justify-between items-center transition-all duration-300 ${isScrolled ? 'h-20' : 'h-24'}`}>
+          {/* Logo - Without Strapline */}
+          <Link href="/" className="flex items-center">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/logo.png"
               alt="Lawsons Creative"
-              width={260}
-              height={87}
-              priority
-              className={`block object-contain transition-all duration-300 ${
-                isScrolled ? 'h-10' : 'h-12'
-              }`}
+              className="transition-all duration-300 h-auto"
+              style={{
+                width: isScrolled ? '17rem' : '20rem',
+              }}
             />
           </Link>
 
@@ -76,11 +65,14 @@ export default function Navigation() {
               >
                 {link.label}
                 {isActive(link.href) && (
-                  <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-lime" />
+                  <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-lime"></span>
                 )}
               </Link>
             ))}
-            <Link href="/contact" className="btn-primary">
+            <Link
+              href="/contact"
+              className="btn-primary"
+            >
               Book a free consultation
             </Link>
           </div>
@@ -126,7 +118,7 @@ export default function Navigation() {
                 >
                   {link.label}
                   {isActive(link.href) && (
-                    <span className="absolute left-0 top-1/2 -translate-y-1/2 -ml-4 w-1 h-4 bg-lime rounded-r" />
+                    <span className="absolute left-0 top-1/2 -translate-y-1/2 -ml-4 w-1 h-4 bg-lime rounded-r"></span>
                   )}
                 </Link>
               ))}
