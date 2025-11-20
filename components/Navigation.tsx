@@ -40,7 +40,7 @@ export default function Navigation() {
       <div className="container-custom">
         <div className={`flex justify-between items-center transition-all duration-300 ${isScrolled ? 'h-20' : 'h-24'}`}>
           {/* Logo - Without Strapline */}
-          <Link href="/" className="relative">
+          <Link href="/" className="relative flex items-center">
             <Image
               src="/images/logo.webp"
               alt="Lawsons Creative"
@@ -48,6 +48,7 @@ export default function Navigation() {
               height={87}
               priority
               className={`transition-all duration-300 h-auto ${isScrolled ? 'w-52 md:w-56' : 'w-56 md:w-60'}`}
+              style={{ display: 'block' }}
             />
           </Link>
 
