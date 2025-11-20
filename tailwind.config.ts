@@ -29,8 +29,8 @@ const config: Config = {
         warning: '#F97316',
       },
       fontFamily: {
-        sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
-        heading: ['Space Grotesk', 'Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-body)', 'system-ui', 'sans-serif'],
+        heading: ['var(--font-heading)', 'var(--font-body)', 'system-ui', 'sans-serif'],
       },
     },
   },

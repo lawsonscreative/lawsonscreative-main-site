@@ -108,7 +108,7 @@ export default function PortfolioShowcase() {
                 </div>
                 {/* Screenshot */}
                 <Image
-                  src="/images/portfolio/graceful-petcare-before.png"
+                  src="/images/portfolio/graceful-petcare-before.webp"
                   alt="Graceful Pet Care website before redesign"
                   width={800}
                   height={600}
@@ -129,7 +129,7 @@ export default function PortfolioShowcase() {
                 </div>
                 {/* Screenshot */}
                 <Image
-                  src="/images/portfolio/graceful-petcare-after.png"
+                  src="/images/portfolio/graceful-petcare-after.webp"
                   alt="Graceful Pet Care website after redesign"
                   width={800}
                   height={600}

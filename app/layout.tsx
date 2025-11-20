@@ -1,8 +1,25 @@
 import type { Metadata } from "next";
+import { Plus_Jakarta_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import StructuredData from "@/components/StructuredData";
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-body",
+  display: "swap",
+  preload: true,
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  variable: "--font-heading",
+  display: "swap",
+  preload: true,
+});
 
 export const metadata: Metadata = {
   title: "Web Design for Small Businesses in the UK | Lawsons Creative",
@@ -24,11 +41,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${plusJakartaSans.variable} ${spaceGrotesk.variable}`}>
       <head>
         <StructuredData />
-        {/* Privacy-friendly analytics by Plausible */}
-        <script async src="https://plausible.io/js/pa-OXqteu7AAgLEOfejtV_6h.js"></script>
+        {/* Privacy-friendly analytics by Plausible - deferred for performance */}
+        <script defer data-domain="lawsonscreative.co.uk" src="https://plausible.io/js/pa-OXqteu7AAgLEOfejtV_6h.js"></script>
         <script dangerouslySetInnerHTML={{
           __html: `window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()`
         }} />
