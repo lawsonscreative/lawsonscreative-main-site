@@ -11,6 +11,11 @@ const nextConfig = {
   },
   // Modern JS output for better performance
   swcMinify: true,
+  // Optimize CSS and JS
+  experimental: {
+    optimizeCss: true,
+    optimizePackageImports: ['framer-motion', 'lucide-react'],
+  },
   async redirects() {
     return [
       {

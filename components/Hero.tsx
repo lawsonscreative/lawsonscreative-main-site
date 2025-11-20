@@ -80,10 +80,8 @@ export default function Hero() {
         </div>
 
         {/* Scroll indicator - animated arrow prompting users to scroll down and explore more content */}
-        <motion.div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
+        <div
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
         >
           <svg
             className="w-6 h-6 text-gray-300"
@@ -96,7 +94,7 @@ export default function Hero() {
           >
             <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
           </svg>
-        </motion.div>
+        </div>
       </div>
 
       {/* Background decoration */}

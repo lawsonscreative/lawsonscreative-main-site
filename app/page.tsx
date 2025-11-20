@@ -1,12 +1,29 @@
+import dynamic from 'next/dynamic';
 import Hero from '@/components/Hero';
 import SocialProof from '@/components/SocialProof';
-import PortfolioShowcase from '@/components/PortfolioShowcase';
-import PackagesSummary from '@/components/PackagesSummary';
-import Process from '@/components/Process';
-import Testimonials from '@/components/Testimonials';
-import WhyChooseUs from '@/components/WhyChooseUs';
-import FAQ from '@/components/FAQ';
-import FinalCTA from '@/components/FinalCTA';
+
+// Lazy load below-the-fold components to reduce initial JS bundle
+const PortfolioShowcase = dynamic(() => import('@/components/PortfolioShowcase'), {
+  loading: () => <div className="section-padding" style={{ minHeight: '400px' }} />
+});
+const PackagesSummary = dynamic(() => import('@/components/PackagesSummary'), {
+  loading: () => <div className="section-padding" style={{ minHeight: '400px' }} />
+});
+const Process = dynamic(() => import('@/components/Process'), {
+  loading: () => <div className="section-padding" style={{ minHeight: '400px' }} />
+});
+const Testimonials = dynamic(() => import('@/components/Testimonials'), {
+  loading: () => <div className="section-padding" style={{ minHeight: '300px' }} />
+});
+const WhyChooseUs = dynamic(() => import('@/components/WhyChooseUs'), {
+  loading: () => <div className="section-padding" style={{ minHeight: '300px' }} />
+});
+const FAQ = dynamic(() => import('@/components/FAQ'), {
+  loading: () => <div className="section-padding" style={{ minHeight: '300px' }} />
+});
+const FinalCTA = dynamic(() => import('@/components/FinalCTA'), {
+  loading: () => <div className="section-padding" style={{ minHeight: '200px' }} />
+});
 
 export default function Home() {
   return (

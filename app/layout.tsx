@@ -43,6 +43,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${plusJakartaSans.variable} ${spaceGrotesk.variable}`}>
       <head>
+        {/* Preconnect to external domains for faster loading */}
+        <link rel="preconnect" href="https://plausible.io" />
+        <link rel="dns-prefetch" href="https://plausible.io" />
         <StructuredData />
         {/* Privacy-friendly analytics by Plausible - deferred for performance */}
         <script defer data-domain="lawsonscreative.co.uk" src="https://plausible.io/js/pa-OXqteu7AAgLEOfejtV_6h.js"></script>
