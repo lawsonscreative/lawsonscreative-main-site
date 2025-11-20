@@ -4,6 +4,7 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import StructuredData from "@/components/StructuredData";
+import CookieConsent from "@/components/CookieConsent";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -60,6 +61,7 @@ export default function RootLayout({
         <Navigation />
         <main id="main-content">{children}</main>
         <Footer />
+        <CookieConsent />
       </body>
     </html>
   );
