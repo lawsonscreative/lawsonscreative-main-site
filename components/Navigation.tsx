@@ -39,14 +39,15 @@ export default function Navigation() {
       <div className="container-custom">
         <div className={`flex justify-between items-center transition-all duration-300 ${isScrolled ? 'h-20' : 'h-24'}`}>
           {/* Logo - Without Strapline */}
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center h-full py-3">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/logo.webp"
               alt="Lawsons Creative"
-              className="transition-all duration-300 h-auto"
+              className="transition-all duration-300"
               style={{
-                width: isScrolled ? '180px' : '220px',
+                height: isScrolled ? '48px' : '56px',
+                width: 'auto',
               }}
             />
           </Link>
