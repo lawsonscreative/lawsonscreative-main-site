@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
@@ -9,11 +8,7 @@ export default function Hero() {
       <div className="container-custom pt-12 pb-16 md:pt-16 md:pb-20 lg:pt-20 lg:pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
+          <div>
             <h1 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6 leading-snug text-white">
               Websites that actually win you customers<span className="text-lime">.</span>
             </h1>
@@ -44,15 +39,10 @@ export default function Hero() {
                 View our work
               </Link>
             </div>
-          </motion.div>
+          </div>
 
           {/* Right Column - Visual Element */}
-          <motion.div
-            className="relative hidden lg:block"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
+          <div className="relative hidden lg:block">
             <div className="relative">
               {/* Placeholder for device mockup - you can add images later */}
               <div className="bg-white rounded-lg shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-300">
@@ -76,7 +66,7 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
 
         {/* Scroll indicator - animated arrow prompting users to scroll down and explore more content */}
