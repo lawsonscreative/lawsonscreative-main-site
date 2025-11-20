@@ -76,7 +76,7 @@ export default function PortfolioPage() {
                 <div className="relative mb-6">
                   <div className="bg-white rounded-xl overflow-hidden shadow-lg ring-2 ring-lime">
                     <Image
-                      src="/images/portfolio/tfrco-hero.webp"
+                      src="/images/portfolio/tfrco-new-site.webp"
                       alt="TFRCO new website homepage"
                       width={800}
                       height={600}
@@ -374,16 +374,16 @@ export default function PortfolioPage() {
                   </h3>
                   <div className="space-y-4">
                     <div>
-                      <div className="text-3xl font-bold text-lime mb-1">35%</div>
-                      <div className="text-slate">Increase in enquiries in first month</div>
+                      <div className="text-3xl font-bold text-lime mb-1">Significant increase in enquiries</div>
+                      <div className="text-slate">More customers requesting consultations since launch</div>
                     </div>
                     <div>
-                      <div className="text-3xl font-bold text-lime mb-1">80%</div>
-                      <div className="text-slate">Increase in mobile bookings</div>
+                      <div className="text-3xl font-bold text-lime mb-1">Better mobile experience</div>
+                      <div className="text-slate">Pet owners can now easily book on their phones</div>
                     </div>
                     <div>
                       <div className="text-3xl font-bold text-lime mb-1">Professional, trustworthy appearance</div>
-                      <div className="text-slate">Customers now regularly comment on how professional and trustworthy the website feels</div>
+                      <div className="text-slate">Customers regularly comment on how professional and trustworthy the website feels</div>
                     </div>
                   </div>
                 </div>
