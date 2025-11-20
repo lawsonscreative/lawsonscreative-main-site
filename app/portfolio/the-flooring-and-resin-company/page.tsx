@@ -34,9 +34,40 @@ export default function TFRCOCaseStudy() {
             <p className="text-xl md:text-2xl text-gray-200 mb-8">
               A modern web presence for a family-run flooring & resin specialist
             </p>
-            <p className="text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto mb-8">
               The Flooring and Resin Company are a family-run business in Ashford, Kent, with over 50 years' experience fitting flooring and resin surfaces. They asked us to replace their single Facebook page with a professional website that reflects the quality of their work and makes it easier for customers to request a quote.
             </p>
+
+            {/* Project summary bar */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 mt-8">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-center text-left">
+                <div>
+                  <div className="text-xs font-semibold text-lime uppercase tracking-wide mb-1">Sector</div>
+                  <div className="text-white">Flooring & Resin</div>
+                </div>
+                <div>
+                  <div className="text-xs font-semibold text-lime uppercase tracking-wide mb-1">Location</div>
+                  <div className="text-white">Ashford, Kent</div>
+                </div>
+                <div>
+                  <div className="text-xs font-semibold text-lime uppercase tracking-wide mb-1">Services</div>
+                  <div className="text-white text-sm">Strategy, UX & Design, Development</div>
+                </div>
+                <div className="flex justify-start md:justify-end">
+                  <a
+                    href="https://www.tfrco.co.uk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary inline-flex items-center gap-2"
+                  >
+                    Visit live site
+                    <svg className="w-4 h-4" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                      <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -365,50 +396,71 @@ export default function TFRCOCaseStudy() {
       {/* Before & After Visuals */}
       <section className="section-padding bg-lightgrey">
         <div className="container-custom max-w-6xl">
-          <h2 className="font-heading font-bold text-3xl md:text-4xl text-navy mb-12 text-center">
-            Before & after
+          <h2 className="font-heading font-bold text-3xl md:text-4xl text-navy mb-6 text-center">
+            The transformation
           </h2>
+          <p className="text-xl text-slate text-center mb-12 max-w-3xl mx-auto">
+            We took TFRCO from a single Facebook page to a full website where every service has a clear path to enquire
+          </p>
 
-          {/* Before */}
-          <div className="mb-16">
-            <h3 className="font-heading font-bold text-2xl md:text-3xl text-navy mb-4">
-              Before – a single Facebook page
-            </h3>
-            <p className="text-lg text-slate leading-relaxed mb-8">
-              Before the new site, TFRCO's online presence was a single Facebook page. It worked for existing customers, but it didn't convey the full range of services or the professionalism of the business.
-            </p>
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-red-200">
-              <div className="bg-gray-100 px-4 py-3 flex items-center justify-between border-b border-gray-200">
-                <div className="flex gap-1.5">
-                  <div className="w-3 h-3 rounded-full bg-red-400"></div>
-                  <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
-                  <div className="w-3 h-3 rounded-full bg-green-400"></div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+            {/* Before */}
+            <div>
+              <h3 className="font-heading font-bold text-2xl text-navy mb-4">
+                Before
+              </h3>
+              <p className="text-slate leading-relaxed mb-6">
+                A single Facebook page that worked for existing customers but didn't convey the full range of services or professionalism of the business.
+              </p>
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-red-200">
+                <div className="bg-gray-100 px-4 py-3 flex items-center justify-between border-b border-gray-200">
+                  <div className="flex gap-1.5">
+                    <div className="w-3 h-3 rounded-full bg-red-400"></div>
+                    <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
+                    <div className="w-3 h-3 rounded-full bg-green-400"></div>
+                  </div>
+                  <span className="text-xs font-semibold text-red-600 uppercase tracking-wide">Before</span>
                 </div>
-                <span className="text-xs font-semibold text-red-600 uppercase tracking-wide">Before</span>
+                <Image
+                  src="/images/portfolio/tfrco-facebook-page.png"
+                  alt="TFRCO Facebook page before website"
+                  width={1200}
+                  height={800}
+                  loading="lazy"
+                  quality={85}
+                  className="w-full h-auto"
+                />
               </div>
-              <Image
-                src="/images/portfolio/tfrco-facebook-page.png"
-                alt="TFRCO Facebook page before website"
-                width={1200}
-                height={800}
-                loading="lazy"
-                quality={85}
-                className="w-full h-auto"
-              />
             </div>
-            <p className="text-sm text-slate italic mt-4 text-center">
-              Before: TFRCO relied on a single Facebook page for enquiries and visibility.
-            </p>
-          </div>
 
-          {/* After - summary of transformation */}
-          <div>
-            <h3 className="font-heading font-bold text-2xl md:text-3xl text-navy mb-4">
-              After – a modern, customer-focused website
-            </h3>
-            <p className="text-lg text-slate leading-relaxed mb-8">
-              The new website provides a professional presence that matches the quality of their work and supports both domestic and commercial projects. See the transformation above in the detailed solution sections.
-            </p>
+            {/* After */}
+            <div>
+              <h3 className="font-heading font-bold text-2xl text-navy mb-4">
+                After
+              </h3>
+              <p className="text-slate leading-relaxed mb-6">
+                A modern, customer-focused website with clear service separation, professional imagery, trust signals, and multiple paths to request quotes.
+              </p>
+              <div className="bg-white rounded-xl shadow-xl overflow-hidden ring-4 ring-lime">
+                <div className="bg-gray-100 px-4 py-3 flex items-center justify-between border-b border-gray-200">
+                  <div className="flex gap-1.5">
+                    <div className="w-3 h-3 rounded-full bg-red-400"></div>
+                    <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
+                    <div className="w-3 h-3 rounded-full bg-green-400"></div>
+                  </div>
+                  <span className="text-xs font-semibold text-lime uppercase tracking-wide">After</span>
+                </div>
+                <Image
+                  src="/images/portfolio/tfrco-hero.png"
+                  alt="TFRCO new website homepage"
+                  width={1200}
+                  height={800}
+                  loading="lazy"
+                  quality={85}
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -419,9 +471,17 @@ export default function TFRCOCaseStudy() {
           <h2 className="font-heading font-bold text-3xl md:text-4xl text-navy mb-6">
             Results & early impact
           </h2>
-          <p className="text-lg text-slate leading-relaxed">
-            Since launch, TFRCO's enquiries are more focused, and new customers arrive with a better understanding of the flooring and resin options available. The site gives them a professional presence that matches the quality of their work and supports both domestic and commercial projects.
-          </p>
+          <div className="space-y-6">
+            <p className="text-lg text-slate leading-relaxed">
+              Since launch, TFRCO's enquiries are more focused and better prepared. New customers now arrive with a clearer understanding of both flooring and resin options, which saves time in early conversations.
+            </p>
+            <p className="text-lg text-slate leading-relaxed">
+              The site gives them a professional presence that matches the quality of their craftsmanship. Resin is now positioned as a clear hero service — not something they have to explain from scratch — and commercial clients can quickly see the range of settings they work in (homes, care facilities, offices).
+            </p>
+            <p className="text-lg text-slate leading-relaxed">
+              Most importantly: the website works as hard as they do, turning visitors into enquiries 24/7.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -431,8 +491,11 @@ export default function TFRCOCaseStudy() {
           <h2 className="font-heading font-bold text-3xl md:text-4xl mb-6">
             Want a site like this for your business?
           </h2>
+          <p className="text-lg text-gray-200 leading-relaxed mb-4 max-w-3xl mx-auto">
+            We do this for other trades, pet services, fitness coaches, and local service businesses across the UK.
+          </p>
           <p className="text-lg text-gray-200 leading-relaxed mb-8 max-w-3xl mx-auto">
-            We build modern, fast-loading sites for UK service businesses, with clear messaging and measurable results.
+            Modern, fast-loading websites with clear messaging and measurable results. No agency price tag.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -442,10 +505,18 @@ export default function TFRCOCaseStudy() {
               Book a free consultation
             </Link>
             <Link
-              href="/contact"
+              href="mailto:hello@lawsonscreative.co.uk"
               className="inline-block px-8 py-4 bg-white text-navy font-semibold rounded-lg hover:bg-gray-100 transition-colors"
             >
               Get a quote by email
+            </Link>
+          </div>
+          <div className="mt-8">
+            <Link
+              href="/portfolio"
+              className="text-gray-300 hover:text-lime transition-colors text-sm font-semibold"
+            >
+              ← See more projects
             </Link>
           </div>
         </div>

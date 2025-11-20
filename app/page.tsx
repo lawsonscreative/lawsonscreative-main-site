@@ -32,6 +32,10 @@ const FinalCTA = dynamic(() => import('@/components/FinalCTA'), {
   loading: () => <div className="section-padding" style={{ minHeight: '200px' }} />,
   ssr: false
 });
+const MidPageCTA = dynamic(() => import('@/components/MidPageCTA'), {
+  loading: () => <div className="section-padding" style={{ minHeight: '200px' }} />,
+  ssr: false
+});
 
 export default function Home() {
   return (
@@ -39,6 +43,7 @@ export default function Home() {
       <Hero />
       <SocialProof />
       <PortfolioShowcase />
+      <MidPageCTA />
       <PackagesSummary />
       <Process />
       <Testimonials />

@@ -466,4 +466,13 @@ h4 {
     color: var(--color-text-secondary);
     font-weight: var(--font-medium);
   }
+
+  /* Prose width for readability (70-80 characters) */
+  .prose-width {
+    max-width: 70ch; /* ~70-80 characters per line for optimal readability */
+  }
+
+  .prose-width-wide {
+    max-width: 90ch; /* Slightly wider for less dense content */
+  }
 }
