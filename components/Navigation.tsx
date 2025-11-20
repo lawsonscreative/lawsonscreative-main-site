@@ -44,7 +44,10 @@ export default function Navigation() {
             <img
               src="/images/logo.png"
               alt="Lawsons Creative"
-              className={`h-auto transition-all duration-300 ${isScrolled ? 'w-[14.3rem] md:w-[15.4rem]' : 'w-[15.4rem] md:w-[16.5rem]'}`}
+              className="transition-all duration-300 h-auto"
+              style={{
+                width: isScrolled ? '17rem' : '20rem',
+              }}
             />
           </Link>
 
