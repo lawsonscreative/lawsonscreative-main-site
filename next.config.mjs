@@ -16,6 +16,10 @@ const nextConfig = {
     optimizeCss: true,
     optimizePackageImports: ['framer-motion', 'lucide-react'],
   },
+  // Output standalone for better performance
+  output: 'standalone',
+  // Enable production optimizations
+  productionBrowserSourceMaps: false,
   async headers() {
     return [
       {

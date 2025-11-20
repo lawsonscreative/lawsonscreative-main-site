@@ -52,6 +52,8 @@ export default function RootLayout({
     <html lang="en" className={`${plusJakartaSans.variable} ${spaceGrotesk.variable}`}>
       <head>
         {/* Preconnect to external domains for faster loading */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://plausible.io" />
         <link rel="dns-prefetch" href="https://plausible.io" />
         <StructuredData />
