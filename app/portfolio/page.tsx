@@ -22,6 +22,207 @@ export default function PortfolioPage() {
         </div>
       </section>
 
+      {/* Case Study - The Flooring and Resin Company */}
+      <section className="section-padding bg-lightgrey">
+        <div className="container-custom">
+          <div className="max-w-6xl mx-auto">
+            {/* Project Header */}
+            <div className="mb-12">
+              <div className="flex flex-wrap items-center gap-3 mb-4">
+                <span className="inline-block bg-lime text-navy px-4 py-2 rounded-full font-semibold text-sm">
+                  Trades
+                </span>
+                <span className="text-slate text-sm">·</span>
+                <span className="inline-block bg-navy/5 text-navy px-4 py-2 rounded-full font-semibold text-sm">
+                  New Website Build
+                </span>
+              </div>
+              <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-4">
+                The Flooring and Resin Company
+              </h2>
+              <p className="text-xl text-slate">
+                Replacing a single Facebook page with a modern website that positions a family-run flooring specialist as experts in both traditional flooring and bespoke resin surfaces.
+              </p>
+            </div>
+
+            {/* Before/After Comparison */}
+            <div className="bg-white rounded-2xl p-8 mb-12">
+              <div className="text-center mb-6">
+                <h3 className="font-heading font-bold text-2xl text-navy mb-2">
+                  Before & After
+                </h3>
+                <p className="text-slate">From Facebook-only to professional web presence</p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Before */}
+                <div className="relative mb-6">
+                  <div className="bg-white rounded-xl overflow-hidden shadow-lg">
+                    <Image
+                      src="/images/portfolio/tfrco-facebook-page.webp"
+                      alt="TFRCO Facebook page before website"
+                      width={800}
+                      height={600}
+                      loading="lazy"
+                      className="w-full h-auto"
+                    />
+                  </div>
+                  <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 z-10">
+                    <span className="inline-block bg-red-100 text-red-700 px-5 py-2 rounded-full text-base font-bold shadow-lg">
+                      Before
+                    </span>
+                  </div>
+                </div>
+                {/* After */}
+                <div className="relative mb-6">
+                  <div className="bg-white rounded-xl overflow-hidden shadow-lg ring-2 ring-lime">
+                    <Image
+                      src="/images/portfolio/tfrco-hero.webp"
+                      alt="TFRCO new website homepage"
+                      width={800}
+                      height={600}
+                      loading="lazy"
+                      className="w-full h-auto"
+                    />
+                  </div>
+                  <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 z-10">
+                    <span className="inline-block bg-lime text-navy px-5 py-2 rounded-full text-base font-bold shadow-lg">
+                      After
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Project Details */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+              {/* Left Column */}
+              <div>
+                <div className="mb-8">
+                  <h3 className="font-heading font-bold text-2xl text-navy mb-3">
+                    Project overview
+                  </h3>
+                  <div className="space-y-2 text-slate">
+                    <div><strong className="text-navy">Client:</strong> The Flooring and Resin Company</div>
+                    <div><strong className="text-navy">Industry:</strong> Flooring & Resin Specialists</div>
+                    <div><strong className="text-navy">Project Type:</strong> New Website Build</div>
+                    <div><strong className="text-navy">Timeline:</strong> 2 weeks</div>
+                    <div><strong className="text-navy">Package:</strong> Professional</div>
+                  </div>
+                </div>
+
+                <div className="mb-8">
+                  <h3 className="font-heading font-bold text-2xl text-navy mb-3">
+                    The challenge
+                  </h3>
+                  <p className="text-slate leading-relaxed">
+                    TFRCO relied on a Facebook page for their online presence. While fine for word-of-mouth, it didn't clearly explain their full range of services, didn't look as professional as their workmanship, and made it harder for new customers to understand what they do and request quotes.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="font-heading font-bold text-2xl text-navy mb-3">
+                    Our solution
+                  </h3>
+                  <p className="text-slate leading-relaxed mb-4">
+                    We built a modern website that immediately tells visitors who they are, where they work, and what they offer. Service tiles separate traditional flooring (carpet, vinyl, laminate) from specialist resin surfaces, each with clear quote paths.
+                  </p>
+                  <p className="text-slate leading-relaxed">
+                    A dedicated resin page positions it as a premium service with "what it is", benefits, and use-cases. Trust content highlights 50+ years' experience, family-run service, and testimonials from homes, offices, and care settings.
+                  </p>
+                </div>
+              </div>
+
+              {/* Right Column */}
+              <div>
+                <div className="mb-8">
+                  <h3 className="font-heading font-bold text-2xl text-navy mb-3">
+                    Key features
+                  </h3>
+                  <ul className="space-y-3">
+                    {[
+                      'Clear local hero with location and services upfront',
+                      'Service-led layout with 4 clear tiles',
+                      'Dedicated resin feature surfaces page',
+                      'Trust badges (50+ years, fully insured, family-run)',
+                      'Multiple quote CTAs (form, phone, WhatsApp)',
+                      'Real testimonials from different client types',
+                      'Mobile-friendly responsive design',
+                      'Fast loading and SEO optimised',
+                    ].map((feature, idx) => (
+                      <li key={idx} className="flex items-start">
+                        <svg
+                          className="w-5 h-5 text-lime mr-2 flex-shrink-0 mt-0.5"
+                          fill="none"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span className="text-slate">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="bg-white rounded-xl p-6">
+                  <h3 className="font-heading font-bold text-2xl text-navy mb-4">
+                    Early results
+                  </h3>
+                  <div className="space-y-4">
+                    <div>
+                      <div className="text-3xl font-bold text-lime mb-1">More focused enquiries</div>
+                      <div className="text-slate">Customers arrive better informed about both flooring and resin options</div>
+                    </div>
+                    <div>
+                      <div className="text-3xl font-bold text-lime mb-1">Resin now a hero service</div>
+                      <div className="text-slate">Positioned as premium specialist service, not an afterthought</div>
+                    </div>
+                    <div>
+                      <div className="text-3xl font-bold text-lime mb-1">Working 24/7</div>
+                      <div className="text-slate">Professional web presence converting visitors into enquiries around the clock</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* CTA */}
+            <div className="text-center">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="https://www.tfrco.co.uk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center btn-primary"
+                >
+                  View live site
+                  <svg
+                    className="w-5 h-5 ml-2"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                  </svg>
+                </a>
+                <Link
+                  href="/portfolio/the-flooring-and-resin-company"
+                  className="btn-secondary inline-block"
+                >
+                  Read full case study
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Case Study - Graceful Pet Care */}
       <section className="section-padding">
         <div className="container-custom">
