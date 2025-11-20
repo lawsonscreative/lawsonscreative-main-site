@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic';
 import Hero from '@/components/Hero';
+import LighthouseMetricsSection from '@/components/LighthouseMetricsSection';
 import SocialProof from '@/components/SocialProof';
 
 // Lazy load below-the-fold components to reduce initial JS bundle
@@ -41,6 +42,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <LighthouseMetricsSection />
       <SocialProof />
       <PortfolioShowcase />
       <MidPageCTA />
