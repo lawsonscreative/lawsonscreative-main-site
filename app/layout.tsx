@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import { Plus_Jakarta_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import StructuredData from "@/components/StructuredData";
-import CookieConsent from "@/components/CookieConsent";
+
+// Lazy load cookie consent to avoid blocking initial render
+const CookieConsent = dynamic(() => import("@/components/CookieConsent"), {
+  ssr: false,
+});
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],

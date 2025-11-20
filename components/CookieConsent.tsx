@@ -10,8 +10,13 @@ export default function CookieConsent() {
     // Check if user has already made a choice
     const consent = localStorage.getItem('cookie-consent');
     if (!consent) {
-      // Show banner after a short delay for better UX
-      setTimeout(() => setShowBanner(true), 1000);
+      // Show banner after a short delay for better UX and performance
+      // Use requestIdleCallback for non-blocking render
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(() => setShowBanner(true), { timeout: 2000 });
+      } else {
+        setTimeout(() => setShowBanner(true), 2000);
+      }
     }
   }, []);
 
@@ -33,10 +38,11 @@ export default function CookieConsent() {
 
   return (
     <div
-      className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t-2 border-gray-200 shadow-2xl"
+      className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t-2 border-gray-200 shadow-2xl will-change-transform"
       role="dialog"
       aria-live="polite"
       aria-label="Cookie consent"
+      style={{ transform: 'translateZ(0)' }}
     >
       <div className="container-custom py-6">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
