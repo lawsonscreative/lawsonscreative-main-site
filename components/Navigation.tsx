@@ -42,7 +42,7 @@ export default function Navigation() {
           {/* Logo - Without Strapline */}
           <Link href="/" className="relative">
             <Image
-              src="/images/logo.png"
+              src="/images/logo.webp"
               alt="Lawsons Creative"
               width={260}
               height={87}
