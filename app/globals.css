@@ -37,9 +37,7 @@
   --color-border-dark: #94A3B8;
 
   /* ===== TYPOGRAPHY SYSTEM ===== */
-  /* Font families - using Next.js font optimization */
-  --font-body: var(--font-body), system-ui, sans-serif;
-  --font-heading: var(--font-heading), var(--font-body), system-ui, sans-serif;
+  /* Font families - Next.js font optimization sets --font-body and --font-heading */
 
   /* Font sizes - Mobile first, desktop in media queries */
   --text-xs: 0.875rem;      /* 14px - small/meta text */
@@ -130,7 +128,7 @@
 body {
   color: var(--color-text-secondary);
   background: var(--color-background-primary);
-  font-family: var(--font-body);
+  font-family: var(--font-body), system-ui, -apple-system, sans-serif;
   font-size: var(--text-base);
   line-height: var(--leading-relaxed);
 }
@@ -141,7 +139,7 @@ html {
 
 /* ===== TYPOGRAPHY SYSTEM ===== */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
+  font-family: var(--font-heading), var(--font-body), system-ui, -apple-system, sans-serif;
   color: var(--color-text-primary);
   font-weight: var(--font-bold);
   line-height: var(--leading-tight);
