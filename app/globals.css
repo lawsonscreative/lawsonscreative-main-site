@@ -87,10 +87,10 @@
   --space-20: 5rem;     /* 80px */
   --space-24: 6rem;     /* 96px */
 
-  /* Section spacing */
-  --section-padding-y-sm: 4rem;   /* 64px mobile */
-  --section-padding-y-md: 5rem;   /* 80px tablet */
-  --section-padding-y-lg: 6rem;   /* 96px desktop */
+  /* Section spacing - matched to TFRCO's tighter feel */
+  --section-padding-y-sm: 3rem;   /* 48px mobile */
+  --section-padding-y-md: 3.5rem; /* 56px tablet */
+  --section-padding-y-lg: 4rem;   /* 64px desktop */
 
   /* ===== DESIGN TOKENS ===== */
   --border-radius-sm: 0.5rem;   /* 8px - buttons, inputs */
