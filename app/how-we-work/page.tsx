@@ -13,7 +13,7 @@ export default function ProcessPage() {
       title: 'Discovery',
       duration: 'Day 1–2',
       description:
-        'I start by understanding your business, goals, and customers. What makes you different? Who are you trying to reach? What actions do you want visitors to take?',
+        'We start by understanding your business, goals, and customers. What makes you different? Who are you trying to reach? What actions do you want visitors to take?',
       deliverable: 'Strategic brief and sitemap',
       whatWeNeed: [
         'Information about your business and services',
@@ -34,7 +34,7 @@ export default function ProcessPage() {
       title: 'Design',
       duration: 'Day 3-5',
       description:
-        "I design a modern, mobile-first website that reflects your brand and speaks to your customers. You'll review visual mock-ups and give feedback before I build anything.",
+        "We design a modern, mobile-first website that reflects your brand and speaks to your customers. You'll review visual mock-ups and give feedback before we build anything.",
       deliverable: 'Visual designs for approval',
       whatWeNeed: [
         'Approval of strategic brief',
@@ -54,7 +54,7 @@ export default function ProcessPage() {
       title: 'Build',
       duration: 'Day 6-10',
       description:
-        'I build your site using modern, fast technology. Every page is optimised for mobile, tested for speed, and built to convert visitors into customers.',
+        'We build your site using modern, fast technology. Every page is optimised for mobile, tested for speed, and built to convert visitors into customers.',
       deliverable: 'Fully-functional website on staging URL',
       whatWeNeed: [
         'Approval of final designs',
@@ -76,7 +76,7 @@ export default function ProcessPage() {
       title: 'Launch',
       duration: 'Day 11-14',
       description:
-        "After your final approval, I launch your site, set up analytics, and walk you through how everything works. You're live and ready to grow.",
+        "After your final approval, we launch your site, set up analytics, and walk you through how everything works. You're live and ready to grow.",
       deliverable: 'Live website + walkthrough',
       whatWeNeed: [
         'Final approval of staging site',
@@ -225,7 +225,7 @@ export default function ProcessPage() {
                 </div>
               </div>
               <p className="text-slate leading-relaxed mt-4">
-                I accept bank transfer, debit card, and credit card. All terms are agreed upfront — no surprise invoices, no scope creep.
+                We accept bank transfer, debit card, and credit card. All terms are agreed upfront — no surprise invoices, no scope creep.
               </p>
             </div>
 
@@ -285,27 +285,27 @@ export default function ProcessPage() {
               </div>
             </div>
 
-            {/* What I Need From You */}
+            {/* What We Need From You */}
             <div>
               <h3 className="font-heading font-bold text-2xl text-navy mb-4">
-                What I need from you
+                What we need from you
               </h3>
               <p className="text-slate leading-relaxed mb-4">
-                To deliver on time, I need a few things from you:
+                To deliver on time, we need a few things from you:
               </p>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <div className="text-2xl flex-shrink-0">📝</div>
                   <div>
                     <h4 className="font-semibold text-navy mb-1">Content within 3 days of request</h4>
-                    <p className="text-slate text-sm">Text, photos, testimonials — I'll give you a simple template showing exactly what I need.</p>
+                    <p className="text-slate text-sm">Text, photos, testimonials — we'll give you a simple template showing exactly what we need.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="text-2xl flex-shrink-0">👀</div>
                   <div>
                     <h4 className="font-semibold text-navy mb-1">Timely feedback</h4>
-                    <p className="text-slate text-sm">When I share designs or staging sites, a quick reply (even just a phone call) keeps us on track.</p>
+                    <p className="text-slate text-sm">When we share designs or staging sites, a quick reply (even just a phone call) keeps us on track.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -317,7 +317,7 @@ export default function ProcessPage() {
                 </div>
               </div>
               <p className="text-slate text-sm leading-relaxed mt-4 italic">
-                Don't worry — I'll remind you when I need something, and I'll make it as easy as possible. Most clients find the process surprisingly smooth.
+                Don't worry — we'll remind you when we need something, and we'll make it as easy as possible. Most clients find the process surprisingly smooth.
               </p>
             </div>
 
@@ -335,7 +335,7 @@ export default function ProcessPage() {
                 <li>You own all the work delivered so far (designs, content, code)</li>
               </ul>
               <p className="text-slate text-sm leading-relaxed mt-3">
-                I'd rather you be happy than locked into something that's not working. Cancellations are rare, but the option is there if you need it.
+                We'd rather you be happy than locked into something that's not working. Cancellations are rare, but the option is there if you need it.
               </p>
             </div>
           </div>
@@ -346,7 +346,7 @@ export default function ProcessPage() {
       <section className="section-padding bg-navy text-white">
         <div className="container-custom max-w-4xl">
           <h2 className="font-heading font-bold text-4xl mb-12 text-center text-white">
-            What you can expect from me
+            What you can expect from us
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -359,7 +359,7 @@ export default function ProcessPage() {
               <div>
                 <h3 className="font-heading font-bold text-xl mb-2">Clear communication</h3>
                 <p className="text-gray-200">
-                  Email, Teams, or phone — your choice. I keep you updated at every stage and respond to questions quickly.
+                  Email, Teams, or phone — your choice. We keep you updated at every stage and respond to questions quickly.
                 </p>
               </div>
             </div>
@@ -385,7 +385,7 @@ export default function ProcessPage() {
               <div>
                 <h3 className="font-heading font-bold text-xl mb-2">Proactive problem-solving</h3>
                 <p className="text-gray-200">
-                  If I spot an issue or opportunity, I'll tell you. I'm here to make your site work, not just tick boxes.
+                  If we spot an issue or opportunity, we'll tell you. We're here to make your site work, not just tick boxes.
                 </p>
               </div>
             </div>
@@ -398,7 +398,7 @@ export default function ProcessPage() {
               <div>
                 <h3 className="font-heading font-bold text-xl mb-2">On-time delivery</h3>
                 <p className="text-gray-200">
-                  I commit to realistic timelines and hit them. If something changes, I'll communicate immediately.
+                  We commit to realistic timelines and hit them. If something changes, we'll communicate immediately.
                 </p>
               </div>
             </div>
@@ -406,7 +406,7 @@ export default function ProcessPage() {
 
           <div className="mt-12 text-center">
             <p className="text-gray-200 italic mb-4">
-              Timeline may vary based on package and complexity. I'll provide a detailed schedule during discovery.
+              Timeline may vary based on package and complexity. We'll provide a detailed schedule during discovery.
             </p>
           </div>
         </div>

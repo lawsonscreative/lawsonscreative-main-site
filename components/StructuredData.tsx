@@ -101,7 +101,7 @@ export default function StructuredData() {
         name: 'What if I need changes after launch?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Every package includes post-launch revisions: Starter: 1 round of revisions, Professional: 2 rounds of revisions, Premium: 3 rounds of revisions + 30 days priority support. After launch, you have several options for ongoing changes: DIY (I\'ll train you on how to make basic content updates yourself), Maintenance package (£50–£150/month for regular updates, security, backups, and small changes), or Pay-as-you-go (£75/hour for one-off content updates or new pages).',
+          text: 'Every package includes post-launch revisions: Starter: 1 round of revisions, Professional: 2 rounds of revisions, Premium: 3 rounds of revisions + 30 days priority support. After launch, you have several options for ongoing changes: DIY (we\'ll train you on how to make basic content updates yourself), Maintenance package (£50–£150/month for regular updates, security, backups, and small changes), or Pay-as-you-go (£75/hour for one-off content updates or new pages).',
         },
       },
       {
@@ -109,7 +109,7 @@ export default function StructuredData() {
         name: 'What about hosting? Do I need to arrange that?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'No, you don\'t need to worry about hosting — I\'ll handle everything. What\'s included: Fast, secure hosting on modern platforms (Vercel or Netlify), Free SSL certificate, Automatic backups, 99.9% uptime guarantee, Your custom domain setup. First year hosting is included in your build cost. After year 1, you have two options: Self-managed hosting (£5-20/month) or Managed hosting + maintenance (£50-150/month) which includes hosting, security updates, backups, content updates, and priority support.',
+          text: 'No, you don\'t need to worry about hosting — we\'ll handle everything. What\'s included: Fast, secure hosting on modern platforms (Vercel or Netlify), Free SSL certificate, Automatic backups, 99.9% uptime guarantee, Your custom domain setup. First year hosting is included in your build cost. After year 1, you have two options: Self-managed hosting (£5-20/month) or Managed hosting + maintenance (£50-150/month) which includes hosting, security updates, backups, content updates, and priority support.',
         },
       },
       {
@@ -117,7 +117,7 @@ export default function StructuredData() {
         name: 'Can I update the website myself after it\'s built?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'For non-technical clients, your website is built with modern, high-performance technology (not a drag-and-drop builder). For most updates (changing text, adding images, updating prices), you simply email me what needs changing. I\'ll handle it and typically turn it around same-day or next-day. For clients with in-house developers, your site is built with Next.js and hosted on Vercel/Netlify, so developers can take over the codebase and make updates directly.',
+          text: 'For non-technical clients, your website is built with modern, high-performance technology (not a drag-and-drop builder). For most updates (changing text, adding images, updating prices), you simply email us what needs changing. We\'ll handle it and typically turn it around same-day or next-day. For clients with in-house developers, your site is built with Next.js and hosted on Vercel/Netlify, so developers can take over the codebase and make updates directly.',
         },
       },
       {

@@ -19,7 +19,7 @@ export default function ContactPage() {
             Let's talk about your project<span className="text-lime">.</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
-            Book a free 30-minute consultation or send a message. I'll respond within 48 hours (usually much faster).
+            Book a free 30-minute consultation or send a message. We'll respond within 48 hours (usually much faster).
           </p>
         </div>
       </section>
@@ -48,7 +48,7 @@ export default function ContactPage() {
                 Book a call (recommended)
               </h2>
               <p className="text-slate mb-6 leading-relaxed">
-                The best way to discuss your project is a quick call. I'll talk about your business, goals, and how a website can help. No pressure, no obligation.
+                The best way to discuss your project is a quick call. We'll talk about your business, goals, and how a website can help. No pressure, no obligation.
               </p>
 
               <CalendlyButton className="btn-primary w-full text-center">
@@ -91,7 +91,7 @@ export default function ContactPage() {
                 Send a message
               </h2>
               <p className="text-slate mb-6 leading-relaxed">
-                Prefer email? Fill out the form below and I'll get back to you within 48 hours (usually much faster) with answers to your questions.
+                Prefer email? Fill out the form below and we'll get back to you within 48 hours (usually much faster) with answers to your questions.
               </p>
             </div>
           </div>
