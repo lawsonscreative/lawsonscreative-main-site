@@ -13,7 +13,7 @@ export default function ProcessPage() {
       title: 'Discovery',
       duration: 'Day 1–2',
       description:
-        'We start by understanding your business, goals, and customers. What makes you different? Who are you trying to reach? What actions do you want visitors to take?',
+        'I start by understanding your business, goals, and customers. What makes you different? Who are you trying to reach? What actions do you want visitors to take?',
       deliverable: 'Strategic brief and sitemap',
       whatWeNeed: [
         'Information about your business and services',
@@ -34,7 +34,7 @@ export default function ProcessPage() {
       title: 'Design',
       duration: 'Day 3-5',
       description:
-        "We design a modern, mobile-friendly website that reflects your brand and speaks to your customers. You'll see mockups and provide feedback before we build anything.",
+        "I design a modern, mobile-first website that reflects your brand and speaks to your customers. You'll review visual mock-ups and give feedback before I build anything.",
       deliverable: 'Visual designs for approval',
       whatWeNeed: [
         'Approval of strategic brief',
@@ -54,7 +54,7 @@ export default function ProcessPage() {
       title: 'Build',
       duration: 'Day 6-10',
       description:
-        'We build your site using modern, fast technology. Every page is optimised for mobile, tested for speed, and built to convert visitors into customers.',
+        'I build your site using modern, fast technology. Every page is optimised for mobile, tested for speed, and built to convert visitors into customers.',
       deliverable: 'Fully-functional website on staging URL',
       whatWeNeed: [
         'Approval of final designs',
@@ -76,7 +76,7 @@ export default function ProcessPage() {
       title: 'Launch',
       duration: 'Day 11-14',
       description:
-        "After your final approval, we launch your site, set up analytics, and walk you through how everything works. You're live and ready to grow.",
+        "After your final approval, I launch your site, set up analytics, and walk you through how everything works. You're live and ready to grow.",
       deliverable: 'Live website + walkthrough',
       whatWeNeed: [
         'Final approval of staging site',
@@ -225,7 +225,7 @@ export default function ProcessPage() {
                 </div>
               </div>
               <p className="text-slate leading-relaxed mt-4">
-                We accept bank transfer, debit card, and credit card. All terms are agreed upfront — no surprise invoices, no scope creep.
+                I accept bank transfer, debit card, and credit card. All terms are agreed upfront — no surprise invoices, no scope creep.
               </p>
             </div>
 
@@ -245,12 +245,12 @@ export default function ProcessPage() {
                 </div>
                 <div className="bg-lightgrey rounded-lg p-4 text-center">
                   <div className="text-3xl mb-2">💬</div>
-                  <div className="font-semibold text-navy">Slack</div>
+                  <div className="font-semibold text-navy">Teams</div>
                   <div className="text-sm text-slate">Real-time updates</div>
                 </div>
                 <div className="bg-lightgrey rounded-lg p-4 text-center">
                   <div className="text-3xl mb-2">📞</div>
-                  <div className="font-semibold text-navy">Phone/Video</div>
+                  <div className="font-semibold text-navy">Phone</div>
                   <div className="text-sm text-slate">Quick calls as needed</div>
                 </div>
               </div>
@@ -304,8 +304,8 @@ export default function ProcessPage() {
                 <div className="flex items-start gap-3">
                   <div className="text-2xl flex-shrink-0">👀</div>
                   <div>
-                    <h4 className="font-semibold text-navy mb-1">Feedback within 48 hours</h4>
-                    <p className="text-slate text-sm">When I share designs or staging sites, timely feedback keeps us on track.</p>
+                    <h4 className="font-semibold text-navy mb-1">Timely feedback</h4>
+                    <p className="text-slate text-sm">When I share designs or staging sites, a quick reply (even just a phone call) keeps us on track.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -346,39 +346,67 @@ export default function ProcessPage() {
       <section className="section-padding bg-navy text-white">
         <div className="container-custom max-w-4xl">
           <h2 className="font-heading font-bold text-4xl mb-12 text-center text-white">
-            What you can expect from us
+            What you can expect from me
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="font-heading font-bold text-xl mb-3">Clear Communication</h3>
-              <p className="text-gray-200">
-                Email, Slack, or phone, your choice. We keep you updated at every stage and respond to questions quickly.
-              </p>
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 bg-lime rounded-full flex items-center justify-center flex-shrink-0">
+                <svg className="w-6 h-6 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 className="font-heading font-bold text-xl mb-2">Clear communication</h3>
+                <p className="text-gray-200">
+                  Email, Teams, or phone — your choice. I keep you updated at every stage and respond to questions quickly.
+                </p>
+              </div>
             </div>
-            <div>
-              <h3 className="font-heading font-bold text-xl mb-3">Regular Updates</h3>
-              <p className="text-gray-200">
-                You'll see progress throughout the project. No disappearing for weeks and surprising you with something you didn't expect.
-              </p>
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 bg-lime rounded-full flex items-center justify-center flex-shrink-0">
+                <svg className="w-6 h-6 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 className="font-heading font-bold text-xl mb-2">Regular updates</h3>
+                <p className="text-gray-200">
+                  You'll see progress throughout the project. No disappearing for weeks and surprising you with something you didn't expect.
+                </p>
+              </div>
             </div>
-            <div>
-              <h3 className="font-heading font-bold text-xl mb-3">Proactive Problem-Solving</h3>
-              <p className="text-gray-200">
-                If we spot an issue or opportunity, we'll tell you. We're here to make your site work, not just tick boxes.
-              </p>
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 bg-lime rounded-full flex items-center justify-center flex-shrink-0">
+                <svg className="w-6 h-6 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 className="font-heading font-bold text-xl mb-2">Proactive problem-solving</h3>
+                <p className="text-gray-200">
+                  If I spot an issue or opportunity, I'll tell you. I'm here to make your site work, not just tick boxes.
+                </p>
+              </div>
             </div>
-            <div>
-              <h3 className="font-heading font-bold text-xl mb-3">On-Time Delivery</h3>
-              <p className="text-gray-200">
-                We commit to realistic timelines and hit them. If something changes, we'll communicate immediately.
-              </p>
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 bg-lime rounded-full flex items-center justify-center flex-shrink-0">
+                <svg className="w-6 h-6 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 className="font-heading font-bold text-xl mb-2">On-time delivery</h3>
+                <p className="text-gray-200">
+                  I commit to realistic timelines and hit them. If something changes, I'll communicate immediately.
+                </p>
+              </div>
             </div>
           </div>
 
           <div className="mt-12 text-center">
             <p className="text-gray-200 italic mb-4">
-              Timeline may vary based on package and complexity. We'll provide a detailed schedule during discovery.
+              Timeline may vary based on package and complexity. I'll provide a detailed schedule during discovery.
             </p>
           </div>
         </div>

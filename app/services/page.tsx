@@ -571,7 +571,7 @@ export default function ServicesPage() {
       <section className="section-padding bg-lightgrey">
         <div className="container-custom max-w-4xl">
           <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-12 text-center">
-            Pricing questions
+            Pricing questions<span className="text-lime">.</span>
           </h2>
 
           <div className="space-y-6">

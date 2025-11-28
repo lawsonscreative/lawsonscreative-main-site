@@ -23,7 +23,7 @@ export default function Process() {
       title: 'Design',
       duration: 'Day 3-5',
       description:
-        "We design a modern, mobile-friendly website that reflects your brand and speaks to your customers. You'll see mockups and provide feedback before we build anything.",
+        "We design a modern, mobile-first website that reflects your brand and speaks to your customers. You'll review visual mock-ups and give feedback before we build anything.",
       deliverable: 'Visual designs for approval',
     },
     {
@@ -54,7 +54,7 @@ export default function Process() {
           className="text-center mb-16"
         >
           <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-4">
-            Simple process. Outstanding results.
+            Simple process. Outstanding results<span className="text-lime">.</span>
           </h2>
           <p className="text-xl text-slate max-w-6xl mx-auto">
             We've streamlined our workflow to deliver quality websites fast, without sacrificing strategy or design.

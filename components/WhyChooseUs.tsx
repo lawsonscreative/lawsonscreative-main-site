@@ -17,39 +17,39 @@ export default function WhyChooseUs() {
     icon: LucideIcon;
   }> = [
     {
-      title: 'Fast Delivery Without Rushing',
+      title: 'Fast delivery without rushing',
       description:
-        "We use efficient modern tools and streamlined processes to deliver in 1–2 weeks. You get realistic timelines and a clear schedule — not vague promises or endless delays.",
+        "Using efficient tooling and proven workflows, we typically complete builds in 1–2 weeks. You'll receive a detailed timeline and milestone plan, ensuring no surprises, just results.",
       icon: Zap,
     },
     {
-      title: 'Strategy First, Pretty Second',
+      title: 'Strategy first, design second',
       description:
-        'Beautiful design matters, but only if it drives results. We start with your business goals and build websites that convert visitors into customers.',
+        'Beautiful design matters only when it delivers results. We start with your business goals and build websites that turn visitors into customers.',
       icon: Target,
     },
     {
       title: 'Mobile-friendly websites',
       description:
-        "60%+ of your visitors are on mobile. We design for phones first, then scale up, not the other way around.",
+        "Over 60% of site visitors are on mobile. We design for phones first, then scale up, not the other way around.",
       icon: Smartphone,
     },
     {
-      title: 'Transparent Pricing, No Surprises',
+      title: 'Transparent pricing, no surprises',
       description:
         "You know exactly what you're paying before we start. No hidden fees, no scope creep, no surprise invoices.",
       icon: PoundSterling,
     },
     {
-      title: 'Built to Last',
+      title: 'Built to last',
       description:
-        "We use modern, maintainable technology that won't be outdated in 6 months. Your site is fast, secure, and straightforward to keep current with simple update requests or ongoing maintenance.",
+        "Built on modern, future-proof technology. Fast, secure and easy to keep current, you can request simple updates anytime or choose ongoing maintenance for peace of mind.",
       icon: Wrench,
     },
     {
-      title: 'Ongoing Support Available',
+      title: 'Ongoing support available',
       description:
-        "Your website isn't 'done' at launch. We offer maintenance packages and support so you can focus on running your business.",
+        "Keep your site secure, current and converting. Post-launch support and maintenance plans mean fewer interruptions and more time for your business.",
       icon: HandshakeIcon,
     },
   ];
@@ -64,7 +64,7 @@ export default function WhyChooseUs() {
           className="text-center mb-16"
         >
           <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-4">
-            Built for small businesses, by someone who gets it
+            Built for small businesses, by someone who gets it<span className="text-lime">.</span>
           </h2>
           <p className="text-xl text-slate max-w-6xl mx-auto">
             Large agencies charge £10k+ and take months. We deliver quality websites in 1–2 weeks at a fraction of the cost, without cutting corners.
