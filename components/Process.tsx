@@ -15,7 +15,7 @@ export default function Process() {
       title: 'Discovery',
       duration: 'Day 1–2',
       description:
-        'We start by understanding your business, goals, and customers. What makes you different? Who are you trying to reach? What actions do you want visitors to take?',
+        'We start by understanding your business, goals, and customers and ask questions like what makes you different? Who are you trying to reach? What actions do you want visitors to take?',
       deliverable: 'Strategic brief and sitemap',
     },
     {
