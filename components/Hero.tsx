@@ -1,8 +1,23 @@
 'use client';
 
 import Link from 'next/link';
+import { useTypewriter } from '@/hooks/useTypewriter';
+
+// Phrases to cycle through (UK spelling)
+const HERO_PHRASES = [
+  'drive more enquiries',
+  'showcase your work',
+  'demonstrate credibility',
+  'simply work',
+  'win you business',
+  'win you customers',
+];
 
 export default function Hero() {
+  const { displayText, isAnimating } = useTypewriter({
+    phrases: HERO_PHRASES,
+  });
+
   return (
     <section className="relative bg-gradient-to-br from-navy via-navy to-blue-900 text-white overflow-hidden">
       <div className="container-custom pt-12 pb-16 md:pt-16 md:pb-20 lg:pt-20 lg:pb-24">
@@ -10,7 +25,17 @@ export default function Hero() {
           {/* Left Column - Content */}
           <div>
             <h1 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6 leading-snug text-white">
-              Websites that actually win you customers<span className="text-lime">.</span>
+              Websites that{' '}
+              <span aria-live="polite" className="inline">
+                {displayText}
+              </span>
+              <span className="text-lime">.</span>
+              {isAnimating && (
+                <span
+                  className="typewriter-caret"
+                  aria-hidden="true"
+                />
+              )}
             </h1>
             <h2 className="text-xl md:text-2xl mb-6 text-gray-200 font-semibold">
               Modern, fast-loading websites for UK service businesses — designed to build trust and generate enquiries. Typically delivered in 1–2 weeks, without the agency price tag.
