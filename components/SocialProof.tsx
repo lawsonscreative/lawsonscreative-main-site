@@ -10,17 +10,17 @@ export default function SocialProof() {
     {
       Icon: Zap,
       title: 'Launched in 1–2 weeks',
-      description: 'Streamlined process, clear deadlines. You get your site when you need it, not when an agency\'s calendar opens up.'
+      description: 'Fast, streamlined process with clear deadlines. You get your site when you need it, not when an agency\'s calendar opens up.'
     },
     {
       Icon: PoundSterling,
       title: 'From £500 (ex VAT)',
-      description: 'Transparent fixed-price packages, no surprise invoices. You know exactly what you\'re paying before we start.'
+      description: 'Transparent fixed-price packages mean no surprise invoices. You know exactly what you\'re paying before we start.'
     },
     {
       Icon: TrendingUp,
-      title: 'Clients see more enquiries',
-      description: 'Real small businesses with measurable results. Modern websites that convert visitors into customers.'
+      title: 'More enquiries, less fuss',
+      description: 'Strategy-led websites for businesses that convert visitors into paying customers.'
     },
   ];
 
