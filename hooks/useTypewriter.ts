@@ -3,11 +3,17 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 
 // Configurable timing constants
-const TYPE_SPEED = 60; // ms per character
-const ERASE_SPEED = 36; // ms per character
+const TYPE_SPEED = 60; // ms per character (base)
+const ERASE_SPEED = 36; // ms per character (base)
 const HOLD_TIME = 5000; // 5 seconds hold after typing complete
 const GAP_TIME = 400; // pause between phrases
 const INITIAL_DELAY = 600; // delay before first animation starts
+const VARIANCE = 15; // ±ms random variance for natural feel
+
+// Add slight random variance for more human-like typing
+const addVariance = (baseSpeed: number): number => {
+  return baseSpeed + Math.floor(Math.random() * (VARIANCE * 2 + 1)) - VARIANCE;
+};
 
 interface UseTypewriterConfig {
   phrases: string[];
@@ -68,7 +74,8 @@ export function useTypewriter({
         if (charIndexRef.current < currentPhrase.length) {
           charIndexRef.current++;
           setDisplayText(currentPhrase.slice(0, charIndexRef.current));
-          scheduleNext(tick, typeSpeed);
+          // Add variance for natural feel
+          scheduleNext(tick, addVariance(typeSpeed));
         } else {
           // Finished typing, hold
           phaseRef.current = 'holding';
@@ -88,7 +95,8 @@ export function useTypewriter({
         if (charIndexRef.current > 0) {
           charIndexRef.current--;
           setDisplayText(currentPhrase.slice(0, charIndexRef.current));
-          scheduleNext(tick, eraseSpeed);
+          // Add variance for natural feel
+          scheduleNext(tick, addVariance(eraseSpeed));
         } else {
           // Finished erasing, gap before next phrase
           phaseRef.current = 'gap';
