@@ -398,15 +398,15 @@ export default function ServicesPage() {
             </div>
 
             {/* Content Updates Card */}
-            <div className="group relative bg-gradient-to-br from-white via-white to-navy/5 rounded-3xl p-10 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(10,37,64,0.3)] transition-all duration-500 border border-gray-100 hover:border-navy/50 hover:-translate-y-2">
+            <div className="group relative bg-gradient-to-br from-white via-white to-lime/5 rounded-3xl p-10 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(0,230,118,0.3)] transition-all duration-500 border border-gray-100 hover:border-lime/50 hover:-translate-y-2">
               {/* Decorative gradient orb */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-navy/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-lime/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
               <div className="relative">
                 {/* Icon */}
-                <div className="w-20 h-20 bg-gradient-to-br from-navy to-navy/60 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-navy/20 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-20 h-20 bg-gradient-to-br from-lime to-lime/60 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-lime/20 group-hover:scale-110 transition-transform duration-300">
                   <svg
-                    className="w-10 h-10 text-lime"
+                    className="w-10 h-10 text-navy"
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -426,7 +426,7 @@ export default function ServicesPage() {
                 {/* Pricing */}
                 <div className="mb-6 pb-6 border-b border-gray-200">
                   <div className="flex items-baseline gap-2">
-                    <span className="text-5xl font-bold bg-gradient-to-r from-navy to-navy/60 bg-clip-text text-transparent">£75</span>
+                    <span className="text-5xl font-bold bg-gradient-to-r from-lime to-lime/60 bg-clip-text text-transparent">£75</span>
                   </div>
                   <div className="text-sm font-semibold text-slate uppercase tracking-wide mt-1">per hour</div>
                 </div>
@@ -434,40 +434,40 @@ export default function ServicesPage() {
                 {/* Features */}
                 <ul className="space-y-4 text-slate">
                   <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-navy/10 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>
                     <span className="text-base leading-relaxed">New page creation</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-navy/10 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>
                     <span className="text-base leading-relaxed">Copy changes & edits</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-navy/10 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>
                     <span className="text-base leading-relaxed">Image updates and optimisation</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-navy/10 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>
                     <span className="text-base leading-relaxed">Adding new features</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-navy/10 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>
@@ -558,15 +558,15 @@ export default function ServicesPage() {
             </div>
 
             {/* Brand & Print Collateral Card */}
-            <div className="group relative bg-gradient-to-br from-white via-white to-navy/5 rounded-3xl p-10 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(10,37,64,0.3)] transition-all duration-500 border border-gray-100 hover:border-navy/50 hover:-translate-y-2">
+            <div className="group relative bg-gradient-to-br from-white via-white to-lime/5 rounded-3xl p-10 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(0,230,118,0.3)] transition-all duration-500 border border-gray-100 hover:border-lime/50 hover:-translate-y-2">
               {/* Decorative gradient orb */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-navy/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-lime/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
               <div className="relative">
                 {/* Icon */}
-                <div className="w-20 h-20 bg-gradient-to-br from-navy to-navy/60 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-navy/20 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-20 h-20 bg-gradient-to-br from-lime to-lime/60 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-lime/20 group-hover:scale-110 transition-transform duration-300">
                   <svg
-                    className="w-10 h-10 text-lime"
+                    className="w-10 h-10 text-navy"
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -586,7 +586,7 @@ export default function ServicesPage() {
                 {/* Pricing */}
                 <div className="mb-6 pb-6 border-b border-gray-200">
                   <div className="flex items-baseline gap-2">
-                    <span className="text-5xl font-bold bg-gradient-to-r from-navy to-navy/60 bg-clip-text text-transparent">Custom</span>
+                    <span className="text-5xl font-bold bg-gradient-to-r from-lime to-lime/60 bg-clip-text text-transparent">Custom</span>
                   </div>
                   <div className="text-sm font-semibold text-slate uppercase tracking-wide mt-1">pricing based on scope</div>
                 </div>
@@ -594,48 +594,48 @@ export default function ServicesPage() {
                 {/* Features */}
                 <ul className="space-y-4 text-slate">
                   <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-navy/10 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>
                     <span className="text-base leading-relaxed">Flyers and leaflets to match your website</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-navy/10 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>
                     <span className="text-base leading-relaxed">Business cards and basic stationery</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-navy/10 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>
                     <span className="text-base leading-relaxed">Simple logo design or refresh</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-navy/10 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>
                     <span className="text-base leading-relaxed">Posters, menus or price lists</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-navy/10 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>
                     <span className="text-base leading-relaxed">Social media launch graphics</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-navy/10 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>

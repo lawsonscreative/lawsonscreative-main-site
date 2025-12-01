@@ -1,6 +1,7 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 export default function Testimonials() {
@@ -9,7 +10,16 @@ export default function Testimonials() {
     threshold: 0.1,
   });
 
+  const [activeIndex, setActiveIndex] = useState(0);
+
   const testimonials = [
+    {
+      quote:
+        "Lawsons Creative transformed our brand and online presence. The new logo and bold identity reflect our female-led management in a male dominated sector, while the website finally showcases the quality of our work. Moving from a generic Outlook address to a professional @TFRCo email has elevated how customers see us and everything now looks and feels as professional as the service we deliver. The team were collaborative, responsive and delivered everything on time. We could not be happier with the result.",
+      name: 'Katie Townsend',
+      business: 'The Flooring and Resin Company',
+      industry: 'Flooring Services',
+    },
     {
       quote:
         "Working with Lawsons Creative was effortless. They took our dated website and transformed it into something that truly represents our business. We've seen a significant increase in enquiries since launch, and customers regularly compliment how professional we look online.",
@@ -17,8 +27,15 @@ export default function Testimonials() {
       business: 'Graceful Pet Care',
       industry: 'Pet Care Services',
     },
-    // Placeholder for future testimonials
   ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((current) => (current + 1) % testimonials.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [testimonials.length]);
 
   return (
     <section className="section-padding bg-secondary" ref={ref}>
@@ -34,13 +51,14 @@ export default function Testimonials() {
           </h2>
         </motion.div>
 
-        <div className="max-w-6xl mx-auto">
-          {testimonials.map((testimonial, index) => (
+        <div className="max-w-6xl mx-auto relative">
+          <AnimatePresence mode="wait">
             <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              key={activeIndex}
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -20 }}
+              transition={{ duration: 0.5 }}
               className="bg-white rounded-2xl p-8 md:p-12 shadow-lg"
             >
               <div className="flex items-start mb-6">
@@ -54,17 +72,17 @@ export default function Testimonials() {
               </div>
 
               <p className="text-xl italic text-slate leading-relaxed mb-8 font-serif">
-                {testimonial.quote}
+                {testimonials[activeIndex].quote}
               </p>
 
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-lime rounded-full flex items-center justify-center text-navy font-bold text-xl mr-4">
-                  {testimonial.name.charAt(0)}
+                  {testimonials[activeIndex].name.charAt(0)}
                 </div>
                 <div>
-                  <div className="font-semibold text-navy">{testimonial.name}</div>
+                  <div className="font-semibold text-navy">{testimonials[activeIndex].name}</div>
                   <div className="text-slate text-sm">
-                    {testimonial.business} • {testimonial.industry}
+                    {testimonials[activeIndex].business} • {testimonials[activeIndex].industry}
                   </div>
                 </div>
               </div>
@@ -83,7 +101,21 @@ export default function Testimonials() {
                 ))}
               </div>
             </motion.div>
-          ))}
+          </AnimatePresence>
+
+          {/* Pagination dots */}
+          <div className="flex justify-center gap-2 mt-6">
+            {testimonials.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setActiveIndex(index)}
+                className={`w-3 h-3 rounded-full transition-colors ${
+                  index === activeIndex ? 'bg-lime' : 'bg-gray-300 hover:bg-gray-400'
+                }`}
+                aria-label={`Go to testimonial ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
