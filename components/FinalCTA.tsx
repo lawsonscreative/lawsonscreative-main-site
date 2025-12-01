@@ -26,8 +26,8 @@ export default function FinalCTA() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-6xl mx-auto"
         >
-          <h2 className="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl mb-6">
-            Ready to grow your business?
+          <h2 className="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl mb-6 text-white">
+            Ready to grow your business<span className="text-lime">?</span>
           </h2>
           <p className="text-xl md:text-2xl mb-8 text-gray-200">
             Book a free 30-minute consultation to discuss your project. No pressure, no obligation, just a conversation about your business and how a website can help.
@@ -53,21 +53,49 @@ export default function FinalCTA() {
             </Link>
           </div>
 
-          <div className="flex items-center justify-center text-gray-300">
-            <svg
-              className="w-5 h-5 mr-2"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-            <span className="text-sm">
-              Free consultation. No obligation. Response time: Within 24 hours (usually faster).
-            </span>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-gray-300">
+            <div className="flex items-center">
+              <svg
+                className="w-5 h-5 mr-2 text-lime"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span className="text-sm">Free consultation</span>
+            </div>
+            <div className="flex items-center">
+              <svg
+                className="w-5 h-5 mr-2 text-lime"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span className="text-sm">No obligation</span>
+            </div>
+            <div className="flex items-center">
+              <svg
+                className="w-5 h-5 mr-2 text-lime"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span className="text-sm">Response time: Within 24 hours (usually faster)</span>
+            </div>
           </div>
         </motion.div>
       </div>

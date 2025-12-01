@@ -62,8 +62,8 @@ export default function LighthouseMetricsSection({
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             {/* Heading */}
-            <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6 text-navy">
-              {heading}
+            <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl mb-6 text-navy">
+              {heading}<span className="text-lime">.</span>
             </h2>
 
             {/* Description */}

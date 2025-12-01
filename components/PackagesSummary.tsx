@@ -41,7 +41,7 @@ export default function PackagesSummary() {
           className="text-center mb-16"
         >
           <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-4">
-            Flexible packages for every business
+            Flexible packages for every business<span className="text-lime">.</span>
           </h2>
           <p className="text-xl text-slate max-w-3xl mx-auto">
             Choose a package that fits your business and budget
