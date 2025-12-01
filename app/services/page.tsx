@@ -110,7 +110,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Pricing Explainer */}
-      <section className="pt-12 md:pt-16 lg:pt-20 pb-0">
+      <section className="pt-6 md:pt-8 lg:pt-10 pb-0">
         <div className="container-custom">
           <div className="bg-white rounded-xl p-8 max-w-4xl mx-auto shadow-lg border-l-4 border-lime">
             <h3 className="font-heading font-bold text-2xl text-navy mb-4">
@@ -132,7 +132,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Decision Framework */}
-      <section className="pt-12 md:pt-16 pb-8 md:pb-12 bg-white">
+      <section className="pt-6 md:pt-8 pb-4 md:pb-6 bg-white">
         <div className="container-custom max-w-4xl">
           <div className="bg-gradient-to-br from-navy to-blue-900 rounded-xl p-8 md:p-10 text-white shadow-xl">
             <h3 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-center text-white">
