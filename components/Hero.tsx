@@ -7,7 +7,7 @@ import { useTypewriter } from '@/hooks/useTypewriter';
 const HERO_PHRASES = [
   'drive more enquiries',
   'showcase your work',
-  'demonstrate credibility',
+  'build credibility',
   'simply work',
   'win you business',
   'win you customers',
@@ -76,7 +76,7 @@ export default function Hero() {
 
           {/* Right - Browser Mockup (absolutely positioned, vertically centered from h1 to CTAs) */}
           <div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2">
-            <div className="w-[25.3rem]">
+            <div className="w-[27.8rem]">
               {/* Browser mockup - angled */}
               <div className="bg-white rounded-lg shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-300">
                 <div className="space-y-4">
