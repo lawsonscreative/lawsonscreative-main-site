@@ -151,12 +151,24 @@ export default function ContactForm() {
         </label>
         <p className="text-slate text-sm mb-2">Optional - leave blank if you don't have one</p>
         <input
-          type="url"
+          type="text"
           id="websiteUrl"
-          {...register('websiteUrl')}
+          {...register('websiteUrl', {
+            validate: (value) => {
+              if (!value) return true;
+              // Accept URLs with or without protocol
+              const urlPattern = /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([/\w .-]*)*\/?$/i;
+              return urlPattern.test(value) || 'Please enter a valid website address';
+            }
+          })}
           className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime focus:ring-2 focus:ring-lime/20 outline-none transition-colors"
-          placeholder="https://"
+          placeholder="www.example.com"
         />
+        {errors.websiteUrl && (
+          <p className="text-red-500 text-sm mt-1" role="alert">
+            {errors.websiteUrl.message}
+          </p>
+        )}
       </div>
 
       {/* Message */}
@@ -199,10 +211,10 @@ export default function ContactForm() {
           className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime focus:ring-2 focus:ring-lime/20 outline-none transition-colors"
         >
           <option value="">Select...</option>
-          <option value="under-1000">Under £1,000</option>
-          <option value="1000-2000">£1,000–£2,000</option>
-          <option value="2000-4000">£2,000–£4,000</option>
-          <option value="4000+">£4,000+</option>
+          <option value="starter">Starter – £1,295</option>
+          <option value="growth">Growth – £1,795</option>
+          <option value="professional">Professional – £2,495</option>
+          <option value="custom">Custom / Not sure</option>
         </select>
         {errors.budget && <p className="text-red-500 text-sm mt-1">{errors.budget.message}</p>}
       </div>
@@ -269,6 +281,51 @@ export default function ContactForm() {
               className="w-4 h-4 text-lime border-gray-300 rounded focus:ring-lime focus:ring-2"
             />
             <span className="ml-2 text-slate">I need help with copy/content</span>
+          </label>
+        </div>
+      </div>
+
+      {/* Add-on Services */}
+      <div>
+        <label className="block text-sm font-semibold text-navy mb-3">
+          Interested in any add-on services? (optional)
+        </label>
+        <div className="space-y-2">
+          <label className="flex items-center">
+            <input
+              type="checkbox"
+              value="hosting-maintenance"
+              {...register('brandingContent')}
+              className="w-4 h-4 text-lime border-gray-300 rounded focus:ring-lime focus:ring-2"
+            />
+            <span className="ml-2 text-slate">Hosting & Maintenance (from £30/month)</span>
+          </label>
+          <label className="flex items-center">
+            <input
+              type="checkbox"
+              value="content-updates"
+              {...register('brandingContent')}
+              className="w-4 h-4 text-lime border-gray-300 rounded focus:ring-lime focus:ring-2"
+            />
+            <span className="ml-2 text-slate">Content Updates (£75/hour)</span>
+          </label>
+          <label className="flex items-center">
+            <input
+              type="checkbox"
+              value="seo-local"
+              {...register('brandingContent')}
+              className="w-4 h-4 text-lime border-gray-300 rounded focus:ring-lime focus:ring-2"
+            />
+            <span className="ml-2 text-slate">SEO & Local Visibility (from £150/month)</span>
+          </label>
+          <label className="flex items-center">
+            <input
+              type="checkbox"
+              value="brand-print"
+              {...register('brandingContent')}
+              className="w-4 h-4 text-lime border-gray-300 rounded focus:ring-lime focus:ring-2"
+            />
+            <span className="ml-2 text-slate">Brand & Print Collateral (business cards, flyers, etc.)</span>
           </label>
         </div>
       </div>
