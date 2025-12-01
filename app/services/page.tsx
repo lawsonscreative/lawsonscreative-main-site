@@ -339,7 +339,7 @@ export default function ServicesPage() {
                 </div>
 
                 {/* Title */}
-                <h3 className="font-heading font-bold text-3xl mb-4 text-navy">
+                <h3 className="font-heading font-bold text-2xl mb-4 text-navy">
                   Website maintenance
                 </h3>
 
@@ -419,7 +419,7 @@ export default function ServicesPage() {
                 </div>
 
                 {/* Title */}
-                <h3 className="font-heading font-bold text-3xl mb-4 text-navy">
+                <h3 className="font-heading font-bold text-2xl mb-4 text-navy">
                   Content updates
                 </h3>
 
@@ -499,7 +499,7 @@ export default function ServicesPage() {
                 </div>
 
                 {/* Title */}
-                <h3 className="font-heading font-bold text-3xl mb-4 text-navy">
+                <h3 className="font-heading font-bold text-2xl mb-4 text-navy">
                   SEO services
                 </h3>
 
