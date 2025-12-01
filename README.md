@@ -91,14 +91,17 @@ Current URL: `https://calendly.com/andy-lawsonsenterprises/30min`
 
 ### Contact Form
 
-The contact form uses Formspree for submissions. To enable:
+The contact form uses Resend for email delivery. To configure:
 
-1. Sign up at [formspree.io](https://formspree.io)
-2. Create a new form
-3. Update the form endpoint in [components/ContactForm.tsx](components/ContactForm.tsx):
-   ```typescript
-   const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+1. Sign up at [resend.com](https://resend.com)
+2. Verify your domain (lawsonscreative.co.uk)
+3. Create an API key
+4. Add to environment variables:
+   ```env
+   RESEND_API_KEY=re_xxxxxxxxxx
    ```
+
+The API route is at [app/api/contact/route.ts](app/api/contact/route.ts).
 
 ## 🖼️ Adding Portfolio Images
 
@@ -122,11 +125,11 @@ Recommended: Use Next.js Image component for optimization.
 
 ### Environment Variables
 
-No environment variables required for basic functionality. If using Formspree or analytics:
+Environment variables required:
 
 ```env
-NEXT_PUBLIC_FORMSPREE_ID=your_form_id
-NEXT_PUBLIC_GA_ID=your_ga_id (optional)
+RESEND_API_KEY=re_xxxxxxxxxx  # Required for contact form
+NEXT_PUBLIC_GA_ID=your_ga_id  # Optional, for Google Analytics
 ```
 
 ## 📄 Pages Overview

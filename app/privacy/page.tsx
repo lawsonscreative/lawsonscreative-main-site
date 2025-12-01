@@ -138,7 +138,7 @@ export default function PrivacyPage() {
 
               <h3 className="font-heading font-bold text-xl text-navy mb-2 mt-4">Essential Service Providers:</h3>
               <ul className="list-disc ml-6 space-y-2">
-                <li><strong>Formspree:</strong> Contact form processing service that receives form submissions (name, email, message)</li>
+                <li><strong>Resend:</strong> Email delivery service that processes contact form submissions (name, email, phone, business details, message)</li>
                 <li><strong>Calendly:</strong> Appointment scheduling service that receives booking information (name, email, phone)</li>
                 <li><strong>Hosting Providers:</strong> Vercel, Netlify, or similar platforms where our website and data are hosted</li>
                 <li><strong>Email Services:</strong> Email service providers used to send and receive communications</li>
