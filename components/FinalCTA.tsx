@@ -42,7 +42,7 @@ export default function FinalCTA() {
             </button>
             <Link
               href="/contact"
-              className="bg-transparent border-2 border-white text-white font-semibold px-8 py-4 rounded-lg hover:bg-white hover:text-navy transition-all duration-200 text-base text-center"
+              className="bg-transparent border-2 border-white text-white font-semibold px-8 py-4 rounded-lg hover:scale-105 hover:shadow-xl transition-all duration-200 text-base text-center"
               onClick={() => {
                 if (typeof window !== 'undefined' && window.plausible) {
                   window.plausible('CTA Click', { props: { location: 'Final CTA', button: 'Email Quote' } });

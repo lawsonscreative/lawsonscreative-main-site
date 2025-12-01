@@ -61,7 +61,7 @@ export default function CookieConsent() {
           <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
             <button
               onClick={handleDecline}
-              className="px-6 py-3 font-semibold text-navy border-2 border-navy rounded-lg hover:bg-gray-50 transition-all whitespace-nowrap"
+              className="px-6 py-3 font-semibold text-navy border-2 border-navy rounded-lg hover:scale-105 hover:shadow-lg transition-all whitespace-nowrap"
               aria-label="Decline cookies"
             >
               Decline

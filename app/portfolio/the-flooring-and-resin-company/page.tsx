@@ -506,7 +506,7 @@ export default function TFRCOCaseStudy() {
             </Link>
             <Link
               href="mailto:hello@lawsonscreative.co.uk"
-              className="inline-block px-8 py-4 bg-white text-navy font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+              className="inline-block px-8 py-4 bg-white text-navy font-semibold rounded-lg hover:scale-105 hover:shadow-xl transition-all duration-200"
             >
               Get a quote by email
             </Link>
