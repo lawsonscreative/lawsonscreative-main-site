@@ -48,19 +48,22 @@ export default function PortfolioShowcase() {
                 <div>
                   <h4 className="font-semibold text-lg text-navy mb-3">The challenge</h4>
                   <p className="text-slate leading-relaxed">
-                    A family-run flooring specialist with 50+ years' experience relied solely on a Facebook page. It didn't showcase their full range of traditional flooring and specialist resin work, or make it easy for new customers to request quotes.
+                    A family-run flooring specialist with 50+ years' experience relied solely on a Facebook page. The business did not showcase its full range of traditional flooring and specialist resin work, and it was not easy for new customers to request quotes.
                   </p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg text-navy mb-3">Our solution</h4>
+                  <p className="text-slate leading-relaxed mb-3">
+                    We delivered a modern, service-led website with clear separation between carpet, vinyl, laminate and premium resin feature surfaces. A dedicated resin page positions their specialist work as the standout service it deserves to be.
+                  </p>
                   <p className="text-slate leading-relaxed">
-                    Modern, service-led website with clear separation between carpet, vinyl, laminate, and premium resin feature surfaces. Dedicated resin page positions their specialist work as the standout service it deserves to be.
+                    As an add-on, we provided a full rebrand and site build, including a bold pink palette chosen to reflect the company's female-led management and to broaden appeal in a traditionally male-dominated sector.
                   </p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg text-navy mb-4">The impact</h4>
                   <p className="text-slate leading-relaxed">
-                    Professional web presence that matches the quality of their craftsmanship. More focused enquiries from customers who understand exactly what services they offer and how to get a quote.
+                    A professional web presence that matches the quality of their craftsmanship. The new site generates more focused enquiries from customers who understand exactly what services are offered and how to request a quote, while the rebrand helps the business stand out and reach a wider market.
                   </p>
                 </div>
               </div>
