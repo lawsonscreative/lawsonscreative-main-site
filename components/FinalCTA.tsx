@@ -18,7 +18,7 @@ export default function FinalCTA() {
   };
 
   return (
-    <section className="pt-20 md:pt-28 lg:pt-32 pb-16 md:pb-20 lg:pb-24 bg-gradient-to-br from-navy via-navy to-blue-900 text-white" ref={ref}>
+    <section className="section-padding bg-gradient-to-br from-navy via-navy to-blue-900 text-white" ref={ref}>
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

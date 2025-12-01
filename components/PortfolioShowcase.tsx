@@ -21,7 +21,7 @@ export default function PortfolioShowcase() {
           className="text-center mb-16"
         >
           <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-4">
-            Real businesses. Real results<span className="text-lime">.</span>
+            Real businesses<span className="text-lime">.</span> Real results<span className="text-lime">.</span>
           </h2>
           <p className="text-xl text-slate max-w-6xl mx-auto leading-relaxed">
             See how we've transformed small businesses with websites that work as hard as they do.
