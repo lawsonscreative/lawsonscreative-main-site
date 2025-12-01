@@ -444,8 +444,8 @@ export default function PortfolioPage() {
       {/* Current Projects */}
       <section className="section-padding bg-lightgrey">
         <div className="container-custom max-w-4xl text-center">
-          <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-6">
-            New client projects launching soon
+          <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-6">
+            New client projects launching soon<span className="text-lime">.</span>
           </h2>
           <div className="text-lg text-slate leading-relaxed space-y-4 mb-8">
             <p>
@@ -467,8 +467,8 @@ export default function PortfolioPage() {
       {/* Closing CTA */}
       <section className="section-padding bg-white">
         <div className="container-custom max-w-4xl text-center">
-          <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-6">
-            Want results like this for your business?
+          <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-6">
+            Want results like this for your business<span className="text-lime">?</span>
           </h2>
           <div className="text-lg text-slate leading-relaxed space-y-4 mb-8">
             <p>

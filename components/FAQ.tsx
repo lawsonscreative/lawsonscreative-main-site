@@ -137,7 +137,7 @@ export default function FAQ() {
         >
           <div className="bg-white rounded-xl p-8 md:p-12 shadow-lg">
             <h3 className="font-heading font-bold text-3xl md:text-4xl text-navy mb-4">
-              Still unsure?
+              Still unsure<span className="text-lime">?</span>
             </h3>
             <p className="text-xl text-slate mb-6 leading-relaxed">
               Book a free consultation to discuss your project. No pressure, no obligation — just an honest conversation about what you need.

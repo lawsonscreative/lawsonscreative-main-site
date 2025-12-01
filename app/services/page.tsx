@@ -304,8 +304,8 @@ export default function ServicesPage() {
           </div>
 
           <div className="text-center mb-16">
-            <h2 className="font-heading font-bold text-4xl md:text-5xl mb-4 text-navy">
-              Add-on services
+            <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl mb-4 text-navy">
+              Add-on services<span className="text-lime">.</span>
             </h2>
             <p className="text-xl text-slate max-w-3xl mx-auto mb-4">
               Keep your website running smoothly with our ongoing support services.
@@ -570,7 +570,7 @@ export default function ServicesPage() {
       {/* Pricing FAQ */}
       <section className="section-padding bg-lightgrey">
         <div className="container-custom max-w-4xl">
-          <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-12 text-center">
+          <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-12 text-center">
             Pricing questions<span className="text-lime">.</span>
           </h2>
 
@@ -656,7 +656,7 @@ export default function ServicesPage() {
         <div className="container-custom text-center max-w-3xl mx-auto">
           <div className="bg-white rounded-xl p-8 md:p-12 shadow-lg">
             <h2 className="font-heading font-bold text-3xl md:text-4xl text-navy mb-4">
-              Still unsure?
+              Still unsure<span className="text-lime">?</span>
             </h2>
             <p className="text-xl text-slate mb-6 leading-relaxed">
               Book a free consultation to discuss your project. No pressure, no obligation — just an honest conversation about what you need and which package fits best.

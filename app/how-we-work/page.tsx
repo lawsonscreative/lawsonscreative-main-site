@@ -193,8 +193,8 @@ export default function ProcessPage() {
       {/* How Payments and Communication Work */}
       <section className="section-padding bg-white">
         <div className="container-custom max-w-4xl">
-          <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-12 text-center">
-            How payments and communication work
+          <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-12 text-center">
+            How payments and communication work<span className="text-lime">.</span>
           </h2>
 
           <div className="space-y-12">
@@ -345,8 +345,8 @@ export default function ProcessPage() {
       {/* Additional Info */}
       <section className="section-padding bg-navy text-white">
         <div className="container-custom max-w-4xl">
-          <h2 className="font-heading font-bold text-4xl mb-12 text-center text-white">
-            What you can expect from us
+          <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl mb-12 text-center text-white">
+            What you can expect from us<span className="text-lime">.</span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -415,8 +415,8 @@ export default function ProcessPage() {
       {/* CTA */}
       <section className="section-padding bg-lightgrey">
         <div className="container-custom text-center">
-          <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-6">
-            Ready to get started?
+          <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-6">
+            Ready to get started<span className="text-lime">?</span>
           </h2>
           <p className="text-xl text-slate mb-8 max-w-3xl mx-auto">
             <Link href="/services" className="text-lime hover:underline font-semibold">Choose a package that fits your business and budget</Link>, then book your free consultation to discuss your project. We'll walk you through the process and answer any questions.

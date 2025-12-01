@@ -58,8 +58,8 @@ export default function AboutPage() {
       {/* Story */}
       <section className="section-padding">
         <div className="container-custom max-w-4xl">
-          <h2 className="font-heading font-bold text-4xl text-navy mb-6">
-            Why we started Lawsons Creative
+          <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-6">
+            Why we started Lawsons Creative<span className="text-lime">.</span>
           </h2>
           <div className="prose prose-lg max-w-none text-slate space-y-4 leading-relaxed">
             <p>
@@ -81,8 +81,8 @@ export default function AboutPage() {
       {/* Approach */}
       <section className="section-padding bg-lightgrey">
         <div className="container-custom max-w-4xl">
-          <h2 className="font-heading font-bold text-4xl text-navy mb-12 text-center">
-            Our approach
+          <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-12 text-center">
+            Our approach<span className="text-lime">.</span>
           </h2>
 
           <div className="space-y-12">
@@ -199,8 +199,8 @@ export default function AboutPage() {
       {/* CTA */}
       <section className="section-padding bg-white">
         <div className="container-custom text-center">
-          <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6 text-navy">
-            Want to work together?
+          <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl mb-6 text-navy">
+            Want to work together<span className="text-lime">?</span>
           </h2>
           <p className="text-xl text-slate mb-8 max-w-3xl mx-auto">
             Let's chat about your project. No pressure, no obligation, just a conversation.
