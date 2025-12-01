@@ -11,7 +11,7 @@ export default function AboutPage() {
   return (
     <div className="bg-white">
       {/* Hero */}
-      <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32 bg-gradient-to-br from-navy via-navy to-blue-900 text-white">
+      <section className="section-padding bg-gradient-to-br from-navy via-navy to-blue-900 text-white">
         <div className="container-custom text-center">
           <h1 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6 text-white">
             Built by a small business owner, for small business owners<span className="text-lime">.</span>
@@ -23,7 +23,7 @@ export default function AboutPage() {
       </section>
 
       {/* Photo + Micro Bio */}
-      <section className="pt-16 md:pt-20 lg:pt-24 pb-12 md:pb-16">
+      <section className="section-padding">
         <div className="container-custom max-w-5xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center">
             {/* Photo */}
@@ -56,7 +56,7 @@ export default function AboutPage() {
       </section>
 
       {/* Story */}
-      <section className="pt-12 md:pt-16 pb-20 md:pb-28 lg:pb-32">
+      <section className="section-padding">
         <div className="container-custom max-w-4xl">
           <h2 className="font-heading font-bold text-4xl text-navy mb-6">
             Why we started Lawsons Creative
@@ -79,7 +79,7 @@ export default function AboutPage() {
       </section>
 
       {/* Approach */}
-      <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32 bg-lightgrey">
+      <section className="section-padding bg-lightgrey">
         <div className="container-custom max-w-4xl">
           <h2 className="font-heading font-bold text-4xl text-navy mb-12 text-center">
             Our approach
@@ -197,7 +197,7 @@ export default function AboutPage() {
 
 
       {/* CTA */}
-      <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32 bg-white">
+      <section className="section-padding bg-white">
         <div className="container-custom text-center">
           <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6 text-navy">
             Want to work together?
