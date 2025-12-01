@@ -28,7 +28,7 @@ export default function TFRCOCaseStudy() {
                 Small business
               </span>
             </div>
-            <h1 className="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl mb-6 text-white">
+            <h1 className="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl mb-6 text-white text-balance">
               The Flooring and Resin Company
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 mb-8">

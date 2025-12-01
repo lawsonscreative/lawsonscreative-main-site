@@ -45,7 +45,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           {/* Left Column - Content */}
           <div>
-            <h2 className="text-xl md:text-2xl mb-6 text-gray-200 font-semibold">
+            <h2 className="text-xl md:text-2xl mb-6 text-gray-200 font-semibold text-balance">
               Modern, fast-loading websites for UK service businesses — designed to build trust and generate enquiries. Typically delivered in 1–2 weeks, without the agency price tag.
             </h2>
             <p className="text-lg text-gray-300 mb-8 leading-relaxed">
