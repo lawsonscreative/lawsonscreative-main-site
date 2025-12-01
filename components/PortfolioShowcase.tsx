@@ -134,21 +134,10 @@ export default function PortfolioShowcase() {
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-lg text-navy mb-4">The results</h4>
-                  <div className="grid grid-cols-3 gap-4">
-                    <div className="bg-lightgrey px-4 py-5 rounded-lg shadow-md text-center border border-gray-100">
-                      <div className="metric-value">35%</div>
-                      <div className="metric-label">More enquiries</div>
-                    </div>
-                    <div className="bg-lightgrey px-4 py-5 rounded-lg shadow-md text-center border border-gray-100">
-                      <div className="metric-value">80%</div>
-                      <div className="metric-label">Mobile bookings</div>
-                    </div>
-                    <div className="bg-lightgrey px-4 py-5 rounded-lg shadow-md text-center border border-gray-100">
-                      <div className="metric-value">2×</div>
-                      <div className="metric-label">Professional trust</div>
-                    </div>
-                  </div>
+                  <h4 className="font-semibold text-lg text-navy mb-3">The results</h4>
+                  <p className="text-slate leading-relaxed">
+                    Significant increase in enquiries since launch. Pet owners can now easily book on mobile, and customers regularly comment on how professional and trustworthy the website feels.
+                  </p>
                 </div>
               </div>
               <a
