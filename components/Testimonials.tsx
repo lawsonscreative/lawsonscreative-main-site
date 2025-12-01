@@ -11,6 +11,8 @@ export default function Testimonials() {
   });
 
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   const testimonials = [
     {
@@ -30,12 +32,14 @@ export default function Testimonials() {
   ];
 
   useEffect(() => {
+    if (isPaused || isHovered) return;
+
     const interval = setInterval(() => {
       setActiveIndex((current) => (current + 1) % testimonials.length);
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [testimonials.length]);
+  }, [testimonials.length, isPaused, isHovered]);
 
   return (
     <section className="section-padding bg-secondary" ref={ref}>
@@ -59,7 +63,9 @@ export default function Testimonials() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -20 }}
               transition={{ duration: 0.5 }}
-              className="bg-white rounded-2xl p-8 md:p-12 shadow-lg"
+              className="bg-white rounded-2xl p-8 md:p-12 shadow-lg cursor-default"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
             >
               <div className="flex items-start mb-6">
                 <svg
@@ -103,8 +109,8 @@ export default function Testimonials() {
             </motion.div>
           </AnimatePresence>
 
-          {/* Pagination dots */}
-          <div className="flex justify-center gap-2 mt-6">
+          {/* Pagination dots and pause button */}
+          <div className="flex justify-center items-center gap-3 mt-6">
             {testimonials.map((_, index) => (
               <button
                 key={index}
@@ -115,6 +121,21 @@ export default function Testimonials() {
                 aria-label={`Go to testimonial ${index + 1}`}
               />
             ))}
+            <button
+              onClick={() => setIsPaused(!isPaused)}
+              className="ml-2 w-8 h-8 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center transition-colors"
+              aria-label={isPaused ? 'Play testimonials' : 'Pause testimonials'}
+            >
+              {isPaused ? (
+                <svg className="w-4 h-4 text-navy" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                </svg>
+              ) : (
+                <svg className="w-4 h-4 text-navy" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M5.75 3a.75.75 0 00-.75.75v12.5c0 .414.336.75.75.75h1.5a.75.75 0 00.75-.75V3.75A.75.75 0 007.25 3h-1.5zM12.75 3a.75.75 0 00-.75.75v12.5c0 .414.336.75.75.75h1.5a.75.75 0 00.75-.75V3.75a.75.75 0 00-.75-.75h-1.5z" />
+                </svg>
+              )}
+            </button>
           </div>
         </div>
       </div>
