@@ -17,7 +17,7 @@ export default function AboutPage() {
             Built by a small business owner, for small business owners<span className="text-lime">.</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
-            Hi, I'm Andrew. I started Lawsons Creative because too many great small businesses were stuck with expensive agencies or cheap, ineffective websites. There had to be a better way.
+            Hi, I'm Andy. With over 30 years in IT, I launched Lawsons Creative to give small businesses a better choice — high-quality, effective websites without the agency price tag or the "cheap and broken" alternative.
           </p>
         </div>
       </section>
@@ -32,7 +32,7 @@ export default function AboutPage() {
                 {/* Placeholder - replace with actual photo when available */}
                 <div className="text-center">
                   <div className="text-6xl font-bold mb-2">AL</div>
-                  <div className="text-sm text-gray-300">Andrew Lawson</div>
+                  <div className="text-sm text-gray-300">Andy Lawson</div>
                 </div>
               </div>
             </div>
@@ -40,14 +40,14 @@ export default function AboutPage() {
             {/* Micro Bio */}
             <div className="md:col-span-2">
               <h2 className="font-heading font-bold text-3xl md:text-4xl text-navy mb-4">
-                About Andrew
+                About Andy
               </h2>
               <div className="text-lg text-slate leading-relaxed space-y-3">
                 <p>
-                  I build websites for small service businesses who need results, not just pretty designs.
+                  We build websites for businesses that need measurable results, not just pretty designs.
                 </p>
                 <p>
-                  Based in Kent, I've helped businesses across the UK transform their online presence and generate more enquiries. Every website is built with strategy first, design second — because beautiful sites that don't convert are just expensive art projects.
+                  Based in Kent, we've helped organisations across the UK transform their online presence and generate more enquiries. Every site is proudly strategy first and design second — because attractive sites that don't convert are just expensive art projects.
                 </p>
               </div>
             </div>
@@ -59,20 +59,20 @@ export default function AboutPage() {
       <section className="pt-12 md:pt-16 pb-20 md:pb-28 lg:pb-32">
         <div className="container-custom max-w-4xl">
           <h2 className="font-heading font-bold text-4xl text-navy mb-6">
-            Why I started this
+            Why we started Lawsons Creative
           </h2>
           <div className="prose prose-lg max-w-none text-slate space-y-4 leading-relaxed">
             <p>
-              I've always been drawn to building things. Websites, apps, businesses. But as I talked to small business owners, I kept hearing the same frustrations:
+              I've always loved building things — whether that's websites, apps, or businesses. But talking with small business owners, the same frustrations kept coming up:
             </p>
             <ul className="list-disc ml-6 space-y-2">
-              <li>Agencies quoted £10k+ and took 6 months</li>
-              <li>Fiverr delivered cheap work that looked cheap</li>
-              <li>DIY builders were overwhelming and time-consuming</li>
-              <li>Existing sites were outdated but "good enough" (they weren't)</li>
+              <li>Agencies quoting £10k+ and taking six months</li>
+              <li>Freelancers delivering work that looked cheap</li>
+              <li>DIY website builders that were overwhelming and time-consuming</li>
+              <li>Existing sites labelled "good enough" when they clearly weren't</li>
             </ul>
             <p>
-              I knew there was a gap: quality, strategic websites delivered fast at fair prices. That's Lawsons Creative.
+              There was a clear gap: quality, strategy-led websites delivered quickly and fairly priced. That's why we started Lawsons Creative.
             </p>
           </div>
         </div>
@@ -82,7 +82,7 @@ export default function AboutPage() {
       <section className="pt-16 md:pt-20 lg:pt-24 pb-20 md:pb-28 lg:pb-32 bg-lightgrey">
         <div className="container-custom max-w-4xl">
           <h2 className="font-heading font-bold text-4xl text-navy mb-12 text-center">
-            My approach
+            Our approach
           </h2>
 
           <div className="space-y-12">
@@ -91,7 +91,7 @@ export default function AboutPage() {
                 Business First, Design Second
               </h3>
               <p className="text-slate leading-relaxed">
-                I don't just make websites look pretty (though they should). I think about: Who are your customers and what do they need to see? What actions do you want visitors to take? How can design build trust quickly? What's the fastest path from visitor to customer?
+                We don't just make websites look pretty (though they should). We think about: Who are your customers and what do they need to see? What actions do you want visitors to take? How can design build trust quickly? What's the fastest path from visitor to customer?
               </p>
               <p className="text-slate leading-relaxed mt-3">
                 Beautiful design matters, but only if it drives results. <Link href="/portfolio" className="text-lime hover:underline font-semibold">See how this translates into real client results</Link>.
@@ -103,7 +103,7 @@ export default function AboutPage() {
                 Fast Doesn't Mean Rushed
               </h3>
               <p className="text-slate leading-relaxed">
-                Using modern tools and efficient processes, I deliver in 1–2 weeks without cutting corners. You get strategy, quality design, and websites built to last, just without the agency overhead.
+                Using modern tools and efficient processes, we deliver in 1–2 weeks without cutting corners. You get strategy, quality design, and websites built to last — just without the agency overhead.
               </p>
             </div>
 
@@ -112,21 +112,21 @@ export default function AboutPage() {
                 Transparent and Honest
               </h3>
               <p className="text-slate leading-relaxed">
-                No jargon, no upselling, no hidden fees. I tell you exactly what you need (and what you don't). Fair pricing, clear timelines, honest communication.
+                No jargon, no upselling, no hidden fees. We tell you exactly what you need (and what you don't). Fair pricing, clear timelines, honest communication.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Who I work best with */}
+      {/* Who we work best with */}
       <section className="section-padding bg-white">
         <div className="container-custom max-w-5xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Good Fit */}
             <div className="card bg-white border-2 border-lime/30">
               <h2 className="font-heading font-bold text-3xl md:text-4xl text-navy mb-6">
-                Who I work best with
+                Who we work best with
               </h2>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
