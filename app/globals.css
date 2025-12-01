@@ -316,6 +316,8 @@ h4 {
   .btn-tertiary:hover {
     background-color: white;
     color: var(--color-accent-navy);
+    transform: scale(1.02);
+    box-shadow: var(--shadow-lg);
   }
 
   .btn-tertiary:active {
