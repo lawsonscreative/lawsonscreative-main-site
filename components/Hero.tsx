@@ -27,11 +27,11 @@ export default function Hero() {
           <span className="block min-h-[3rem] md:min-h-[3.5rem] lg:min-h-[4rem]">
             <span
               aria-live="polite"
-              className="will-change-contents"
+              className="will-change-contents text-lime"
             >
               {displayText}
             </span>
-            <span className="text-lime">.</span>
+            <span className="text-white">.</span>
             {isAnimating && (
               <span
                 className="typewriter-caret"
