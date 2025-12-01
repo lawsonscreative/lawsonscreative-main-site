@@ -315,7 +315,7 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Website Maintenance Card */}
             <div className="group relative bg-gradient-to-br from-white via-white to-lime/5 rounded-3xl p-10 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(0,230,118,0.3)] transition-all duration-500 border border-gray-100 hover:border-lime/50 hover:-translate-y-2">
               {/* Decorative gradient orb */}
@@ -556,12 +556,100 @@ export default function ServicesPage() {
                 </ul>
               </div>
             </div>
+
+            {/* Brand & Print Collateral Card */}
+            <div className="group relative bg-gradient-to-br from-white via-white to-navy/5 rounded-3xl p-10 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(10,37,64,0.3)] transition-all duration-500 border border-gray-100 hover:border-navy/50 hover:-translate-y-2">
+              {/* Decorative gradient orb */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-navy/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+              <div className="relative">
+                {/* Icon */}
+                <div className="w-20 h-20 bg-gradient-to-br from-navy to-navy/60 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-navy/20 group-hover:scale-110 transition-transform duration-300">
+                  <svg
+                    className="w-10 h-10 text-lime"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
+                  </svg>
+                </div>
+
+                {/* Title */}
+                <h3 className="font-heading font-bold text-2xl mb-4 text-navy">
+                  Brand & print collateral
+                </h3>
+
+                {/* Pricing */}
+                <div className="mb-6 pb-6 border-b border-gray-200">
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-5xl font-bold bg-gradient-to-r from-navy to-navy/60 bg-clip-text text-transparent">Custom</span>
+                  </div>
+                  <div className="text-sm font-semibold text-slate uppercase tracking-wide mt-1">pricing based on scope</div>
+                </div>
+
+                {/* Features */}
+                <ul className="space-y-4 text-slate">
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-navy/10 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span className="text-base leading-relaxed">Flyers and leaflets to match your website</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-navy/10 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span className="text-base leading-relaxed">Business cards and basic stationery</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-navy/10 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span className="text-base leading-relaxed">Simple logo design or refresh</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-navy/10 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span className="text-base leading-relaxed">Posters, menus or price lists</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-navy/10 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span className="text-base leading-relaxed">Social media launch graphics</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-navy/10 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-navy" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span className="text-base leading-relaxed">Print-ready files supplied</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           {/* Bottom note */}
           <div className="mt-12 text-center">
             <p className="text-slate text-lg max-w-2xl mx-auto">
-              All add-on services can be combined with any package or purchased independently. Get in touch to discuss your specific needs.
+              All add-on services can be combined with any package or purchased independently. We can also design matching flyers, stationery and social graphics so your brand feels consistent online and offline.
             </p>
           </div>
         </div>
