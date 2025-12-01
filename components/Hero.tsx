@@ -21,8 +21,8 @@ export default function Hero() {
   return (
     <section className="relative bg-gradient-to-br from-navy via-navy to-blue-900 text-white overflow-hidden">
       <div className="container-custom pt-12 pb-16 md:pt-16 md:pb-20 lg:pt-20 lg:pb-24">
-        {/* Typing headline - centred, fixed height, independent of layout below */}
-        <h1 className="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl mb-8 md:mb-10 leading-tight text-white text-center">
+        {/* Typing headline - left aligned, fixed height, independent of layout below */}
+        <h1 className="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl mb-8 md:mb-10 leading-tight text-white text-left">
           <span className="block">Bespoke websites that</span>
           <span className="block min-h-[3rem] md:min-h-[3.5rem] lg:min-h-[4rem]">
             <span
