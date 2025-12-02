@@ -59,25 +59,41 @@ export default function PetCareWebsitesPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white rounded-xl p-6 shadow-md flex items-start gap-4">
-              <div className="text-3xl flex-shrink-0">🐕</div>
+              <div className="w-12 h-12 bg-lime/20 text-lime rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg className="w-6 h-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path>
+                </svg>
+              </div>
               <p className="text-slate leading-relaxed">
                 "I'm getting enquiries through Instagram and word of mouth, but I need somewhere to send people with proper info."
               </p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md flex items-start gap-4">
-              <div className="text-3xl flex-shrink-0">📱</div>
+              <div className="w-12 h-12 bg-lime/20 text-lime rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg className="w-6 h-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                </svg>
+              </div>
               <p className="text-slate leading-relaxed">
                 "My current site looks dated. It doesn't show how caring and professional we really are."
               </p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md flex items-start gap-4">
-              <div className="text-3xl flex-shrink-0">🏠</div>
+              <div className="w-12 h-12 bg-lime/20 text-lime rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg className="w-6 h-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+              </div>
               <p className="text-slate leading-relaxed">
                 "Pet owners need to trust me with their animals. My website doesn't build that trust at all."
               </p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md flex items-start gap-4">
-              <div className="text-3xl flex-shrink-0">⏰</div>
+              <div className="w-12 h-12 bg-lime/20 text-lime rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg className="w-6 h-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
               <p className="text-slate leading-relaxed">
                 "I'm too busy with the animals to figure out websites. I just need someone to sort it for me."
               </p>
