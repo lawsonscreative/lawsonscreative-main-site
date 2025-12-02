@@ -24,8 +24,11 @@ export default function ContactPage() {
           <h1 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6 text-white text-balance">
             Let's talk about your project<span className="text-lime">.</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-4">
             Book a free 15-minute consultation or send us your project details. We'll respond within 24 hours (usually much faster).
+          </p>
+          <p className="text-gray-400">
+            Web design for trades, pet care and local service businesses in Kent and across the UK.
           </p>
         </div>
       </section>

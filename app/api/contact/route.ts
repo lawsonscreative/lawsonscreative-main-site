@@ -36,7 +36,7 @@ export async function POST(request: Request) {
         'need-copy-help': 'Needs copy/content help',
         'hosting-maintenance': 'Hosting & Maintenance',
         'content-updates': 'Content Updates',
-        'seo-local': 'SEO & Local Visibility',
+        'seo-local': 'Local SEO',
         'brand-print': 'Brand & Print Collateral',
       };
       return items.map(item => labels[item] || item).join(', ') || 'None selected';

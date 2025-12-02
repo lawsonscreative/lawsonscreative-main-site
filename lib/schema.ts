@@ -2,7 +2,7 @@
 
 export const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "ProfessionalService",
   "@id": "https://lawsonscreative.co.uk/#business",
   "name": "Lawsons Creative",
   "description": "Small web studio helping UK service businesses modernise their websites. Starter sites from £500, full multi-page sites from £1,295.",

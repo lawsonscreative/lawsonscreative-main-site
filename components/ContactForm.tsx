@@ -317,7 +317,7 @@ export default function ContactForm() {
               {...register('brandingContent')}
               className="w-4 h-4 text-lime border-gray-300 rounded focus:ring-lime focus:ring-2"
             />
-            <span className="ml-2 text-slate">SEO & Local Visibility (from £150/month)</span>
+            <span className="ml-2 text-slate">Local SEO (from £150/month)</span>
           </label>
           <label className="flex items-center">
             <input
