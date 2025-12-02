@@ -87,18 +87,28 @@ export default function ServicesSummary() {
               transition={{ duration: 0.6, delay: 0.1 * (index + 1) }}
               className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full"
             >
-              {/* Icon - fixed height */}
-              <div className="w-14 h-14 bg-lime/20 text-lime rounded-xl flex items-center justify-center mb-4 flex-shrink-0">
-                {service.icon}
+              {/* Icon and Title */}
+              <div className="flex items-center gap-3 mb-3 md:block">
+                <div className="w-14 h-14 bg-lime/20 text-lime rounded-xl flex items-center justify-center flex-shrink-0 md:mb-4">
+                  {service.icon}
+                </div>
+                <div className="md:hidden">
+                  <h3 className="font-heading font-bold text-xl text-navy">
+                    {service.name}
+                  </h3>
+                  <p className="text-lime font-semibold text-sm">
+                    {service.tagline}
+                  </p>
+                </div>
               </div>
 
-              {/* Title - fixed height to accommodate 2 lines */}
-              <h3 className="font-heading font-bold text-xl text-navy mb-2 min-h-[3.5rem] flex items-start">
+              {/* Title - desktop only */}
+              <h3 className="font-heading font-bold text-xl text-navy mb-2 min-h-[3.5rem] items-start hidden md:flex">
                 {service.name}
               </h3>
 
-              {/* Tagline - fixed height to accommodate 2 lines */}
-              <p className="text-lime font-semibold text-sm mb-3 min-h-[2.5rem]">
+              {/* Tagline - desktop only */}
+              <p className="text-lime font-semibold text-sm mb-3 min-h-[2.5rem] hidden md:block">
                 {service.tagline}
               </p>
 

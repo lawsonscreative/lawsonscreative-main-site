@@ -85,36 +85,42 @@ export default function TradesWebsitesPage() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-lime/20 text-lime rounded-xl flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                  <path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-                </svg>
+            <div className="md:text-center">
+              <div className="flex items-center gap-3 mb-2 md:block">
+                <div className="w-16 h-16 bg-lime/20 text-lime rounded-xl flex items-center justify-center flex-shrink-0 md:mx-auto md:mb-4">
+                  <svg className="w-8 h-8" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                  </svg>
+                </div>
+                <h3 className="font-heading font-bold text-xl text-navy md:mb-2">Phone-Friendly</h3>
               </div>
-              <h3 className="font-heading font-bold text-xl text-navy mb-2">Phone-Friendly</h3>
               <p className="text-slate">
                 Most customers find you on their phone. Your site needs to work perfectly on mobile.
               </p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-lime/20 text-lime rounded-xl flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                  <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                </svg>
+            <div className="md:text-center">
+              <div className="flex items-center gap-3 mb-2 md:block">
+                <div className="w-16 h-16 bg-lime/20 text-lime rounded-xl flex items-center justify-center flex-shrink-0 md:mx-auto md:mb-4">
+                  <svg className="w-8 h-8" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                </div>
+                <h3 className="font-heading font-bold text-xl text-navy md:mb-2">Local Focus</h3>
               </div>
-              <h3 className="font-heading font-bold text-xl text-navy mb-2">Local Focus</h3>
               <p className="text-slate">
                 Clear service area info and local SEO so customers in your patch can find you.
               </p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-lime/20 text-lime rounded-xl flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                  <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                </svg>
+            <div className="md:text-center">
+              <div className="flex items-center gap-3 mb-2 md:block">
+                <div className="w-16 h-16 bg-lime/20 text-lime rounded-xl flex items-center justify-center flex-shrink-0 md:mx-auto md:mb-4">
+                  <svg className="w-8 h-8" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                  </svg>
+                </div>
+                <h3 className="font-heading font-bold text-xl text-navy md:mb-2">Easy Contact</h3>
               </div>
-              <h3 className="font-heading font-bold text-xl text-navy mb-2">Easy Contact</h3>
               <p className="text-slate">
                 Click-to-call buttons, contact forms, and WhatsApp links — however customers prefer to reach you.
               </p>

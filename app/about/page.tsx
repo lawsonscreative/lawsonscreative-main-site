@@ -114,49 +114,57 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
-              <div className="w-12 h-12 bg-lime/20 text-lime rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                  <path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
-                </svg>
+              <div className="flex items-center gap-3 mb-2 sm:block">
+                <div className="w-12 h-12 bg-lime/20 text-lime rounded-lg flex items-center justify-center flex-shrink-0 sm:mb-4">
+                  <svg className="w-6 h-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                  </svg>
+                </div>
+                <h3 className="font-heading font-bold text-lg text-navy sm:mb-2">Trades</h3>
               </div>
-              <h3 className="font-heading font-bold text-lg text-navy mb-2">Trades</h3>
               <p className="text-slate text-sm leading-relaxed">
                 Plumbers, electricians, builders, roofers, landscapers, cleaners, and handymen.
               </p>
             </div>
 
             <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
-              <div className="w-12 h-12 bg-lime/20 text-lime rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                  <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                </svg>
+              <div className="flex items-center gap-3 mb-2 sm:block">
+                <div className="w-12 h-12 bg-lime/20 text-lime rounded-lg flex items-center justify-center flex-shrink-0 sm:mb-4">
+                  <svg className="w-6 h-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                  </svg>
+                </div>
+                <h3 className="font-heading font-bold text-lg text-navy sm:mb-2">Pet Care</h3>
               </div>
-              <h3 className="font-heading font-bold text-lg text-navy mb-2">Pet Care</h3>
               <p className="text-slate text-sm leading-relaxed">
                 Dog walkers, groomers, pet sitters, trainers, and kennels.
               </p>
             </div>
 
             <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
-              <div className="w-12 h-12 bg-lime/20 text-lime rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                  <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                </svg>
+              <div className="flex items-center gap-3 mb-2 sm:block">
+                <div className="w-12 h-12 bg-lime/20 text-lime rounded-lg flex items-center justify-center flex-shrink-0 sm:mb-4">
+                  <svg className="w-6 h-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                </div>
+                <h3 className="font-heading font-bold text-lg text-navy sm:mb-2">Local Services</h3>
               </div>
-              <h3 className="font-heading font-bold text-lg text-navy mb-2">Local Services</h3>
               <p className="text-slate text-sm leading-relaxed">
                 Salons, studios, tutors, therapists, and mobile services.
               </p>
             </div>
 
             <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
-              <div className="w-12 h-12 bg-lime/20 text-lime rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                  <path d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                </svg>
+              <div className="flex items-center gap-3 mb-2 sm:block">
+                <div className="w-12 h-12 bg-lime/20 text-lime rounded-lg flex items-center justify-center flex-shrink-0 sm:mb-4">
+                  <svg className="w-6 h-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                  </svg>
+                </div>
+                <h3 className="font-heading font-bold text-lg text-navy sm:mb-2">Professional Services</h3>
               </div>
-              <h3 className="font-heading font-bold text-lg text-navy mb-2">Professional Services</h3>
               <p className="text-slate text-sm leading-relaxed">
                 Consultants, coaches, accountants, and small agencies.
               </p>

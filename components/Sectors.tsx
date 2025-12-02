@@ -73,15 +73,22 @@ export default function Sectors() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.1 * (index + 1) }}
-              className="bg-white rounded-xl p-5 text-center shadow-sm"
+              className="bg-white rounded-xl p-5 shadow-sm"
             >
-              <div className="w-12 h-12 bg-lime/20 text-lime rounded-lg flex items-center justify-center mx-auto mb-3">
-                {sector.icon}
+              <div className="flex items-center gap-3 mb-2 md:block md:text-center">
+                <div className="w-12 h-12 bg-lime/20 text-lime rounded-lg flex items-center justify-center flex-shrink-0 md:mx-auto md:mb-3">
+                  {sector.icon}
+                </div>
+                <div>
+                  <h3 className="font-heading font-bold text-lg text-navy md:mb-1">
+                    {sector.name}
+                  </h3>
+                  <p className="text-slate text-sm leading-relaxed md:hidden">
+                    {sector.examples}
+                  </p>
+                </div>
               </div>
-              <h3 className="font-heading font-bold text-lg text-navy mb-1">
-                {sector.name}
-              </h3>
-              <p className="text-slate text-sm leading-relaxed">
+              <p className="text-slate text-sm leading-relaxed hidden md:block md:text-center">
                 {sector.examples}
               </p>
             </motion.div>

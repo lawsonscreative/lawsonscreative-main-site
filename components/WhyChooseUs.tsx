@@ -80,10 +80,17 @@ export default function WhyChooseUs() {
               transition={{ duration: 0.6, delay: 0.1 * (index + 1) }}
               className="bg-lightgrey rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow"
             >
-              <div className="mb-4 text-lime">
-                <reason.icon size={40} strokeWidth={2} />
+              <div className="flex items-center gap-3 mb-3 md:block">
+                <div className="text-lime flex-shrink-0 md:mb-4">
+                  <reason.icon size={40} strokeWidth={2} />
+                </div>
+                <div className="md:hidden">
+                  <h3 className="font-heading font-bold text-xl text-navy">
+                    {reason.title}
+                  </h3>
+                </div>
               </div>
-              <h3 className="font-heading font-bold text-xl text-navy mb-3">
+              <h3 className="font-heading font-bold text-xl text-navy mb-3 hidden md:block">
                 {reason.title}
               </h3>
               <p className="text-slate leading-relaxed">{reason.description}</p>
