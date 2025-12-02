@@ -539,19 +539,19 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-navy text-white">
+      <section className="section-padding bg-white">
         <div className="container-custom text-center max-w-3xl mx-auto">
-          <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6 text-white">
+          <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6 text-navy">
             Ready to talk<span className="text-lime">?</span>
           </h2>
-          <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+          <p className="text-xl text-slate mb-8 leading-relaxed">
             Book a free 15-minute consultation to discuss your project. No pressure, no obligation — just an honest conversation about what you need.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link href="/contact" className="btn-primary">
               Book a free consultation
             </Link>
-            <Link href="/contact" className="btn-tertiary">
+            <Link href="/contact" className="btn-secondary">
               Get a quote by email
             </Link>
           </div>
