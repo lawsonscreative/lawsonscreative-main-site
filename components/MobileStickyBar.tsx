@@ -22,6 +22,13 @@ export default function MobileStickyBar() {
     }
 
     const handleScroll = () => {
+      // Don't show if cookie consent hasn't been handled yet
+      const cookieConsent = localStorage.getItem('cookie-consent');
+      if (!cookieConsent) {
+        setIsVisible(false);
+        return;
+      }
+
       if (window.scrollY > SCROLL_THRESHOLD) {
         setIsVisible(true);
       } else {
