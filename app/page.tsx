@@ -30,8 +30,12 @@ const FAQ = dynamic(() => import('@/components/FAQ'), {
   loading: () => <div className="section-padding" style={{ minHeight: '300px' }} />,
   ssr: false
 });
-const SectorsAndAreas = dynamic(() => import('@/components/SectorsAndAreas'), {
+const Sectors = dynamic(() => import('@/components/Sectors'), {
   loading: () => <div className="section-padding" style={{ minHeight: '300px' }} />,
+  ssr: false
+});
+const Areas = dynamic(() => import('@/components/Areas'), {
+  loading: () => <div className="section-padding" style={{ minHeight: '200px' }} />,
   ssr: false
 });
 const FinalCTA = dynamic(() => import('@/components/FinalCTA'), {
@@ -75,8 +79,11 @@ export default function Home() {
       {/* FAQ */}
       <FAQ />
 
-      {/* Who we work with & Areas we serve */}
-      <SectorsAndAreas />
+      {/* Who we work with */}
+      <Sectors />
+
+      {/* Areas we serve */}
+      <Areas />
 
       {/* Final CTA band */}
       <FinalCTA />

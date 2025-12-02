@@ -211,6 +211,28 @@ export default function TradesWebsitesPage() {
         </div>
       </section>
 
+      {/* Areas we serve */}
+      <section className="section-padding bg-white">
+        <div className="container-custom max-w-4xl text-center">
+          <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-4">
+            Areas we serve<span className="text-lime">.</span>
+          </h2>
+          <p className="text-xl text-slate mb-8">
+            Based in Kent, working with tradespeople across the UK.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {['Kent', 'London', 'Sussex', 'Surrey', 'Essex', 'UK-wide'].map((area) => (
+              <span
+                key={area}
+                className="bg-navy text-white px-5 py-2.5 rounded-full text-sm font-medium"
+              >
+                {area}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Pricing */}
       <section className="section-padding bg-lightgrey">
         <div className="container-custom max-w-4xl text-center">
