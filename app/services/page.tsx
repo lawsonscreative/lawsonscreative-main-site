@@ -48,15 +48,22 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
             {/* Starter Website Card */}
             <div className="bg-white rounded-2xl p-8 shadow-md border border-gray-100 flex flex-col">
-              <div className="w-14 h-14 bg-lime/20 text-lime rounded-xl flex items-center justify-center mb-6">
-                <svg className="w-7 h-7" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                  <path d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                </svg>
+              <div className="flex items-center gap-3 mb-4 md:block">
+                <div className="w-12 h-12 md:w-14 md:h-14 bg-lime/20 text-lime rounded-xl flex items-center justify-center flex-shrink-0 md:mb-6">
+                  <svg className="w-6 h-6 md:w-7 md:h-7" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h2 className="font-heading font-bold text-2xl text-navy md:mb-2">
+                    Starter Website
+                  </h2>
+                  <p className="text-slate text-sm md:hidden">
+                    A simple one-page site to get you online
+                  </p>
+                </div>
               </div>
-              <h2 className="font-heading font-bold text-2xl text-navy mb-2">
-                Starter Website
-              </h2>
-              <p className="text-slate text-sm mb-4">
+              <p className="text-slate text-sm mb-4 hidden md:block">
                 A simple one-page site to get you online
               </p>
               <div className="mb-6">
@@ -91,15 +98,22 @@ export default function ServicesPage() {
                   Most popular
                 </span>
               </div>
-              <div className="w-14 h-14 bg-lime/20 text-lime rounded-xl flex items-center justify-center mb-6">
-                <svg className="w-7 h-7" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                  <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
-                </svg>
+              <div className="flex items-center gap-3 mb-4 md:block">
+                <div className="w-12 h-12 md:w-14 md:h-14 bg-lime/20 text-lime rounded-xl flex items-center justify-center flex-shrink-0 md:mb-6">
+                  <svg className="w-6 h-6 md:w-7 md:h-7" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h2 className="font-heading font-bold text-2xl text-navy md:mb-2">
+                    Website Rescue
+                  </h2>
+                  <p className="text-slate text-sm md:hidden">
+                    Modernise your old or DIY site
+                  </p>
+                </div>
               </div>
-              <h2 className="font-heading font-bold text-2xl text-navy mb-2">
-                Website Rescue
-              </h2>
-              <p className="text-slate text-sm mb-4">
+              <p className="text-slate text-sm mb-4 hidden md:block">
                 Modernise your old or DIY site
               </p>
               <div className="mb-6">
@@ -130,15 +144,22 @@ export default function ServicesPage() {
 
             {/* New Business Website Card */}
             <div className="bg-white rounded-2xl p-8 shadow-md border border-gray-100 flex flex-col">
-              <div className="w-14 h-14 bg-lime/20 text-lime rounded-xl flex items-center justify-center mb-6">
-                <svg className="w-7 h-7" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-                  <path d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                </svg>
+              <div className="flex items-center gap-3 mb-4 md:block">
+                <div className="w-12 h-12 md:w-14 md:h-14 bg-lime/20 text-lime rounded-xl flex items-center justify-center flex-shrink-0 md:mb-6">
+                  <svg className="w-6 h-6 md:w-7 md:h-7" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h2 className="font-heading font-bold text-2xl text-navy md:mb-2">
+                    New Business Website
+                  </h2>
+                  <p className="text-slate text-sm md:hidden">
+                    A proper first site for your business
+                  </p>
+                </div>
               </div>
-              <h2 className="font-heading font-bold text-2xl text-navy mb-2">
-                New Business Website
-              </h2>
-              <p className="text-slate text-sm mb-4">
+              <p className="text-slate text-sm mb-4 hidden md:block">
                 A proper first site for your business
               </p>
               <div className="mb-6">
@@ -520,7 +541,7 @@ export default function ServicesPage() {
       {/* CTA */}
       <section className="section-padding bg-navy text-white">
         <div className="container-custom text-center max-w-3xl mx-auto">
-          <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6">
+          <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6 text-white">
             Ready to talk<span className="text-lime">?</span>
           </h2>
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
