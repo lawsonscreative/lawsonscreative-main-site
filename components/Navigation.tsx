@@ -77,7 +77,7 @@ export default function Navigation() {
               </Link>
               <Link
                 href="/contact"
-                className="border border-navy text-navy hover:bg-navy hover:text-white transition-all text-sm font-semibold px-4 py-2 rounded-lg whitespace-nowrap"
+                className="btn-secondary text-sm px-4 py-2 whitespace-nowrap"
               >
                 Email us
               </Link>
@@ -139,7 +139,7 @@ export default function Navigation() {
                 </Link>
                 <Link
                   href="/contact"
-                  className="border border-navy text-navy hover:bg-navy hover:text-white transition-all text-center font-semibold px-4 py-3 rounded-lg"
+                  className="btn-secondary text-center"
                   onClick={() => setIsOpen(false)}
                 >
                   Email us
