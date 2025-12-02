@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import { petCareWebsiteSchema, localBusinessSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Websites for Pet Care Businesses | Dog Walkers, Groomers, Pet Sitters | Lawsons Creative',
@@ -10,6 +11,16 @@ export const metadata: Metadata = {
 export default function PetCareWebsitesPage() {
   return (
     <div className="bg-white">
+      {/* Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(petCareWebsiteSchema) }}
+      />
+
       {/* Hero */}
       <section className="section-padding bg-gradient-to-br from-navy via-navy to-blue-900 text-white">
         <div className="container-custom text-center">

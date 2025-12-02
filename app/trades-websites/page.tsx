@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import { tradesWebsiteSchema, localBusinessSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Websites for Tradespeople | Plumbers, Electricians, Builders | Lawsons Creative',
@@ -10,6 +11,16 @@ export const metadata: Metadata = {
 export default function TradesWebsitesPage() {
   return (
     <div className="bg-white">
+      {/* Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(tradesWebsiteSchema) }}
+      />
+
       {/* Hero */}
       <section className="section-padding bg-gradient-to-br from-navy via-navy to-blue-900 text-white">
         <div className="container-custom text-center">

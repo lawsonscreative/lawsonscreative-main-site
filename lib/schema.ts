@@ -151,6 +151,71 @@ export const serviceSchemas = [
   }
 ];
 
+// Vertical/sector-specific service schemas
+export const tradesWebsiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Trades Website Design",
+  "alternateName": "Websites for Tradespeople",
+  "description": "Professional website design for plumbers, electricians, builders, roofers, landscapers, cleaners, and other trades. Get more local work with a website that works as hard as you do.",
+  "url": "https://lawsonscreative.co.uk/trades-websites",
+  "provider": {
+    "@id": "https://lawsonscreative.co.uk/#business"
+  },
+  "serviceType": "Web Design",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Tradespeople and Trade Businesses"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "lowPrice": "1295",
+    "highPrice": "1795",
+    "priceCurrency": "GBP",
+    "offerCount": "3"
+  },
+  "areaServed": [
+    { "@type": "AdministrativeArea", "name": "Kent" },
+    { "@type": "AdministrativeArea", "name": "London" },
+    { "@type": "AdministrativeArea", "name": "Sussex" },
+    { "@type": "AdministrativeArea", "name": "Surrey" },
+    { "@type": "AdministrativeArea", "name": "Essex" },
+    { "@type": "Country", "name": "United Kingdom" }
+  ]
+};
+
+export const petCareWebsiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Pet Care Website Design",
+  "alternateName": "Websites for Pet Care Businesses",
+  "description": "Professional website design for dog walkers, pet sitters, groomers, trainers, kennels, catteries, and pet photographers. Websites that help pet owners trust you with their furry friends.",
+  "url": "https://lawsonscreative.co.uk/pet-care-websites",
+  "provider": {
+    "@id": "https://lawsonscreative.co.uk/#business"
+  },
+  "serviceType": "Web Design",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Pet Care Professionals and Businesses"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "lowPrice": "1295",
+    "highPrice": "1795",
+    "priceCurrency": "GBP",
+    "offerCount": "3"
+  },
+  "areaServed": [
+    { "@type": "AdministrativeArea", "name": "Kent" },
+    { "@type": "AdministrativeArea", "name": "London" },
+    { "@type": "AdministrativeArea", "name": "Sussex" },
+    { "@type": "AdministrativeArea", "name": "Surrey" },
+    { "@type": "AdministrativeArea", "name": "Essex" },
+    { "@type": "Country", "name": "United Kingdom" }
+  ]
+};
+
 export const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
