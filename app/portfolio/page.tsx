@@ -477,7 +477,7 @@ export default function PortfolioPage() {
               We're currently building new sites for fitness coaches, trades professionals, and creative service businesses. As those projects launch, we'll add them here with full case studies and results.
             </p>
             <p>
-              In the meantime, Graceful Pet Care demonstrates our approach: strategy-first design that drives real business results.
+              In the meantime, The Flooring and Resin Company demonstrates our approach: strategy-first design that drives real business results.
             </p>
           </div>
           <a
