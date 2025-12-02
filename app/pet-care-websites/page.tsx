@@ -58,26 +58,26 @@ export default function PetCareWebsitesPage() {
             Sound familiar<span className="text-lime">?</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-xl p-6 shadow-md">
-              <div className="text-3xl mb-4">🐕</div>
+            <div className="bg-white rounded-xl p-6 shadow-md flex items-start gap-4">
+              <div className="text-3xl flex-shrink-0">🐕</div>
               <p className="text-slate leading-relaxed">
                 "I'm getting enquiries through Instagram and word of mouth, but I need somewhere to send people with proper info."
               </p>
             </div>
-            <div className="bg-white rounded-xl p-6 shadow-md">
-              <div className="text-3xl mb-4">📱</div>
+            <div className="bg-white rounded-xl p-6 shadow-md flex items-start gap-4">
+              <div className="text-3xl flex-shrink-0">📱</div>
               <p className="text-slate leading-relaxed">
                 "My current site looks dated. It doesn't show how caring and professional we really are."
               </p>
             </div>
-            <div className="bg-white rounded-xl p-6 shadow-md">
-              <div className="text-3xl mb-4">🏠</div>
+            <div className="bg-white rounded-xl p-6 shadow-md flex items-start gap-4">
+              <div className="text-3xl flex-shrink-0">🏠</div>
               <p className="text-slate leading-relaxed">
                 "Pet owners need to trust me with their animals. My website doesn't build that trust at all."
               </p>
             </div>
-            <div className="bg-white rounded-xl p-6 shadow-md">
-              <div className="text-3xl mb-4">⏰</div>
+            <div className="bg-white rounded-xl p-6 shadow-md flex items-start gap-4">
+              <div className="text-3xl flex-shrink-0">⏰</div>
               <p className="text-slate leading-relaxed">
                 "I'm too busy with the animals to figure out websites. I just need someone to sort it for me."
               </p>

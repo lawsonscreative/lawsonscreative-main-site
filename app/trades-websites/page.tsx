@@ -58,26 +58,26 @@ export default function TradesWebsitesPage() {
             Sound familiar<span className="text-lime">?</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-xl p-6 shadow-md">
-              <div className="text-3xl mb-4">📱</div>
+            <div className="bg-white rounded-xl p-6 shadow-md flex items-start gap-4">
+              <div className="text-3xl flex-shrink-0">📱</div>
               <p className="text-slate leading-relaxed">
                 "I've got a Facebook page but customers keep asking for a proper website."
               </p>
             </div>
-            <div className="bg-white rounded-xl p-6 shadow-md">
-              <div className="text-3xl mb-4">🔧</div>
+            <div className="bg-white rounded-xl p-6 shadow-md flex items-start gap-4">
+              <div className="text-3xl flex-shrink-0">🔧</div>
               <p className="text-slate leading-relaxed">
                 "My nephew built me a site years ago. It looks dated and I don't know how to update it."
               </p>
             </div>
-            <div className="bg-white rounded-xl p-6 shadow-md">
-              <div className="text-3xl mb-4">🏠</div>
+            <div className="bg-white rounded-xl p-6 shadow-md flex items-start gap-4">
+              <div className="text-3xl flex-shrink-0">🏠</div>
               <p className="text-slate leading-relaxed">
                 "I'm getting work through word of mouth, but I want to grow and need to be found online."
               </p>
             </div>
-            <div className="bg-white rounded-xl p-6 shadow-md">
-              <div className="text-3xl mb-4">📋</div>
+            <div className="bg-white rounded-xl p-6 shadow-md flex items-start gap-4">
+              <div className="text-3xl flex-shrink-0">📋</div>
               <p className="text-slate leading-relaxed">
                 "I spent hours trying to build something on Wix but gave up — it just looked rubbish."
               </p>
