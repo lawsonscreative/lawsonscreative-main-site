@@ -197,23 +197,19 @@ export default function ServicesPage() {
             <p className="text-slate leading-relaxed mb-6">
               Just starting out or need somewhere to send people? A clean, professional one-page website that covers the essentials — who you are, what you do, and how to get in touch.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <h4 className="font-bold text-navy mb-3">Perfect if you...</h4>
-                <ul className="space-y-2 text-slate text-sm">
-                  <li className="flex items-start"><span className="text-lime mr-2">•</span>You're just starting out and need a simple online presence</li>
-                  <li className="flex items-start"><span className="text-lime mr-2">•</span>You mostly rely on word of mouth but want somewhere to send people</li>
-                  <li className="flex items-start"><span className="text-lime mr-2">•</span>You don't need a full multi-page site yet</li>
-                  <li className="flex items-start"><span className="text-lime mr-2">•</span>You want to test the waters before investing more</li>
-                </ul>
-              </div>
-              <div className="bg-navy text-white rounded-xl p-6">
-                <h4 className="font-bold mb-2">Ready for something bigger?</h4>
-                <p className="text-gray-300 text-sm leading-relaxed">
-                  When you're ready for a larger site, our multi-page Website Rescue and New Business Website packages start from £1,295.
-                </p>
-              </div>
-            </div>
+            <h4 className="font-bold text-navy mb-3">Perfect if you...</h4>
+            <ul className="space-y-2 text-slate text-sm mb-6">
+              <li className="flex items-start"><span className="text-lime mr-2">•</span>You're just starting out and need a simple online presence</li>
+              <li className="flex items-start"><span className="text-lime mr-2">•</span>You mostly rely on word of mouth but want somewhere to send people</li>
+              <li className="flex items-start"><span className="text-lime mr-2">•</span>You don't need a full multi-page site yet</li>
+              <li className="flex items-start"><span className="text-lime mr-2">•</span>You want to test the waters before investing more</li>
+            </ul>
+            <p className="text-slate text-sm flex items-start">
+              <svg className="w-4 h-4 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+              </svg>
+              Ready for something bigger? Our multi-page packages start from £1,295.
+            </p>
           </div>
 
           {/* Website Rescue Details */}
@@ -232,23 +228,19 @@ export default function ServicesPage() {
             <p className="text-slate leading-relaxed mb-6">
               Got a website that's looking tired, awkward on phones, or just not bringing in enquiries? We take what you've got and turn it into something you're actually proud to share.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <h4 className="font-bold text-navy mb-3">Perfect if you...</h4>
-                <ul className="space-y-2 text-slate text-sm">
-                  <li className="flex items-start"><span className="text-lime mr-2">•</span>Built your site yourself years ago and it's showing its age</li>
-                  <li className="flex items-start"><span className="text-lime mr-2">•</span>Had it made by someone who's now unreachable</li>
-                  <li className="flex items-start"><span className="text-lime mr-2">•</span>Keep meaning to update it but never get round to it</li>
-                  <li className="flex items-start"><span className="text-lime mr-2">•</span>Feel embarrassed sending people to your current site</li>
-                </ul>
-              </div>
-              <div className="bg-navy text-white rounded-xl p-6">
-                <h4 className="font-bold mb-2">What happens to my old site?</h4>
-                <p className="text-gray-300 text-sm leading-relaxed">
-                  We'll review what you have, keep anything that's working, and rebuild the rest from scratch. You keep your domain, your content gets refreshed, and you end up with something that actually works.
-                </p>
-              </div>
-            </div>
+            <h4 className="font-bold text-navy mb-3">Perfect if you...</h4>
+            <ul className="space-y-2 text-slate text-sm mb-6">
+              <li className="flex items-start"><span className="text-lime mr-2">•</span>Built your site yourself years ago and it's showing its age</li>
+              <li className="flex items-start"><span className="text-lime mr-2">•</span>Had it made by someone who's now unreachable</li>
+              <li className="flex items-start"><span className="text-lime mr-2">•</span>Keep meaning to update it but never get round to it</li>
+              <li className="flex items-start"><span className="text-lime mr-2">•</span>Feel embarrassed sending people to your current site</li>
+            </ul>
+            <p className="text-slate text-sm flex items-start">
+              <svg className="w-4 h-4 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+              </svg>
+              We keep what's working and rebuild the rest. Your domain stays, your content gets refreshed.
+            </p>
           </div>
 
           {/* New Business Website Details */}
@@ -267,23 +259,19 @@ export default function ServicesPage() {
             <p className="text-slate leading-relaxed mb-6">
               Starting out or upgrading from a free template? Get a clean, professional website that makes the right first impression — without the agency price tag.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <h4 className="font-bold text-navy mb-3">Perfect if you...</h4>
-                <ul className="space-y-2 text-slate text-sm">
-                  <li className="flex items-start"><span className="text-lime mr-2">•</span>Just started your business and need an online presence</li>
-                  <li className="flex items-start"><span className="text-lime mr-2">•</span>Currently rely on social media or word of mouth only</li>
-                  <li className="flex items-start"><span className="text-lime mr-2">•</span>Want something simple but professional</li>
-                  <li className="flex items-start"><span className="text-lime mr-2">•</span>Need a site you can point customers to with confidence</li>
-                </ul>
-              </div>
-              <div className="bg-navy text-white rounded-xl p-6">
-                <h4 className="font-bold mb-2">What if I don't have content?</h4>
-                <p className="text-gray-300 text-sm leading-relaxed">
-                  No problem. Rachel can help with copywriting and content creation as an add-on service. We'll guide you through what's needed and can write it for you if required.
-                </p>
-              </div>
-            </div>
+            <h4 className="font-bold text-navy mb-3">Perfect if you...</h4>
+            <ul className="space-y-2 text-slate text-sm mb-6">
+              <li className="flex items-start"><span className="text-lime mr-2">•</span>Just started your business and need an online presence</li>
+              <li className="flex items-start"><span className="text-lime mr-2">•</span>Currently rely on social media or word of mouth only</li>
+              <li className="flex items-start"><span className="text-lime mr-2">•</span>Want something simple but professional</li>
+              <li className="flex items-start"><span className="text-lime mr-2">•</span>Need a site you can point customers to with confidence</li>
+            </ul>
+            <p className="text-slate text-sm flex items-start">
+              <svg className="w-4 h-4 text-lime mr-2 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+              </svg>
+              Don't have content? Rachel can help with copywriting as an add-on.
+            </p>
           </div>
         </div>
       </section>
@@ -350,14 +338,12 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            <div className="bg-navy text-white rounded-xl p-6 text-center">
-              <p className="text-gray-300 leading-relaxed mb-4">
-                <strong className="text-white">What if we didn't build your site?</strong> No problem. We're happy to take over maintenance of existing sites. We'll review what you have and quote accordingly.
-              </p>
-              <Link href="/contact" className="btn-primary inline-block">
-                Discuss support options
-              </Link>
-            </div>
+            <p className="text-slate text-sm text-center mt-6 flex items-center justify-center">
+              <svg className="w-4 h-4 text-lime mr-2 flex-shrink-0" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+              We didn't build your site? No problem — we're happy to take over maintenance. <Link href="/contact" className="text-lime hover:underline font-semibold ml-1">Get in touch</Link>.
+            </p>
           </div>
         </div>
       </section>
