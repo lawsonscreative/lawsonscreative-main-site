@@ -12,35 +12,35 @@ export default function Process() {
   const steps = [
     {
       number: '01',
-      title: 'Discovery',
-      duration: 'Day 1–2',
+      title: 'Quick chat and short brief',
+      duration: 'Day 1',
       description:
-        'We start by understanding your business, goals, and customers and ask questions like what makes you different? Who are you trying to reach? What actions do you want visitors to take?',
-      deliverable: 'Strategic brief and sitemap',
+        'A quick call to understand your business, what you need, and how we can help. No jargon, just a friendly conversation.',
+      deliverable: 'Clear understanding of your needs',
     },
     {
       number: '02',
-      title: 'Design',
-      duration: 'Day 3-5',
+      title: 'Homepage layout and key content',
+      duration: 'Day 2–4',
       description:
-        "We design a modern, mobile-first website that reflects your brand and speaks to your customers. You'll review visual mock-ups and give feedback before we build anything.",
-      deliverable: 'Visual designs for approval',
+        "We design your homepage and agree the key content and structure. You'll see how it looks before we build the rest.",
+      deliverable: 'Homepage design for approval',
     },
     {
       number: '03',
-      title: 'Build',
-      duration: 'Day 6-10',
+      title: 'Build and test',
+      duration: 'Day 5–10',
       description:
-        'We build your site using modern, fast technology. Every page is optimised for mobile, tested for speed, and built to convert visitors into customers.',
-      deliverable: 'Fully-functional website on staging URL',
+        'We build the full site, test it on phones and desktops, and make sure everything works smoothly.',
+      deliverable: 'Working site on a test URL',
     },
     {
       number: '04',
-      title: 'Launch',
-      duration: 'Day 11-14',
+      title: 'Launch and tidy-up',
+      duration: 'Day 11–14',
       description:
-        "After your final approval, we launch your site, set up analytics, and walk you through how everything works. You'll know exactly how to track performance and request future updates.",
-      deliverable: 'Live website + walkthrough',
+        'Your site goes live. We handle the technical bits, walk you through how it works, and tidy up any final details.',
+      deliverable: 'Live website ready for customers',
     },
   ];
 
@@ -54,10 +54,10 @@ export default function Process() {
           className="text-center mb-16"
         >
           <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-4">
-            Simple process<span className="text-lime">.</span> Outstanding results<span className="text-lime">.</span>
+            Our process<span className="text-lime">.</span>
           </h2>
-          <p className="text-xl text-slate max-w-6xl mx-auto">
-            We've streamlined our workflow to deliver quality websites fast, without sacrificing strategy or design.
+          <p className="text-xl text-slate max-w-4xl mx-auto">
+            Straightforward steps, no surprises. Most sites are delivered in 1–2 weeks.
           </p>
         </motion.div>
 

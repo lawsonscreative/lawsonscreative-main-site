@@ -2,737 +2,470 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Web Design Packages & Pricing for Small Businesses | Lawsons Creative',
-  description: 'Flexible website design packages for small businesses. From £500 starter sites to premium custom solutions.',
+  title: 'Services & Pricing – Lawsons Creative | Website Design for Small Businesses',
+  description: 'Website rescue, new business sites, and ongoing support. Clear pricing from £1,295. We modernise tired websites for small UK service businesses.',
 };
 
 export default function ServicesPage() {
-  const packages = [
-    {
-      name: 'Starter',
-      price: '£500–£800',
-      bestFor: 'Ideal for new businesses or single-service providers',
-      included: [
-        'Single-page website (homepage only)',
-        'Mobile-responsive design',
-        'Contact form integration',
-        'Google Maps integration',
-        'Basic SEO setup',
-        'Fast loading (< 2s)',
-        '1 round of revisions',
-        '1 week delivery',
-      ],
-      notIncluded: [
-        'Multiple pages',
-        'Advanced features',
-        'E-commerce',
-        'Custom functionality',
-      ],
-      ideal: [
-        'Sole traders just starting out',
-        'Single-service businesses',
-        'Landing pages for specific campaigns',
-        'Simple portfolio showcases',
-      ],
-    },
-    {
-      name: 'Professional',
-      price: '£1,200–£2,000',
-      bestFor: 'Ideal for established businesses ready to grow',
-      included: [
-        'Multi-page website (up to 5 pages)',
-        'Everything in Starter, plus:',
-        'Photo gallery or portfolio section',
-        'Testimonials showcase',
-        'Service/product pages with detailed info',
-        'Blog setup (optional)',
-        'Advanced SEO optimisation',
-        'Integration with booking systems (Calendly, etc.)',
-        '2 rounds of revisions',
-        '1–2 week delivery',
-      ],
-      notIncluded: [
-        'E-commerce (6+ products)',
-        'Custom calculators',
-        'Member areas',
-        'Advanced booking systems',
-      ],
-      ideal: [
-        'Service businesses with multiple offerings',
-        'Local businesses building their reputation',
-        'Companies needing portfolio/gallery showcases',
-        'Businesses ready to invest in growth',
-      ],
-    },
-    {
-      name: 'Premium',
-      price: '£2,500–£4,000',
-      bestFor: 'Ideal for businesses needing custom features',
-      included: [
-        'Everything in Professional, plus:',
-        'Custom functionality (calculators, advanced booking)',
-        'Advanced animations and interactions',
-        'E-commerce integration (up to 50 products)',
-        'Member/client portal areas',
-        'Priority support',
-        'Comprehensive analytics setup',
-        '3 rounds of revisions',
-        '2-week delivery',
-        '30-day post-launch support',
-      ],
-      notIncluded: [
-        'Large-scale e-commerce (50+ products)',
-        'Complex web applications',
-        'Multi-language sites',
-        'Advanced integrations beyond standard tools',
-      ],
-      ideal: [
-        'Established businesses with specific needs',
-        'E-commerce businesses',
-        'Companies needing custom tools',
-        'Businesses scaling rapidly',
-      ],
-    },
-  ];
-
   return (
     <div className="bg-white">
       {/* Hero */}
       <section className="section-padding bg-gradient-to-br from-navy via-navy to-blue-900 text-white">
         <div className="container-custom text-center">
           <h1 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6 text-white text-balance">
-            Websites built to fit your business and budget<span className="text-lime">.</span>
+            Simple services, clear pricing<span className="text-lime">.</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
-            No cookie-cutter templates. No overpriced agency fees. Just honest pricing for quality websites that drive results.
+          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
+            Whether you need to rescue an old site, build a new one, or keep things running smoothly — we've got you covered with honest, transparent pricing.
           </p>
         </div>
       </section>
 
-      {/* Pricing Explainer */}
-      <section className="pt-6 md:pt-8 lg:pt-10 pb-0">
-        <div className="container-custom">
-          <div className="bg-white rounded-xl p-8 max-w-4xl mx-auto shadow-lg border-l-4 border-lime">
-            <h3 className="font-heading font-bold text-2xl text-navy mb-4">
-              How pricing works
-            </h3>
-            <div className="space-y-3 text-slate leading-relaxed">
-              <p>
-                <strong className="text-navy">Why the price ranges?</strong> Every business is slightly different. A 3-page site with simple layouts costs less than a 3-page site with custom animations and integrations.
-              </p>
-              <p>
-                <strong className="text-navy">How it works:</strong> During our free discovery call, we'll discuss your specific needs and give you a fixed quote before we start. No surprises, no scope creep.
-              </p>
-              <p className="text-sm italic pt-2 border-t border-gray-200">
-                <strong className="text-navy">VAT:</strong> All prices shown exclude VAT (20%). If you're VAT registered, you can reclaim this. Final invoice will include VAT where applicable.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Decision Framework */}
-      <section className="pt-6 md:pt-8 pb-4 md:pb-6 bg-white">
-        <div className="container-custom max-w-4xl">
-          <div className="bg-gradient-to-br from-navy to-blue-900 rounded-xl p-8 md:p-10 text-white shadow-xl">
-            <h3 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-center text-white">
-              Not sure which package? Here's how to choose:
-            </h3>
-            <ol className="space-y-4 list-none">
-              <li>
-                <a href="#starter" className="flex items-start gap-4 bg-white/10 rounded-lg p-4 backdrop-blur-sm hover:bg-white/20 transition-colors cursor-pointer">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-lime flex items-center justify-center font-bold text-navy" aria-hidden="true">
-                    1
-                  </div>
-                  <div>
-                    <p className="text-lg leading-relaxed">
-                      <strong className="text-lime">Just need an online presence?</strong> → Starter
-                    </p>
-                    <p className="text-sm text-gray-300 mt-1">
-                      Perfect for sole traders, new businesses, or single-service providers who need a simple but professional web presence.
-                    </p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#professional" className="flex items-start gap-4 bg-white/10 rounded-lg p-4 backdrop-blur-sm hover:bg-white/20 transition-colors cursor-pointer">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-lime flex items-center justify-center font-bold text-navy" aria-hidden="true">
-                    2
-                  </div>
-                  <div>
-                    <p className="text-lg leading-relaxed">
-                      <strong className="text-lime">Ready to grow and generate leads?</strong> → Professional
-                    </p>
-                    <p className="text-sm text-gray-300 mt-1">
-                      Ideal for established businesses with multiple services, portfolios to showcase, or those serious about online marketing.
-                    </p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#premium" className="flex items-start gap-4 bg-white/10 rounded-lg p-4 backdrop-blur-sm hover:bg-white/20 transition-colors cursor-pointer">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-lime flex items-center justify-center font-bold text-navy" aria-hidden="true">
-                    3
-                  </div>
-                  <div>
-                    <p className="text-lg leading-relaxed">
-                      <strong className="text-lime">Need custom features or e-commerce?</strong> → Premium
-                    </p>
-                    <p className="text-sm text-gray-300 mt-1">
-                      Best for businesses with specific requirements like online booking systems, product sales, or custom functionality.
-                    </p>
-                  </div>
-                </a>
-              </li>
-            </ol>
-            <p className="text-center text-sm text-gray-300 mt-6 italic">
-              Still unsure? Book a free consultation and we'll help you choose the right fit.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Package Details */}
-      {packages.map((pkg, index) => {
-        const isProfessional = pkg.name === 'Professional';
-        return (
-        <section
-          key={pkg.name}
-          id={pkg.name.toLowerCase()}
-          className={`section-padding ${index % 2 === 0 ? 'bg-white' : 'bg-lightgrey'} scroll-mt-8 ${isProfessional ? 'relative' : ''}`}
-        >
-          {/* Most Popular Badge */}
-          {isProfessional && (
-            <div className="absolute top-8 left-1/2 transform -translate-x-1/2 z-10">
-              <div className="bg-gradient-to-r from-lime to-lime/80 text-navy px-6 py-2 rounded-full font-bold text-sm shadow-lg flex items-center gap-2">
-                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+      {/* Website Rescue */}
+      <section id="website-rescue" className="section-padding bg-white scroll-mt-8">
+        <div className="container-custom max-w-6xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Service Info */}
+            <div>
+              <div className="w-16 h-16 bg-lime/20 text-lime rounded-xl flex items-center justify-center mb-6">
+                <svg className="w-8 h-8" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
                 </svg>
-                Most Popular
               </div>
+              <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-4">
+                Website Rescue<span className="text-lime">.</span>
+              </h2>
+              <p className="text-lime font-semibold text-lg mb-4">
+                Modernise your old or DIY site
+              </p>
+              <p className="text-slate text-lg leading-relaxed mb-6">
+                Got a website that's looking tired, awkward on phones, or just not bringing in enquiries? We take what you've got and turn it into something you're actually proud to share.
+              </p>
+
+              <div className="mb-8">
+                <div className="text-4xl font-bold text-navy mb-2">From £1,295</div>
+                <p className="text-sm text-slate italic">*Prices exclude VAT</p>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="font-heading font-bold text-xl text-navy mb-4">
+                  What's included
+                </h3>
+                <ul className="space-y-3">
+                  {[
+                    'Complete redesign for modern devices',
+                    'Phone-friendly, fast-loading pages',
+                    'Clear calls-to-action that generate enquiries',
+                    'Content review and restructure',
+                    'Basic SEO setup',
+                    'Contact form integration',
+                    '2–3 week turnaround',
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-start">
+                      <svg className="w-5 h-5 text-lime mr-3 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span className="text-slate">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <Link href="/contact" className="btn-primary inline-block">
+                Book a free consultation
+              </Link>
             </div>
-          )}
-          <div className={`container-custom max-w-6xl ${isProfessional ? 'border-4 border-lime rounded-3xl p-8 bg-white shadow-2xl' : ''}`}>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-              {/* Package Info */}
-              <div>
-                <div className="inline-block bg-lime text-navy px-4 py-2 rounded-full font-semibold text-sm mb-4">
-                  {pkg.bestFor}
-                </div>
-                <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-4">
-                  {pkg.name}
-                </h2>
-                <div className="mb-6">
-                  <div className="text-4xl font-bold text-slate">{pkg.price}</div>
-                  <p className="text-sm text-slate/70 italic mt-1">*Prices exclude VAT</p>
-                </div>
 
-                <div className="mb-8">
-                  <h3 className="font-heading font-bold text-2xl text-navy mb-4">
-                    What's Included
-                  </h3>
-                  <ul className="space-y-3">
-                    {pkg.included.map((item, idx) => (
-                      <li key={idx} className="flex items-start">
-                        <svg
-                          className="w-5 h-5 text-lime mr-3 flex-shrink-0 mt-0.5"
-                          fill="none"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <span className="text-slate">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <Link href="/contact" className="btn-primary inline-block">
-                  Book a free consultation
-                </Link>
+            {/* Right column - ideal for */}
+            <div className="space-y-6">
+              <div className="bg-lightgrey rounded-xl p-6">
+                <h3 className="font-heading font-bold text-xl text-navy mb-4">
+                  Perfect if you...
+                </h3>
+                <ul className="space-y-3 text-slate">
+                  <li className="flex items-start">
+                    <span className="text-lime mr-2">•</span>
+                    Built your site yourself years ago and it's showing its age
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-lime mr-2">•</span>
+                    Had it made by someone who's now unreachable
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-lime mr-2">•</span>
+                    Keep meaning to update it but never get round to it
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-lime mr-2">•</span>
+                    Feel embarrassed sending people to your current site
+                  </li>
+                </ul>
               </div>
 
-              {/* Additional Details */}
-              <div className="space-y-8">
-                <div className="bg-white rounded-xl p-6 shadow-md">
-                  <h3 className="font-heading font-bold text-xl text-navy mb-4">
-                    Ideal For
-                  </h3>
-                  <ul className="space-y-2 list-disc list-inside marker:text-lime">
-                    {pkg.ideal.map((item, idx) => (
-                      <li key={idx} className="text-slate text-sm pl-2">
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="bg-white rounded-xl p-6 shadow-md">
-                  <h3 className="font-heading font-bold text-xl text-navy mb-4">
-                    Not Included
-                  </h3>
-                  <ul className="space-y-2 list-disc list-inside marker:text-gray-400">
-                    {pkg.notIncluded.map((item, idx) => (
-                      <li key={idx} className="text-slate text-sm pl-2">
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  <p className="text-sm text-slate mt-4 italic">
-                    Need something not included? Let's discuss a custom solution.
-                  </p>
-                </div>
+              <div className="bg-navy text-white rounded-xl p-6">
+                <h3 className="font-heading font-bold text-xl mb-4">
+                  What happens to my old site?
+                </h3>
+                <p className="text-gray-300 leading-relaxed">
+                  We'll review what you have, keep anything that's working, and rebuild the rest from scratch. You keep your domain, your content gets refreshed, and you end up with something that actually works.
+                </p>
               </div>
             </div>
           </div>
-        </section>
-        );
-      })}
+        </div>
+      </section>
 
-      {/* Add-on services */}
-      <section className="section-padding bg-lightgrey border-t-4 border-lime">
-        <div className="container-custom">
-          {/* Section intro */}
-          <div className="text-center mb-4">
-            <p className="text-lime font-semibold text-sm uppercase tracking-wide mb-2">
-              Need something extra?
-            </p>
+      {/* New Business Website */}
+      <section id="new-website" className="section-padding bg-lightgrey scroll-mt-8">
+        <div className="container-custom max-w-6xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Service Info */}
+            <div>
+              <div className="w-16 h-16 bg-lime/20 text-lime rounded-xl flex items-center justify-center mb-6">
+                <svg className="w-8 h-8" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                </svg>
+              </div>
+              <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-4">
+                New Business Website<span className="text-lime">.</span>
+              </h2>
+              <p className="text-lime font-semibold text-lg mb-4">
+                A proper first site for your business
+              </p>
+              <p className="text-slate text-lg leading-relaxed mb-6">
+                Starting out or upgrading from a free template? Get a clean, professional website that makes the right first impression — without the agency price tag.
+              </p>
+
+              <div className="mb-8">
+                <div className="text-4xl font-bold text-navy mb-2">From £1,295</div>
+                <p className="text-sm text-slate italic">*Prices exclude VAT</p>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="font-heading font-bold text-xl text-navy mb-4">
+                  What's included
+                </h3>
+                <ul className="space-y-3">
+                  {[
+                    'Custom design tailored to your business',
+                    'Mobile-first, responsive layout',
+                    'Up to 5 pages (Home, About, Services, Portfolio, Contact)',
+                    'Contact form with email notifications',
+                    'Google Maps integration',
+                    'Basic SEO setup',
+                    '2–3 week turnaround',
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-start">
+                      <svg className="w-5 h-5 text-lime mr-3 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span className="text-slate">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <Link href="/contact" className="btn-primary inline-block">
+                Book a free consultation
+              </Link>
+            </div>
+
+            {/* Right column */}
+            <div className="space-y-6">
+              <div className="bg-white rounded-xl p-6 shadow-md">
+                <h3 className="font-heading font-bold text-xl text-navy mb-4">
+                  Perfect if you...
+                </h3>
+                <ul className="space-y-3 text-slate">
+                  <li className="flex items-start">
+                    <span className="text-lime mr-2">•</span>
+                    Just started your business and need an online presence
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-lime mr-2">•</span>
+                    Currently rely on social media or word of mouth only
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-lime mr-2">•</span>
+                    Want something simple but professional
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-lime mr-2">•</span>
+                    Need a site you can point customers to with confidence
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-navy text-white rounded-xl p-6">
+                <h3 className="font-heading font-bold text-xl mb-4">
+                  What if I don't have content?
+                </h3>
+                <p className="text-gray-300 leading-relaxed">
+                  No problem. Rachel can help with copywriting and content creation as an add-on service. We'll guide you through what's needed and can write it for you if required.
+                </p>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <div className="text-center mb-16">
-            <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl mb-4 text-navy">
+      {/* Ongoing Support */}
+      <section id="ongoing-support" className="section-padding bg-white scroll-mt-8">
+        <div className="container-custom max-w-6xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Service Info */}
+            <div>
+              <div className="w-16 h-16 bg-lime/20 text-lime rounded-xl flex items-center justify-center mb-6">
+                <svg className="w-8 h-8" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+              </div>
+              <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-4">
+                Ongoing Support<span className="text-lime">.</span>
+              </h2>
+              <p className="text-lime font-semibold text-lg mb-4">
+                Keep your site secure and current
+              </p>
+              <p className="text-slate text-lg leading-relaxed mb-6">
+                Your website needs looking after. Updates, security patches, backups, and the occasional tweak — we handle the tech so you can focus on running your business.
+              </p>
+
+              <div className="mb-8">
+                <div className="text-4xl font-bold text-navy mb-2">From £30/month</div>
+                <p className="text-sm text-slate italic">*Prices exclude VAT</p>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="font-heading font-bold text-xl text-navy mb-4">
+                  What's included
+                </h3>
+                <ul className="space-y-3">
+                  {[
+                    'Regular security updates and patches',
+                    'Automated daily backups',
+                    'Performance monitoring',
+                    'Small content changes (text, images)',
+                    'Priority email support',
+                    'Uptime monitoring',
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-start">
+                      <svg className="w-5 h-5 text-lime mr-3 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span className="text-slate">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <Link href="/contact" className="btn-primary inline-block">
+                Book a free consultation
+              </Link>
+            </div>
+
+            {/* Right column */}
+            <div className="space-y-6">
+              <div className="bg-lightgrey rounded-xl p-6">
+                <h3 className="font-heading font-bold text-xl text-navy mb-4">
+                  Support tiers
+                </h3>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="font-bold text-navy">Essential</span>
+                      <span className="text-lime font-bold">£30/month</span>
+                    </div>
+                    <p className="text-slate text-sm">Security updates, backups, and monitoring. Perfect for simple sites.</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-4">
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="font-bold text-navy">Standard</span>
+                      <span className="text-lime font-bold">£75/month</span>
+                    </div>
+                    <p className="text-slate text-sm">Everything in Essential, plus 1 hour of content updates per month.</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-4">
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="font-bold text-navy">Premium</span>
+                      <span className="text-lime font-bold">£150/month</span>
+                    </div>
+                    <p className="text-slate text-sm">Everything in Standard, plus 3 hours of updates and priority support.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-navy text-white rounded-xl p-6">
+                <h3 className="font-heading font-bold text-xl mb-4">
+                  What if we didn't build your site?
+                </h3>
+                <p className="text-gray-300 leading-relaxed">
+                  No problem. We're happy to take over maintenance of existing sites. We'll review what you have, let you know if there are any issues, and quote accordingly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Add-on Services */}
+      <section id="add-ons" className="section-padding bg-lightgrey scroll-mt-8">
+        <div className="container-custom max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-4">
               Add-on services<span className="text-lime">.</span>
             </h2>
-            <p className="text-xl text-slate max-w-3xl mx-auto mb-4">
-              Keep your website running smoothly with our ongoing support services.
-            </p>
-            <p className="text-lg text-slate max-w-2xl mx-auto">
-              <strong className="text-navy">Flexible options:</strong> Add these to any package during your build, or purchase them separately after launch — even if we didn't build your original site.
+            <p className="text-xl text-slate max-w-3xl mx-auto">
+              Need help with content, print materials, or getting found online? Rachel handles the words and design, while we sort the technical SEO.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {/* Website Maintenance Card */}
-            <div className="group relative bg-gradient-to-br from-white via-white to-lime/5 rounded-3xl p-10 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(0,230,118,0.3)] transition-all duration-500 border border-gray-100 hover:border-lime/50 hover:-translate-y-2">
-              {/* Decorative gradient orb */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-lime/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-              <div className="relative">
-                {/* Icon */}
-                <div className="w-20 h-20 bg-gradient-to-br from-lime to-lime/60 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-lime/20 group-hover:scale-110 transition-transform duration-300">
-                  <svg
-                    className="w-10 h-10 text-navy"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
-                    <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                  </svg>
-                </div>
-
-                {/* Title */}
-                <h3 className="font-heading font-bold text-2xl mb-4 text-navy">
-                  Website maintenance
-                </h3>
-
-                {/* Pricing */}
-                <div className="mb-6 pb-6 border-b border-gray-200">
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-5xl font-bold bg-gradient-to-r from-lime to-lime/60 bg-clip-text text-transparent">£50–£150</span>
-                  </div>
-                  <div className="text-sm font-semibold text-slate uppercase tracking-wide mt-1">per month</div>
-                </div>
-
-                {/* Features */}
-                <ul className="space-y-4 text-slate">
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <span className="text-base leading-relaxed">Regular updates & security patches</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <span className="text-base leading-relaxed">Automated backups</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <span className="text-base leading-relaxed">Small content changes</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <span className="text-base leading-relaxed">Performance monitoring</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <span className="text-base leading-relaxed">Priority email support</span>
-                  </li>
-                </ul>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Copywriting */}
+            <div className="bg-white rounded-2xl p-8 shadow-md">
+              <div className="w-14 h-14 bg-lime/20 text-lime rounded-xl flex items-center justify-center mb-6">
+                <svg className="w-7 h-7" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                </svg>
               </div>
+              <h3 className="font-heading font-bold text-2xl text-navy mb-2">
+                Copywriting
+              </h3>
+              <p className="text-lime font-semibold text-sm mb-4">
+                From £300 per page
+              </p>
+              <p className="text-slate leading-relaxed mb-4">
+                Rachel writes website copy that sounds like you — clear, confident, and professional. No jargon, no fluff.
+              </p>
+              <ul className="space-y-2 text-slate text-sm">
+                <li className="flex items-start">
+                  <span className="text-lime mr-2">✓</span>
+                  Homepage and key pages
+                </li>
+                <li className="flex items-start">
+                  <span className="text-lime mr-2">✓</span>
+                  Service descriptions
+                </li>
+                <li className="flex items-start">
+                  <span className="text-lime mr-2">✓</span>
+                  About page content
+                </li>
+              </ul>
             </div>
 
-            {/* Content Updates Card */}
-            <div className="group relative bg-gradient-to-br from-white via-white to-lime/5 rounded-3xl p-10 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(0,230,118,0.3)] transition-all duration-500 border border-gray-100 hover:border-lime/50 hover:-translate-y-2">
-              {/* Decorative gradient orb */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-lime/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-              <div className="relative">
-                {/* Icon */}
-                <div className="w-20 h-20 bg-gradient-to-br from-lime to-lime/60 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-lime/20 group-hover:scale-110 transition-transform duration-300">
-                  <svg
-                    className="w-10 h-10 text-navy"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
-                  </svg>
-                </div>
-
-                {/* Title */}
-                <h3 className="font-heading font-bold text-2xl mb-4 text-navy">
-                  Content updates
-                </h3>
-
-                {/* Pricing */}
-                <div className="mb-6 pb-6 border-b border-gray-200">
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-5xl font-bold bg-gradient-to-r from-lime to-lime/60 bg-clip-text text-transparent">£75</span>
-                  </div>
-                  <div className="text-sm font-semibold text-slate uppercase tracking-wide mt-1">per hour</div>
-                </div>
-
-                {/* Features */}
-                <ul className="space-y-4 text-slate">
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <span className="text-base leading-relaxed">New page creation</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <span className="text-base leading-relaxed">Copy changes & edits</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <span className="text-base leading-relaxed">Image updates and optimisation</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <span className="text-base leading-relaxed">Adding new features</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <span className="text-base leading-relaxed">Layout adjustments</span>
-                  </li>
-                </ul>
+            {/* Print & Branding */}
+            <div className="bg-white rounded-2xl p-8 shadow-md">
+              <div className="w-14 h-14 bg-lime/20 text-lime rounded-xl flex items-center justify-center mb-6">
+                <svg className="w-7 h-7" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
+                </svg>
               </div>
+              <h3 className="font-heading font-bold text-2xl text-navy mb-2">
+                Print & Branding
+              </h3>
+              <p className="text-lime font-semibold text-sm mb-4">
+                Custom pricing
+              </p>
+              <p className="text-slate leading-relaxed mb-4">
+                Matching materials to go with your new site — business cards, flyers, simple logos, and social media graphics.
+              </p>
+              <ul className="space-y-2 text-slate text-sm">
+                <li className="flex items-start">
+                  <span className="text-lime mr-2">✓</span>
+                  Business cards and stationery
+                </li>
+                <li className="flex items-start">
+                  <span className="text-lime mr-2">✓</span>
+                  Flyers and leaflets
+                </li>
+                <li className="flex items-start">
+                  <span className="text-lime mr-2">✓</span>
+                  Logo design or refresh
+                </li>
+              </ul>
             </div>
 
-            {/* SEO Services Card */}
-            <div className="group relative bg-gradient-to-br from-white via-white to-lime/5 rounded-3xl p-10 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(0,230,118,0.3)] transition-all duration-500 border border-gray-100 hover:border-lime/50 hover:-translate-y-2">
-              {/* Decorative gradient orb */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-lime/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-              <div className="relative">
-                {/* Icon */}
-                <div className="w-20 h-20 bg-gradient-to-br from-lime to-lime/60 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-lime/20 group-hover:scale-110 transition-transform duration-300">
-                  <svg
-                    className="w-10 h-10 text-navy"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                  </svg>
-                </div>
-
-                {/* Title */}
-                <h3 className="font-heading font-bold text-2xl mb-4 text-navy">
-                  SEO services
-                </h3>
-
-                {/* Pricing */}
-                <div className="mb-6 pb-6 border-b border-gray-200">
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-5xl font-bold bg-gradient-to-r from-lime to-lime/60 bg-clip-text text-transparent">Custom</span>
-                  </div>
-                  <div className="text-sm font-semibold text-slate uppercase tracking-wide mt-1">pricing based on scope</div>
-                </div>
-
-                {/* Features */}
-                <ul className="space-y-4 text-slate">
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <span className="text-base leading-relaxed">Keyword research & strategy</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <span className="text-base leading-relaxed">On-page optimisation</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <span className="text-base leading-relaxed">Content strategy & creation</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <span className="text-base leading-relaxed">Local SEO optimisation</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <span className="text-base leading-relaxed">Monthly reporting</span>
-                  </li>
-                </ul>
+            {/* Local SEO */}
+            <div className="bg-white rounded-2xl p-8 shadow-md">
+              <div className="w-14 h-14 bg-lime/20 text-lime rounded-xl flex items-center justify-center mb-6">
+                <svg className="w-7 h-7" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
               </div>
+              <h3 className="font-heading font-bold text-2xl text-navy mb-2">
+                Local SEO
+              </h3>
+              <p className="text-lime font-semibold text-sm mb-4">
+                From £150/month
+              </p>
+              <p className="text-slate leading-relaxed mb-4">
+                Help your business show up when people search for services in your area. We focus on practical, sustainable improvements.
+              </p>
+              <ul className="space-y-2 text-slate text-sm">
+                <li className="flex items-start">
+                  <span className="text-lime mr-2">✓</span>
+                  Google Business Profile setup
+                </li>
+                <li className="flex items-start">
+                  <span className="text-lime mr-2">✓</span>
+                  Local keyword optimisation
+                </li>
+                <li className="flex items-start">
+                  <span className="text-lime mr-2">✓</span>
+                  Monthly reporting
+                </li>
+              </ul>
             </div>
-
-            {/* Brand & Print Collateral Card */}
-            <div className="group relative bg-gradient-to-br from-white via-white to-lime/5 rounded-3xl p-10 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(0,230,118,0.3)] transition-all duration-500 border border-gray-100 hover:border-lime/50 hover:-translate-y-2">
-              {/* Decorative gradient orb */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-lime/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-              <div className="relative">
-                {/* Icon */}
-                <div className="w-20 h-20 bg-gradient-to-br from-lime to-lime/60 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-lime/20 group-hover:scale-110 transition-transform duration-300">
-                  <svg
-                    className="w-10 h-10 text-navy"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
-                  </svg>
-                </div>
-
-                {/* Title */}
-                <h3 className="font-heading font-bold text-2xl mb-4 text-navy">
-                  Brand & print collateral
-                </h3>
-
-                {/* Pricing */}
-                <div className="mb-6 pb-6 border-b border-gray-200">
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-5xl font-bold bg-gradient-to-r from-lime to-lime/60 bg-clip-text text-transparent">Custom</span>
-                  </div>
-                  <div className="text-sm font-semibold text-slate uppercase tracking-wide mt-1">pricing based on scope</div>
-                </div>
-
-                {/* Features */}
-                <ul className="space-y-4 text-slate">
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <span className="text-base leading-relaxed">Flyers and leaflets to match your website</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <span className="text-base leading-relaxed">Business cards and basic stationery</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <span className="text-base leading-relaxed">Simple logo design or refresh</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <span className="text-base leading-relaxed">Posters, menus or price lists</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <span className="text-base leading-relaxed">Social media launch graphics</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <span className="text-base leading-relaxed">Print-ready files supplied</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Bottom note */}
-          <div className="mt-12 text-center">
-            <p className="text-slate text-lg max-w-2xl mx-auto">
-              All add-on services can be combined with any package or purchased independently. We can also design matching flyers, stationery and social graphics so your brand feels consistent online and offline.
-            </p>
           </div>
         </div>
       </section>
 
       {/* Pricing FAQ */}
-      <section className="section-padding bg-lightgrey">
+      <section className="section-padding bg-white">
         <div className="container-custom max-w-4xl">
-          <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-12 text-center">
-            Pricing questions<span className="text-lime">.</span>
+          <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-12 text-center">
+            Common questions<span className="text-lime">.</span>
           </h2>
 
           <div className="space-y-6">
-            <div className="bg-white rounded-xl p-6 shadow-md">
+            <div className="bg-lightgrey rounded-xl p-6">
               <h3 className="font-semibold text-xl text-navy mb-3">
-                What affects the final cost?
+                What affects the final price?
               </h3>
               <p className="text-slate leading-relaxed">
-                The final price depends on the number of pages, complexity of features, amount of custom design work, and how much content you provide. We'll give you a detailed quote after our discovery call so there are no surprises.
+                The main factors are the number of pages, complexity of design, and how much content you already have. We'll give you a fixed quote after our initial chat — no surprises.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6 shadow-md">
+            <div className="bg-lightgrey rounded-xl p-6">
               <h3 className="font-semibold text-xl text-navy mb-3">
-                Why do prices vary within packages?
+                How long does a project take?
               </h3>
               <p className="text-slate leading-relaxed">
-                Every business is unique. A 5-page site with simple layouts costs less than a 5-page site with custom features and extensive content. We price based on actual work required, not arbitrary numbers. You'll always know the exact price before we start.
+                Most projects take 2–3 weeks from brief to launch. Larger sites or those needing copywriting help may take a bit longer. We'll give you a realistic timeline upfront.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6 shadow-md">
+            <div className="bg-lightgrey rounded-xl p-6">
               <h3 className="font-semibold text-xl text-navy mb-3">
-                What's NOT included in any package?
+                What's NOT included?
               </h3>
               <p className="text-slate leading-relaxed mb-3">
-                Our packages cover design and development. Separate costs include:
+                Our build prices cover design and development. Separate costs may include:
               </p>
-              <ul className="text-slate space-y-1 ml-4 list-disc list-inside marker:text-navy/40">
-                <li className="pl-2">Domain name (£10-15/year)</li>
-                <li className="pl-2">Stock photography (if needed, £10-50)</li>
-                <li className="pl-2">Professional copywriting (if needed, custom quote)</li>
+              <ul className="text-slate space-y-1 ml-4 list-disc list-inside marker:text-lime">
+                <li className="pl-2">Domain name (typically £10-15/year)</li>
+                <li className="pl-2">Stock photography if needed</li>
+                <li className="pl-2">Copywriting if you need help with content</li>
+                <li className="pl-2">Ongoing hosting and maintenance (see support packages)</li>
               </ul>
-              <div className="mt-4 pt-4 border-t border-gray-200">
-                <p className="text-slate font-semibold mb-2">Hosting & ongoing maintenance</p>
-                <p className="text-slate text-sm leading-relaxed mb-2">
-                  Hosting infrastructure costs £5-20/month (or free for simple static sites on Vercel/Netlify).
-                </p>
-                <p className="text-slate text-sm leading-relaxed mb-2">
-                  However, most clients opt for a maintenance package (£50-150/month) which includes:
-                </p>
-                <ul className="text-slate text-sm space-y-1 ml-4 list-disc list-inside marker:text-navy/40">
-                  <li className="pl-2">Hosting + fast CDN</li>
-                  <li className="pl-2">Security updates and patches</li>
-                  <li className="pl-2">Automated backups</li>
-                  <li className="pl-2">Content updates (included hours vary by tier)</li>
-                  <li className="pl-2">Priority support</li>
-                </ul>
-                <p className="text-slate text-sm leading-relaxed mt-2">
-                  First year hosting is included in your build cost. After that, you can:
-                </p>
-                <ul className="text-slate text-sm space-y-1 ml-4 list-disc list-inside marker:text-navy/40">
-                  <li className="pl-2">Self-manage hosting (£5-20/month) if you have technical capabilities</li>
-                  <li className="pl-2">Use our maintenance packages (recommended for most clients)</li>
-                </ul>
-              </div>
             </div>
 
-            <div className="bg-white rounded-xl p-6 shadow-md">
+            <div className="bg-lightgrey rounded-xl p-6">
               <h3 className="font-semibold text-xl text-navy mb-3">
-                Can I upgrade later?
+                Do you offer payment plans?
               </h3>
               <p className="text-slate leading-relaxed">
-                Absolutely. Start with a Starter package and upgrade to Professional or Premium as your business grows. We'll credit what you've already paid toward the upgrade cost.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl p-6 shadow-md">
-              <h3 className="font-semibold text-xl text-navy mb-3">
-                Do you offer discounts?
-              </h3>
-              <p className="text-slate leading-relaxed">
-                We occasionally offer discounts for charities, multiple projects, or referrals. Our prices are already fair and transparent. We don't inflate them to offer fake discounts later.
+                Yes. We typically take 50% upfront and 50% on completion. For larger projects, we can discuss alternative arrangements.
               </p>
             </div>
           </div>
@@ -740,17 +473,21 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-lightgrey">
+      <section className="section-padding bg-navy text-white">
         <div className="container-custom text-center max-w-3xl mx-auto">
-          <div className="bg-white rounded-xl p-8 md:p-12 shadow-lg">
-            <h2 className="font-heading font-bold text-3xl md:text-4xl text-navy mb-4">
-              Still unsure<span className="text-lime">?</span>
-            </h2>
-            <p className="text-xl text-slate mb-6 leading-relaxed">
-              Book a free consultation to discuss your project. No pressure, no obligation — just an honest conversation about what you need and which package fits best.
-            </p>
-            <Link href="/contact" className="btn-primary inline-block">
+          <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6">
+            Ready to talk<span className="text-lime">?</span>
+          </h2>
+          <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+            Book a free 15-minute consultation to discuss your project. No pressure, no obligation — just an honest conversation about what you need.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link href="/contact" className="btn-primary">
               Book a free consultation
+            </Link>
+            <span className="text-gray-400">or</span>
+            <Link href="/contact" className="text-white font-semibold hover:text-lime transition-colors">
+              Email us your project details →
             </Link>
           </div>
         </div>

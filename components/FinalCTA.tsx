@@ -30,7 +30,7 @@ export default function FinalCTA() {
             Ready to grow your business<span className="text-lime">?</span>
           </h2>
           <p className="text-xl md:text-2xl mb-8 text-gray-200">
-            Book a free 30-minute consultation to discuss your project. No pressure, no obligation, just a conversation about your business and how a website can help.
+            Book a free 15-minute consultation to discuss your project. No pressure, no obligation — just a conversation about your business and how a website can help.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">

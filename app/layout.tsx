@@ -30,12 +30,12 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Web Design for Small Businesses in the UK | Lawsons Creative",
-  description: "Professional website design and development for small service businesses. Fast delivery, transparent pricing, real results. Based in London, serving UK-wide.",
-  keywords: ["web design", "website design London", "small business websites", "affordable web design", "website designer UK"],
+  title: "Website Design for Small Businesses | Lawsons Creative",
+  description: "We modernise tired, awkward and DIY websites for small UK service businesses. Based in Kent, working with trades, pet care, and local services across the UK.",
+  keywords: ["website design", "small business websites", "website redesign", "trades websites", "pet care websites", "web design Kent", "website designer UK"],
   openGraph: {
     title: "Lawsons Creative | Modern Websites for Small Businesses",
-    description: "Professional website design and development for small service businesses. Fast delivery, transparent pricing, real results.",
+    description: "We modernise tired, awkward and DIY websites for small UK service businesses. Based in Kent, working with trades, pet care, and local services across the UK.",
     url: "https://lawsonscreative.co.uk",
     siteName: "Lawsons Creative",
     locale: "en_GB",

@@ -12,8 +12,11 @@ export default function Footer() {
             <h3 className="text-2xl font-heading font-bold mb-4">
               Lawsons Creative
             </h3>
-            <p className="text-gray-300 text-sm leading-relaxed">
-              Modern, effective websites for small service businesses. Built fast, without the agency price tag.
+            <p className="text-gray-300 text-sm leading-relaxed mb-4">
+              A small web studio specialising in modernising tired, awkward and DIY websites for small UK service businesses.
+            </p>
+            <p className="text-gray-400 text-sm">
+              Based in Kent, working with businesses across the UK.
             </p>
           </div>
 
@@ -48,10 +51,26 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4 text-lime">Services</h4>
             <ul className="space-y-2 text-sm">
-              <li className="text-gray-300">Website Design</li>
-              <li className="text-gray-300">Website Development</li>
-              <li className="text-gray-300">Website Maintenance</li>
-              <li className="text-gray-300">SEO optimisation</li>
+              <li>
+                <Link href="/services#website-rescue" className="text-gray-300 hover:text-white transition-colors">
+                  Website Rescue
+                </Link>
+              </li>
+              <li>
+                <Link href="/services#new-website" className="text-gray-300 hover:text-white transition-colors">
+                  New Business Websites
+                </Link>
+              </li>
+              <li>
+                <Link href="/services#ongoing-support" className="text-gray-300 hover:text-white transition-colors">
+                  Ongoing Support
+                </Link>
+              </li>
+              <li>
+                <Link href="/services#add-ons" className="text-gray-300 hover:text-white transition-colors">
+                  Content & Print Design
+                </Link>
+              </li>
             </ul>
           </div>
 

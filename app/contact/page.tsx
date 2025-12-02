@@ -4,8 +4,8 @@ import ContactForm from '@/components/ContactForm';
 import CalendlyButton from '@/components/CalendlyButton';
 
 export const metadata: Metadata = {
-  title: 'Get a Free Website Quote | Contact Lawsons Creative',
-  description: 'Get in touch for your free consultation. Book a call or send us a message about your website project.',
+  title: 'Contact Us – Book a Free Consultation | Lawsons Creative',
+  description: 'Book a free 15-minute consultation or email us your project details. We respond within 24 hours. Based in Kent, working with small businesses across the UK.',
 };
 
 export default function ContactPage() {
@@ -19,7 +19,7 @@ export default function ContactPage() {
             Let's talk about your project<span className="text-lime">.</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
-            Book a free 30-minute consultation or send a message. We'll respond within 48 hours (usually much faster).
+            Book a free 15-minute consultation or send us your project details. We'll respond within 24 hours (usually much faster).
           </p>
         </div>
       </section>
@@ -67,7 +67,7 @@ export default function ContactPage() {
                 >
                   <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
-                <span>30 minutes • No obligation • Free consultation</span>
+                <span>15 minutes • No obligation • Free consultation</span>
               </div>
             </div>
 
@@ -91,7 +91,7 @@ export default function ContactPage() {
                 Send a message
               </h2>
               <p className="text-slate mb-6 leading-relaxed">
-                Prefer email? Fill out the form below and we'll get back to you within 48 hours (usually much faster) with answers to your questions.
+                Prefer email? Fill out the form below and we'll get back to you within 24 hours (usually much faster) with answers to your questions.
               </p>
             </div>
           </div>
@@ -172,7 +172,7 @@ export default function ContactPage() {
                 </svg>
               </div>
               <h3 className="font-semibold text-navy mb-2">Response Time</h3>
-              <p className="text-slate">Within 48 hours</p>
+              <p className="text-slate">Within 24 hours</p>
               <p className="text-slate text-sm">(usually much faster)</p>
             </div>
           </div>
@@ -198,8 +198,8 @@ export default function ContactPage() {
                     <path d="M9 5l7 7-7 7"></path>
                   </svg>
                 </Link>
-                <Link href="/how-we-work" className="inline-flex items-center font-semibold text-navy hover:text-lime transition-colors">
-                  <span>How We Work</span>
+                <Link href="/about" className="inline-flex items-center font-semibold text-navy hover:text-lime transition-colors">
+                  <span>About Us</span>
                   <svg className="w-4 h-4 ml-1" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
                     <path d="M9 5l7 7-7 7"></path>
                   </svg>

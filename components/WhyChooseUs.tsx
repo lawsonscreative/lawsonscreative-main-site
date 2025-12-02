@@ -17,40 +17,40 @@ export default function WhyChooseUs() {
     icon: LucideIcon;
   }> = [
     {
-      title: 'Fast delivery without rushing',
+      title: 'Plain-English communication',
       description:
-        "Using efficient tooling and proven workflows, we typically complete builds in 1–2 weeks. You'll receive a detailed timeline and milestone plan, ensuring no surprises, just results.",
-      icon: Zap,
-    },
-    {
-      title: 'Strategy first, design second',
-      description:
-        'Beautiful design matters only when it delivers results. We start with your business goals and build websites that turn visitors into customers.',
+        "No jargon, no tech-speak. We explain everything clearly and handle the technical side so you don't have to.",
       icon: Target,
     },
     {
-      title: 'Mobile-friendly websites',
+      title: 'Small studio, direct access',
       description:
-        "Over 60% of site visitors are on mobile. We design for phones first, then scale up, not the other way around.",
+        "You deal directly with the people doing the work — Andy and Rachel. No account managers or middlemen.",
+      icon: HandshakeIcon,
+    },
+    {
+      title: 'Clear process from brief to launch',
+      description:
+        "We follow a simple, proven process. You'll know exactly what's happening at every stage.",
+      icon: Zap,
+    },
+    {
+      title: 'Phone-friendly as standard',
+      description:
+        "Over 60% of visitors are on mobile. Every site we build works beautifully on phones, tablets and desktops.",
       icon: Smartphone,
     },
     {
-      title: 'Transparent pricing, no surprises',
+      title: 'Transparent, fair pricing',
       description:
-        "You know exactly what you're paying before we start. No hidden fees, no scope creep, no surprise invoices.",
+        "You know exactly what you're paying before we start. No hidden fees, no surprise invoices.",
       icon: PoundSterling,
     },
     {
-      title: 'Built to last',
+      title: 'Words and print too',
       description:
-        "Built on modern, future-proof technology. Fast, secure and easy to keep current, you can request simple updates anytime or choose ongoing maintenance for peace of mind.",
+        "Rachel can sharpen your website copy and create matching printed materials — flyers, business cards, brochures — so everything feels consistent.",
       icon: Wrench,
-    },
-    {
-      title: 'Ongoing support available',
-      description:
-        "Keep your site secure, current and converting. Post-launch support and maintenance plans mean fewer interruptions and more time for your business.",
-      icon: HandshakeIcon,
     },
   ];
 
@@ -64,10 +64,10 @@ export default function WhyChooseUs() {
           className="text-center mb-16"
         >
           <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-4">
-            Built for small businesses, by someone who gets it<span className="text-lime">.</span>
+            Why local small businesses work with us<span className="text-lime">.</span>
           </h2>
-          <p className="text-xl text-slate max-w-6xl mx-auto">
-            Large agencies charge £10k+ and take months. We deliver quality websites in 1–2 weeks at a fraction of the cost, without cutting corners.
+          <p className="text-xl text-slate max-w-4xl mx-auto">
+            We're a small web studio — not an agency. You get direct access to the people doing the work, plain-English communication, and websites delivered in 1–2 weeks.
           </p>
         </motion.div>
 

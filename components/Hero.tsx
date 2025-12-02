@@ -27,7 +27,7 @@ export default function Hero() {
           <div className="lg:max-w-[55%]">
             {/* Typing headline - left aligned, fixed height */}
             <h1 className="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl mb-8 md:mb-10 leading-tight text-white text-left">
-              <span className="block">Bespoke websites that</span>
+              <span className="block">Modern, phone-friendly websites that</span>
               <span className="block min-h-[3rem] md:min-h-[3.5rem] lg:min-h-[4rem]">
                 <span
                   aria-live="polite"
@@ -46,10 +46,10 @@ export default function Hero() {
             </h1>
 
             <h2 className="text-xl md:text-2xl mb-6 text-gray-200 font-semibold text-balance">
-              Modern, fast-loading websites for UK service businesses — designed to build trust and generate enquiries. Typically delivered in 1–2 weeks, without the agency price tag.
+              We take your tired, awkward or DIY website and turn it into something you're proud of — fast, clear and easy for your customers to use.
             </h2>
             <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-              You're great at what you do, and your website should show that. We build strategy-led sites that turn visitors into bookings, not just &quot;pretty&quot; homepages.
+              A small web studio in Kent, working with trades, pet care, and local service businesses across the UK. Plain-English communication, straightforward process, typically delivered in 1–2 weeks.
             </p>
 
             {/* CTAs */}
@@ -66,10 +66,15 @@ export default function Hero() {
                 Book a free consultation
               </Link>
               <Link
-                href="/portfolio"
+                href="/contact"
                 className="btn-tertiary text-center"
+                onClick={() => {
+                  if (typeof window !== 'undefined' && window.plausible) {
+                    window.plausible('CTA Click', { props: { location: 'Hero', button: 'Email Quote' } });
+                  }
+                }}
               >
-                View our work
+                Get a quote by email
               </Link>
             </div>
           </div>

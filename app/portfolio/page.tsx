@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Web Design Portfolio – Small Business Websites | Lawsons Creative',
-  description: 'View our portfolio of stunning, effective websites for small service businesses across the UK.',
+  title: 'Our Work – Website Design Portfolio | Lawsons Creative',
+  description: "See how we've helped trades, pet care, and local service businesses across the UK modernise their websites. Before & after case studies with real results.",
 };
 
 export default function PortfolioPage() {
@@ -475,7 +475,7 @@ export default function PortfolioPage() {
               If your current website feels dated or isn't generating enquiries, let's fix that.
             </p>
             <p>
-              Every project I take on focuses on the same goal: websites that work as hard as you do to win customers and build trust.
+              Every project we take on focuses on the same goal: websites that work as hard as you do to win customers and build trust.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
