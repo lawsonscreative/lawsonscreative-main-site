@@ -2,6 +2,7 @@ import dynamic from 'next/dynamic';
 import Hero from '@/components/Hero';
 import ProblemSection from '@/components/ProblemSection';
 import SocialProof from '@/components/SocialProof';
+import MobileStickyBar from '@/components/MobileStickyBar';
 import { localBusinessSchema } from '@/lib/schema';
 
 // Lazy load below-the-fold components to reduce initial JS bundle
@@ -87,6 +88,9 @@ export default function Home() {
 
       {/* Final CTA band */}
       <FinalCTA />
+
+      {/* Mobile sticky bar */}
+      <MobileStickyBar />
     </>
   );
 }

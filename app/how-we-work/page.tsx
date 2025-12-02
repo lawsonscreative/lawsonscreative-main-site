@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import MobileStickyBar from '@/components/MobileStickyBar';
 
 export const metadata: Metadata = {
   title: 'Our Web Design Process – From Idea to Live Website in 1–2 Weeks | Lawsons Creative',
@@ -427,6 +428,9 @@ export default function ProcessPage() {
           </Link>
         </div>
       </section>
+
+      {/* Mobile sticky bar */}
+      <MobileStickyBar />
     </div>
   );
 }

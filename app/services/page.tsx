@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { localBusinessSchema, serviceSchemas, faqSchema } from '@/lib/schema';
+import MobileStickyBar from '@/components/MobileStickyBar';
 
 export const metadata: Metadata = {
   title: 'Services & Pricing – Lawsons Creative | Website Design for Small Businesses',
@@ -514,6 +515,9 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+
+      {/* Mobile sticky bar */}
+      <MobileStickyBar />
     </div>
   );
 }

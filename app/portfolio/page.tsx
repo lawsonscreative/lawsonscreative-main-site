@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import MobileStickyBar from '@/components/MobileStickyBar';
 
 export const metadata: Metadata = {
   title: 'Our Work – Website Design Portfolio | Lawsons Creative',
@@ -602,6 +603,9 @@ export default function PortfolioPage() {
           </div>
         </div>
       </section>
+
+      {/* Mobile sticky bar */}
+      <MobileStickyBar />
     </div>
   );
 }
