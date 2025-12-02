@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { localBusinessSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'About Us – Lawsons Creative | Small Web Studio in Kent',
@@ -9,6 +10,12 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="bg-white">
+      {/* LocalBusiness Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+
       {/* Hero */}
       <section className="section-padding bg-gradient-to-br from-navy via-navy to-blue-900 text-white">
         <div className="container-custom text-center">

@@ -52,13 +52,18 @@ export default function Footer() {
             <h4 className="font-semibold mb-4 text-lime">Services</h4>
             <ul className="space-y-2 text-sm">
               <li>
+                <Link href="/services#starter-website" className="text-gray-300 hover:text-white transition-colors">
+                  Starter Website
+                </Link>
+              </li>
+              <li>
                 <Link href="/services#website-rescue" className="text-gray-300 hover:text-white transition-colors">
                   Website Rescue
                 </Link>
               </li>
               <li>
                 <Link href="/services#new-website" className="text-gray-300 hover:text-white transition-colors">
-                  New Business Websites
+                  New Business Website
                 </Link>
               </li>
               <li>
@@ -68,7 +73,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/services#add-ons" className="text-gray-300 hover:text-white transition-colors">
-                  Content & Print Design
+                  Add-ons
                 </Link>
               </li>
             </ul>

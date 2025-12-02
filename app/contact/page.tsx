@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import ContactForm from '@/components/ContactForm';
 import CalendlyButton from '@/components/CalendlyButton';
+import { localBusinessSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Contact Us – Book a Free Consultation | Lawsons Creative',
@@ -9,9 +10,14 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
-
   return (
     <div className="bg-white">
+      {/* LocalBusiness Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+
       {/* Hero */}
       <section className="section-padding bg-gradient-to-br from-navy via-navy to-blue-900 text-white">
         <div className="container-custom text-center">

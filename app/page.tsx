@@ -2,6 +2,7 @@ import dynamic from 'next/dynamic';
 import Hero from '@/components/Hero';
 import ProblemSection from '@/components/ProblemSection';
 import SocialProof from '@/components/SocialProof';
+import { localBusinessSchema } from '@/lib/schema';
 
 // Lazy load below-the-fold components to reduce initial JS bundle
 // ssr: false reduces initial HTML size for animation-heavy components
@@ -29,6 +30,10 @@ const FAQ = dynamic(() => import('@/components/FAQ'), {
   loading: () => <div className="section-padding" style={{ minHeight: '300px' }} />,
   ssr: false
 });
+const SectorsAndAreas = dynamic(() => import('@/components/SectorsAndAreas'), {
+  loading: () => <div className="section-padding" style={{ minHeight: '300px' }} />,
+  ssr: false
+});
 const FinalCTA = dynamic(() => import('@/components/FinalCTA'), {
   loading: () => <div className="section-padding" style={{ minHeight: '200px' }} />,
   ssr: false
@@ -37,6 +42,12 @@ const FinalCTA = dynamic(() => import('@/components/FinalCTA'), {
 export default function Home() {
   return (
     <>
+      {/* LocalBusiness Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+
       {/* Hero with new positioning: modernise old/DIY sites for small UK service businesses */}
       <Hero />
 
@@ -63,6 +74,9 @@ export default function Home() {
 
       {/* FAQ */}
       <FAQ />
+
+      {/* Who we work with & Areas we serve */}
+      <SectorsAndAreas />
 
       {/* Final CTA band */}
       <FinalCTA />

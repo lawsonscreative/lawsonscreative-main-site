@@ -202,19 +202,20 @@ export default function ContactForm() {
       {/* Budget */}
       <div>
         <label htmlFor="budget" className="block text-sm font-semibold text-navy mb-2">
-          Approximate budget
+          Which package are you interested in?
         </label>
-        <p className="text-slate text-sm mb-2">Helps us recommend the right package - all budgets welcome</p>
+        <p className="text-slate text-sm mb-2">Helps us recommend the right option - all budgets welcome</p>
         <select
           id="budget"
           {...register('budget')}
           className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lime focus:ring-2 focus:ring-lime/20 outline-none transition-colors"
         >
           <option value="">Select...</option>
-          <option value="starter">Starter – £1,295</option>
-          <option value="growth">Growth – £1,795</option>
-          <option value="professional">Professional – £2,495</option>
-          <option value="custom">Custom / Not sure</option>
+          <option value="starter-website">Starter Website – from £500</option>
+          <option value="website-rescue">Website Rescue – from £1,295</option>
+          <option value="new-business-website">New Business Website – from £1,295</option>
+          <option value="ongoing-support">Ongoing Support – from £30/month</option>
+          <option value="custom">Not sure / Multiple services</option>
         </select>
         {errors.budget && <p className="text-red-500 text-sm mt-1">{errors.budget.message}</p>}
       </div>

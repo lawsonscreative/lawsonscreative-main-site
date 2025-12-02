@@ -50,7 +50,7 @@ export default function TermsPage() {
                 <li>Website hosting setup and configuration</li>
               </ul>
               <p>
-                All services are subject to these Terms and the specific details outlined in your project proposal, quote, or written agreement. Services are provided as part of three main packages: Starter, Professional, and Premium, as detailed on our website.
+                All services are subject to these Terms and the specific details outlined in your project proposal, quote, or written agreement. Our main services include Starter Website, Website Rescue, New Business Website, and Ongoing Support, as detailed on our website.
               </p>
             </div>
 
@@ -110,15 +110,15 @@ export default function TermsPage() {
             <div>
               <h2 className="font-heading font-bold text-2xl text-navy mb-3">4. Revision Policy</h2>
               <p>
-                Each package includes a specified number of revision rounds as outlined in your proposal:
+                Each project includes revision rounds as outlined in your proposal:
               </p>
               <ul className="list-disc ml-6 space-y-2">
-                <li><strong>Starter package:</strong> 1 round of revisions</li>
-                <li><strong>Professional package:</strong> 2 rounds of revisions</li>
-                <li><strong>Premium package:</strong> 3 rounds of revisions</li>
+                <li><strong>Starter Website:</strong> 1 round of revisions</li>
+                <li><strong>Website Rescue:</strong> 2 rounds of revisions</li>
+                <li><strong>New Business Website:</strong> 2 rounds of revisions</li>
               </ul>
               <p className="mt-4">
-                A revision round allows for feedback and changes to the design or functionality within the agreed project scope. Revisions must be submitted as a consolidated list. Additional revisions beyond the included rounds may incur extra charges at our standard hourly rate of £40-60 per hour. Major scope changes (new pages, significant functionality additions) will be quoted separately as a change request.
+                A revision round allows for feedback and changes to the design or functionality within the agreed project scope. Revisions must be submitted as a consolidated list. Additional revisions beyond the included rounds may incur extra charges at our standard hourly rate of £50-75 per hour. Major scope changes (new pages, significant functionality additions) will be quoted separately as a change request.
               </p>
             </div>
 
@@ -128,9 +128,9 @@ export default function TermsPage() {
                 We commit to delivering your project within the timeframe specified in your written proposal or agreement. Standard project timelines are:
               </p>
               <ul className="list-disc ml-6 space-y-2">
-                <li><strong>Starter package:</strong> 1 week</li>
-                <li><strong>Professional package:</strong> 1–2 weeks</li>
-                <li><strong>Premium package:</strong> 2 weeks</li>
+                <li><strong>Starter Website:</strong> 1–2 weeks</li>
+                <li><strong>Website Rescue:</strong> 2–3 weeks</li>
+                <li><strong>New Business Website:</strong> 2–3 weeks</li>
               </ul>
               <p className="mt-4">
                 Timelines are calculated from the date of deposit receipt and receipt of all required materials. Timelines may be extended if:
@@ -270,7 +270,7 @@ export default function TermsPage() {
               <ul className="list-disc ml-6 space-y-2">
                 <li>The website will function substantially as specified at the time of launch</li>
                 <li>The website will be delivered using professional standards and best practices</li>
-                <li>We will fix any bugs or defects in custom code we wrote for 30 days after launch (Premium package only, or as otherwise agreed)</li>
+                <li>We will fix any bugs or defects in custom code we wrote for 30 days after launch (or as otherwise agreed in your proposal)</li>
               </ul>
               <p className="mt-4">
                 <strong>Limitations:</strong> We do not warrant or guarantee:

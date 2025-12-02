@@ -28,13 +28,26 @@ export default function PortfolioPage() {
           <div className="max-w-6xl mx-auto">
             {/* Project Header */}
             <div className="mb-12">
+              {/* Meta Strip */}
               <div className="flex flex-wrap items-center gap-3 mb-4">
-                <span className="inline-block bg-lime text-navy px-4 py-2 rounded-full font-semibold text-sm">
+                <span className="inline-flex items-center bg-lime text-navy px-4 py-2 rounded-full font-semibold text-sm">
+                  <svg className="w-4 h-4 mr-1.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                  </svg>
                   Trades
                 </span>
-                <span className="text-slate text-sm">·</span>
-                <span className="inline-block bg-navy/5 text-navy px-4 py-2 rounded-full font-semibold text-sm">
-                  New Website Build
+                <span className="inline-flex items-center bg-navy/10 text-navy px-4 py-2 rounded-full font-semibold text-sm">
+                  <svg className="w-4 h-4 mr-1.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                  Kent
+                </span>
+                <span className="inline-flex items-center bg-navy/10 text-navy px-4 py-2 rounded-full font-semibold text-sm">
+                  <svg className="w-4 h-4 mr-1.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                  </svg>
+                  New Business Website
                 </span>
               </div>
               <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-4">
@@ -254,13 +267,26 @@ export default function PortfolioPage() {
           <div className="max-w-6xl mx-auto">
             {/* Project Header */}
             <div className="mb-12">
+              {/* Meta Strip */}
               <div className="flex flex-wrap items-center gap-3 mb-4">
-                <span className="inline-block bg-lime text-navy px-4 py-2 rounded-full font-semibold text-sm">
-                  Pet Care Services
+                <span className="inline-flex items-center bg-lime text-navy px-4 py-2 rounded-full font-semibold text-sm">
+                  <svg className="w-4 h-4 mr-1.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                  </svg>
+                  Pet Care
                 </span>
-                <span className="text-slate text-sm">·</span>
-                <span className="inline-block bg-navy/5 text-navy px-4 py-2 rounded-full font-semibold text-sm">
-                  Full Website Redesign
+                <span className="inline-flex items-center bg-navy/10 text-navy px-4 py-2 rounded-full font-semibold text-sm">
+                  <svg className="w-4 h-4 mr-1.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                  Kent
+                </span>
+                <span className="inline-flex items-center bg-navy/10 text-navy px-4 py-2 rounded-full font-semibold text-sm">
+                  <svg className="w-4 h-4 mr-1.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                  </svg>
+                  Website Rescue
                 </span>
               </div>
               <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-4">

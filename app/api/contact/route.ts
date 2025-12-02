@@ -43,10 +43,11 @@ export async function POST(request: Request) {
     };
 
     const budgetLabels: Record<string, string> = {
-      'starter': 'Starter – £1,295',
-      'growth': 'Growth – £1,795',
-      'professional': 'Professional – £2,495',
-      'custom': 'Custom / Not sure',
+      'starter-website': 'Starter Website – from £500',
+      'website-rescue': 'Website Rescue – from £1,295',
+      'new-business-website': 'New Business Website – from £1,295',
+      'ongoing-support': 'Ongoing Support – from £30/month',
+      'custom': 'Not sure / Multiple services',
     };
 
     const timelineLabels: Record<string, string> = {
