@@ -68,7 +68,7 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="section-padding bg-secondary" ref={ref}>
+    <section className="section-padding bg-white" ref={ref}>
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

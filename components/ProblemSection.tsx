@@ -46,7 +46,7 @@ export default function ProblemSection() {
   ];
 
   return (
-    <section className="section-padding bg-white" ref={ref}>
+    <section className="section-padding bg-lightgrey" ref={ref}>
       <div className="container-custom max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

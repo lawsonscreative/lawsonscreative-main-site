@@ -25,7 +25,7 @@ export default function SocialProof() {
   ];
 
   return (
-    <section className="bg-secondary py-12 md:py-16">
+    <section className="bg-white py-12 md:py-16 border-y border-gray-100">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {features.map((feature, index) => {

@@ -55,7 +55,7 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="section-padding bg-white" ref={ref}>
+    <section className="section-padding bg-lightgrey" ref={ref}>
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

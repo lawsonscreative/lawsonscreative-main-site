@@ -68,7 +68,7 @@ export default function Navigation() {
                 )}
               </Link>
             ))}
-            <div className="flex items-center gap-3 ml-2">
+            <div className="flex items-center gap-2 ml-2">
               <Link
                 href="/contact"
                 className="btn-primary text-sm px-4 py-2"
@@ -77,9 +77,9 @@ export default function Navigation() {
               </Link>
               <Link
                 href="/contact"
-                className="text-navy hover:text-lime transition-colors text-sm font-semibold whitespace-nowrap"
+                className="border border-navy text-navy hover:bg-navy hover:text-white transition-all text-sm font-semibold px-4 py-2 rounded-lg whitespace-nowrap"
               >
-                Or email us
+                Email us
               </Link>
             </div>
           </div>
@@ -139,10 +139,10 @@ export default function Navigation() {
                 </Link>
                 <Link
                   href="/contact"
-                  className="text-navy hover:text-lime transition-colors text-center font-semibold"
+                  className="border border-navy text-navy hover:bg-navy hover:text-white transition-all text-center font-semibold px-4 py-3 rounded-lg"
                   onClick={() => setIsOpen(false)}
                 >
-                  Or get a quote by email
+                  Email us
                 </Link>
               </div>
             </div>
