@@ -12,9 +12,21 @@ export default function ServicesSummary() {
 
   const services = [
     {
+      name: 'Starter Website',
+      tagline: 'A simple one-page site to get you online',
+      description: 'A clean, professional one-page website covering the essentials — who you are, what you do, and how to get in touch.',
+      price: 'From £500',
+      href: '/services#starter-website',
+      icon: (
+        <svg className="w-8 h-8" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+          <path d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+        </svg>
+      ),
+    },
+    {
       name: 'Website Rescue',
       tagline: 'Modernise your old or DIY site',
-      description: 'We rebuild tired, awkward or broken websites into clean, phone-friendly sites that actually generate enquiries.',
+      description: 'We rebuild tired, awkward or broken websites into clean, phone-friendly multi-page sites that generate enquiries.',
       price: 'From £1,295',
       href: '/services#website-rescue',
       icon: (
@@ -25,8 +37,8 @@ export default function ServicesSummary() {
     },
     {
       name: 'New Business Website',
-      tagline: 'A proper first site for your business',
-      description: 'Simple, clean, no-fluff design for new or early-stage businesses. Everything you need to look professional online.',
+      tagline: 'A proper multi-page site for your business',
+      description: 'Custom design for new or early-stage businesses. Typically up to 5 pages — everything you need to look professional online.',
       price: 'From £1,295',
       href: '/services#new-website',
       icon: (
@@ -62,11 +74,11 @@ export default function ServicesSummary() {
             What we do<span className="text-lime">.</span>
           </h2>
           <p className="text-xl text-slate max-w-3xl mx-auto">
-            Three clear services to match what you need — whether that's fixing an old site, building a new one, or keeping everything running smoothly.
+            Clear services to match what you need — from a simple starter site to a full multi-page website, plus ongoing support to keep things running smoothly.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {services.map((service, index) => (
             <motion.div
               key={service.name}
