@@ -18,7 +18,7 @@ export default function PortfolioShowcase() {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-navy mb-4">
             Real businesses<span className="text-lime">.</span> Real results<span className="text-lime">.</span>
@@ -26,6 +26,64 @@ export default function PortfolioShowcase() {
           <p className="text-xl text-slate max-w-6xl mx-auto leading-relaxed">
             See how we've transformed small businesses with websites that work as hard as they do.
           </p>
+        </motion.div>
+
+        {/* Portfolio proof strip - project thumbnails */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16"
+        >
+          {/* TFRCO Card */}
+          <Link href="/portfolio" className="group">
+            <div className="bg-lightgrey rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all">
+              <div className="aspect-video relative overflow-hidden">
+                <Image
+                  src="/images/portfolio/tfrco-new-site.webp"
+                  alt="The Flooring and Resin Company website"
+                  fill
+                  className="object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-5">
+                <div className="flex flex-wrap items-center gap-2 mb-2">
+                  <span className="text-xs font-semibold text-white bg-lime px-2 py-1 rounded">Trades</span>
+                  <span className="text-xs font-semibold text-navy bg-navy/10 px-2 py-1 rounded">Kent</span>
+                  <span className="text-xs font-semibold text-navy bg-navy/10 px-2 py-1 rounded">New Business Website</span>
+                </div>
+                <h3 className="font-heading font-bold text-lg text-navy mb-1 group-hover:text-lime transition-colors">
+                  The Flooring and Resin Company
+                </h3>
+                <p className="text-slate text-sm">More focused enquiries, resin positioned as premium service</p>
+              </div>
+            </div>
+          </Link>
+
+          {/* Graceful Pet Care Card */}
+          <Link href="/portfolio" className="group">
+            <div className="bg-lightgrey rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all">
+              <div className="aspect-video relative overflow-hidden">
+                <Image
+                  src="/images/portfolio/graceful-petcare-after.png"
+                  alt="Graceful Pet Care website"
+                  fill
+                  className="object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-5">
+                <div className="flex flex-wrap items-center gap-2 mb-2">
+                  <span className="text-xs font-semibold text-white bg-lime px-2 py-1 rounded">Pet Care</span>
+                  <span className="text-xs font-semibold text-navy bg-navy/10 px-2 py-1 rounded">Kent</span>
+                  <span className="text-xs font-semibold text-navy bg-navy/10 px-2 py-1 rounded">Website Rescue</span>
+                </div>
+                <h3 className="font-heading font-bold text-lg text-navy mb-1 group-hover:text-lime transition-colors">
+                  Graceful Pet Care
+                </h3>
+                <p className="text-slate text-sm">Significant increase in enquiries, professional appearance</p>
+              </div>
+            </div>
+          </Link>
         </motion.div>
 
         {/* Featured Case Study - TFRCO */}
