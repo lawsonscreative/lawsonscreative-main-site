@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { tradesWebsiteSchema, localBusinessSchema } from '@/lib/schema';
+import { tradesWebsiteSchema, localBusinessSchema, tradesWebsiteFaqSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Websites for Tradespeople | Plumbers, Electricians, Builders | Lawsons Creative',
@@ -19,6 +19,10 @@ export default function TradesWebsitesPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(tradesWebsiteSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(tradesWebsiteFaqSchema) }}
       />
 
       {/* Hero */}
@@ -283,6 +287,49 @@ export default function TradesWebsitesPage() {
             <Link href="/services" className="text-navy font-semibold hover:text-lime transition-colors">
               See all services and pricing →
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section-padding bg-white">
+        <div className="container-custom max-w-4xl">
+          <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-8 text-center">
+            Common questions<span className="text-lime">.</span>
+          </h2>
+          <div className="space-y-4">
+            <div className="bg-lightgrey rounded-xl p-6">
+              <h3 className="font-semibold text-lg text-navy mb-2">
+                Do you only work with trades in Kent?
+              </h3>
+              <p className="text-slate leading-relaxed">
+                No — we're based in Kent but work with tradespeople across the UK. Most of our communication happens over email and video calls, so location isn't a barrier.
+              </p>
+            </div>
+            <div className="bg-lightgrey rounded-xl p-6">
+              <h3 className="font-semibold text-lg text-navy mb-2">
+                Can you work with my existing domain and email?
+              </h3>
+              <p className="text-slate leading-relaxed">
+                Absolutely. If you already have a domain name and email setup, we can build your new site to work with them. We'll handle the technical side of connecting everything.
+              </p>
+            </div>
+            <div className="bg-lightgrey rounded-xl p-6">
+              <h3 className="font-semibold text-lg text-navy mb-2">
+                What do you need from me to get started?
+              </h3>
+              <p className="text-slate leading-relaxed">
+                Just some basic info about your business — what services you offer, where you work, and any photos of your work. Don't worry if you don't have much; we'll guide you through it.
+              </p>
+            </div>
+            <div className="bg-lightgrey rounded-xl p-6">
+              <h3 className="font-semibold text-lg text-navy mb-2">
+                I'm not very tech-savvy — is that a problem?
+              </h3>
+              <p className="text-slate leading-relaxed">
+                Not at all. We handle all the technical stuff and explain everything in plain English. You focus on your trade; we'll sort the website.
+              </p>
+            </div>
           </div>
         </div>
       </section>

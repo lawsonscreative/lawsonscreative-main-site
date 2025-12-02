@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { petCareWebsiteSchema, localBusinessSchema } from '@/lib/schema';
+import { petCareWebsiteSchema, localBusinessSchema, petCareWebsiteFaqSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Websites for Pet Care Businesses | Dog Walkers, Groomers, Pet Sitters | Lawsons Creative',
@@ -19,6 +19,10 @@ export default function PetCareWebsitesPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(petCareWebsiteSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(petCareWebsiteFaqSchema) }}
       />
 
       {/* Hero */}
@@ -291,6 +295,49 @@ export default function PetCareWebsitesPage() {
             <Link href="/services" className="text-navy font-semibold hover:text-lime transition-colors">
               See all services and pricing →
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section-padding bg-white">
+        <div className="container-custom max-w-4xl">
+          <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-8 text-center">
+            Common questions<span className="text-lime">.</span>
+          </h2>
+          <div className="space-y-4">
+            <div className="bg-lightgrey rounded-xl p-6">
+              <h3 className="font-semibold text-lg text-navy mb-2">
+                Can you show my qualifications and insurance clearly?
+              </h3>
+              <p className="text-slate leading-relaxed">
+                Absolutely. We'll create a dedicated section for your qualifications, insurance, and any certifications. Pet owners want to see you're properly trained and insured — we make that easy to find.
+              </p>
+            </div>
+            <div className="bg-lightgrey rounded-xl p-6">
+              <h3 className="font-semibold text-lg text-navy mb-2">
+                Can you integrate my existing booking system?
+              </h3>
+              <p className="text-slate leading-relaxed">
+                Yes. If you use a booking tool like Time To Pet, PetSitter Plus, or similar, we can link to it or embed booking widgets. We'll work with whatever system you're already comfortable with.
+              </p>
+            </div>
+            <div className="bg-lightgrey rounded-xl p-6">
+              <h3 className="font-semibold text-lg text-navy mb-2">
+                Can I update photos and prices myself?
+              </h3>
+              <p className="text-slate leading-relaxed">
+                If you'd like to manage updates yourself, we can set that up. Otherwise, small changes are included in our support packages — just email us and we'll sort it.
+              </p>
+            </div>
+            <div className="bg-lightgrey rounded-xl p-6">
+              <h3 className="font-semibold text-lg text-navy mb-2">
+                Do you only work with pet care businesses in Kent?
+              </h3>
+              <p className="text-slate leading-relaxed">
+                No — we're based in Kent but work with pet care businesses across the UK. Most of our communication is by email and video call, so distance isn't an issue.
+              </p>
+            </div>
           </div>
         </div>
       </section>

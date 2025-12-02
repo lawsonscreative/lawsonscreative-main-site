@@ -216,6 +216,87 @@ export const petCareWebsiteSchema = {
   ]
 };
 
+// Trades website FAQ schema
+export const tradesWebsiteFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you only work with trades in Kent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — we're based in Kent but work with tradespeople across the UK. Most of our communication happens over email and video calls, so location isn't a barrier."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you work with my existing domain and email?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. If you already have a domain name and email setup, we can build your new site to work with them. We'll handle the technical side of connecting everything."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do you need from me to get started?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Just some basic info about your business — what services you offer, where you work, and any photos of your work. Don't worry if you don't have much; we'll guide you through it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I'm not very tech-savvy — is that a problem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not at all. We handle all the technical stuff and explain everything in plain English. You focus on your trade; we'll sort the website."
+      }
+    }
+  ]
+};
+
+// Pet care website FAQ schema
+export const petCareWebsiteFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can you show my qualifications and insurance clearly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. We'll create a dedicated section for your qualifications, insurance, and any certifications. Pet owners want to see you're properly trained and insured — we make that easy to find."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you integrate my existing booking system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. If you use a booking tool like Time To Pet, PetSitter Plus, or similar, we can link to it or embed booking widgets. We'll work with whatever system you're already comfortable with."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I update photos and prices myself?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you'd like to manage updates yourself, we can set that up. Otherwise, small changes are included in our support packages — just email us and we'll sort it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you only work with pet care businesses in Kent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — we're based in Kent but work with pet care businesses across the UK. Most of our communication is by email and video call, so distance isn't an issue."
+      }
+    }
+  ]
+};
+
+// General services FAQ schema
 export const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
