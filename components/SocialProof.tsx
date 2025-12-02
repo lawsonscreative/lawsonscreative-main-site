@@ -15,7 +15,7 @@ export default function SocialProof() {
     {
       Icon: PoundSterling,
       title: 'From £500 (ex VAT)',
-      description: 'Transparent fixed-price packages mean no surprise invoices. You know exactly what you\'re paying before we start.'
+      description: 'Starter one-page websites from £500. Full multi-page website projects typically start from £1,295.'
     },
     {
       Icon: TrendingUp,

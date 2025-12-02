@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Services & Pricing – Lawsons Creative | Website Design for Small Businesses',
-  description: 'Website rescue, new business sites, and ongoing support. Clear pricing from £1,295. We modernise tired websites for small UK service businesses.',
+  description: 'Starter websites from £500, full multi-page sites from £1,295. Website rescue, new business sites, and ongoing support for small UK service businesses.',
 };
 
 export default function ServicesPage() {
@@ -21,8 +21,101 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Starter Website */}
+      <section id="starter-website" className="section-padding bg-white scroll-mt-8">
+        <div className="container-custom max-w-6xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Service Info */}
+            <div>
+              <div className="w-16 h-16 bg-lime/20 text-lime rounded-xl flex items-center justify-center mb-6">
+                <svg className="w-8 h-8" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-4">
+                Starter Website<span className="text-lime">.</span>
+              </h2>
+              <p className="text-lime font-semibold text-lg mb-4">
+                A simple one-page site to get you online
+              </p>
+              <p className="text-slate text-lg leading-relaxed mb-6">
+                Just starting out or need somewhere to send people? A clean, professional one-page website that covers the essentials — who you are, what you do, and how to get in touch.
+              </p>
+
+              <div className="mb-8">
+                <div className="text-4xl font-bold text-navy mb-2">From £500</div>
+                <p className="text-sm text-slate italic">*Prices exclude VAT</p>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="font-heading font-bold text-xl text-navy mb-4">
+                  What's included
+                </h3>
+                <ul className="space-y-3">
+                  {[
+                    'A clean, single-page scrolling website',
+                    'Mobile-friendly, responsive layout',
+                    'Clear sections for who you are, what you offer and how to contact you',
+                    'Basic contact details and call-to-action',
+                    'Basic SEO setup',
+                    '1–2 week turnaround',
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-start">
+                      <svg className="w-5 h-5 text-lime mr-3 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span className="text-slate">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <Link href="/contact" className="btn-primary inline-block">
+                Book a free consultation
+              </Link>
+            </div>
+
+            {/* Right column - ideal for */}
+            <div className="space-y-6">
+              <div className="bg-lightgrey rounded-xl p-6">
+                <h3 className="font-heading font-bold text-xl text-navy mb-4">
+                  Perfect if you...
+                </h3>
+                <ul className="space-y-3 text-slate">
+                  <li className="flex items-start">
+                    <span className="text-lime mr-2">•</span>
+                    You're just starting out and need a simple online presence
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-lime mr-2">•</span>
+                    You mostly rely on word of mouth but want somewhere to send people
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-lime mr-2">•</span>
+                    You don't need a full multi-page site yet
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-lime mr-2">•</span>
+                    You want to test the waters before investing more
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-navy text-white rounded-xl p-6">
+                <h3 className="font-heading font-bold text-xl mb-4">
+                  Ready for something bigger?
+                </h3>
+                <p className="text-gray-300 leading-relaxed">
+                  When you're ready for a larger site, our multi-page Website Rescue and New Business Website packages start from £1,295.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Website Rescue */}
-      <section id="website-rescue" className="section-padding bg-white scroll-mt-8">
+      <section id="website-rescue" className="section-padding bg-lightgrey scroll-mt-8">
         <div className="container-custom max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Service Info */}
@@ -45,6 +138,9 @@ export default function ServicesPage() {
               <div className="mb-8">
                 <div className="text-4xl font-bold text-navy mb-2">From £1,295</div>
                 <p className="text-sm text-slate italic">*Prices exclude VAT</p>
+                <p className="text-sm text-slate mt-2">
+                  This is for full multi-page rebuilds of existing sites. Simple one-page starter sites are available from £500.
+                </p>
               </div>
 
               <div className="mb-8">
@@ -116,7 +212,7 @@ export default function ServicesPage() {
       </section>
 
       {/* New Business Website */}
-      <section id="new-website" className="section-padding bg-lightgrey scroll-mt-8">
+      <section id="new-website" className="section-padding bg-white scroll-mt-8">
         <div className="container-custom max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Service Info */}
@@ -139,6 +235,9 @@ export default function ServicesPage() {
               <div className="mb-8">
                 <div className="text-4xl font-bold text-navy mb-2">From £1,295</div>
                 <p className="text-sm text-slate italic">*Prices exclude VAT</p>
+                <p className="text-sm text-slate mt-2">
+                  This is for full multi-page sites (typically up to 5 pages). For a simple one-page starter, see our £500 Starter Website option.
+                </p>
               </div>
 
               <div className="mb-8">
@@ -172,7 +271,7 @@ export default function ServicesPage() {
 
             {/* Right column */}
             <div className="space-y-6">
-              <div className="bg-white rounded-xl p-6 shadow-md">
+              <div className="bg-lightgrey rounded-xl p-6">
                 <h3 className="font-heading font-bold text-xl text-navy mb-4">
                   Perfect if you...
                 </h3>
@@ -210,7 +309,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Ongoing Support */}
-      <section id="ongoing-support" className="section-padding bg-white scroll-mt-8">
+      <section id="ongoing-support" className="section-padding bg-lightgrey scroll-mt-8">
         <div className="container-custom max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Service Info */}
@@ -265,26 +364,26 @@ export default function ServicesPage() {
 
             {/* Right column */}
             <div className="space-y-6">
-              <div className="bg-lightgrey rounded-xl p-6">
+              <div className="bg-white rounded-xl p-6 shadow-md">
                 <h3 className="font-heading font-bold text-xl text-navy mb-4">
                   Support tiers
                 </h3>
                 <div className="space-y-4">
-                  <div className="bg-white rounded-lg p-4">
+                  <div className="bg-lightgrey rounded-lg p-4">
                     <div className="flex justify-between items-center mb-2">
                       <span className="font-bold text-navy">Essential</span>
                       <span className="text-lime font-bold">£30/month</span>
                     </div>
                     <p className="text-slate text-sm">Security updates, backups, and monitoring. Perfect for simple sites.</p>
                   </div>
-                  <div className="bg-white rounded-lg p-4">
+                  <div className="bg-lightgrey rounded-lg p-4">
                     <div className="flex justify-between items-center mb-2">
                       <span className="font-bold text-navy">Standard</span>
                       <span className="text-lime font-bold">£75/month</span>
                     </div>
                     <p className="text-slate text-sm">Everything in Essential, plus 1 hour of content updates per month.</p>
                   </div>
-                  <div className="bg-white rounded-lg p-4">
+                  <div className="bg-lightgrey rounded-lg p-4">
                     <div className="flex justify-between items-center mb-2">
                       <span className="font-bold text-navy">Premium</span>
                       <span className="text-lime font-bold">£150/month</span>
@@ -308,7 +407,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Add-on Services */}
-      <section id="add-ons" className="section-padding bg-lightgrey scroll-mt-8">
+      <section id="add-ons" className="section-padding bg-white scroll-mt-8">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-4">
@@ -420,14 +519,14 @@ export default function ServicesPage() {
       </section>
 
       {/* Pricing FAQ */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-lightgrey">
         <div className="container-custom max-w-4xl">
           <h2 className="font-heading font-bold text-4xl md:text-5xl text-navy mb-12 text-center">
             Common questions<span className="text-lime">.</span>
           </h2>
 
           <div className="space-y-6">
-            <div className="bg-lightgrey rounded-xl p-6">
+            <div className="bg-white rounded-xl p-6 shadow-sm">
               <h3 className="font-semibold text-xl text-navy mb-3">
                 What affects the final price?
               </h3>
@@ -436,7 +535,7 @@ export default function ServicesPage() {
               </p>
             </div>
 
-            <div className="bg-lightgrey rounded-xl p-6">
+            <div className="bg-white rounded-xl p-6 shadow-sm">
               <h3 className="font-semibold text-xl text-navy mb-3">
                 How long does a project take?
               </h3>
@@ -445,7 +544,7 @@ export default function ServicesPage() {
               </p>
             </div>
 
-            <div className="bg-lightgrey rounded-xl p-6">
+            <div className="bg-white rounded-xl p-6 shadow-sm">
               <h3 className="font-semibold text-xl text-navy mb-3">
                 What's NOT included?
               </h3>
@@ -460,7 +559,7 @@ export default function ServicesPage() {
               </ul>
             </div>
 
-            <div className="bg-lightgrey rounded-xl p-6">
+            <div className="bg-white rounded-xl p-6 shadow-sm">
               <h3 className="font-semibold text-xl text-navy mb-3">
                 Do you offer payment plans?
               </h3>
