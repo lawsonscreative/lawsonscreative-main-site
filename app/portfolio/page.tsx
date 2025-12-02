@@ -209,7 +209,7 @@ export default function PortfolioPage() {
                 </div>
                 <div>
                   <div className="font-semibold">Katie Townsend</div>
-                  <div className="text-gray-300 text-sm">Director, The Flooring and Resin Company</div>
+                  <div className="text-gray-300 text-sm">The Flooring and Resin Company</div>
                 </div>
               </div>
             </div>
