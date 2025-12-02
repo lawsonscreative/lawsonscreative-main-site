@@ -104,7 +104,8 @@ export default function ProcessPage() {
             From idea to live website in 1–2 weeks<span className="text-lime">.</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
-            Here's exactly how we'll work together, what to expect at each stage, and how we deliver quality websites fast.
+            Here's exactly how we'll work together, what to expect at each stage, and how we deliver quality websites fast.{' '}
+            <Link href="/services" className="text-lime hover:underline font-semibold">Not sure where to start? See our services and pricing</Link>.
           </p>
         </div>
       </section>

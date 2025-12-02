@@ -108,7 +108,8 @@ export default function AboutPage() {
             Who we work with<span className="text-lime">.</span>
           </h2>
           <p className="text-xl text-slate text-center mb-12 max-w-3xl mx-auto">
-            We specialise in helping small UK service businesses — the kind where the owner answers the phone and reputation matters.
+            We specialise in helping small UK service businesses — the kind where the owner answers the phone and reputation matters.{' '}
+            <Link href="/portfolio" className="text-lime hover:underline font-semibold">See examples of our work in the portfolio</Link>.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

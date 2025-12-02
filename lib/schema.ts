@@ -123,6 +123,31 @@ export const serviceSchemas = [
       "@type": "Country",
       "name": "United Kingdom"
     }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Local SEO",
+    "description": "Get found by customers searching in your area. Google Business Profile setup, local citations, and ongoing optimisation.",
+    "provider": {
+      "@id": "https://lawsonscreative.co.uk/#business"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "150",
+      "priceCurrency": "GBP",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "150",
+        "priceCurrency": "GBP",
+        "valueAddedTaxIncluded": false,
+        "billingDuration": "P1M"
+      }
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "United Kingdom"
+    }
   }
 ];
 
