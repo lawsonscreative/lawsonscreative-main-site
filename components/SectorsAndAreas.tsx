@@ -59,7 +59,7 @@ export default function SectorsAndAreas() {
   ];
 
   return (
-    <section className="section-padding bg-white" ref={ref}>
+    <section className="section-padding bg-lightgrey" ref={ref}>
       <div className="container-custom">
         {/* Who we work with */}
         <motion.div
@@ -83,7 +83,7 @@ export default function SectorsAndAreas() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.1 * (index + 1) }}
-              className="bg-lightgrey rounded-xl p-5 text-center"
+              className="bg-white rounded-xl p-5 text-center shadow-sm"
             >
               <div className="w-12 h-12 bg-lime/20 text-lime rounded-lg flex items-center justify-center mx-auto mb-3">
                 {sector.icon}
