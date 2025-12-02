@@ -78,36 +78,43 @@ export default function ServicesSummary() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto items-stretch">
           {services.map((service, index) => (
             <motion.div
               key={service.name}
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.1 * (index + 1) }}
-              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow flex flex-col"
+              className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full"
             >
-              <div className="w-16 h-16 bg-lime/20 text-lime rounded-xl flex items-center justify-center mb-6">
+              {/* Icon - fixed height */}
+              <div className="w-14 h-14 bg-lime/20 text-lime rounded-xl flex items-center justify-center mb-4 flex-shrink-0">
                 {service.icon}
               </div>
 
-              <h3 className="font-heading font-bold text-2xl text-navy mb-2">
+              {/* Title - fixed height to accommodate 2 lines */}
+              <h3 className="font-heading font-bold text-xl text-navy mb-2 min-h-[3.5rem] flex items-start">
                 {service.name}
               </h3>
-              <p className="text-lime font-semibold text-sm mb-4">
+
+              {/* Tagline - fixed height to accommodate 2 lines */}
+              <p className="text-lime font-semibold text-sm mb-3 min-h-[2.5rem]">
                 {service.tagline}
               </p>
-              <p className="text-slate leading-relaxed mb-6 flex-grow">
+
+              {/* Description - grows to fill space */}
+              <p className="text-slate text-sm leading-relaxed flex-grow mb-6">
                 {service.description}
               </p>
 
-              <div className="mt-auto">
-                <p className="text-navy font-bold text-lg mb-4">
+              {/* Price and CTA - always at bottom */}
+              <div className="mt-auto pt-4 border-t border-gray-100">
+                <p className="text-navy font-bold text-lg mb-3">
                   {service.price}
                 </p>
                 <Link
                   href={service.href}
-                  className="inline-flex items-center text-navy font-semibold hover:text-lime transition-colors"
+                  className="inline-flex items-center text-navy font-semibold hover:text-lime transition-colors text-sm"
                 >
                   Learn more
                   <svg className="w-4 h-4 ml-1" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
