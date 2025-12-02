@@ -154,7 +154,7 @@ export default function TradesWebsitesPage() {
                 <h3 className="font-heading font-bold text-xl text-navy md:mb-2">Easy Contact</h3>
               </div>
               <p className="text-slate">
-                Click-to-call buttons, contact forms, and WhatsApp links — however customers prefer to reach you.
+                Click-to-call buttons and simple contact forms — so customers can reach you without fuss.
               </p>
             </div>
           </div>
@@ -214,6 +214,19 @@ export default function TradesWebsitesPage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Testimonial */}
+      <section className="section-padding bg-navy text-white">
+        <div className="container-custom max-w-4xl text-center">
+          <svg className="w-12 h-12 text-lime mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+          </svg>
+          <blockquote className="text-2xl md:text-3xl font-heading leading-relaxed mb-6">
+            "Lawsons Creative transformed our brand and online presence. The team were collaborative, responsive and delivered everything on time. We could not be happier with the result."
+          </blockquote>
+          <p className="text-lime font-semibold">— Katie Townsend, The Flooring and Resin Company</p>
         </div>
       </section>
 
@@ -281,7 +294,7 @@ export default function TradesWebsitesPage() {
             Most trades websites cost between £1,295 and £1,795. You'll get a fixed quote before we start — no surprises.
           </p>
           <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <div className="text-4xl font-bold text-navy mb-2">From £1,295</div>
+            <h3 className="font-heading font-bold text-2xl text-navy mb-2">What's typically included</h3>
             <p className="text-slate mb-6">For a complete, professional trades website</p>
             <ul className="text-left max-w-md mx-auto space-y-3 mb-8">
               {[

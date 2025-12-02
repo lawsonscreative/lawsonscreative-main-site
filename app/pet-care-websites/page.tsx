@@ -288,7 +288,7 @@ export default function PetCareWebsitesPage() {
             Most pet care websites cost between £1,295 and £1,795. You'll get a fixed quote before we start — no surprises.
           </p>
           <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <div className="text-4xl font-bold text-navy mb-2">From £1,295</div>
+            <h3 className="font-heading font-bold text-2xl text-navy mb-2">What's typically included</h3>
             <p className="text-slate mb-6">For a complete, professional pet care website</p>
             <ul className="text-left max-w-md mx-auto space-y-3 mb-8">
               {[
