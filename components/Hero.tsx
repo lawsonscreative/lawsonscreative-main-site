@@ -25,6 +25,19 @@ export default function Hero() {
         <div className="relative">
           {/* Left Column - All text content (constrained width on large screens) */}
           <div className="lg:max-w-[55%]">
+            {/* Trust strip - location and specialism */}
+            <div className="flex flex-wrap items-center gap-2 mb-6 text-sm text-gray-300">
+              <span className="inline-flex items-center">
+                <svg className="w-4 h-4 mr-1 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                Based in Kent
+              </span>
+              <span className="text-gray-500">•</span>
+              <span>Working with trades, pet care and local services across the UK</span>
+            </div>
+
             {/* Typing headline - left aligned, fixed height */}
             <h1 className="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl mb-8 md:mb-10 leading-tight text-white text-left">
               <span className="block">Modern, phone-friendly websites that</span>
@@ -48,12 +61,9 @@ export default function Hero() {
             <h2 className="text-xl md:text-2xl mb-6 text-gray-200 font-semibold text-balance">
               We take your tired, awkward or DIY website and turn it into something you're proud of — fast, clear and easy for your customers to use.
             </h2>
-            <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-              A small web studio in Kent, working with trades, pet care, and local service businesses across the UK. Plain-English communication, straightforward process, typically delivered in 1–2 weeks.
-            </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <Link
                 href="/contact"
                 className="btn-primary text-center text-lg px-10 py-4 shadow-xl"
@@ -76,6 +86,22 @@ export default function Hero() {
               >
                 Get a quote by email
               </Link>
+            </div>
+
+            {/* Benefit tiles - key promises */}
+            <div className="grid grid-cols-3 gap-3 md:gap-4">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
+                <div className="text-2xl md:text-3xl font-bold text-lime mb-1">1–2</div>
+                <div className="text-xs md:text-sm text-gray-300">weeks to launch</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
+                <div className="text-2xl md:text-3xl font-bold text-lime mb-1">£500</div>
+                <div className="text-xs md:text-sm text-gray-300">starter sites from</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
+                <div className="text-2xl md:text-3xl font-bold text-lime mb-1">100%</div>
+                <div className="text-xs md:text-sm text-gray-300">focused on you</div>
+              </div>
             </div>
           </div>
 
