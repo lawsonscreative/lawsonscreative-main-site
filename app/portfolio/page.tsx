@@ -22,8 +22,65 @@ export default function PortfolioPage() {
         </div>
       </section>
 
+      {/* Project Cards Overview */}
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            {/* TFRCO Card */}
+            <a href="#tfrco" className="group block">
+              <div className="bg-lightgrey rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all">
+                <div className="aspect-video relative overflow-hidden">
+                  <Image
+                    src="/images/portfolio/tfrco-new-site.webp"
+                    alt="The Flooring and Resin Company website"
+                    fill
+                    className="object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-5">
+                  <div className="flex flex-wrap items-center gap-2 mb-2">
+                    <span className="text-xs font-semibold text-white bg-lime px-2 py-1 rounded">Trades</span>
+                    <span className="text-xs font-semibold text-navy bg-navy/10 px-2 py-1 rounded">Kent</span>
+                    <span className="text-xs font-semibold text-navy bg-navy/10 px-2 py-1 rounded">New Business Website</span>
+                  </div>
+                  <h3 className="font-heading font-bold text-lg text-navy mb-1 group-hover:text-lime transition-colors">
+                    The Flooring and Resin Company
+                  </h3>
+                  <p className="text-slate text-sm">From Facebook-only to professional web presence with resin as a hero service</p>
+                </div>
+              </div>
+            </a>
+
+            {/* Graceful Pet Care Card */}
+            <a href="#graceful" className="group block">
+              <div className="bg-lightgrey rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all">
+                <div className="aspect-video relative overflow-hidden">
+                  <Image
+                    src="/images/portfolio/graceful-petcare-after.png"
+                    alt="Graceful Pet Care website"
+                    fill
+                    className="object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-5">
+                  <div className="flex flex-wrap items-center gap-2 mb-2">
+                    <span className="text-xs font-semibold text-white bg-lime px-2 py-1 rounded">Pet Care</span>
+                    <span className="text-xs font-semibold text-navy bg-navy/10 px-2 py-1 rounded">Kent</span>
+                    <span className="text-xs font-semibold text-navy bg-navy/10 px-2 py-1 rounded">Website Rescue</span>
+                  </div>
+                  <h3 className="font-heading font-bold text-lg text-navy mb-1 group-hover:text-lime transition-colors">
+                    Graceful Pet Care
+                  </h3>
+                  <p className="text-slate text-sm">Significant increase in enquiries with a modern, trust-focused redesign</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Case Study - The Flooring and Resin Company */}
-      <section className="section-padding bg-lightgrey">
+      <section id="tfrco" className="section-padding bg-lightgrey scroll-mt-8">
         <div className="container-custom">
           <div className="max-w-6xl mx-auto">
             {/* Project Header */}
@@ -262,7 +319,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* Case Study - Graceful Pet Care */}
-      <section className="section-padding">
+      <section id="graceful" className="section-padding scroll-mt-8">
         <div className="container-custom">
           <div className="max-w-6xl mx-auto">
             {/* Project Header */}

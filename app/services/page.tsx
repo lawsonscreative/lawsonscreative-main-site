@@ -312,7 +312,10 @@ export default function ServicesPage() {
                   <li className="flex items-center"><span className="text-lime mr-2">✓</span>Uptime monitoring</li>
                 </ul>
               </div>
-              <div className="bg-lightgrey rounded-xl p-6">
+              <div className="bg-lightgrey rounded-xl p-6 ring-2 ring-lime relative">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                  <span className="bg-lime text-navy px-3 py-1 rounded-full text-xs font-bold">Most popular</span>
+                </div>
                 <div className="flex justify-between items-start mb-3">
                   <span className="font-bold text-navy text-lg">Standard</span>
                   <span className="text-lime font-bold text-xl">£75<span className="text-sm font-normal text-slate">/mo</span></span>
