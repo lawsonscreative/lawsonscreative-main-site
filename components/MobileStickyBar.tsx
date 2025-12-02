@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 
 const STORAGE_KEY = 'mobileStickyBarDismissed';
 const SCROLL_THRESHOLD = 400;
@@ -8,15 +9,16 @@ const SCROLL_THRESHOLD = 400;
 export default function MobileStickyBar() {
   const [isVisible, setIsVisible] = useState(false);
   const [isDismissed, setIsDismissed] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
+
     // Check if already dismissed this session
-    if (typeof window !== 'undefined') {
-      const dismissed = sessionStorage.getItem(STORAGE_KEY);
-      if (dismissed === 'true') {
-        setIsDismissed(true);
-        return;
-      }
+    const dismissed = sessionStorage.getItem(STORAGE_KEY);
+    if (dismissed === 'true') {
+      setIsDismissed(true);
+      return;
     }
 
     const handleScroll = () => {
@@ -37,19 +39,17 @@ export default function MobileStickyBar() {
 
   const handleDismiss = () => {
     setIsDismissed(true);
-    if (typeof window !== 'undefined') {
-      sessionStorage.setItem(STORAGE_KEY, 'true');
-    }
+    sessionStorage.setItem(STORAGE_KEY, 'true');
   };
 
-  // Don't render if dismissed or not visible yet
-  if (isDismissed || !isVisible) {
+  // Don't render if not mounted, dismissed, or not visible yet
+  if (!mounted || isDismissed || !isVisible) {
     return null;
   }
 
   const mailtoLink = `mailto:hello@lawsonscreative.co.uk?subject=${encodeURIComponent('Website enquiry from Lawsons Creative website')}`;
 
-  return (
+  const bar = (
     <div
       className="fixed bottom-0 left-0 right-0 z-50 md:hidden"
       role="complementary"
@@ -79,4 +79,7 @@ export default function MobileStickyBar() {
       </div>
     </div>
   );
+
+  // Use portal to render at document body level, avoiding parent container issues
+  return createPortal(bar, document.body);
 }
