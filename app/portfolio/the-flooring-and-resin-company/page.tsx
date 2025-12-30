@@ -488,7 +488,7 @@ export default function TFRCOCaseStudy() {
       {/* Call to Action */}
       <section className="section-padding bg-navy text-white">
         <div className="container-custom max-w-4xl text-center">
-          <h2 className="font-heading font-bold text-3xl md:text-4xl mb-6">
+          <h2 className="font-heading font-bold text-3xl md:text-4xl mb-6 text-white">
             Want a site like this for your business?
           </h2>
           <p className="text-lg text-gray-200 leading-relaxed mb-4 max-w-3xl mx-auto">

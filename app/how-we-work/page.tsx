@@ -359,7 +359,7 @@ export default function ProcessPage() {
                 </svg>
               </div>
               <div>
-                <h3 className="font-heading font-bold text-xl mb-2">Clear communication</h3>
+                <h3 className="font-heading font-bold text-xl mb-2 text-white">Clear communication</h3>
                 <p className="text-gray-200">
                   Email, Teams, or phone — your choice. We keep you updated at every stage and respond to questions quickly.
                 </p>
@@ -372,7 +372,7 @@ export default function ProcessPage() {
                 </svg>
               </div>
               <div>
-                <h3 className="font-heading font-bold text-xl mb-2">Regular updates</h3>
+                <h3 className="font-heading font-bold text-xl mb-2 text-white">Regular updates</h3>
                 <p className="text-gray-200">
                   You'll see progress throughout the project. No disappearing for weeks and surprising you with something you didn't expect.
                 </p>
@@ -385,7 +385,7 @@ export default function ProcessPage() {
                 </svg>
               </div>
               <div>
-                <h3 className="font-heading font-bold text-xl mb-2">Proactive problem-solving</h3>
+                <h3 className="font-heading font-bold text-xl mb-2 text-white">Proactive problem-solving</h3>
                 <p className="text-gray-200">
                   If we spot an issue or opportunity, we'll tell you. We're here to make your site work, not just tick boxes.
                 </p>
@@ -398,7 +398,7 @@ export default function ProcessPage() {
                 </svg>
               </div>
               <div>
-                <h3 className="font-heading font-bold text-xl mb-2">On-time delivery</h3>
+                <h3 className="font-heading font-bold text-xl mb-2 text-white">On-time delivery</h3>
                 <p className="text-gray-200">
                   We commit to realistic timelines and hit them. If something changes, we'll communicate immediately.
                 </p>

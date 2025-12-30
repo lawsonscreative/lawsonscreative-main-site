@@ -140,9 +140,18 @@ html {
 /* ===== TYPOGRAPHY SYSTEM ===== */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading), var(--font-body), system-ui, -apple-system, sans-serif;
-  color: var(--color-text-primary);
   font-weight: var(--font-bold);
   line-height: var(--leading-tight);
+}
+
+/* Default heading color - only apply on light backgrounds, not in dark sections */
+h1:not([class*="text-"]),
+h2:not([class*="text-"]),
+h3:not([class*="text-"]),
+h4:not([class*="text-"]),
+h5:not([class*="text-"]),
+h6:not([class*="text-"]) {
+  color: var(--color-text-primary);
 }
 
 h1 {

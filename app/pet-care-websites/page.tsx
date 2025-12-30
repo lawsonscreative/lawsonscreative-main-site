@@ -361,7 +361,7 @@ export default function PetCareWebsitesPage() {
       {/* CTA */}
       <section className="section-padding bg-navy text-white">
         <div className="container-custom text-center max-w-3xl mx-auto">
-          <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6">
+          <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6 text-white">
             Ready to get started<span className="text-lime">?</span>
           </h2>
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
