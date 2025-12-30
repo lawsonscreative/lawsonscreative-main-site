@@ -18,93 +18,60 @@ export default function ContactPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
 
-      {/* Hero */}
+      {/* Hero - Book a Call (Primary Action) */}
       <section className="section-padding bg-gradient-to-br from-navy via-navy to-blue-900 text-white">
-        <div className="container-custom text-center">
+        <div className="container-custom text-center max-w-4xl mx-auto">
+          <div className="inline-block bg-lime/20 text-lime px-4 py-2 rounded-full font-semibold text-sm mb-6">
+            Free 15-minute consultation
+          </div>
           <h1 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl mb-6 text-white text-balance">
             Let's talk about your project<span className="text-lime">.</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-4">
-            Book a free 15-minute consultation or send us your project details. We'll respond within 24 hours (usually much faster).
+          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-8 leading-relaxed">
+            The best way to discuss your website is a quick call. We'll talk about your business, goals, and how we can help. No pressure, no obligation.
           </p>
-          <p className="text-gray-400">
-            Web design for trades, pet care and local service businesses in Kent and across the UK.
-          </p>
+
+          <CalendlyButton className="btn-primary text-lg px-10 py-4">
+            Book your free consultation
+          </CalendlyButton>
+
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-gray-300 text-sm">
+            <div className="flex items-center gap-2">
+              <svg className="w-5 h-5 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <span>15 minutes</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <svg className="w-5 h-5 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <span>No obligation</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <svg className="w-5 h-5 text-lime" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <span>Friendly chat</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Contact Options */}
-      <section className="section-padding">
-        <div className="container-custom max-w-6xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-            {/* Option 1: Book a Call */}
-            <div className="bg-lightgrey rounded-2xl p-8 md:p-10">
-              <div className="w-16 h-16 bg-lime rounded-full flex items-center justify-center mb-6">
-                <svg
-                  className="w-8 h-8 text-navy"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                </svg>
-              </div>
+      {/* Prefer Email? (Secondary Action) */}
+      <section className="section-padding bg-lightgrey">
+        <div className="container-custom max-w-3xl">
+          <div className="text-center mb-8">
+            <h2 className="font-heading font-bold text-2xl md:text-3xl text-navy mb-3">
+              Prefer email instead?
+            </h2>
+            <p className="text-slate">
+              Fill out the form and we'll get back to you within 24 hours (usually much faster).
+            </p>
+          </div>
 
-              <h2 className="font-heading font-bold text-3xl text-navy mb-4">
-                Book a call (recommended)
-              </h2>
-              <p className="text-slate mb-6 leading-relaxed">
-                The best way to discuss your project is a quick call. We'll talk about your business, goals, and how a website can help. No pressure, no obligation.
-              </p>
-
-              <CalendlyButton className="btn-primary w-full text-center">
-                Book your free consultation
-              </CalendlyButton>
-
-              <div className="mt-6 flex items-center text-slate text-sm">
-                <svg
-                  className="w-5 h-5 mr-2 text-success"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                <span>15 minutes • No obligation • Free consultation</span>
-              </div>
-            </div>
-
-            {/* Option 2: Send a message */}
-            <div className="bg-lightgrey rounded-2xl p-8 md:p-10">
-              <div className="w-16 h-16 bg-navy rounded-full flex items-center justify-center mb-6">
-                <svg
-                  className="w-8 h-8 text-lime"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                </svg>
-              </div>
-
-              <h2 className="font-heading font-bold text-3xl text-navy mb-4">
-                Send a message
-              </h2>
-              <p className="text-slate mb-8 leading-relaxed">
-                Prefer email? Fill out the form and we'll get back to you within 24 hours (usually much faster) with answers to your questions.
-              </p>
-
-              <ContactForm />
-            </div>
+          <div className="bg-white rounded-2xl p-6 md:p-8 shadow-md">
+            <ContactForm />
           </div>
         </div>
       </section>
