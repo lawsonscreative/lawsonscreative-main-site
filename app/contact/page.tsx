@@ -36,9 +36,9 @@ export default function ContactPage() {
       {/* Contact Options */}
       <section className="section-padding">
         <div className="container-custom max-w-6xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             {/* Option 1: Book a Call */}
-            <div className="bg-lightgrey rounded-2xl p-8 md:p-12">
+            <div className="bg-lightgrey rounded-2xl p-8 md:p-10">
               <div className="w-16 h-16 bg-lime rounded-full flex items-center justify-center mb-6">
                 <svg
                   className="w-8 h-8 text-navy"
@@ -81,7 +81,7 @@ export default function ContactPage() {
             </div>
 
             {/* Option 2: Send a message */}
-            <div>
+            <div className="bg-lightgrey rounded-2xl p-8 md:p-10">
               <div className="w-16 h-16 bg-navy rounded-full flex items-center justify-center mb-6">
                 <svg
                   className="w-8 h-8 text-lime"
@@ -99,22 +99,12 @@ export default function ContactPage() {
               <h2 className="font-heading font-bold text-3xl text-navy mb-4">
                 Send a message
               </h2>
-              <p className="text-slate mb-6 leading-relaxed">
-                Prefer email? Fill out the form below and we'll get back to you within 24 hours (usually much faster) with answers to your questions.
+              <p className="text-slate mb-8 leading-relaxed">
+                Prefer email? Fill out the form and we'll get back to you within 24 hours (usually much faster) with answers to your questions.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Contact form */}
-      <section className="section-padding bg-lightgrey">
-        <div className="container-custom max-w-3xl">
-          <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
-            <h2 className="font-heading font-bold text-3xl text-navy mb-8 text-center">
-              Contact form
-            </h2>
-            <ContactForm />
+              <ContactForm />
+            </div>
           </div>
         </div>
       </section>
